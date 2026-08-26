@@ -4,8 +4,10 @@ import { useLocation } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 import { bows } from "../data/bows";
 
+
 function BowPage() {
   const location = useLocation();
+
 
   useEffect(() => {
     if (!location.hash) {
@@ -18,10 +20,14 @@ function BowPage() {
       return;
     }
 
-    const sectionId = location.hash.substring(1);
+
+    const sectionId =
+      location.hash.substring(1);
+
 
     const scrollToSection = () => {
-      const section = document.getElementById(sectionId);
+      const section =
+        document.getElementById(sectionId);
 
       if (section) {
         section.scrollIntoView({
@@ -31,80 +37,103 @@ function BowPage() {
       }
     };
 
-    const frame = requestAnimationFrame(() => {
-      requestAnimationFrame(scrollToSection);
-    });
 
-    return () => cancelAnimationFrame(frame);
-  }, [location.pathname, location.hash]);
+    const frame =
+      requestAnimationFrame(() => {
+        requestAnimationFrame(
+          scrollToSection
+        );
+      });
+
+
+    return () =>
+      cancelAnimationFrame(frame);
+  }, [
+    location.pathname,
+    location.hash,
+  ]);
 
 
   /* =====================================
      VIOLIN BOWS
   ====================================== */
 
-  const woodViolinBows = bows.filter(
-    (bow) =>
-      bow.instrument === "Violin" &&
-      bow.material === "Wood"
-  );
+  const woodViolinBows =
+    bows.filter(
+      (bow) =>
+        bow.instrument === "Violin" &&
+        bow.material === "Wood"
+    );
 
-  const carbonViolinBows = bows.filter(
-    (bow) =>
-      bow.instrument === "Violin" &&
-      bow.material === "Carbon Fiber"
-  );
+
+  const carbonViolinBows =
+    bows.filter(
+      (bow) =>
+        bow.instrument === "Violin" &&
+        bow.material === "Carbon Fiber"
+    );
 
 
   /* =====================================
      VIOLA BOWS
   ====================================== */
 
-  const woodViolaBows = bows.filter(
-    (bow) =>
-      bow.instrument === "Viola" &&
-      bow.material === "Wood"
-  );
+  const woodViolaBows =
+    bows.filter(
+      (bow) =>
+        bow.instrument === "Viola" &&
+        bow.material === "Wood"
+    );
 
-  const carbonViolaBows = bows.filter(
-    (bow) =>
-      bow.instrument === "Viola" &&
-      bow.material === "Carbon Fiber"
-  );
+
+  const carbonViolaBows =
+    bows.filter(
+      (bow) =>
+        bow.instrument === "Viola" &&
+        bow.material === "Carbon Fiber"
+    );
 
 
   /* =====================================
      CELLO BOWS
   ====================================== */
 
-  const woodCelloBows = bows.filter(
-    (bow) =>
-      bow.instrument === "Cello" &&
-      bow.material === "Wood"
-  );
+  const woodCelloBows =
+    bows.filter(
+      (bow) =>
+        bow.instrument === "Cello" &&
+        bow.material === "Wood"
+    );
 
-  const carbonCelloBows = bows.filter(
-    (bow) =>
-      bow.instrument === "Cello" &&
-      bow.material === "Carbon Fiber"
-  );
+
+  const carbonCelloBows =
+    bows.filter(
+      (bow) =>
+        bow.instrument === "Cello" &&
+        bow.material === "Carbon Fiber"
+    );
 
 
   /* =====================================
      PRODUCT CARD
   ====================================== */
 
-  const renderBowCard = (bow) => (
+  const renderBowCard = (
+    bow
+  ) => (
     <ProductCard
       key={bow.id}
       image={bow.image}
       name={bow.name}
-      level={bow.category}
+      level={bow.level}
       price={bow.price}
       regularPrice={bow.regularPrice}
       salePrice={bow.salePrice}
       savings={bow.savings}
-      description={bow.description}
+      description={
+        bow.shortDescription ||
+        bow.description
+      }
       href={`/bows/${bow.slug}`}
       viewLabel="View Bow"
       productType="Bow"
@@ -116,20 +145,24 @@ function BowPage() {
   return (
     <main className="collection-page">
 
+
       {/* =====================================
           BOW PAGE HERO
       ====================================== */}
 
       <section className="collection-page-hero">
+
         <div className="collection-page-hero-inner">
 
           <p className="collection-page-eyebrow">
             HARMONIC STRINGS
           </p>
 
+
           <h1>
             Bows
           </h1>
+
 
           <p className="collection-page-intro">
             Explore violin, viola, and cello bows selected
@@ -138,6 +171,7 @@ function BowPage() {
           </p>
 
         </div>
+
       </section>
 
 
@@ -149,6 +183,7 @@ function BowPage() {
         className="collection-category-nav"
         aria-label="Bow categories"
       >
+
         <div
           className="collection-category-nav-inner"
           style={{
@@ -163,25 +198,30 @@ function BowPage() {
             Wood Violin
           </a>
 
+
           <a href="#carbon-violin">
             <span>02</span>
             Carbon Violin
           </a>
+
 
           <a href="#wood-viola">
             <span>03</span>
             Wood Viola
           </a>
 
+
           <a href="#carbon-viola">
             <span>04</span>
             Carbon Viola
           </a>
 
+
           <a href="#wood-cello">
             <span>05</span>
             Wood Cello
           </a>
+
 
           <a href="#carbon-cello">
             <span>06</span>
@@ -189,6 +229,7 @@ function BowPage() {
           </a>
 
         </div>
+
       </nav>
 
 
@@ -200,17 +241,22 @@ function BowPage() {
         id="wood-violin"
         className="collection-category-section"
       >
+
         <div className="collection-section-heading">
 
           <div>
+
             <p className="collection-section-number">
               01
             </p>
 
+
             <p className="collection-section-eyebrow">
               TRADITIONAL CRAFTSMANSHIP
             </p>
+
           </div>
+
 
           <div className="collection-section-title-group">
 
@@ -218,6 +264,7 @@ function BowPage() {
               Wood
               <span> Violin Bows</span>
             </h2>
+
 
             <p>
               Traditional violin bows selected for balance,
@@ -229,8 +276,11 @@ function BowPage() {
 
         </div>
 
+
         <div className="collection-product-grid">
-          {woodViolinBows.map(renderBowCard)}
+          {woodViolinBows.map(
+            renderBowCard
+          )}
         </div>
 
       </section>
@@ -244,17 +294,22 @@ function BowPage() {
         id="carbon-violin"
         className="collection-category-section"
       >
+
         <div className="collection-section-heading">
 
           <div>
+
             <p className="collection-section-number">
               02
             </p>
 
+
             <p className="collection-section-eyebrow">
               MODERN PERFORMANCE
             </p>
+
           </div>
+
 
           <div className="collection-section-title-group">
 
@@ -262,6 +317,7 @@ function BowPage() {
               Carbon Fiber
               <span> Violin Bows</span>
             </h2>
+
 
             <p>
               Responsive and durable violin bows offering
@@ -273,8 +329,11 @@ function BowPage() {
 
         </div>
 
+
         <div className="collection-product-grid">
-          {carbonViolinBows.map(renderBowCard)}
+          {carbonViolinBows.map(
+            renderBowCard
+          )}
         </div>
 
       </section>
@@ -288,17 +347,22 @@ function BowPage() {
         id="wood-viola"
         className="collection-category-section"
       >
+
         <div className="collection-section-heading">
 
           <div>
+
             <p className="collection-section-number">
               03
             </p>
 
+
             <p className="collection-section-eyebrow">
-              DEPTH & CONTROL
+              DEPTH &amp; CONTROL
             </p>
+
           </div>
+
 
           <div className="collection-section-title-group">
 
@@ -306,6 +370,7 @@ function BowPage() {
               Wood
               <span> Viola Bows</span>
             </h2>
+
 
             <p>
               Wood viola bows chosen for comfortable balance,
@@ -317,8 +382,11 @@ function BowPage() {
 
         </div>
 
+
         <div className="collection-product-grid">
-          {woodViolaBows.map(renderBowCard)}
+          {woodViolaBows.map(
+            renderBowCard
+          )}
         </div>
 
       </section>
@@ -332,17 +400,22 @@ function BowPage() {
         id="carbon-viola"
         className="collection-category-section"
       >
+
         <div className="collection-section-heading">
 
           <div>
+
             <p className="collection-section-number">
               04
             </p>
 
+
             <p className="collection-section-eyebrow">
-              STABILITY & RESPONSE
+              STABILITY &amp; RESPONSE
             </p>
+
           </div>
+
 
           <div className="collection-section-title-group">
 
@@ -350,6 +423,7 @@ function BowPage() {
               Carbon Fiber
               <span> Viola Bows</span>
             </h2>
+
 
             <p>
               Modern viola bows designed for reliable handling,
@@ -361,8 +435,11 @@ function BowPage() {
 
         </div>
 
+
         <div className="collection-product-grid">
-          {carbonViolaBows.map(renderBowCard)}
+          {carbonViolaBows.map(
+            renderBowCard
+          )}
         </div>
 
       </section>
@@ -376,17 +453,22 @@ function BowPage() {
         id="wood-cello"
         className="collection-category-section"
       >
+
         <div className="collection-section-heading">
 
           <div>
+
             <p className="collection-section-number">
               05
             </p>
 
+
             <p className="collection-section-eyebrow">
-              POWER & NUANCE
+              POWER &amp; NUANCE
             </p>
+
           </div>
+
 
           <div className="collection-section-title-group">
 
@@ -394,6 +476,7 @@ function BowPage() {
               Wood
               <span> Cello Bows</span>
             </h2>
+
 
             <p>
               Traditional cello bows selected for strength,
@@ -405,8 +488,11 @@ function BowPage() {
 
         </div>
 
+
         <div className="collection-product-grid">
-          {woodCelloBows.map(renderBowCard)}
+          {woodCelloBows.map(
+            renderBowCard
+          )}
         </div>
 
       </section>
@@ -420,17 +506,22 @@ function BowPage() {
         id="carbon-cello"
         className="collection-category-section collection-fine-section"
       >
+
         <div className="collection-section-heading">
 
           <div>
+
             <p className="collection-section-number">
               06
             </p>
 
+
             <p className="collection-section-eyebrow">
               MODERN RELIABILITY
             </p>
+
           </div>
+
 
           <div className="collection-section-title-group">
 
@@ -438,6 +529,7 @@ function BowPage() {
               Carbon Fiber
               <span> Cello Bows</span>
             </h2>
+
 
             <p>
               Durable, consistent cello bows offering dependable
@@ -449,8 +541,11 @@ function BowPage() {
 
         </div>
 
+
         <div className="collection-product-grid">
-          {carbonCelloBows.map(renderBowCard)}
+          {carbonCelloBows.map(
+            renderBowCard
+          )}
         </div>
 
       </section>
@@ -458,5 +553,6 @@ function BowPage() {
     </main>
   );
 }
+
 
 export default BowPage;

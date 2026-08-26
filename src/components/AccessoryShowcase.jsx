@@ -12,19 +12,21 @@ import "../styles/product-detail.css";
 import "../styles/product-detail-viewer.css";
 
 
-function BowShowcase({ bow }) {
-  const product = bow || {
-    name: "Harmonic Strings Bow",
-    maker: "Harmonic Strings",
-    model: "Bow",
+function AccessoryShowcase({ accessory }) {
+  const product = accessory || {
+    name: "Harmonic Strings Accessory",
 
+    brand: null,
+    maker: null,
+    model: null,
+
+    category: "Accessory",
     instrument: null,
     level: null,
-    material: null,
 
     image: null,
-    fullImage: null,
-    frogTipImage: null,
+    secondaryImage: null,
+    detailImage: null,
 
     price: null,
     regularPrice: null,
@@ -32,56 +34,48 @@ function BowShowcase({ bow }) {
     savings: null,
 
     description:
-      "A carefully selected bow chosen for balance, response, control, and musical expression.",
+      "A carefully selected accessory chosen to support musicians in practice, lessons, rehearsals, and performance.",
 
-    handlingCharacter: null,
+    compatibility: null,
     idealFor: null,
+    performanceNotes: null,
 
-    stick: null,
-    frog: null,
-    mounting: null,
-    thumbGrip: null,
-    inlays: null,
-    tip: null,
-    hair: null,
-    weight: null,
-    length: null,
-    setup: null,
+    specifications: [],
+
+    condition: null,
+    conditionNotes: null,
 
     inStock: null,
   };
 
 
   /* =====================================
-     IMAGES
+     IMAGE VIEWS
   ====================================== */
 
-  const hasFullView = Boolean(
-    product.fullImage ||
-    product.image
+  const imageViews = [
+    {
+      key: "primary",
+      label: "Product",
+      image: product.image,
+    },
+    {
+      key: "secondary",
+      label: "Alternate",
+      image: product.secondaryImage,
+    },
+    {
+      key: "detail",
+      label: "Detail",
+      image: product.detailImage,
+    },
+  ].filter(
+    (view) => Boolean(view.image)
   );
 
-  const hasFrogTipView = Boolean(
-    product.frogTipImage
-  );
 
   const hasImages =
-    hasFullView ||
-    hasFrogTipView;
-
-
-  const fullImage =
-    product.fullImage ||
-    product.image ||
-    product.frogTipImage ||
-    null;
-
-
-  const frogTipImage =
-    product.frogTipImage ||
-    product.fullImage ||
-    product.image ||
-    null;
+    imageViews.length > 0;
 
 
   /* =====================================
@@ -90,9 +84,8 @@ function BowShowcase({ bow }) {
 
   const [activeView, setActiveView] =
     useState(
-      hasFullView
-        ? "full"
-        : "frogTip"
+      imageViews[0]?.key ||
+      "primary"
     );
 
 
@@ -104,30 +97,61 @@ function BowShowcase({ bow }) {
     useState(false);
 
 
+  /* =====================================
+     ACTIVE IMAGE
+  ====================================== */
+
+  const activeImageView =
+    imageViews.find(
+      (view) =>
+        view.key === activeView
+    ) ||
+    imageViews[0] ||
+    null;
+
+
   const activeImage =
-    activeView === "frogTip"
-      ? frogTipImage
-      : fullImage;
+    activeImageView?.image ||
+    null;
 
 
   const activeViewLabel =
-    activeView === "frogTip"
-      ? "Frog & Tip"
-      : "Full Bow";
+    activeImageView?.label ||
+    "Product";
 
 
   /* =====================================
-     EMAIL SUBJECT
+     KEEP IMAGE VIEW VALID
   ====================================== */
 
-  const trialSubject =
-    encodeURIComponent(
-      `${product.name || "Bow"} Trial Inquiry`
-    );
+  useEffect(() => {
+    if (!imageViews.length) {
+      return;
+    }
+
+
+    const activeViewExists =
+      imageViews.some(
+        (view) =>
+          view.key === activeView
+      );
+
+
+    if (!activeViewExists) {
+      setActiveView(
+        imageViews[0].key
+      );
+    }
+  }, [
+    activeView,
+    product.image,
+    product.secondaryImage,
+    product.detailImage,
+  ]);
 
 
   /* =====================================
-     FULLSCREEN
+     FULLSCREEN VIEWER
   ====================================== */
 
   useEffect(() => {
@@ -179,7 +203,22 @@ function BowShowcase({ bow }) {
     value,
     tonal = false,
   }) => {
-    if (!value) {
+    if (
+      value === null ||
+      value === undefined ||
+      value === ""
+    ) {
+      return null;
+    }
+
+
+    const displayValue =
+      Array.isArray(value)
+        ? value.join(" · ")
+        : value;
+
+
+    if (!displayValue) {
       return null;
     }
 
@@ -196,11 +235,51 @@ function BowShowcase({ bow }) {
 
 
         <strong>
-          {value}
+          {displayValue}
         </strong>
       </div>
     );
   };
+
+
+  /* =====================================
+     DISPLAY VALUES
+  ====================================== */
+
+  const brand =
+    product.brand ||
+    product.maker ||
+    null;
+
+
+  const categoryLabel =
+    product.category ||
+    "Accessory";
+
+
+  const inquirySubject =
+    encodeURIComponent(
+      `${product.name || "Accessory"} Inquiry`
+    );
+
+
+  /* =====================================
+     FLEXIBLE SPECIFICATIONS
+  ====================================== */
+
+  const specificationRows =
+    Array.isArray(
+      product.specifications
+    )
+      ? product.specifications.filter(
+          (specification) =>
+            specification &&
+            specification.label &&
+            specification.value !== null &&
+            specification.value !== undefined &&
+            specification.value !== ""
+        )
+      : [];
 
 
   /* =====================================
@@ -209,25 +288,19 @@ function BowShowcase({ bow }) {
 
   const hasOverview =
     Boolean(
+      product.model ||
       product.instrument ||
-      product.material ||
       product.level ||
+      product.compatibility ||
       product.idealFor
     );
 
 
   const hasSpecifications =
     Boolean(
-      product.stick ||
-      product.frog ||
-      product.mounting ||
-      product.thumbGrip ||
-      product.inlays ||
-      product.tip ||
-      product.hair ||
-      product.weight ||
-      product.length ||
-      product.setup
+      specificationRows.length ||
+      product.condition ||
+      product.conditionNotes
     );
 
 
@@ -242,14 +315,15 @@ function BowShowcase({ bow }) {
 
 
         {/* =====================================
-            LEFT — BOW IMAGE
+            LEFT — ACCESSORY IMAGE
         ====================================== */}
 
         <section className="hs-detail-visual">
 
           <div className="hs-detail-stage">
 
-            {hasImages && activeImage ? (
+            {hasImages &&
+            activeImage ? (
               <img
                 src={activeImage}
                 alt={`${product.name} ${activeViewLabel} view`}
@@ -272,7 +346,7 @@ function BowShowcase({ bow }) {
 
 
                 <p className="hs-detail-image-placeholder-copy">
-                  Images of this bow will be added shortly.
+                  Images of this accessory will be added shortly.
                 </p>
               </div>
             )}
@@ -280,7 +354,8 @@ function BowShowcase({ bow }) {
           </div>
 
 
-          {hasImages && activeImage && (
+          {hasImages &&
+          activeImage && (
             <>
 
               <button
@@ -297,45 +372,36 @@ function BowShowcase({ bow }) {
               </button>
 
 
-              <div
-                className="hs-detail-views"
-                aria-label="Bow image views"
-              >
+              {imageViews.length > 1 && (
+                <div
+                  className="hs-detail-views"
+                  aria-label="Accessory image views"
+                >
 
-                {hasFullView && (
-                  <button
-                    type="button"
-                    className={
-                      activeView === "full"
-                        ? "active"
-                        : ""
-                    }
-                    onClick={() =>
-                      setActiveView("full")
-                    }
-                  >
-                    Full Bow
-                  </button>
-                )}
+                  {imageViews.map(
+                    (view) => (
+                      <button
+                        key={view.key}
+                        type="button"
+                        className={
+                          activeView ===
+                          view.key
+                            ? "active"
+                            : ""
+                        }
+                        onClick={() =>
+                          setActiveView(
+                            view.key
+                          )
+                        }
+                      >
+                        {view.label}
+                      </button>
+                    )
+                  )}
 
-
-                {hasFrogTipView && (
-                  <button
-                    type="button"
-                    className={
-                      activeView === "frogTip"
-                        ? "active"
-                        : ""
-                    }
-                    onClick={() =>
-                      setActiveView("frogTip")
-                    }
-                  >
-                    Frog &amp; Tip
-                  </button>
-                )}
-
-              </div>
+                </div>
+              )}
 
             </>
           )}
@@ -354,28 +420,26 @@ function BowShowcase({ bow }) {
             <div className="hs-detail-topline">
 
               <p className="hs-detail-category">
-                {product.level
-                  ? `${product.level} Collection`
-                  : "Harmonic Strings"}
+                {categoryLabel}
               </p>
 
 
-              {typeof product.inStock === "boolean" && (
-                <p className="hs-detail-stock">
-                  {product.inStock
-                    ? "In Stock"
-                    : "Unavailable"}
-                </p>
-              )}
+              <p className="hs-detail-stock">
+                {product.inStock === true
+                  ? "In Stock"
+                  : product.inStock === false
+                    ? "Unavailable"
+                    : "Contact for Availability"}
+              </p>
 
             </div>
 
 
             <div className="hs-detail-identity">
 
-              {product.maker && (
+              {brand && (
                 <p className="hs-detail-maker">
-                  {product.maker}
+                  {brand}
                 </p>
               )}
 
@@ -439,7 +503,7 @@ function BowShowcase({ bow }) {
           <div
             className="hs-detail-tabs"
             role="tablist"
-            aria-label="Bow information"
+            aria-label="Accessory information"
           >
 
             <button
@@ -511,33 +575,49 @@ function BowShowcase({ bow }) {
                   <>
 
                     <p className="hs-detail-subheading">
-                      Bow Overview
+                      Accessory Overview
                     </p>
 
 
                     <div className="hs-detail-ledger">
 
                       <DetailRow
-                        label="Instrument"
-                        value={product.instrument}
+                        label="Model"
+                        value={
+                          product.model
+                        }
                       />
 
 
                       <DetailRow
-                        label="Material"
-                        value={product.material}
+                        label="Instrument"
+                        value={
+                          product.instrument
+                        }
                       />
 
 
                       <DetailRow
                         label="Player Level"
-                        value={product.level}
+                        value={
+                          product.level
+                        }
+                      />
+
+
+                      <DetailRow
+                        label="Compatibility"
+                        value={
+                          product.compatibility
+                        }
                       />
 
 
                       <DetailRow
                         label="Ideal For"
-                        value={product.idealFor}
+                        value={
+                          product.idealFor
+                        }
                       />
 
                     </div>
@@ -546,16 +626,16 @@ function BowShowcase({ bow }) {
                 )}
 
 
-                {product.handlingCharacter && (
+                {product.performanceNotes && (
                   <>
 
                     <p className="hs-detail-subheading">
-                      Handling &amp; Response
+                      Use &amp; Performance
                     </p>
 
 
                     <p className="hs-detail-description">
-                      {product.handlingCharacter}
+                      {product.performanceNotes}
                     </p>
 
                   </>
@@ -573,69 +653,47 @@ function BowShowcase({ bow }) {
               "specifications" && (
               <div className="hs-detail-ledger">
 
-                {hasSpecifications && (
+                {hasSpecifications ? (
                   <>
 
+                    {specificationRows.map(
+                      (
+                        specification,
+                        index
+                      ) => (
+                        <DetailRow
+                          key={`${specification.label}-${index}`}
+                          label={
+                            specification.label
+                          }
+                          value={
+                            specification.value
+                          }
+                        />
+                      )
+                    )}
+
+
                     <DetailRow
-                      label="Stick"
-                      value={product.stick}
+                      label="Condition"
+                      value={
+                        product.condition
+                      }
                     />
 
 
                     <DetailRow
-                      label="Frog"
-                      value={product.frog}
-                    />
-
-
-                    <DetailRow
-                      label="Mounting"
-                      value={product.mounting}
-                    />
-
-
-                    <DetailRow
-                      label="Thumb Grip"
-                      value={product.thumbGrip}
-                    />
-
-
-                    <DetailRow
-                      label="Inlays"
-                      value={product.inlays}
-                    />
-
-
-                    <DetailRow
-                      label="Tip"
-                      value={product.tip}
-                    />
-
-
-                    <DetailRow
-                      label="Hair"
-                      value={product.hair}
-                    />
-
-
-                    <DetailRow
-                      label="Weight"
-                      value={product.weight}
-                    />
-
-
-                    <DetailRow
-                      label="Length"
-                      value={product.length}
-                    />
-
-
-                    <DetailRow
-                      label="Setup"
-                      value={product.setup}
+                      label="Condition Notes"
+                      value={
+                        product.conditionNotes
+                      }
                     />
 
                   </>
+                ) : (
+                  <p className="hs-detail-description">
+                    Additional specifications will be added as they become available.
+                  </p>
                 )}
 
               </div>
@@ -649,7 +707,7 @@ function BowShowcase({ bow }) {
 
 
       {/* =====================================
-          BOW SERVICE
+          ACCESSORY SERVICE
       ====================================== */}
 
       <section className="hs-detail-service">
@@ -657,22 +715,21 @@ function BowShowcase({ bow }) {
         <div className="hs-detail-service-heading">
 
           <p className="hs-detail-service-eyebrow">
-            Interested in this bow?
+            Interested in this accessory?
           </p>
 
 
           <h2 className="hs-detail-service-title">
-            Experience it with your instrument.
+            Make sure it&apos;s right for you.
           </h2>
 
         </div>
 
 
         <p className="hs-detail-service-copy">
-          Harmonic Strings currently handles bow purchases
-          personally. Call us to confirm availability, ask
-          questions, arrange your purchase, or inquire about
-          trying the bow with your instrument.
+          Call or email Harmonic Strings to confirm availability,
+          ask product questions, or get help choosing an accessory
+          that works with your instrument and playing needs.
         </p>
 
 
@@ -681,7 +738,7 @@ function BowShowcase({ bow }) {
           <div className="hs-detail-service-option">
 
             <span>
-              Call to Order
+              Product Questions
             </span>
 
 
@@ -691,8 +748,9 @@ function BowShowcase({ bow }) {
 
 
             <p>
-              We’ll answer your questions, confirm availability,
-              and help you with the next steps.
+              Ask about availability, product details,
+              features, or anything else you would like
+              to know before purchasing.
             </p>
 
           </div>
@@ -701,18 +759,19 @@ function BowShowcase({ bow }) {
           <div className="hs-detail-service-option">
 
             <span>
-              Bow Trial
+              Compatibility Help
             </span>
 
 
             <strong>
-              Experience the bow with your instrument
+              Find the right accessory for your instrument
             </strong>
 
 
             <p>
-              Ask about arranging an opportunity to experience
-              the bow before making your final decision.
+              Contact us if you are unsure about sizing,
+              compatibility, or which option best fits
+              your playing needs.
             </p>
 
           </div>
@@ -731,10 +790,10 @@ function BowShowcase({ bow }) {
 
 
           <a
-            href={`mailto:lisa@harmonicstrings.net?subject=${trialSubject}`}
+            href={`mailto:lisa@harmonicstrings.net?subject=${inquirySubject}`}
             className="hs-detail-service-secondary"
           >
-            Ask About a Bow Trial
+            Ask About This Accessory
           </a>
 
         </div>
@@ -806,9 +865,7 @@ function BowShowcase({ bow }) {
           <div className="product-detail-viewer-heading">
 
             <p>
-              {product.level
-                ? `${product.level} Collection`
-                : "Harmonic Strings"}
+              {categoryLabel}
             </p>
 
 
@@ -830,46 +887,37 @@ function BowShowcase({ bow }) {
           </div>
 
 
-          <div className="product-detail-viewer-controls">
+          {imageViews.length > 1 && (
+            <div className="product-detail-viewer-controls">
 
-            {hasFullView && (
-              <button
-                type="button"
-                className={
-                  activeView === "full"
-                    ? "active"
-                    : ""
-                }
-                onClick={() =>
-                  setActiveView("full")
-                }
-              >
-                Full Bow
-              </button>
-            )}
+              {imageViews.map(
+                (view) => (
+                  <button
+                    key={view.key}
+                    type="button"
+                    className={
+                      activeView ===
+                      view.key
+                        ? "active"
+                        : ""
+                    }
+                    onClick={() =>
+                      setActiveView(
+                        view.key
+                      )
+                    }
+                  >
+                    {view.label}
+                  </button>
+                )
+              )}
 
-
-            {hasFrogTipView && (
-              <button
-                type="button"
-                className={
-                  activeView === "frogTip"
-                    ? "active"
-                    : ""
-                }
-                onClick={() =>
-                  setActiveView("frogTip")
-                }
-              >
-                Frog &amp; Tip
-              </button>
-            )}
-
-          </div>
+            </div>
+          )}
 
 
           <p className="product-detail-viewer-note">
-            High-resolution bow detail view
+            High-resolution accessory detail view
           </p>
 
         </div>
@@ -880,4 +928,4 @@ function BowShowcase({ bow }) {
 }
 
 
-export default BowShowcase;
+export default AccessoryShowcase;

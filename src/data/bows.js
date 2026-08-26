@@ -10,30 +10,29 @@ export const bows = [
     name: "Arcos Brazil Silver Violin Bow",
     maker: "T. Chagas",
     model: "Arcos Brazil Silver",
-
     instrument: "Violin",
-    material: "Wood",
-    category: "Intermediate",
     level: "Intermediate",
-    price: "$1,250",
+    material: "Wood",
+    stage: "light",
 
     image: arcosBrazilSilverFullImage,
     fullImage: arcosBrazilSilverFullImage,
     frogTipImage: arcosBrazilSilverFrogTipImage,
 
-    stage: "light",
+    price: "$1,250",
+    regularPrice: null,
+    salePrice: null,
+    savings: null,
+
+    shortDescription:
+      "A refined Pernambuco violin bow by T. Chagas with silver mounting and abalone accents, selected by Harmonic Strings for advancing players.",
 
     description:
-      "This beautiful fully-mounted silver-wound violin bow has been specially selected by Harmonic Strings. This special bow features Pernambuco wood and is finished with silver fittings and abalone accents. The bow by maker T. Chagas weighs 60.4 grams.",
+      "This violin bow by maker T. Chagas has been specially selected by Harmonic Strings for its traditional craftsmanship, refined appointments, and professional presentation.",
 
-    features: [
-      "Aged Pernambuco wood",
-      "Fully-mounted frog",
-      "Beautiful abalone slide and Parisian eye",
-      "Silver winding",
-      "Lizard-leather thumb-grip",
-      "Bone tip",
-    ],
+    handlingCharacter: null,
+
+    idealFor: null,
 
     stick:
       "Aged Pernambuco wood",
@@ -48,7 +47,7 @@ export const bows = [
       "Lizard-leather thumb-grip",
 
     inlays:
-      "Beautiful abalone slide and Parisian eye",
+      "Abalone slide and Parisian eye",
 
     tip:
       "Bone tip",
@@ -60,8 +59,8 @@ export const bows = [
 
     length: null,
 
-    handlingCharacter: null,
-
     setup: null,
+
+    inStock: null,
   },
 ];

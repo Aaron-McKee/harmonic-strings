@@ -27,6 +27,7 @@ import CasePage from "./pages/CasePage";
 import CaseDetailPage from "./pages/CaseDetailPage";
 
 import AccessoriesPage from "./pages/AccessoriesPage";
+import AccessoriesDetailPage from "./pages/AccessoriesDetailPage";
 
 
 function HomePage() {
@@ -110,6 +111,11 @@ function App() {
         <Route
           path="/accessories"
           element={<AccessoriesPage />}
+        />
+
+        <Route
+          path="/accessories/:slug"
+          element={<AccessoriesDetailPage />}
         />
       </Routes>
 

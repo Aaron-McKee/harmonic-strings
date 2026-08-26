@@ -181,9 +181,9 @@ function Footer() {
                 Strings
               </a>
 
-              <a href="#">
+              <Link to="/accessories">
                 Accessories
-              </a>
+              </Link>
 
               <a href="#">
                 Gift Cards
