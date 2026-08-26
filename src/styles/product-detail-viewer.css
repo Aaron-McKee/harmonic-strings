@@ -1,0 +1,729 @@
+/* =========================================================
+   HARMONIC STRINGS
+   FULLSCREEN PRODUCT VIEWER
+   ========================================================= */
+
+.product-detail-viewer {
+  position:
+    fixed;
+
+  inset:
+    0;
+
+  z-index:
+    5000;
+
+  width:
+    100vw;
+
+  height:
+    100dvh;
+
+  display:
+    grid;
+
+  grid-template-rows:
+    auto
+    minmax(0, 1fr)
+    auto;
+
+  grid-template-columns:
+    1fr;
+
+  padding:
+    34px
+    42px
+    28px;
+
+  overflow:
+    hidden;
+
+  color:
+    #ffffff;
+
+  background:
+    radial-gradient(
+      circle at 50% 48%,
+      rgba(145, 45, 36, 0.16) 0%,
+      rgba(94, 31, 27, 0.07) 24%,
+      transparent 48%
+    ),
+    radial-gradient(
+      ellipse at 50% 88%,
+      rgba(180, 107, 62, 0.08) 0%,
+      transparent 40%
+    ),
+    linear-gradient(
+      145deg,
+      #0b0b0b 0%,
+      #050505 62%,
+      #0e0909 100%
+    );
+
+  isolation:
+    isolate;
+}
+
+.product-detail-viewer::before {
+  content:
+    "";
+
+  position:
+    absolute;
+
+  inset:
+    8%
+    16%
+    10%;
+
+  z-index:
+    -1;
+
+  pointer-events:
+    none;
+
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(255, 226, 192, 0.07) 0%,
+      rgba(171, 99, 54, 0.025) 38%,
+      transparent 70%
+    );
+
+  filter:
+    blur(24px);
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.product-detail-viewer-heading {
+  position:
+    absolute;
+
+  top:
+    34px;
+
+  left:
+    42px;
+
+  z-index:
+    4;
+
+  max-width:
+    min(
+      620px,
+      62vw
+    );
+}
+
+.product-detail-viewer-heading p {
+  margin:
+    0
+    0
+    9px;
+
+  color:
+    rgba(202, 77, 68, 0.9);
+
+  font-size:
+    9px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    2.1px;
+
+  text-transform:
+    uppercase;
+}
+
+.product-detail-viewer-heading h2 {
+  margin:
+    0;
+
+  color:
+    rgba(255, 255, 255, 0.95);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      28px,
+      3vw,
+      48px
+    );
+
+  font-weight:
+    400;
+
+  line-height:
+    1;
+
+  letter-spacing:
+    -1.5px;
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+   ========================================================= */
+
+.product-detail-viewer-close {
+  position:
+    absolute;
+
+  top:
+    30px;
+
+  right:
+    38px;
+
+  z-index:
+    6;
+
+  min-height:
+    44px;
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    9px;
+
+  padding:
+    0
+    15px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.15);
+
+  background:
+    rgba(5, 5, 5, 0.56);
+
+  backdrop-filter:
+    blur(14px);
+
+  -webkit-backdrop-filter:
+    blur(14px);
+
+  color:
+    rgba(255, 255, 255, 0.76);
+
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  font-size:
+    9px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    1.4px;
+
+  text-transform:
+    uppercase;
+
+  cursor:
+    pointer;
+
+  transition:
+    color 220ms ease,
+    border-color 220ms ease,
+    background 220ms ease;
+}
+
+.product-detail-viewer-close:hover {
+  color:
+    #ffffff;
+
+  border-color:
+    rgba(178, 57, 50, 0.65);
+
+  background:
+    rgba(141, 29, 29, 0.7);
+}
+
+
+/* =========================================================
+   IMAGE STAGE
+   ========================================================= */
+
+.product-detail-viewer-stage {
+  position:
+    relative;
+
+  grid-row:
+    2;
+
+  width:
+    100%;
+
+  height:
+    100%;
+
+  min-height:
+    0;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  padding:
+    76px
+    42px
+    80px;
+
+  overflow:
+    hidden;
+}
+
+.product-detail-viewer-stage::after {
+  content:
+    "";
+
+  position:
+    absolute;
+
+  left:
+    50%;
+
+  bottom:
+    8%;
+
+  z-index:
+    -1;
+
+  width:
+    min(
+      520px,
+      52vw
+    );
+
+  height:
+    74px;
+
+  transform:
+    translateX(-50%);
+
+  border-radius:
+    50%;
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(205, 133, 84, 0.11) 0%,
+      rgba(96, 49, 30, 0.035) 40%,
+      transparent 72%
+    );
+
+  filter:
+    blur(18px);
+}
+
+.product-detail-viewer-image {
+  display:
+    block;
+
+  width:
+    auto;
+
+  height:
+    auto;
+
+  max-width:
+    min(
+      88vw,
+      1500px
+    );
+
+  max-height:
+    calc(
+      100dvh - 190px
+    );
+
+  object-fit:
+    contain;
+
+  filter:
+    drop-shadow(
+      0 34px 32px
+      rgba(0, 0, 0, 0.52)
+    )
+    drop-shadow(
+      0 10px 12px
+      rgba(0, 0, 0, 0.34)
+    );
+}
+
+
+/* =========================================================
+   VIEW CONTROLS
+   ========================================================= */
+
+.product-detail-viewer-controls {
+  position:
+    absolute;
+
+  left:
+    50%;
+
+  bottom:
+    28px;
+
+  z-index:
+    6;
+
+  transform:
+    translateX(-50%);
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  padding:
+    4px;
+
+  background:
+    rgba(4, 4, 4, 0.7);
+
+  backdrop-filter:
+    blur(16px);
+
+  -webkit-backdrop-filter:
+    blur(16px);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.13);
+
+  box-shadow:
+    0 16px 40px
+    rgba(0, 0, 0, 0.3);
+}
+
+.product-detail-viewer-controls button {
+  position:
+    relative;
+
+  min-width:
+    78px;
+
+  min-height:
+    40px;
+
+  padding:
+    0
+    14px;
+
+  border:
+    none;
+
+  background:
+    transparent;
+
+  color:
+    rgba(255, 255, 255, 0.5);
+
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  font-size:
+    9px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    1.4px;
+
+  text-transform:
+    uppercase;
+
+  cursor:
+    pointer;
+
+  transition:
+    color 220ms ease,
+    background 220ms ease;
+}
+
+.product-detail-viewer-controls button:hover {
+  color:
+    #ffffff;
+}
+
+.product-detail-viewer-controls button.active {
+  color:
+    #ffffff;
+
+  background:
+    rgba(141, 29, 29, 0.9);
+}
+
+.product-detail-viewer-controls button.active::after {
+  content:
+    "";
+
+  position:
+    absolute;
+
+  left:
+    20%;
+
+  right:
+    20%;
+
+  bottom:
+    5px;
+
+  height:
+    1px;
+
+  background:
+    rgba(255, 255, 255, 0.55);
+}
+
+.product-detail-viewer-note {
+  position:
+    absolute;
+
+  left:
+    42px;
+
+  bottom:
+    34px;
+
+  z-index:
+    4;
+
+  margin:
+    0;
+
+  color:
+    rgba(255, 255, 255, 0.34);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    11px;
+
+  font-style:
+    italic;
+
+  letter-spacing:
+    0.1px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .product-detail-viewer {
+    padding:
+      24px
+      24px
+      22px;
+  }
+
+  .product-detail-viewer-heading {
+    top:
+      24px;
+
+    left:
+      24px;
+
+    max-width:
+      58vw;
+  }
+
+  .product-detail-viewer-close {
+    top:
+      20px;
+
+    right:
+      22px;
+  }
+
+  .product-detail-viewer-stage {
+    padding:
+      82px
+      24px
+      86px;
+  }
+
+  .product-detail-viewer-image {
+    max-width:
+      92vw;
+
+    max-height:
+      calc(
+        100dvh - 175px
+      );
+  }
+
+  .product-detail-viewer-controls {
+    bottom:
+      22px;
+  }
+
+  .product-detail-viewer-note {
+    left:
+      24px;
+
+    bottom:
+      28px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .product-detail-viewer {
+    padding:
+      18px
+      16px
+      16px;
+  }
+
+  .product-detail-viewer-heading {
+    top:
+      18px;
+
+    left:
+      16px;
+
+    max-width:
+      65vw;
+  }
+
+  .product-detail-viewer-heading p {
+    font-size:
+      8px;
+
+    letter-spacing:
+      1.5px;
+  }
+
+  .product-detail-viewer-heading h2 {
+    font-size:
+      25px;
+
+    line-height:
+      1.05;
+  }
+
+  .product-detail-viewer-close {
+    top:
+      14px;
+
+    right:
+      14px;
+
+    min-height:
+      40px;
+
+    padding:
+      0
+      12px;
+  }
+
+  .product-detail-viewer-close span {
+    display:
+      none;
+  }
+
+  .product-detail-viewer-stage {
+    padding:
+      90px
+      8px
+      92px;
+  }
+
+  .product-detail-viewer-image {
+    max-width:
+      96vw;
+
+    max-height:
+      calc(
+        100dvh - 180px
+      );
+  }
+
+  .product-detail-viewer-controls {
+    bottom:
+      16px;
+  }
+
+  .product-detail-viewer-controls button {
+    min-width:
+      62px;
+
+    min-height:
+      36px;
+
+    padding:
+      0
+      10px;
+
+    font-size:
+      8px;
+  }
+
+  .product-detail-viewer-note {
+    display:
+      none;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .product-detail-viewer-close,
+  .product-detail-viewer-controls button {
+    transition:
+      none;
+  }
+}

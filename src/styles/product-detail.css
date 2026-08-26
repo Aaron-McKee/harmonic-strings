@@ -1,0 +1,1723 @@
+/* =========================================================
+   HARMONIC STRINGS — SHARED PRODUCT DETAIL
+   ========================================================= */
+
+.product-detail-page {
+  padding: 158px 3.5vw 70px !important;
+}
+
+.product-detail-page > div:first-child {
+  margin: 0 auto 22px !important;
+}
+
+.product-detail-page > div:first-child a {
+  color: rgba(20, 20, 20, 0.58) !important;
+  font-size: 10px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.5px !important;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.product-detail-page > div:first-child a:hover {
+  color: #8d1d1d !important;
+}
+
+
+/* =========================================================
+   MAIN SPOTLIGHT
+   ========================================================= */
+
+.hs-detail-spotlight {
+  width: min(100%, 1560px);
+  height: 1020px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.04fr)
+    minmax(600px, 0.96fr);
+
+  overflow: hidden;
+
+  background: #090909;
+
+  border:
+    1px solid
+    rgba(18, 18, 18, 0.16);
+
+  box-shadow:
+    0 30px 85px
+    rgba(0, 0, 0, 0.14);
+}
+
+
+/* =========================================================
+   LEFT IMAGE AREA
+   ========================================================= */
+
+.hs-detail-visual {
+  position: relative;
+
+  min-width: 0;
+  height: 1020px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  isolation: isolate;
+
+  background:
+    radial-gradient(
+      ellipse at 50% 45%,
+      rgba(198, 126, 72, 0.1) 0%,
+      rgba(102, 52, 29, 0.035) 35%,
+      transparent 66%
+    ),
+    radial-gradient(
+      ellipse at 50% 91%,
+      rgba(126, 25, 25, 0.1) 0%,
+      transparent 42%
+    ),
+    linear-gradient(
+      145deg,
+      #0b0b0b 0%,
+      #060606 64%,
+      #100909 100%
+    );
+}
+
+.hs-detail-visual::before {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  top: 47%;
+
+  width: 620px;
+  height: 820px;
+
+  transform:
+    translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(255, 228, 194, 0.072),
+      rgba(152, 89, 49, 0.024) 42%,
+      transparent 70%
+    );
+
+  filter: blur(8px);
+
+  pointer-events: none;
+}
+
+.hs-detail-visual::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 82px;
+
+  width: 44%;
+  height: 76px;
+
+  transform:
+    translateX(-50%);
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(204, 127, 74, 0.11),
+      rgba(83, 43, 27, 0.035) 42%,
+      transparent 72%
+    );
+
+  filter: blur(18px);
+
+  pointer-events: none;
+}
+
+.hs-detail-stage {
+  position: absolute;
+
+  inset:
+    34px
+    38px
+    108px;
+
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hs-detail-image {
+  position: relative;
+
+  z-index: 2;
+
+  display: block;
+
+  width: auto;
+  height: auto;
+
+  max-width: 92%;
+  max-height: 845px;
+
+  object-fit: contain;
+
+  filter:
+    drop-shadow(
+      0 30px 30px
+      rgba(0, 0, 0, 0.48)
+    )
+    drop-shadow(
+      0 10px 10px
+      rgba(0, 0, 0, 0.28)
+    );
+
+  transition:
+    transform
+    750ms
+    cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hs-detail-visual:hover
+.hs-detail-image {
+  transform:
+    scale(1.012);
+}
+
+
+/* =========================================================
+   PHOTOGRAPHY PLACEHOLDER
+   ========================================================= */
+
+.hs-detail-image-placeholder {
+  position: relative;
+
+  z-index: 2;
+
+  width:
+    min(
+      82%,
+      520px
+    );
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding:
+    54px
+    34px;
+
+  text-align: center;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.09);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.035),
+      rgba(255, 255, 255, 0.012)
+    );
+
+  box-shadow:
+    0 28px 70px
+    rgba(0, 0, 0, 0.22);
+}
+
+.hs-detail-image-placeholder::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  width: 54px;
+  height: 2px;
+
+  transform:
+    translateX(-50%);
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #a61d22,
+      transparent
+    );
+}
+
+.hs-detail-image-placeholder-eyebrow {
+  margin-bottom: 17px;
+
+  color:
+    rgba(224, 82, 73, 0.96);
+
+  font-family:
+    "Avenir Next",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 1.7px;
+
+  text-transform: uppercase;
+}
+
+.hs-detail-image-placeholder-title {
+  color:
+    rgba(255, 255, 255, 0.94);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      30px,
+      3vw,
+      44px
+    );
+
+  font-weight: 400;
+
+  line-height: 1.08;
+
+  letter-spacing: -0.8px;
+}
+
+.hs-detail-image-placeholder-copy {
+  max-width: 340px;
+
+  margin:
+    16px
+    0
+    0;
+
+  color:
+    rgba(255, 255, 255, 0.46);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   IMAGE CONTROLS
+   ========================================================= */
+
+.hs-detail-expand {
+  position: absolute;
+
+  left: 30px;
+  bottom: 28px;
+
+  z-index: 10;
+
+  min-height: 46px;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding:
+    0
+    16px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.15);
+
+  background:
+    rgba(7, 7, 7, 0.68);
+
+  backdrop-filter:
+    blur(12px);
+
+  -webkit-backdrop-filter:
+    blur(12px);
+
+  color:
+    rgba(255, 255, 255, 0.78);
+
+  font-family:
+    "Avenir Next",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 1.25px;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    background 200ms ease,
+    border-color 200ms ease,
+    color 200ms ease;
+}
+
+.hs-detail-expand:hover {
+  color:
+    #ffffff;
+
+  background:
+    #8d1d1d;
+
+  border-color:
+    #8d1d1d;
+}
+
+.hs-detail-views {
+  position: absolute;
+
+  right: 30px;
+  bottom: 28px;
+
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+
+  padding: 4px;
+
+  background:
+    rgba(7, 7, 7, 0.7);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.13);
+
+  backdrop-filter:
+    blur(14px);
+
+  -webkit-backdrop-filter:
+    blur(14px);
+}
+
+.hs-detail-views button {
+  min-width: 76px;
+  min-height: 38px;
+
+  padding:
+    0
+    12px;
+
+  border: none;
+
+  color:
+    rgba(255, 255, 255, 0.47);
+
+  background:
+    transparent;
+
+  font-family:
+    "Avenir Next",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 1.1px;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    color 180ms ease,
+    background 180ms ease;
+}
+
+.hs-detail-views button:hover {
+  color:
+    #ffffff;
+}
+
+.hs-detail-views button.active {
+  color:
+    #ffffff;
+
+  background:
+    rgba(141, 29, 29, 0.9);
+}
+
+
+/* =========================================================
+   RIGHT PRODUCT CONTENT
+   ========================================================= */
+
+.hs-detail-content {
+  min-width: 0;
+  height: 1020px;
+
+  display: grid;
+
+  grid-template-rows:
+    auto
+    auto
+    minmax(0, 1fr);
+
+  overflow: hidden;
+
+  padding:
+    34px
+    38px
+    30px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #f7f4ee 0%,
+      #f1eee7 100%
+    );
+}
+
+.hs-detail-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding-bottom: 13px;
+
+  border-bottom:
+    1px solid
+    rgba(20, 20, 20, 0.08);
+}
+
+.hs-detail-category {
+  margin: 0;
+
+  color:
+    #8d1d1d;
+
+  font-family:
+    "Avenir Next",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.4px;
+
+  text-transform: uppercase;
+}
+
+.hs-detail-stock {
+  position: relative;
+
+  margin: 0;
+
+  padding-left: 14px;
+
+  color:
+    rgba(20, 20, 20, 0.56);
+
+  font-family:
+    "Avenir Next",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 1.35px;
+
+  text-transform: uppercase;
+}
+
+.hs-detail-stock::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 50%;
+
+  width: 6px;
+  height: 6px;
+
+  transform:
+    translateY(-50%);
+
+  border-radius: 50%;
+
+  background:
+    #55765c;
+
+  box-shadow:
+    0 0 0 4px
+    rgba(85, 118, 92, 0.1);
+}
+
+.hs-detail-identity {
+  padding-top:
+    17px;
+}
+
+.hs-detail-maker {
+  margin:
+    0
+    0
+    5px;
+
+  color:
+    rgba(20, 20, 20, 0.43);
+
+  font-family:
+    "Avenir Next",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 1.25px;
+
+  text-transform: uppercase;
+}
+
+.hs-detail-title {
+  max-width: 690px;
+
+  margin: 0;
+
+  color:
+    #111111;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      38px,
+      3.1vw,
+      58px
+    );
+
+  font-weight: 400;
+
+  line-height: 1.02;
+
+  letter-spacing: -1.6px;
+}
+
+.hs-detail-title::after {
+  content: "";
+
+  display: block;
+
+  width: 52px;
+  height: 2px;
+
+  margin-top: 12px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #751515,
+      #b12c2c,
+      transparent
+    );
+}
+
+
+/* =========================================================
+   PRICE
+   ========================================================= */
+
+.hs-detail-price {
+  margin-top: 15px;
+
+  padding:
+    13px
+    0
+    14px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(0, 1fr)
+    );
+
+  align-items: end;
+
+  gap: 18px;
+
+  border-bottom:
+    1px solid
+    rgba(20, 20, 20, 0.08);
+}
+
+.hs-detail-price-block {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.hs-detail-price-block:nth-child(2) {
+  align-items: center;
+
+  text-align: center;
+}
+
+.hs-detail-price-label {
+  margin: 0;
+
+  color:
+    rgba(20, 20, 20, 0.42);
+
+  font-family:
+    "Avenir Next",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: 1.15px;
+
+  text-transform: uppercase;
+}
+
+.hs-detail-price-regular {
+  color:
+    rgba(20, 20, 20, 0.5);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 14px;
+}
+
+.hs-detail-price-sale {
+  color:
+    #8d1d1d;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 31px;
+  font-weight: 600;
+
+  line-height: 1;
+}
+
+.hs-detail-price-saving {
+  justify-self: end;
+
+  padding:
+    7px
+    10px;
+
+  color:
+    #8d1d1d;
+
+  border:
+    1px solid
+    rgba(141, 29, 29, 0.24);
+
+  font-family:
+    "Avenir Next",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   TABS
+   ========================================================= */
+
+.hs-detail-tabs {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(0, 1fr)
+    );
+
+  gap: 26px;
+
+  padding-top:
+    20px;
+}
+
+.hs-detail-tabs button {
+  position: relative;
+
+  min-height: 46px;
+
+  padding:
+    0
+    0
+    12px;
+
+  border: none;
+
+  border-bottom:
+    1px solid
+    rgba(20, 20, 20, 0.14);
+
+  color:
+    rgba(20, 20, 20, 0.44);
+
+  background:
+    transparent;
+
+  text-align:
+    left;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 21px;
+  font-weight: 400;
+
+  letter-spacing:
+    -0.25px;
+
+  cursor: pointer;
+}
+
+.hs-detail-tabs button::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -1px;
+
+  width: 0;
+  height: 2px;
+
+  background:
+    #8d1d1d;
+
+  transition:
+    width 250ms ease;
+}
+
+.hs-detail-tabs button:hover,
+.hs-detail-tabs button.active {
+  color:
+    #111111;
+}
+
+.hs-detail-tabs button.active::after {
+  width:
+    56px;
+}
+
+
+/* =========================================================
+   TAB CONTENT
+   ========================================================= */
+
+.hs-detail-tab-content {
+  min-height: 0;
+
+  overflow-y: auto;
+
+  margin-top:
+    18px;
+
+  padding:
+    2px
+    16px
+    20px
+    0;
+
+  scrollbar-width:
+    thin;
+
+  scrollbar-color:
+    rgba(141, 29, 29, 0.32)
+    transparent;
+}
+
+.hs-detail-tab-content::-webkit-scrollbar {
+  width:
+    5px;
+}
+
+.hs-detail-tab-content::-webkit-scrollbar-thumb {
+  background:
+    rgba(141, 29, 29, 0.28);
+
+  border-radius:
+    999px;
+}
+
+.hs-detail-description {
+  max-width:
+    660px;
+
+  margin:
+    0
+    0
+    24px;
+
+  color:
+    rgba(20, 20, 20, 0.74);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 17px;
+  font-weight: 400;
+
+  line-height:
+    1.72;
+}
+
+.hs-detail-subheading {
+  margin:
+    24px
+    0
+    7px;
+
+  color:
+    #8d1d1d;
+
+  font-family:
+    "Avenir Next",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing:
+    1.4px;
+
+  text-transform:
+    uppercase;
+}
+
+
+/* =========================================================
+   DETAIL LEDGER
+   ========================================================= */
+
+.hs-detail-ledger {
+  width:
+    100%;
+}
+
+.hs-detail-ledger-row {
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(130px, 0.32fr)
+    minmax(0, 0.68fr);
+
+  gap:
+    26px;
+
+  padding:
+    15px
+    0;
+
+  border-bottom:
+    1px solid
+    rgba(20, 20, 20, 0.085);
+}
+
+.hs-detail-ledger-row > span {
+  color:
+    rgba(20, 20, 20, 0.42);
+
+  font-family:
+    "Avenir Next",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing:
+    1.15px;
+
+  line-height:
+    1.5;
+
+  text-transform:
+    uppercase;
+}
+
+.hs-detail-ledger-row > strong {
+  color:
+    #1c1c1c;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 17px;
+  font-weight: 400;
+
+  line-height:
+    1.5;
+}
+
+.hs-detail-ledger-row.tonal > strong {
+  color:
+    rgba(20, 20, 20, 0.72);
+
+  font-style:
+    italic;
+}
+
+
+/* =========================================================
+   SERVICE PANEL
+   ========================================================= */
+
+.hs-detail-service {
+  width:
+    min(
+      100%,
+      1560px
+    );
+
+  margin:
+    18px
+    auto
+    0;
+
+  padding:
+    28px
+    30px
+    26px;
+
+  color:
+    #ffffff;
+
+  background:
+    radial-gradient(
+      circle at 94% 12%,
+      rgba(141, 29, 29, 0.15),
+      transparent 32%
+    ),
+    linear-gradient(
+      135deg,
+      #151515 0%,
+      #101010 62%,
+      #241111 100%
+    );
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.065);
+
+  box-shadow:
+    0 24px 60px
+    rgba(0, 0, 0, 0.11);
+}
+
+.hs-detail-service-heading {
+  margin-bottom:
+    12px;
+}
+
+.hs-detail-service-eyebrow {
+  margin:
+    0
+    0
+    7px;
+
+  color:
+    rgba(224, 82, 73, 0.96);
+
+  font-family:
+    "Avenir Next",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing:
+    1.45px;
+
+  text-transform:
+    uppercase;
+}
+
+.hs-detail-service-title {
+  margin: 0;
+
+  color:
+    #ffffff;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      26px,
+      2.4vw,
+      36px
+    );
+
+  font-weight: 400;
+
+  line-height:
+    1.08;
+}
+
+.hs-detail-service-copy {
+  max-width:
+    860px;
+
+  margin:
+    0
+    0
+    18px;
+
+  color:
+    rgba(255, 255, 255, 0.6);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 14px;
+
+  line-height:
+    1.6;
+}
+
+.hs-detail-service-options {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(0, 1fr)
+    );
+
+  gap:
+    12px;
+
+  margin-bottom:
+    16px;
+}
+
+.hs-detail-service-option {
+  padding:
+    15px
+    16px;
+
+  background:
+    rgba(255, 255, 255, 0.055);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.035);
+}
+
+.hs-detail-service-option > span {
+  display:
+    block;
+
+  margin-bottom:
+    6px;
+
+  color:
+    rgba(224, 102, 92, 0.95);
+
+  font-family:
+    "Avenir Next",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing:
+    1.1px;
+
+  text-transform:
+    uppercase;
+}
+
+.hs-detail-service-option > strong {
+  display:
+    block;
+
+  margin-bottom:
+    6px;
+
+  color:
+    rgba(255, 255, 255, 0.94);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    15px;
+
+  font-weight:
+    400;
+
+  line-height:
+    1.3;
+}
+
+.hs-detail-service-option > p {
+  max-width:
+    580px;
+
+  margin:
+    0;
+
+  color:
+    rgba(255, 255, 255, 0.5);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    12px;
+
+  line-height:
+    1.5;
+}
+
+.hs-detail-service-actions {
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    10px;
+}
+
+.hs-detail-service-actions a {
+  min-height:
+    42px;
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  padding:
+    0
+    16px;
+
+  text-decoration:
+    none;
+
+  font-family:
+    "Avenir Next",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size:
+    8.5px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    1px;
+
+  text-transform:
+    uppercase;
+
+  transition:
+    transform 180ms ease,
+    background 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease;
+}
+
+.hs-detail-service-primary {
+  color:
+    #ffffff;
+
+  background:
+    #a61d22;
+
+  border:
+    1px solid
+    #a61d22;
+}
+
+.hs-detail-service-primary:hover {
+  transform:
+    translateY(-1px);
+
+  background:
+    #bb2429;
+
+  border-color:
+    #bb2429;
+}
+
+.hs-detail-service-secondary {
+  color:
+    rgba(255, 255, 255, 0.88);
+
+  background:
+    transparent;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.2);
+}
+
+.hs-detail-service-secondary:hover {
+  transform:
+    translateY(-1px);
+
+  color:
+    #ffffff;
+
+  border-color:
+    rgba(255, 255, 255, 0.4);
+}
+
+.hs-detail-service-contact {
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    7px;
+
+  margin-top:
+    12px;
+
+  color:
+    rgba(255, 255, 255, 0.36);
+
+  font-family:
+    "Avenir Next",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size:
+    8px;
+
+  font-weight:
+    700;
+
+  letter-spacing:
+    0.85px;
+
+  text-transform:
+    uppercase;
+}
+
+.hs-detail-service-contact a {
+  color:
+    rgba(255, 255, 255, 0.56);
+
+  text-decoration:
+    none;
+}
+
+.hs-detail-service-contact a:hover {
+  color:
+    #ffffff;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .product-detail-page {
+    padding:
+      145px
+      3vw
+      42px !important;
+  }
+
+  .hs-detail-spotlight {
+    height:
+      auto;
+
+    grid-template-columns:
+      1fr;
+  }
+
+  .hs-detail-visual {
+    height:
+      780px;
+  }
+
+  .hs-detail-content {
+    height:
+      980px;
+  }
+
+  .hs-detail-image {
+    max-height:
+      665px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .product-detail-page {
+    padding:
+      94px
+      0
+      24px !important;
+  }
+
+  .product-detail-page > div:first-child {
+    padding:
+      0
+      18px;
+
+    margin-bottom:
+      14px !important;
+  }
+
+  .hs-detail-spotlight {
+    height:
+      auto;
+
+    grid-template-columns:
+      1fr;
+
+    border-left:
+      none;
+
+    border-right:
+      none;
+  }
+
+  .hs-detail-visual {
+    height:
+      580px;
+  }
+
+  .hs-detail-stage {
+    inset:
+      20px
+      12px
+      108px;
+  }
+
+  .hs-detail-image {
+    max-width:
+      96%;
+
+    max-height:
+      440px;
+  }
+
+  .hs-detail-image-placeholder {
+    width:
+      min(
+        88%,
+        430px
+      );
+
+    padding:
+      42px
+      24px;
+  }
+
+  .hs-detail-image-placeholder-title {
+    font-size:
+      clamp(
+        27px,
+        9vw,
+        38px
+      );
+  }
+
+  .hs-detail-image-placeholder-copy {
+    font-size:
+      13px;
+  }
+
+  .hs-detail-expand {
+    left:
+      16px;
+
+    bottom:
+      66px;
+
+    min-height:
+      38px;
+
+    font-size:
+      8px;
+  }
+
+  .hs-detail-views {
+    left:
+      16px;
+
+    right:
+      auto;
+
+    bottom:
+      16px;
+  }
+
+  .hs-detail-views button {
+    min-width:
+      62px;
+
+    min-height:
+      34px;
+
+    padding:
+      0
+      9px;
+
+    font-size:
+      8px;
+  }
+
+  .hs-detail-content {
+    height:
+      900px;
+
+    padding:
+      25px
+      18px
+      22px;
+  }
+
+  .hs-detail-title {
+    font-size:
+      clamp(
+        34px,
+        10vw,
+        48px
+      );
+  }
+
+  .hs-detail-price {
+    grid-template-columns:
+      1fr;
+
+    align-items:
+      start;
+
+    gap:
+      14px;
+  }
+
+  .hs-detail-price-block:nth-child(2) {
+    align-items:
+      flex-start;
+
+    text-align:
+      left;
+  }
+
+  .hs-detail-price-saving {
+    justify-self:
+      start;
+  }
+
+  .hs-detail-price-sale {
+    font-size:
+      27px;
+  }
+
+  .hs-detail-tabs {
+    gap:
+      18px;
+  }
+
+  .hs-detail-tabs button {
+    font-size:
+      18px;
+  }
+
+  .hs-detail-description {
+    font-size:
+      16px;
+
+    line-height:
+      1.65;
+  }
+
+  .hs-detail-ledger-row {
+    grid-template-columns:
+      1fr;
+
+    gap:
+      5px;
+  }
+
+  .hs-detail-ledger-row > strong {
+    font-size:
+      15px;
+  }
+
+  .hs-detail-service {
+    margin-top:
+      12px;
+
+    padding:
+      23px
+      18px
+      22px;
+  }
+
+  .hs-detail-service-options {
+    grid-template-columns:
+      1fr;
+  }
+
+  .hs-detail-service-actions {
+    display:
+      grid;
+
+    grid-template-columns:
+      1fr;
+  }
+
+  .hs-detail-service-actions a {
+    width:
+      100%;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .hs-detail-image,
+  .hs-detail-expand,
+  .hs-detail-service-actions a {
+    transition:
+      none;
+  }
+
+  .hs-detail-visual:hover
+  .hs-detail-image {
+    transform:
+      none;
+  }
+}

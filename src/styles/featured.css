@@ -1,0 +1,1434 @@
+/* =========================================================
+   HARMONIC STRINGS
+   FEATURED COLLECTION
+   SCULPTURAL SPOTLIGHT SHOWROOM
+   ========================================================= */
+
+
+/* =========================================================
+   OUTER SECTION
+   The surrounding page stays light. The featured collection
+   becomes a dark architectural showroom inset into the page.
+   ========================================================= */
+
+.featured-section {
+  position: relative;
+
+  width: 100%;
+
+  padding: 0;
+
+  overflow: hidden;
+
+  background: #f3f0ea;
+
+  color: #ffffff;
+}
+
+.featured-container {
+  width: 100%;
+  max-width: none;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   DARK ARCHITECTURAL SHOWROOM
+   ========================================================= */
+
+.featured-showroom {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+  isolation: isolate;
+
+  padding:
+    112px
+    max(32px, 5vw)
+    58px;
+
+  border: none;
+
+  background:
+    radial-gradient(
+      ellipse at 50% -8%,
+      rgba(178, 122, 77, 0.12) 0%,
+      rgba(102, 67, 42, 0.045) 28%,
+      transparent 48%
+    ),
+    radial-gradient(
+      ellipse at 50% 96%,
+      rgba(132, 82, 48, 0.08) 0%,
+      transparent 42%
+    ),
+    linear-gradient(
+      145deg,
+      #181512 0%,
+      #0c0b0a 50%,
+      #080808 72%,
+      #120e0b 100%
+    );
+
+  box-shadow:
+    inset
+    0
+    1px
+    0
+    rgba(255, 255, 255, 0.04),
+    inset
+    0
+    -70px
+    100px
+    rgba(0, 0, 0, 0.22);
+}
+
+.featured-showroom::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  z-index: -2;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.025) 0%,
+      transparent 7%,
+      transparent 93%,
+      rgba(255, 255, 255, 0.018) 100%
+    ),
+    radial-gradient(
+      ellipse at center,
+      transparent 46%,
+      rgba(0, 0, 0, 0.26) 100%
+    );
+}
+
+.featured-showroom::after {
+  content: "";
+
+  position: absolute;
+
+  left: 3%;
+  right: 3%;
+  bottom: 0;
+
+  height: 92px;
+
+  z-index: -1;
+
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      ellipse at 50% 100%,
+      rgba(194, 129, 82, 0.09) 0%,
+      rgba(69, 42, 27, 0.03) 34%,
+      transparent 72%
+    ),
+    linear-gradient(
+      180deg,
+      transparent 0%,
+      rgba(0, 0, 0, 0.17) 100%
+    );
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.025);
+}
+
+
+/* =========================================================
+   CEILING + RECESSED DOWNLIGHTS
+   ========================================================= */
+
+.featured-showroom-ceiling {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 58px;
+
+  z-index: 10;
+
+  background:
+    linear-gradient(
+      180deg,
+      #171411 0%,
+      #0e0c0b 75%,
+      #090909 100%
+    );
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+
+  box-shadow:
+    0
+    18px
+    34px
+    rgba(0, 0, 0, 0.34),
+    inset
+    0
+    -1px
+    0
+    rgba(181, 123, 78, 0.07);
+
+  pointer-events: none;
+}
+
+.featured-showroom-ceiling > span {
+  position: absolute;
+
+  top: 18px;
+
+  width: 20px;
+  height: 6px;
+
+  transform:
+    translateX(-50%);
+
+  border-radius:
+    999px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fff4df 0%,
+      #e5bd8d 60%,
+      #8e6545 100%
+    );
+
+  box-shadow:
+    0
+    0
+    7px
+    rgba(255, 225, 185, 0.72),
+    0
+    5px
+    18px
+    rgba(210, 142, 84, 0.26);
+}
+
+.featured-showroom-ceiling > span::after {
+  content: "";
+
+  position: absolute;
+
+  top: 4px;
+  left: 50%;
+
+  width: 190px;
+  height: 142px;
+
+  transform:
+    translateX(-50%);
+
+  clip-path:
+    polygon(
+      45% 0,
+      55% 0,
+      100% 100%,
+      0 100%
+    );
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 215, 170, 0.11) 0%,
+      rgba(214, 147, 91, 0.035) 46%,
+      transparent 100%
+    );
+
+  filter:
+    blur(5px);
+
+  opacity: 0.9;
+}
+
+.featured-showroom-ceiling > span:nth-child(1) {
+  left: 14%;
+}
+
+.featured-showroom-ceiling > span:nth-child(2) {
+  left: 38%;
+}
+
+.featured-showroom-ceiling > span:nth-child(3) {
+  left: 62%;
+}
+
+.featured-showroom-ceiling > span:nth-child(4) {
+  left: 86%;
+}
+
+
+/* =========================================================
+   FEATURED COLLECTION HEADER
+   Typography remains the same family and hierarchy.
+   ========================================================= */
+
+.featured-heading {
+  position: relative;
+
+  z-index: 3;
+
+  max-width: 760px;
+
+  margin:
+    0
+    auto
+    56px;
+
+  text-align: center;
+}
+
+.featured-eyebrow {
+  margin:
+    0
+    0
+    14px;
+
+  color: #b2473c;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 3.5px;
+
+  text-transform: uppercase;
+}
+
+.featured-heading h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      42px,
+      5vw,
+      68px
+    );
+
+  font-weight: 400;
+
+  line-height: 1.05;
+
+  letter-spacing: -1.5px;
+
+  text-shadow:
+    0
+    2px
+    22px
+    rgba(0, 0, 0, 0.28);
+}
+
+.featured-subtitle {
+  max-width: 650px;
+
+  margin:
+    20px
+    auto
+    0;
+
+  color:
+    rgba(255, 255, 255, 0.62);
+
+  font-family:
+    "Avenir Next",
+    "Segoe UI",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  font-size: 18px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   PRODUCT GRID
+   ========================================================= */
+
+.featured-grid {
+  position: relative;
+
+  z-index: 3;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      4,
+      minmax(0, 1fr)
+    );
+
+  gap:
+    28px
+    18px;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+   One unified dark showroom treatment for every product.
+   No separate light / dark / instrument backgrounds.
+   ========================================================= */
+
+.featured-card {
+  position: relative;
+
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(213, 157, 112, 0.16);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(31, 26, 22, 0.98) 0%,
+      rgba(16, 14, 12, 0.99) 100%
+    );
+
+  box-shadow:
+    0
+    18px
+    42px
+    rgba(0, 0, 0, 0.28),
+    inset
+    0
+    1px
+    0
+    rgba(255, 255, 255, 0.025);
+
+  transition:
+    transform 320ms ease,
+    border-color 320ms ease,
+    box-shadow 320ms ease;
+}
+
+.featured-card:hover {
+  transform:
+    translateY(-6px);
+
+  border-color:
+    rgba(218, 159, 113, 0.30);
+
+  box-shadow:
+    0
+    28px
+    62px
+    rgba(0, 0, 0, 0.38),
+    0
+    0
+    0
+    1px
+    rgba(181, 119, 76, 0.055);
+}
+
+
+/* =========================================================
+   SCULPTURAL IMAGE STAGE
+   ========================================================= */
+
+.featured-card-image {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio:
+    4 / 5;
+
+  display: grid;
+  place-items: center;
+
+  overflow: hidden;
+
+  border: none;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.045);
+
+  background:
+    radial-gradient(
+      ellipse at 50% -6%,
+      rgba(255, 229, 199, 0.19) 0%,
+      rgba(214, 153, 101, 0.075) 20%,
+      transparent 53%
+    ),
+    linear-gradient(
+      180deg,
+      #241d18 0%,
+      #17130f 48%,
+      #0d0c0b 100%
+    );
+
+  transition:
+    background 320ms ease;
+}
+
+/* Tiny recessed light directly over each product */
+.featured-card-image::before {
+  content: none;
+}
+
+/* Floor / grounding shadow beneath the object */
+.featured-card-image::after {
+  content: "";
+
+  position: absolute;
+
+  left: 16%;
+  right: 16%;
+  bottom: 8%;
+
+  height: 13%;
+
+  z-index: 1;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(0, 0, 0, 0.54) 0%,
+      rgba(0, 0, 0, 0.22) 36%,
+      rgba(188, 115, 67, 0.055) 54%,
+      transparent 74%
+    );
+
+  filter:
+    blur(12px);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   SPOTLIGHT CONE
+   ========================================================= */
+
+.featured-image-glow {
+  position: absolute;
+
+  top: -16%;
+  left: 50%;
+
+  width: 118%;
+  height: 88%;
+
+  transform:
+    translateX(-50%);
+
+  z-index: 0;
+
+  border-radius: 50%;
+
+  clip-path: none;
+
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(255, 224, 187, 0.16) 0%,
+      rgba(205, 137, 84, 0.065) 34%,
+      rgba(170, 102, 60, 0.018) 57%,
+      transparent 76%
+    );
+
+  filter:
+    blur(20px);
+
+  opacity: 0.95;
+
+  pointer-events: none;
+}
+
+/* Dark products get slightly more illumination,
+   but the physical background remains exactly the same. */
+.featured-card--dark
+.featured-image-glow,
+.featured-card--light
+.featured-image-glow {
+  opacity: 1;
+
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(255, 232, 205, 0.20) 0%,
+      rgba(219, 159, 108, 0.075) 35%,
+      rgba(175, 107, 66, 0.020) 59%,
+      transparent 77%
+    );
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE
+   ========================================================= */
+
+.featured-product-image {
+  position: relative;
+
+  z-index: 2;
+
+  display: block;
+
+  width: auto;
+  height: auto;
+
+  max-width: 92%;
+  max-height: 88%;
+
+  object-fit: contain;
+  object-position: center;
+
+  filter:
+    drop-shadow(
+      0
+      34px
+      26px
+      rgba(0, 0, 0, 0.46)
+    )
+    drop-shadow(
+      0
+      10px
+      16px
+      rgba(0, 0, 0, 0.28)
+    );
+
+  transition:
+    transform
+    650ms
+    cubic-bezier(0.16, 1, 0.3, 1),
+    filter
+    650ms
+    cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.featured-card:hover
+.featured-product-image {
+  transform:
+    translateY(-3px)
+    scale(1.025);
+
+  filter:
+    drop-shadow(
+      0
+      40px
+      30px
+      rgba(0, 0, 0, 0.52)
+    )
+    drop-shadow(
+      0
+      12px
+      18px
+      rgba(0, 0, 0, 0.32)
+    );
+}
+
+
+/* =========================================================
+   SALE PILLS
+   ========================================================= */
+
+.featured-sale-pill {
+  position: absolute;
+
+  top: 18px;
+  left: 18px;
+
+  z-index: 5;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding:
+    8px
+    13px;
+
+  border-radius: 999px;
+
+  background: #8d1d1d;
+
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.2px;
+
+  text-transform: uppercase;
+
+  box-shadow:
+    0
+    8px
+    20px
+    rgba(141, 29, 29, 0.34),
+    inset
+    0
+    0
+    0
+    1px
+    rgba(255, 255, 255, 0.12);
+}
+
+
+/* =========================================================
+   PLACEHOLDERS
+   ========================================================= */
+
+.featured-image-placeholder {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 12px;
+
+  color:
+    rgba(255, 255, 255, 0.36);
+
+  text-align: center;
+}
+
+.featured-image-placeholder > span {
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.featured-image-placeholder > i {
+  display: block;
+
+  width: 38px;
+  height: 1px;
+
+  background: currentColor;
+
+  opacity: 0.48;
+}
+
+.featured-image-placeholder > small {
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: 1.7px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.featured-card-content {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  padding:
+    20px
+    18px
+    18px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(15, 13, 12, 0.96) 0%,
+      rgba(10, 9, 8, 1) 100%
+    );
+}
+
+.featured-card-category {
+  margin:
+    0
+    0
+    9px;
+
+  color: #b84b40;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+
+  text-transform: uppercase;
+}
+
+.featured-card-content h3 {
+  margin: 0;
+
+  color:
+    rgba(255, 255, 255, 0.96);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      23px,
+      1.65vw,
+      28px
+    );
+
+  font-weight: 400;
+
+  line-height: 1.15;
+
+  letter-spacing: -0.55px;
+}
+
+
+/* =========================================================
+   PRICE DETAILS
+   ========================================================= */
+
+.featured-price-block {
+  margin-top: 18px;
+
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 8px;
+}
+
+.featured-price-block--sale {
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(0, 1fr)
+    );
+}
+
+.featured-price-detail {
+  min-width: 0;
+
+  padding:
+    13px
+    14px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.075);
+
+  background:
+    rgba(255, 255, 255, 0.035);
+
+  box-shadow:
+    inset
+    0
+    1px
+    0
+    rgba(255, 255, 255, 0.018);
+}
+
+.featured-price-detail > span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color:
+    rgba(255, 255, 255, 0.38);
+
+  font-size: 8px;
+  font-weight: 800;
+
+  line-height: 1.3;
+
+  letter-spacing: 0.95px;
+
+  text-transform: uppercase;
+}
+
+.featured-price-detail del {
+  display: block;
+
+  color:
+    rgba(255, 255, 255, 0.48);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 16px;
+
+  line-height: 1.15;
+}
+
+.featured-price-detail strong {
+  display: block;
+
+  color:
+    rgba(255, 255, 255, 0.94);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 25px;
+  font-weight: 600;
+
+  line-height: 1;
+
+  letter-spacing: -0.35px;
+}
+
+.featured-price-detail--sale {
+  border-color:
+    rgba(178, 65, 57, 0.22);
+
+  background:
+    rgba(141, 29, 29, 0.085);
+}
+
+.featured-price-detail--sale strong {
+  color: #d9655b;
+
+  font-size: 28px;
+}
+
+.featured-price-detail--standard {
+  width: 100%;
+}
+
+
+/* =========================================================
+   CARD LINK
+   ========================================================= */
+
+.featured-card-link {
+  width: fit-content;
+
+  margin-top: auto;
+
+  padding-top: 20px;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 9px;
+
+  color:
+    rgba(255, 255, 255, 0.78);
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 0.4px;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    gap 0.2s ease;
+}
+
+.featured-card-link:hover {
+  gap: 13px;
+
+  color: #d36559;
+}
+
+
+/* =========================================================
+   MASTER VIOLIN OUTFIT
+   Preserved as the full-width final showcase.
+   ========================================================= */
+
+.featured-outfit-card {
+  grid-column:
+    1 / -1;
+
+  min-height: 480px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.3fr
+    1fr;
+
+  margin-top: 12px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #15120f 0%,
+      #0c0b0a 62%,
+      #16100d 100%
+    );
+
+  border:
+    1px solid
+    rgba(213, 157, 112, 0.13);
+
+  box-shadow:
+    0
+    24px
+    58px
+    rgba(0, 0, 0, 0.30);
+}
+
+.featured-outfit-image {
+  position: relative;
+
+  min-height: 480px;
+
+  display: grid;
+  place-items: center;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      ellipse at 50% 18%,
+      rgba(255, 223, 186, 0.14),
+      rgba(169, 105, 62, 0.035) 34%,
+      transparent 64%
+    ),
+    linear-gradient(
+      180deg,
+      #201914,
+      #0e0d0c
+    );
+}
+
+.featured-outfit-image > span {
+  color:
+    rgba(255, 255, 255, 0.35);
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.featured-outfit-image::before {
+  content: none;
+}
+
+.featured-outfit-image::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 18px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+
+  pointer-events: none;
+}
+
+.featured-outfit-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding:
+    58px
+    60px;
+
+  color: #ffffff;
+}
+
+.featured-outfit-content
+.featured-card-category {
+  color: #b84b40;
+}
+
+.featured-outfit-content h3 {
+  max-width: 500px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      38px,
+      4vw,
+      58px
+    );
+
+  font-weight: 400;
+
+  line-height: 1.05;
+}
+
+.featured-outfit-content
+> p:not(.featured-card-category) {
+  max-width: 500px;
+
+  margin:
+    22px
+    0
+    0;
+
+  color:
+    rgba(255, 255, 255, 0.62);
+
+  font-family:
+    "Avenir Next",
+    "Segoe UI",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  font-size: 17px;
+
+  line-height: 1.65;
+}
+
+.featured-outfit-content a {
+  width: fit-content;
+
+  margin-top: 30px;
+
+  padding-bottom: 6px;
+
+  color: #ffffff;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.45);
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 0.7px;
+
+  text-decoration: none;
+
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.featured-outfit-content a:hover {
+  transform:
+    translateX(4px);
+
+  border-color: #ffffff;
+}
+
+
+/* =========================================================
+   RESPONSIVE — SMALL DESKTOP
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .featured-section {
+    padding: 0;
+  }
+
+  .featured-showroom {
+    padding:
+      100px
+      4vw
+      46px;
+  }
+
+  .featured-grid {
+    grid-template-columns:
+      repeat(
+        3,
+        minmax(0, 1fr)
+      );
+
+    gap:
+      24px
+      16px;
+  }
+
+  .featured-outfit-card {
+    grid-template-columns:
+      1fr
+      1fr;
+  }
+
+  .featured-outfit-content {
+    padding:
+      44px
+      38px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+  .featured-section {
+    padding: 0;
+  }
+
+  .featured-showroom {
+    padding:
+      92px
+      20px
+      36px;
+  }
+
+  .featured-showroom-ceiling > span:nth-child(2) {
+    left: 35%;
+  }
+
+  .featured-showroom-ceiling > span:nth-child(3) {
+    left: 65%;
+  }
+
+  .featured-heading {
+    margin-bottom: 38px;
+  }
+
+  .featured-subtitle {
+    font-size: 17px;
+  }
+
+  .featured-grid {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+  }
+
+  .featured-card-content {
+    padding:
+      20px
+      16px
+      18px;
+  }
+
+  .featured-card-content h3 {
+    font-size: 23px;
+  }
+
+  .featured-outfit-card {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-outfit-image {
+    min-height: 400px;
+  }
+
+  .featured-outfit-content {
+    padding:
+      46px
+      34px
+      50px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .featured-section {
+    padding: 0;
+  }
+
+  .featured-showroom {
+    padding:
+      84px
+      12px
+      26px;
+  }
+
+  .featured-showroom-ceiling {
+    height: 48px;
+  }
+
+  .featured-showroom-ceiling > span {
+    top: 15px;
+
+    width: 17px;
+    height: 5px;
+  }
+
+  .featured-showroom-ceiling > span:nth-child(1) {
+    left: 18%;
+  }
+
+  .featured-showroom-ceiling > span:nth-child(2) {
+    left: 50%;
+  }
+
+  .featured-showroom-ceiling > span:nth-child(3) {
+    left: 82%;
+  }
+
+  .featured-showroom-ceiling > span:nth-child(4) {
+    display: none;
+  }
+
+  .featured-heading {
+    margin-bottom: 32px;
+  }
+
+  .featured-heading h2 {
+    font-size: 42px;
+
+    letter-spacing: -0.8px;
+  }
+
+  .featured-subtitle {
+    margin-top: 16px;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+
+    gap: 24px;
+  }
+
+  .featured-card-image {
+    aspect-ratio:
+      4 / 4.3;
+  }
+
+  .featured-card-content {
+    padding:
+      20px
+      15px
+      18px;
+  }
+
+  .featured-card-content h3 {
+    font-size: 25px;
+  }
+
+  .featured-price-block--sale {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+
+    gap: 7px;
+  }
+
+  .featured-price-detail {
+    padding:
+      12px
+      11px;
+  }
+
+  .featured-price-detail > span {
+    font-size: 7px;
+  }
+
+  .featured-price-detail strong {
+    font-size: 23px;
+  }
+
+  .featured-price-detail--sale strong {
+    font-size: 25px;
+  }
+
+  .featured-outfit-card {
+    min-height: 0;
+
+    margin-top: 4px;
+  }
+
+  .featured-outfit-image {
+    min-height: 340px;
+  }
+
+  .featured-outfit-content {
+    padding:
+      38px
+      24px
+      42px;
+  }
+
+  .featured-outfit-content h3 {
+    font-size: 40px;
+  }
+
+  .featured-outfit-content
+  > p:not(.featured-card-category) {
+    font-size: 16px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .featured-card,
+  .featured-product-image,
+  .featured-card-link,
+  .featured-outfit-content a {
+    transition: none;
+  }
+
+  .featured-card:hover,
+  .featured-card:hover
+  .featured-product-image {
+    transform: none;
+  }
+}

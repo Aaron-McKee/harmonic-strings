@@ -1,0 +1,23 @@
+/* Harmonic Strings — Global / Base Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #111;
+  overflow-x: hidden;
+}
