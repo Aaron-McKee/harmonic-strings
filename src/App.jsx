@@ -29,6 +29,7 @@ import CaseDetailPage from "./pages/CaseDetailPage";
 import AccessoriesPage from "./pages/AccessoriesPage";
 import AccessoriesDetailPage from "./pages/AccessoriesDetailPage";
 
+import AboutPage from "./pages/AboutPage";
 
 function HomePage() {
   return (
@@ -39,7 +40,6 @@ function HomePage() {
     </>
   );
 }
-
 
 function App() {
   const location = useLocation();
@@ -117,12 +117,16 @@ function App() {
           path="/accessories/:slug"
           element={<AccessoriesDetailPage />}
         />
+
+        <Route
+          path="/about"
+          element={<AboutPage />}
+        />
       </Routes>
 
       <Footer />
     </>
   );
 }
-
 
 export default App;

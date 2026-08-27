@@ -1036,7 +1036,12 @@ function Navbar() {
               <div className="instrument-column">
                 <h3>About</h3>
 
-                <a href="#">About Us</a>
+                <Link
+                  to="/about"
+                  onClick={closeAllMenus}
+                >
+                  About Us
+                </Link>
               </div>
             </div>
           </div>
@@ -2176,7 +2181,12 @@ function Navbar() {
 
               {mobileServiceCategoryOpen === "about" && (
                 <div className="mobile-category-links">
-                  <a href="#">About Us</a>
+                  <Link
+                    to="/about"
+                    onClick={closeAllMenus}
+                  >
+                    About Us
+                  </Link>
                 </div>
               )}
             </div>

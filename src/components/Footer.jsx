@@ -280,9 +280,9 @@ function Footer() {
 
             <nav aria-label="Footer company navigation">
 
-              <a href="#">
+              <Link to="/about">
                 About Us
-              </a>
+              </Link>
 
               <a href="#">
                 Featured Collection
