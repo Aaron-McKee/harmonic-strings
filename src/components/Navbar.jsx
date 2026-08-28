@@ -194,17 +194,21 @@ function Navbar() {
             LOGO
         ====================================== */}
 
-        <div
+<div
   className="nav-logo-wrapper"
   onMouseEnter={closeDesktopDropdowns}
 >
-  <a href="/" aria-label="Harmonic Strings Home">
+  <Link
+    to="/"
+    aria-label="Harmonic Strings Home"
+    onClick={closeAllMenus}
+  >
     <img
       className="nav-logo"
       src={logo}
       alt="Harmonic Strings"
     />
-  </a>
+  </Link>
 </div>
 
         {/* =====================================

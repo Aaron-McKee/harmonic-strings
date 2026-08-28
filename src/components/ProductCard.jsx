@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 
 function ProductCard({
@@ -71,8 +72,8 @@ function ProductCard({
           PRODUCT IMAGE STAGE
       ====================================== */}
 
-      <a
-        href={href}
+      <Link
+        to={href}
         className={`violin-product-card-visual violin-product-card-visual--${stage}`}
         aria-label={`${viewLabel}: ${name}`}
       >
@@ -123,7 +124,6 @@ function ProductCard({
             {viewLabel}
           </span>
 
-
           <ArrowUpRight
             size={17}
             strokeWidth={1.7}
@@ -131,7 +131,7 @@ function ProductCard({
 
         </div>
 
-      </a>
+      </Link>
 
 
       {/* =====================================
@@ -150,12 +150,10 @@ function ProductCard({
             {level}
           </p>
 
-
           <span
             className="violin-product-card-meta-line"
             aria-hidden="true"
           />
-
 
           <p>
             {productType}
@@ -170,9 +168,9 @@ function ProductCard({
 
         <h3>
 
-          <a href={href}>
+          <Link to={href}>
             {name}
-          </a>
+          </Link>
 
         </h3>
 
@@ -200,7 +198,6 @@ function ProductCard({
                 {regularPrice}
               </del>
 
-
               <strong className="violin-product-card-sale-price">
                 {salePrice}
               </strong>
@@ -218,20 +215,19 @@ function ProductCard({
             EXPLORE LINK
         ====================================== */}
 
-        <a
-          href={href}
+        <Link
+          to={href}
           className="violin-product-card-link"
         >
 
           Explore
-
 
           <ArrowUpRight
             size={15}
             strokeWidth={1.7}
           />
 
-        </a>
+        </Link>
 
       </div>
 
