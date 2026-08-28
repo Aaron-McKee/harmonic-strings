@@ -8,7 +8,10 @@ function Hero() {
         loop
         playsInline
       >
-        <source src="/videos/hero.mp4" type="video/mp4" />
+        <source
+          src={`${import.meta.env.BASE_URL}videos/hero.mp4`}
+          type="video/mp4"
+        />
       </video>
 
       <div className="hero-overlay">
