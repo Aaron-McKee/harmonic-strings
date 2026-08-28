@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+
 import {
   Routes,
   Route,
@@ -31,6 +32,11 @@ import AccessoriesDetailPage from "./pages/AccessoriesDetailPage";
 
 import AboutPage from "./pages/AboutPage";
 
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+
+import ContactPage from "./pages/ContactPage";
+
+
 function HomePage() {
   return (
     <>
@@ -41,92 +47,125 @@ function HomePage() {
   );
 }
 
+
 function App() {
   const location = useLocation();
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
+
   return (
     <>
       <Navbar />
 
+
       <Routes>
+
         <Route
           path="/"
           element={<HomePage />}
         />
+
 
         <Route
           path="/violins"
           element={<ViolinPage />}
         />
 
+
         <Route
           path="/violins/:slug"
           element={<ViolinDetailPage />}
         />
+
 
         <Route
           path="/violas"
           element={<ViolaPage />}
         />
 
+
         <Route
           path="/violas/:slug"
           element={<ViolaDetailPage />}
         />
+
 
         <Route
           path="/cellos"
           element={<CelloPage />}
         />
 
+
         <Route
           path="/cellos/:slug"
           element={<CelloDetailPage />}
         />
+
 
         <Route
           path="/bows"
           element={<BowPage />}
         />
 
+
         <Route
           path="/bows/:slug"
           element={<BowDetailPage />}
         />
+
 
         <Route
           path="/cases"
           element={<CasePage />}
         />
 
+
         <Route
           path="/cases/:slug"
           element={<CaseDetailPage />}
         />
+
 
         <Route
           path="/accessories"
           element={<AccessoriesPage />}
         />
 
+
         <Route
           path="/accessories/:slug"
           element={<AccessoriesDetailPage />}
         />
 
+
         <Route
           path="/about"
           element={<AboutPage />}
         />
+
+
+        <Route
+          path="/contact"
+          element={<ContactPage />}
+        />
+
+
+        <Route
+          path="/privacy-policy"
+          element={<PrivacyPolicyPage />}
+        />
+
       </Routes>
+
 
       <Footer />
     </>
   );
 }
+
 
 export default App;

@@ -1,0 +1,622 @@
+/* =========================================================
+   HARMONIC STRINGS
+   PRIVACY POLICY
+========================================================= */
+
+.privacy-policy-page {
+  --privacy-bg: #0d0c0b;
+  --privacy-panel: #15120f;
+
+  --privacy-ivory: #eee7da;
+  --privacy-copy: rgba(238, 231, 218, 0.72);
+
+  --privacy-gold: #c3a16c;
+  --privacy-burgundy: #741f1c;
+
+  --privacy-border: rgba(181, 139, 79, 0.18);
+
+  --privacy-serif:
+    Baskerville,
+    "Iowan Old Style",
+    "Palatino Linotype",
+    "Book Antiqua",
+    Palatino,
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  min-height: 100vh;
+
+  padding:
+    205px
+    7vw
+    110px;
+
+  color: var(--privacy-ivory);
+
+  background:
+    radial-gradient(
+      circle at 12% 2%,
+      rgba(116, 31, 28, 0.12),
+      transparent 25%
+    ),
+    linear-gradient(
+      180deg,
+      #0c0b0a 0%,
+      #11100e 44%,
+      #0b0b0a 100%
+    );
+}
+
+
+/* =========================================================
+   SHELL
+========================================================= */
+
+.privacy-policy-shell {
+  width: min(100%, 1120px);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.privacy-policy-header {
+  max-width: 900px;
+
+  padding-bottom: 56px;
+}
+
+
+.privacy-policy-eyebrow {
+  margin: 0;
+
+  color: var(--privacy-gold);
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 2.6px;
+
+  text-transform: uppercase;
+}
+
+
+.privacy-policy-header h1 {
+  margin:
+    18px
+    0
+    0;
+
+  color: var(--privacy-ivory);
+
+  font-family: var(--privacy-serif);
+
+  font-size:
+    clamp(
+      56px,
+      7vw,
+      92px
+    );
+
+  font-weight: 400;
+
+  line-height: 0.98;
+
+  letter-spacing: -2px;
+}
+
+
+.privacy-policy-updated {
+  margin:
+    22px
+    0
+    0;
+
+  color: var(--privacy-gold);
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1.2px;
+
+  text-transform: uppercase;
+}
+
+
+.privacy-policy-intro {
+  max-width: 860px;
+
+  margin:
+    22px
+    0
+    0;
+
+  color: var(--privacy-copy);
+
+  font-size: 17px;
+
+  line-height: 1.85;
+}
+
+
+.privacy-policy-notice {
+  display: inline-block;
+
+  margin:
+    28px
+    0
+    0;
+
+  padding:
+    11px
+    16px;
+
+  border-left:
+    2px
+    solid
+    var(--privacy-burgundy);
+
+  color:
+    rgba(
+      238,
+      231,
+      218,
+      0.88
+    );
+
+  background:
+    rgba(
+      116,
+      31,
+      28,
+      0.08
+    );
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.privacy-policy-section {
+  padding:
+    48px
+    0;
+
+  border-top:
+    1px
+    solid
+    var(--privacy-border);
+}
+
+
+.privacy-policy-section h2 {
+  max-width: 800px;
+
+  margin:
+    0
+    0
+    24px;
+
+  color: var(--privacy-ivory);
+
+  font-family: var(--privacy-serif);
+
+  font-size:
+    clamp(
+      31px,
+      3vw,
+      44px
+    );
+
+  font-weight: 400;
+
+  line-height: 1.08;
+
+  letter-spacing: -0.7px;
+}
+
+
+.privacy-policy-section > p,
+.privacy-policy-subsection > p {
+  max-width: 930px;
+
+  margin:
+    0
+    0
+    17px;
+
+  color: var(--privacy-copy);
+
+  font-size: 15px;
+
+  line-height: 1.82;
+}
+
+
+.privacy-policy-section > p:last-child,
+.privacy-policy-subsection > p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   SUBSECTIONS
+========================================================= */
+
+.privacy-policy-subsection {
+  margin-top: 34px;
+
+  padding-left: 22px;
+
+  border-left:
+    1px
+    solid
+    rgba(
+      195,
+      161,
+      108,
+      0.28
+    );
+}
+
+
+.privacy-policy-subsection h3 {
+  margin:
+    0
+    0
+    15px;
+
+  color: var(--privacy-gold);
+
+  font-family: var(--privacy-serif);
+
+  font-size: 24px;
+  font-weight: 400;
+
+  line-height: 1.2;
+}
+
+
+/* =========================================================
+   LISTS
+========================================================= */
+
+.privacy-policy-section ul,
+.privacy-policy-subsection ul {
+  max-width: 900px;
+
+  margin:
+    20px
+    0
+    22px;
+
+  padding:
+    0
+    0
+    0
+    23px;
+
+  color: var(--privacy-copy);
+}
+
+
+.privacy-policy-section li,
+.privacy-policy-subsection li {
+  margin-bottom: 12px;
+
+  padding-left: 5px;
+
+  font-size: 15px;
+
+  line-height: 1.72;
+}
+
+
+.privacy-policy-section li:last-child,
+.privacy-policy-subsection li:last-child {
+  margin-bottom: 0;
+}
+
+
+.privacy-policy-section strong,
+.privacy-policy-subsection strong {
+  color:
+    rgba(
+      238,
+      231,
+      218,
+      0.92
+    );
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.privacy-policy-table-wrap {
+  width: 100%;
+
+  margin:
+    28px
+    0;
+
+  overflow-x: auto;
+
+  border:
+    1px
+    solid
+    var(--privacy-border);
+}
+
+
+.privacy-policy-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 680px;
+}
+
+
+.privacy-policy-table th,
+.privacy-policy-table td {
+  padding:
+    17px
+    20px;
+
+  text-align: left;
+
+  vertical-align: top;
+
+  border-bottom:
+    1px
+    solid
+    var(--privacy-border);
+}
+
+
+.privacy-policy-table th {
+  color: var(--privacy-gold);
+
+  background:
+    rgba(
+      195,
+      161,
+      108,
+      0.05
+    );
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+
+.privacy-policy-table td {
+  color: var(--privacy-copy);
+
+  font-size: 14px;
+
+  line-height: 1.65;
+}
+
+
+.privacy-policy-table td:first-child {
+  width: 30%;
+
+  color:
+    rgba(
+      238,
+      231,
+      218,
+      0.9
+    );
+
+  font-weight: 700;
+}
+
+
+.privacy-policy-table tr:last-child td {
+  border-bottom: 0;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.privacy-policy-contact {
+  margin-top: 12px;
+
+  padding:
+    44px
+    40px;
+
+  border:
+    1px
+    solid
+    rgba(
+      195,
+      161,
+      108,
+      0.24
+    );
+
+  background:
+    radial-gradient(
+      circle at 5% 50%,
+      rgba(116, 31, 28, 0.17),
+      transparent 34%
+    ),
+    linear-gradient(
+      135deg,
+      #17120f,
+      #100f0d
+    );
+}
+
+
+.privacy-policy-contact h2 {
+  margin-top: 10px;
+}
+
+
+.privacy-policy-contact-details {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap:
+    12px
+    28px;
+
+  margin-top: 26px;
+}
+
+
+.privacy-policy-contact-details a,
+.privacy-policy-contact-details span {
+  color: var(--privacy-gold);
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 0.3px;
+
+  text-decoration: none;
+}
+
+
+.privacy-policy-contact-details a:hover {
+  color: var(--privacy-ivory);
+}
+
+
+.privacy-policy-contact-note {
+  margin-top: 28px !important;
+
+  padding-top: 24px;
+
+  border-top:
+    1px
+    solid
+    var(--privacy-border);
+
+  font-size: 13px !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .privacy-policy-page {
+    padding:
+      180px
+      6vw
+      90px;
+  }
+
+
+  .privacy-policy-header {
+    padding-bottom: 44px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .privacy-policy-page {
+    padding:
+      155px
+      18px
+      72px;
+  }
+
+
+  .privacy-policy-header h1 {
+    font-size:
+      clamp(
+        50px,
+        15vw,
+        68px
+      );
+  }
+
+
+  .privacy-policy-intro {
+    font-size: 15px;
+
+    line-height: 1.75;
+  }
+
+
+  .privacy-policy-section {
+    padding:
+      38px
+      0;
+  }
+
+
+  .privacy-policy-section h2 {
+    font-size:
+      clamp(
+        30px,
+        9vw,
+        39px
+      );
+  }
+
+
+  .privacy-policy-subsection {
+    padding-left: 16px;
+  }
+
+
+  .privacy-policy-subsection h3 {
+    font-size: 22px;
+  }
+
+
+  .privacy-policy-section > p,
+  .privacy-policy-subsection > p,
+  .privacy-policy-section li,
+  .privacy-policy-subsection li {
+    font-size: 14px;
+  }
+
+
+  .privacy-policy-contact {
+    padding:
+      30px
+      22px;
+  }
+
+
+  .privacy-policy-contact-details {
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+}
