@@ -1,0 +1,391 @@
+/* =========================================================
+   HARMONIC STRINGS
+   CASE DETAIL PAGE
+   CASE-SPECIFIC STYLES ONLY
+========================================================= */
+
+
+/* =========================================================
+   KEY FEATURES SECTION
+========================================================= */
+
+.hs-case-features {
+  margin-top: 50px;
+
+  padding-top: 8px;
+}
+
+
+.hs-case-features-eyebrow {
+  margin: 0;
+
+  color: #8d1d1d;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: 2.2px;
+
+  text-transform: uppercase;
+}
+
+
+.hs-case-features-title {
+  max-width: 760px;
+
+  margin:
+    13px
+    0
+    0;
+
+  color: #1b1815;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      30px,
+      3vw,
+      43px
+    );
+
+  font-weight: 400;
+
+  line-height: 1.08;
+
+  letter-spacing: -0.7px;
+}
+
+
+/* =========================================================
+   DECORATIVE RULE
+========================================================= */
+
+.hs-case-features-rule {
+  position: relative;
+
+  width: min(100%, 360px);
+  height: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  margin-top: 11px;
+  margin-bottom: 20px;
+}
+
+
+.hs-case-features-rule::before {
+  content: "";
+
+  width: 100%;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(178, 128, 57, 0.8),
+      rgba(178, 128, 57, 0.18),
+      transparent
+    );
+}
+
+
+.hs-case-features-rule span {
+  position: absolute;
+
+  left: 47%;
+
+  width: 9px;
+  height: 9px;
+
+  border:
+    1px
+    solid
+    rgba(178, 128, 57, 0.75);
+
+  background: #f2efe8;
+
+  transform: rotate(45deg);
+}
+
+
+/* =========================================================
+   FEATURE GRID
+========================================================= */
+
+.hs-case-feature-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(
+        0,
+        1fr
+      )
+    );
+
+  gap: 18px;
+
+  margin-top: 8px;
+}
+
+
+/* =========================================================
+   FEATURE CARD
+========================================================= */
+
+.hs-case-feature-card {
+  min-height: 285px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  padding:
+    28px
+    24px
+    30px;
+
+  border:
+    1px
+    solid
+    rgba(177, 129, 67, 0.38);
+
+  border-radius: 15px;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(183, 137, 74, 0.055),
+      transparent 38%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 253, 248, 0.76),
+      rgba(239, 233, 222, 0.38)
+    );
+
+  box-shadow:
+    0
+    12px
+    28px
+    rgba(42, 32, 20, 0.035);
+
+  text-align: center;
+
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+
+.hs-case-feature-card:hover {
+  transform:
+    translateY(-3px);
+
+  border-color:
+    rgba(141, 29, 29, 0.35);
+
+  box-shadow:
+    0
+    17px
+    36px
+    rgba(42, 32, 20, 0.07);
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.hs-case-feature-icon {
+  width: 74px;
+  height: 74px;
+
+  flex: 0 0 auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 17px;
+
+  border:
+    1px
+    solid
+    rgba(181, 132, 63, 0.78);
+
+  border-radius: 50%;
+
+  color: #b3833e;
+
+  background:
+    rgba(255, 255, 255, 0.28);
+}
+
+
+/* =========================================================
+   FEATURE TITLE
+========================================================= */
+
+.hs-case-feature-card h3 {
+  max-width: 230px;
+
+  margin: 0;
+
+  color: #8d1d1d;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  line-height: 1.35;
+
+  letter-spacing: 1.8px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   SMALL GOLD DIVIDER
+========================================================= */
+
+.hs-case-feature-divider {
+  width: 38px;
+  height: 1px;
+
+  margin:
+    17px
+    0;
+
+  background:
+    rgba(183, 137, 74, 0.68);
+}
+
+
+/* =========================================================
+   FEATURE DESCRIPTION
+========================================================= */
+
+.hs-case-feature-card p {
+  max-width: 270px;
+
+  margin: 0;
+
+  color:
+    rgba(29, 26, 22, 0.78);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 16px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   MEDIUM DESKTOP / TABLET
+========================================================= */
+
+@media (max-width: 1180px) {
+
+  .hs-case-feature-grid {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(
+          0,
+          1fr
+        )
+      );
+  }
+
+
+  .hs-case-feature-card {
+    min-height: 270px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .hs-case-features {
+    margin-top: 40px;
+  }
+
+
+  .hs-case-features-title {
+    font-size:
+      clamp(
+        29px,
+        9vw,
+        39px
+      );
+  }
+
+
+  .hs-case-features-rule {
+    margin-bottom: 15px;
+  }
+
+
+  .hs-case-feature-grid {
+    grid-template-columns: 1fr;
+
+    gap: 13px;
+  }
+
+
+  .hs-case-feature-card {
+    min-height: 0;
+
+    padding:
+      26px
+      22px
+      28px;
+  }
+
+
+  .hs-case-feature-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+
+  .hs-case-feature-card h3 {
+    font-size: 12px;
+  }
+
+
+  .hs-case-feature-card p {
+    font-size: 15px;
+  }
+
+}

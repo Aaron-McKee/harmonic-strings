@@ -2,6 +2,10 @@ import cc398OpenClosedImage from "../assets/Howard_Core_CC398_Violin_Case_Open_C
 import cc398OpenImage from "../assets/Howard_Core_CC398_Violin_Case_Open.png";
 import cc398ClosedImage from "../assets/Howard_Core_CC398_Violin_Case_Closed.png";
 
+import cc498OpenClosedImage from "../assets/Howard_Core_CC498_Oblong_Violin_Case_Open_Closed.png";
+import cc498OpenImage from "../assets/Howard_Core_CC498_Oblong_Violin_Case_Open.png";
+import cc498ClosedImage from "../assets/Howard_Core_CC498_Oblong_Violin_Case_Closed.png";
+
 import bam2002XLClosedImage from "../assets/Bam_Hightech_Contoured_2002XL_Violin_Case_Closed.png";
 import bam2002XLOpenClosedImage from "../assets/Bam_Hightech_Contoured_2002XL_Violin_Case_Open_Closed.png";
 import bam2002XLOpenImage from "../assets/Bam_Hightech_Contoured_2002XL_Violin_Case_Open.png";
@@ -44,14 +48,6 @@ export const cases = [
 
     /* =====================================
        IMAGES
-
-       COLLECTION:
-       Open + Closed
-
-       DETAIL:
-       Exterior = Closed
-       Interior = Open
-       Both Views = Open + Closed
     ====================================== */
 
     image:
@@ -107,17 +103,71 @@ export const cases = [
     ====================================== */
 
     keyFeatures: [
-      "Foam shell construction for lightweight protection",
+      {
+        title:
+          "Lightweight Protection",
 
-      "Cordura screw-attached exterior with latch flap and full-length music pocket",
+        icon:
+          "shield",
 
-      "Plush-lined suspension interior with accessory pockets",
+        description:
+          "Foam shell construction provides dependable lightweight protection for everyday use.",
+      },
 
-      "Two Hill-style bow holders",
+      {
+        title:
+          "Suspension Interior",
 
-      "Built-in hygrometer and included instrument blanket",
+        icon:
+          "interior",
 
-      "Adjustable shoulder strap and secure zipper closure",
+        description:
+          "Plush-lined suspension interior cushions the violin and includes convenient accessory storage.",
+      },
+
+      {
+        title:
+          "Bow Storage",
+
+        icon:
+          "storage",
+
+        description:
+          "Two Hill-style bow holders provide secure dedicated storage for your bows.",
+      },
+
+      {
+        title:
+          "Humidity Protection",
+
+        icon:
+          "humidity",
+
+        description:
+          "A built-in hygrometer helps monitor humidity, with an instrument blanket also included.",
+      },
+
+      {
+        title:
+          "Music Storage",
+
+        icon:
+          "music",
+
+        description:
+          "A full-length exterior music pocket provides convenient space for sheet music and accessories.",
+      },
+
+      {
+        title:
+          "Easy Transport",
+
+        icon:
+          "transport",
+
+        description:
+          "An adjustable shoulder strap and secure zipper closure make everyday travel practical and comfortable.",
+      },
     ],
 
 
@@ -176,6 +226,225 @@ export const cases = [
 
 
   /* =====================================================
+     HOWARD CORE CC498
+     OBLONG VIOLIN CASE
+  ====================================================== */
+
+  {
+    id:
+      "howard-core-cc498",
+
+    slug:
+      "howard-core-cc498-oblong-violin-case",
+
+    name:
+      "Howard Core CC498 Oblong Violin Case",
+
+    maker:
+      "Howard Core",
+
+    model:
+      "CC498",
+
+    reference:
+      "CC498",
+
+    category:
+      "Oblong Violin Case",
+
+    instrument:
+      "Violin",
+
+    caseType:
+      "Oblong",
+
+    caseStyle:
+      "Oblong suspension case",
+
+
+    /* =====================================
+       IMAGES
+    ====================================== */
+
+    image:
+      cc498OpenClosedImage,
+
+    closedImage:
+      cc498ClosedImage,
+
+    openImage:
+      cc498OpenImage,
+
+    combinedImage:
+      cc498OpenClosedImage,
+
+
+    /* =====================================
+       PRICING
+    ====================================== */
+
+    regularPrice:
+      "$304.00",
+
+    salePrice:
+      "$225.00",
+
+    price:
+      null,
+
+    savings:
+      "Save $79",
+
+
+    /* =====================================
+       COLLECTION DESCRIPTION
+    ====================================== */
+
+    description:
+      "The Howard Core CC498 Oblong Violin Case is a premium, 100% wood shell suspension case crafted for violinists who demand durability, elegance, and superior protection. Its refined design combines a plush blue interior with a black canvas exterior, providing both style and functionality.",
+
+
+    /* =====================================
+       FULL DESCRIPTION
+    ====================================== */
+
+    descriptionParagraphs: [
+      "The Howard Core CC498 Oblong Violin Case is a premium, 100% wood shell suspension case crafted for violinists who demand durability, elegance, and superior protection. Its refined design combines a plush blue interior with a black canvas exterior, providing both style and functionality. Equipped with a hygrometer, string tube, and four bowholders, this case is ideal for professional musicians needing to carry multiple bows safely.",
+
+      "Designed with practicality in mind, the CC498 includes a velcro shoulder rest holder, a convenient accessory pocket, and a full-length exterior music pocket, ensuring that all your essentials are organized and easily accessible. The plush-lined interior with suspension protects your violin from bumps and shocks, while the sturdy wood construction provides long-lasting strength and resilience.",
+
+      "Perfect for students advancing to professional levels and seasoned performers alike, this oblong case balances sophistication with everyday functionality. Backpack straps make carrying easy, and the thoughtful layout of compartments ensures that your instrument and accessories remain secure wherever your music takes you.",
+    ],
+
+
+    /* =====================================
+       KEY FEATURES
+    ====================================== */
+
+    keyFeatures: [
+      {
+        title:
+          "Wood Shell Protection",
+
+        icon:
+          "shield",
+
+        description:
+          "A 100% wood suspension shell with a durable canvas exterior provides long-lasting strength and dependable protection.",
+      },
+
+      {
+        title:
+          "Organized Interior",
+
+        icon:
+          "interior",
+
+        description:
+          "The plush-lined interior includes a hygrometer, string tube, and accessory pocket to keep essentials organized.",
+      },
+
+      {
+        title:
+          "Four-Bow Capacity",
+
+        icon:
+          "storage",
+
+        description:
+          "Four dedicated bowholders provide secure storage for musicians who carry multiple bows.",
+      },
+
+      {
+        title:
+          "Shoulder Rest Storage",
+
+        icon:
+          "security",
+
+        description:
+          "A Velcro shoulder rest holder keeps your shoulder rest secure and easy to access.",
+      },
+
+      {
+        title:
+          "Music Pocket",
+
+        icon:
+          "music",
+
+        description:
+          "A full-length zippered exterior music pocket provides convenient storage for sheet music and folders.",
+      },
+
+      {
+        title:
+          "Comfortable Transport",
+
+        icon:
+          "transport",
+
+        description:
+          "Backpack straps and a durable zippered closure with latch flap make transport secure and convenient.",
+      },
+    ],
+
+
+    /* =====================================
+       SPECIFICATIONS
+    ====================================== */
+
+    size:
+      "4/4, 3/4, 1/2",
+
+    availableSizes: [
+      "4/4",
+      "3/4",
+      "1/2",
+    ],
+
+    shell:
+      "100% wood shell",
+
+    construction:
+      "100% wood shell suspension construction",
+
+    exterior:
+      "Black canvas cover with latch flap",
+
+    interior:
+      "Plush-lined blue interior with hygrometer and string tube",
+
+    bowCapacity:
+      "4 bowholders",
+
+    musicPocket:
+      "Full-length zippered exterior music pocket",
+
+    closure:
+      "Zippered closure with latch flap",
+
+    carrying:
+      "Backpack straps",
+
+    extraFeatures:
+      "Accessory pocket and Velcro shoulder rest holder",
+
+    color:
+      "Black exterior / blue interior",
+
+    weight:
+      null,
+
+    protection:
+      "Plush-lined suspension interior with durable wood shell construction",
+
+    inStock:
+      true,
+  },
+
+
+  /* =====================================================
      BAM HIGHTECH CONTOURED 2002XL
      SHAPED VIOLIN CASE
   ====================================================== */
@@ -214,14 +483,6 @@ export const cases = [
 
     /* =====================================
        IMAGES
-
-       COLLECTION:
-       Open + Closed
-
-       DETAIL:
-       Exterior = Closed
-       Interior = Open
-       Both Views = Open + Closed
     ====================================== */
 
     image:
@@ -279,29 +540,71 @@ export const cases = [
     ====================================== */
 
     keyFeatures: [
-      "Made in France using Bam Hightech construction",
+      {
+        title:
+          "Hightech Protection",
 
-      "Triple-ply coated and insulated ABS shell made from high-performance materials",
+        icon:
+          "shield",
 
-      "Outstanding protection at an ultralight 3 lbs. 14 oz.",
+        description:
+          "Triple-ply coated and insulated ABS Hightech construction provides serious protection using high-performance materials.",
+      },
 
-      "Full suspension interior on premium velvet-covered injected foam cushions",
+      {
+        title:
+          "Ultralight Design",
 
-      "Designed specifically for a 4/4 violin",
+        icon:
+          "interior",
 
-      "Fitted for two full-size bows",
+        description:
+          "At just 3 lbs. 14 oz., the case combines strong protection with exceptionally light carrying weight.",
+      },
 
-      "Removable accessory zipper pouch",
+      {
+        title:
+          "Suspension Interior",
 
-      "Secure Velcro strap for a Kun-style shoulder rest",
+        icon:
+          "storage",
 
-      "Two Bam Series 2 soft-touch latches with included keys",
+        description:
+          "Premium velvet-covered injected foam cushions fully suspend the violin for enhanced protection.",
+      },
 
-      "Male/female airtight H seal",
+      {
+        title:
+          "Bow & Accessory Storage",
 
-      "Two neoprene anti-slip backpack straps with covered security screw carabiner hooks",
+        icon:
+          "music",
 
-      "Anti-slip and anti-wear rubber patches to prevent sliding",
+        description:
+          "Storage includes space for two full-size bows, a removable accessory pouch, and a Kun-style shoulder rest.",
+      },
+
+      {
+        title:
+          "Secure Closure",
+
+        icon:
+          "security",
+
+        description:
+          "Two Bam Series 2 soft-touch latches with keys and an airtight H seal provide secure closure.",
+      },
+
+      {
+        title:
+          "Travel Ready",
+
+        icon:
+          "transport",
+
+        description:
+          "An ergonomic handle, detachable subway handle, and neoprene backpack straps provide flexible carrying options.",
+      },
     ],
 
 

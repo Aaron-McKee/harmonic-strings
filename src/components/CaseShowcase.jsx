@@ -4,11 +4,19 @@ import {
 } from "react";
 
 import {
+  Backpack,
+  Gauge,
+  Layers3,
+  LockKeyhole,
   Maximize2,
+  Music2,
+  PackageOpen,
+  ShieldCheck,
   X,
 } from "lucide-react";
 
 import "../styles/product-detail.css";
+import "../styles/case-showcase.css";
 
 
 function CaseShowcase({ caseItem }) {
@@ -51,8 +59,7 @@ function CaseShowcase({ caseItem }) {
     weight: null,
     protection: null,
 
-    inStock:
-      true,
+    inStock: true,
   };
 
 
@@ -73,6 +80,7 @@ function CaseShowcase({ caseItem }) {
     product.openImage ||
     null;
 
+
   const interiorImage =
     product.openImage ||
     product.image ||
@@ -80,12 +88,14 @@ function CaseShowcase({ caseItem }) {
     product.closedImage ||
     null;
 
+
   const bothViewsImage =
     product.combinedImage ||
     product.image ||
     product.closedImage ||
     product.openImage ||
     null;
+
 
   const activeImage =
     activeView === "interior"
@@ -106,7 +116,18 @@ function CaseShowcase({ caseItem }) {
   const sizes =
     product.availableSizes?.length
       ? product.availableSizes.join(" · ")
-      : product.size || "—";
+      : product.size || null;
+
+
+  const featureIcons = {
+    shield: ShieldCheck,
+    interior: PackageOpen,
+    storage: Layers3,
+    music: Music2,
+    humidity: Gauge,
+    transport: Backpack,
+    security: LockKeyhole,
+  };
 
 
   useEffect(() => {
@@ -186,70 +207,74 @@ function CaseShowcase({ caseItem }) {
           </div>
 
 
-          <button
-            type="button"
-            className="hs-detail-expand"
-            onClick={() =>
-              setDetailOpen(true)
-            }
-            aria-label={`View ${product.name} in fullscreen detail`}
-          >
-            <Maximize2 size={16} />
+          {activeImage && (
+            <>
+              <button
+                type="button"
+                className="hs-detail-expand"
+                onClick={() =>
+                  setDetailOpen(true)
+                }
+                aria-label={`View ${product.name} in fullscreen detail`}
+              >
+                <Maximize2 size={16} />
 
-            View Detail
-          </button>
-
-
-          <div
-            className="hs-detail-views"
-            aria-label="Case image views"
-          >
-
-            <button
-              type="button"
-              className={
-                activeView === "exterior"
-                  ? "active"
-                  : ""
-              }
-              onClick={() =>
-                setActiveView("exterior")
-              }
-            >
-              Exterior
-            </button>
+                View Detail
+              </button>
 
 
-            <button
-              type="button"
-              className={
-                activeView === "interior"
-                  ? "active"
-                  : ""
-              }
-              onClick={() =>
-                setActiveView("interior")
-              }
-            >
-              Interior
-            </button>
+              <div
+                className="hs-detail-views"
+                aria-label="Case image views"
+              >
+
+                <button
+                  type="button"
+                  className={
+                    activeView === "exterior"
+                      ? "active"
+                      : ""
+                  }
+                  onClick={() =>
+                    setActiveView("exterior")
+                  }
+                >
+                  Exterior
+                </button>
 
 
-            <button
-              type="button"
-              className={
-                activeView === "both"
-                  ? "active"
-                  : ""
-              }
-              onClick={() =>
-                setActiveView("both")
-              }
-            >
-              Both Views
-            </button>
+                <button
+                  type="button"
+                  className={
+                    activeView === "interior"
+                      ? "active"
+                      : ""
+                  }
+                  onClick={() =>
+                    setActiveView("interior")
+                  }
+                >
+                  Interior
+                </button>
 
-          </div>
+
+                <button
+                  type="button"
+                  className={
+                    activeView === "both"
+                      ? "active"
+                      : ""
+                  }
+                  onClick={() =>
+                    setActiveView("both")
+                  }
+                >
+                  Both Views
+                </button>
+
+              </div>
+            </>
+          )}
 
         </section>
 
@@ -266,9 +291,11 @@ function CaseShowcase({ caseItem }) {
 
 
               <p className="hs-detail-stock">
-                {product.inStock
+                {product.inStock === true
                   ? "In Stock"
-                  : "Currently Unavailable"}
+                  : product.inStock === false
+                    ? "Currently Unavailable"
+                    : "Contact for Availability"}
               </p>
 
             </div>
@@ -403,42 +430,79 @@ function CaseShowcase({ caseItem }) {
 
                 {product.keyFeatures?.length >
                   0 && (
-                  <>
-                    <p className="hs-detail-subheading">
+                  <section className="hs-case-features">
+
+                    <p className="hs-case-features-eyebrow">
                       Key Features
                     </p>
 
 
-                    <ol className="hs-detail-feature-list">
+                    <h2 className="hs-case-features-title">
+                      Built around protection
+                      and practicality.
+                    </h2>
+
+
+                    <div
+                      className="hs-case-features-rule"
+                      aria-hidden="true"
+                    >
+                      <span />
+                    </div>
+
+
+                    <div className="hs-case-feature-grid">
 
                       {product.keyFeatures.map(
                         (
                           feature,
                           index
-                        ) => (
-                          <li
-                            className="hs-detail-feature"
-                            key={index}
-                          >
-                            <span className="hs-detail-feature-number">
-                              {String(
-                                index + 1
-                              ).padStart(
-                                2,
-                                "0"
-                              )}
-                            </span>
+                        ) => {
+                          const Icon =
+                            featureIcons[
+                              feature.icon
+                            ] ||
+                            ShieldCheck;
+
+                          return (
+                            <article
+                              className="hs-case-feature-card"
+                              key={`${feature.title}-${index}`}
+                            >
+
+                              <div className="hs-case-feature-icon">
+
+                                <Icon
+                                  size={31}
+                                  strokeWidth={1.35}
+                                />
+
+                              </div>
 
 
-                            <span className="hs-detail-feature-text">
-                              {feature}
-                            </span>
-                          </li>
-                        )
+                              <h3>
+                                {feature.title}
+                              </h3>
+
+
+                              <span
+                                className="hs-case-feature-divider"
+                                aria-hidden="true"
+                              />
+
+
+                              <p>
+                                {feature.description}
+                              </p>
+
+                            </article>
+                          );
+                        }
                       )}
 
-                    </ol>
-                  </>
+                    </div>
+
+                  </section>
                 )}
 
               </div>
@@ -459,6 +523,7 @@ function CaseShowcase({ caseItem }) {
                 <SpecRow
                   label="Case Type"
                   value={
+                    product.caseStyle ||
                     product.caseType
                   }
                 />
@@ -663,7 +728,8 @@ function CaseShowcase({ caseItem }) {
       </section>
 
 
-      {detailOpen && (
+      {detailOpen &&
+      activeImage && (
         <div
           className="product-detail-viewer"
           role="dialog"
@@ -713,13 +779,11 @@ function CaseShowcase({ caseItem }) {
 
           <div className="product-detail-viewer-stage">
 
-            {activeImage && (
-              <img
-                src={activeImage}
-                alt={`${product.name} ${activeView} fullscreen view`}
-                className="product-detail-viewer-image"
-              />
-            )}
+            <img
+              src={activeImage}
+              alt={`${product.name} ${activeView} fullscreen view`}
+              className="product-detail-viewer-image"
+            />
 
           </div>
 
@@ -786,4 +850,3 @@ function CaseShowcase({ caseItem }) {
 
 
 export default CaseShowcase;
-
