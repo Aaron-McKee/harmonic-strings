@@ -10,7 +10,17 @@ import ap20nFrontImage from "../assets/Nicholas_Parola_AP20_Viola_Front.png";
 import ap20nBackImage from "../assets/Nicholas_Parola_AP20_Viola_Back.png";
 import ap20nCombinedImage from "../assets/Nicholas_Parola_AP20_Viola_Front_Back.png";
 
+import stefanPetrovSPAFrontImage from "../assets/Stefan_Petrov_SPA_Viola_Front.png";
+import stefanPetrovSPABackImage from "../assets/Stefan_Petrov_SPA_Viola_Back.png";
+import stefanPetrovSPACombinedImage from "../assets/Stefan_Petrov_SPA_Viola_Front_Back.png";
+
+
 export const violas = [
+  /* =====================================================
+     H. LUGER CA500 VIOLA
+     BEGINNER
+  ====================================================== */
+
   {
     id: "h-luger-ca500-viola",
     slug: "h-luger-ca500-viola",
@@ -78,6 +88,12 @@ export const violas = [
 
     inStock: true,
   },
+
+
+  /* =====================================================
+     HOWARD CORE C20 CONSERVATORY VIOLA
+     INTERMEDIATE
+  ====================================================== */
 
   {
     id: "howard-core-c20-conservatory-viola",
@@ -147,6 +163,12 @@ export const violas = [
     inStock: true,
   },
 
+
+  /* =====================================================
+     NICOLAS PAROLA AP20N VIOLA
+     INTERMEDIATE
+  ====================================================== */
+
   {
     id: "nicolas-parola-ap20n-viola",
     slug: "nicolas-parola-ap20n-viola",
@@ -212,8 +234,14 @@ export const violas = [
     condition: null,
     conditionNotes: null,
 
-    inStock: null,
+    inStock: true,
   },
+
+
+  /* =====================================================
+     NICOLAS PAROLA AP30N VIOLA
+     ADVANCED
+  ====================================================== */
 
   {
     id: "nicolas-parola-ap30n-viola",
@@ -223,7 +251,10 @@ export const violas = [
     maker: "Nicolas Parola",
     model: "AP30N",
     instrument: "Viola",
-    level: "Intermediate",
+
+    /* MOVED FROM INTERMEDIATE TO ADVANCED */
+    level: "Advanced",
+
     stage: "instrument",
 
     image: ap30nCombinedImage,
@@ -280,5 +311,143 @@ export const violas = [
     conditionNotes: null,
 
     inStock: true,
+  },
+
+
+  /* =====================================================
+     STEFAN PETROV SPA VIOLA
+     ADVANCED
+  ====================================================== */
+
+  {
+    id: "stefan-petrov-spa-viola",
+    slug: "stefan-petrov-spa-viola",
+
+    name: "Stefan Petrov SPA Viola",
+    maker: "Stefan Petrov",
+    model: "SPA",
+    instrument: "Viola",
+    level: "Advanced",
+    stage: "instrument",
+
+    image:
+      stefanPetrovSPACombinedImage,
+
+    frontImage:
+      stefanPetrovSPAFrontImage,
+
+    backImage:
+      stefanPetrovSPABackImage,
+
+    combinedImage:
+      stefanPetrovSPACombinedImage,
+
+
+    /* =====================================
+       PRICING
+    ====================================== */
+
+    price:
+      "$4,100",
+
+    regularPrice:
+      null,
+
+    salePrice:
+      null,
+
+    savings:
+      null,
+
+
+    /* =====================================
+       SIZE
+    ====================================== */
+
+    size:
+      '15.5"',
+
+    availableSizes: [
+      '15.5"',
+    ],
+
+
+    /* =====================================
+       COLLECTION DESCRIPTION
+    ====================================== */
+
+    shortDescription:
+      "The Stefan Petrov Viola SPA combines traditional European craftsmanship with exceptional tonal depth, projection, and response. Handcrafted by skilled luthiers using select tonewoods and a hand-rubbed oil varnish, it is designed for advanced players, educators, and professionals.",
+
+
+    /* =====================================
+       DESCRIPTION
+    ====================================== */
+
+    description:
+      "The Stefan Petrov Viola SPA is a masterful blend of traditional European craftsmanship and tonal artistry. Handcrafted by skilled luthiers in the Stefan Petrov workshop, each viola is individually shaped and finished using only the finest tonewoods and a unique hand-rubbed oil varnish. This process enhances not only the natural beauty of the wood but also the instrument’s resonance and character. Available in classic patterns inspired by the Amati, Guarneri, Guadagnini, and Stradivari schools, capturing the spirit and tonal balance of the old Italian masters.",
+
+
+    /* =====================================
+       TONE & PLAYABILITY
+    ====================================== */
+
+    toneAndPlayability:
+      "The Stefan Petrov SPA viola produces an incredibly rich and warm sound with deep projection and a refined response across all registers. The oil varnish allows the tone to breathe freely, creating a broad, expressive range that matures beautifully over time. Whether performing solo, in chamber settings, or orchestral work, this viola delivers power, balance, and subtlety with ease.",
+
+
+    /* =====================================
+       MATERIALS
+    ====================================== */
+
+    top:
+      "Select spruce",
+
+    backAndSides:
+      "Flamed maple",
+
+    finish:
+      "Hand-rubbed oil varnish",
+
+    fittings:
+      "Ebony fingerboard with ebony tailpiece and built-in fine tuners",
+
+    strings:
+      "Evah Pirazzi or comparable setup",
+
+
+    /* =====================================
+       CRAFTSMANSHIP
+    ====================================== */
+
+    construction:
+      "Handcrafted by skilled luthiers in the Stefan Petrov workshop using select European tonewoods and traditional European viola-making methods",
+
+    handwork:
+      "Individually shaped and finished with a hand-rubbed oil varnish designed to enhance the natural beauty, resonance, and tonal character of the instrument",
+
+    idealFor:
+      "Advanced players, educators, professional violists, solo performance, chamber music, and orchestral work",
+
+    setup:
+      "Fully set up and performance-ready by the Harmonic Strings workshop at no additional cost",
+
+    tonalCharacter:
+      "Rich, warm, broad, expressive, powerful, balanced, and refined with deep projection",
+
+    year:
+      null,
+
+    inspiration:
+      "Amati, Guarneri, Guadagnini, and Stradivari",
+
+    condition:
+      null,
+
+    conditionNotes:
+      null,
+
+    inStock:
+      true,
   },
 ];
