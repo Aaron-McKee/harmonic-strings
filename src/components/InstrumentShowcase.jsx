@@ -11,6 +11,7 @@ import {
 import "../styles/product-detail.css";
 import "../styles/product-detail-viewer.css";
 
+
 function InstrumentShowcase({ product }) {
   const instrument = product || {
     name: "Harmonic Strings Instrument",
@@ -26,6 +27,9 @@ function InstrumentShowcase({ product }) {
     frontImage: null,
     backImage: null,
     combinedImage: null,
+
+    detailImage: null,
+    detailViewLabel: null,
 
     price: null,
     regularPrice: null,
@@ -58,6 +62,7 @@ function InstrumentShowcase({ product }) {
     inStock: null,
   };
 
+
   const [activeView, setActiveView] =
     useState("front");
 
@@ -67,58 +72,98 @@ function InstrumentShowcase({ product }) {
   const [detailOpen, setDetailOpen] =
     useState(false);
 
+
   const frontImage =
     instrument.frontImage ||
     instrument.image ||
     instrument.combinedImage ||
+    instrument.detailImage ||
     null;
+
 
   const backImage =
     instrument.backImage ||
     instrument.frontImage ||
     instrument.image ||
     instrument.combinedImage ||
+    instrument.detailImage ||
     null;
 
-  const bothImage =
+
+  /*
+    The third image normally uses combinedImage.
+
+    A product can instead provide:
+      detailImage
+      detailViewLabel
+
+    Example:
+      detailImage: a31ScrollImage
+      detailViewLabel: "Scroll"
+  */
+
+  const thirdImage =
+    instrument.detailImage ||
     instrument.combinedImage ||
     instrument.image ||
     instrument.frontImage ||
     instrument.backImage ||
     null;
 
+
+  const thirdViewLabel =
+    instrument.detailViewLabel ||
+    "Both";
+
+
   const hasImages = Boolean(
     instrument.image ||
     instrument.frontImage ||
     instrument.backImage ||
-    instrument.combinedImage
+    instrument.combinedImage ||
+    instrument.detailImage
   );
+
 
   const activeImage =
     activeView === "back"
       ? backImage
       : activeView === "both"
-        ? bothImage
+        ? thirdImage
         : frontImage;
+
+
+  const activeViewLabel =
+    activeView === "both"
+      ? thirdViewLabel
+      : activeView === "back"
+        ? "Back"
+        : "Front";
+
 
   const sizes =
     instrument.availableSizes?.length
       ? instrument.availableSizes.join(" · ")
       : instrument.size || null;
 
+
   const toneCopy =
     instrument.toneAndPlayability ||
     instrument.tonalCharacter ||
     null;
 
-  const trialSubject = encodeURIComponent(
-    `In-Home ${instrument.instrument || "Instrument"} Trial Inquiry`
-  );
+
+  const trialSubject =
+    encodeURIComponent(
+      `In-Home ${instrument.instrument || "Instrument"} Trial Inquiry`
+    );
+
 
   useEffect(() => {
     if (!detailOpen) {
       return;
     }
+
 
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
@@ -126,20 +171,25 @@ function InstrumentShowcase({ product }) {
       }
     };
 
+
     const previousOverflow =
       document.body.style.overflow;
 
+
     document.body.style.overflow =
       "hidden";
+
 
     document.addEventListener(
       "keydown",
       handleKeyDown
     );
 
+
     return () => {
       document.body.style.overflow =
         previousOverflow;
+
 
       document.removeEventListener(
         "keydown",
@@ -147,6 +197,7 @@ function InstrumentShowcase({ product }) {
       );
     };
   }, [detailOpen]);
+
 
   const DetailRow = ({
     label,
@@ -157,22 +208,27 @@ function InstrumentShowcase({ product }) {
       return null;
     }
 
+
     return (
       <div
         className={`hs-detail-ledger-row${
           tonal ? " tonal" : ""
         }`}
       >
+
         <span>
           {label}
         </span>
 
+
         <strong>
           {value}
         </strong>
+
       </div>
     );
   };
+
 
   const hasOverview =
     Boolean(
@@ -182,11 +238,13 @@ function InstrumentShowcase({ product }) {
       instrument.idealFor
     );
 
+
   const hasCraftsmanship =
     Boolean(
       instrument.construction ||
       instrument.handwork
     );
+
 
   const hasSpecifications =
     Boolean(
@@ -202,9 +260,16 @@ function InstrumentShowcase({ product }) {
       instrument.conditionNotes
     );
 
+
   return (
     <>
+
       <article className="hs-detail-spotlight">
+
+
+        {/* =====================================
+            PRODUCT IMAGES
+        ====================================== */}
 
         <section className="hs-detail-visual">
 
@@ -213,7 +278,7 @@ function InstrumentShowcase({ product }) {
             {hasImages && activeImage ? (
               <img
                 src={activeImage}
-                alt={`${instrument.name} ${activeView} view`}
+                alt={`${instrument.name} ${activeViewLabel} view`}
                 className="hs-detail-image"
               />
             ) : (
@@ -222,24 +287,31 @@ function InstrumentShowcase({ product }) {
                 role="status"
                 aria-label={`${instrument.name} photography coming soon`}
               >
+
                 <span className="hs-detail-image-placeholder-eyebrow">
                   Harmonic Strings
                 </span>
+
 
                 <strong className="hs-detail-image-placeholder-title">
                   Photography Coming Soon
                 </strong>
 
+
                 <p className="hs-detail-image-placeholder-copy">
                   Images of this instrument will be added shortly.
                 </p>
+
               </div>
             )}
 
           </div>
 
-          {hasImages && activeImage && (
+
+          {hasImages &&
+          activeImage && (
             <>
+
               <button
                 type="button"
                 className="hs-detail-expand"
@@ -248,14 +320,19 @@ function InstrumentShowcase({ product }) {
                 }
                 aria-label={`View ${instrument.name} in fullscreen detail`}
               >
+
                 <Maximize2 size={16} />
+
                 View Detail
+
               </button>
+
 
               <div
                 className="hs-detail-views"
                 aria-label="Instrument image views"
               >
+
                 <button
                   type="button"
                   className={
@@ -269,6 +346,7 @@ function InstrumentShowcase({ product }) {
                 >
                   Front
                 </button>
+
 
                 <button
                   type="button"
@@ -284,6 +362,7 @@ function InstrumentShowcase({ product }) {
                   Back
                 </button>
 
+
                 <button
                   type="button"
                   className={
@@ -295,13 +374,20 @@ function InstrumentShowcase({ product }) {
                     setActiveView("both")
                   }
                 >
-                  Both
+                  {thirdViewLabel}
                 </button>
+
               </div>
+
             </>
           )}
 
         </section>
+
+
+        {/* =====================================
+            PRODUCT INFORMATION
+        ====================================== */}
 
         <section className="hs-detail-content">
 
@@ -315,6 +401,7 @@ function InstrumentShowcase({ product }) {
                   : "Harmonic Strings"}
               </p>
 
+
               <p className="hs-detail-stock">
                 {instrument.inStock === true
                   ? "In Stock"
@@ -325,11 +412,13 @@ function InstrumentShowcase({ product }) {
 
             </div>
 
+
             <div className="hs-detail-identity">
 
               <p className="hs-detail-maker">
                 {instrument.maker}
               </p>
+
 
               <h1 className="hs-detail-title">
                 {instrument.name}
@@ -337,31 +426,44 @@ function InstrumentShowcase({ product }) {
 
             </div>
 
+
+            {/* =====================================
+                PRICING
+            ====================================== */}
+
             <div className="hs-detail-price">
 
               {instrument.regularPrice && (
                 <div className="hs-detail-price-block">
+
                   <p className="hs-detail-price-label">
                     Regular Price
                   </p>
 
+
                   <del className="hs-detail-price-regular">
                     {instrument.regularPrice}
                   </del>
+
                 </div>
               )}
 
+
               <div className="hs-detail-price-block">
+
                 <p className="hs-detail-price-label">
                   Harmonic Strings Price
                 </p>
+
 
                 <strong className="hs-detail-price-sale">
                   {instrument.salePrice ||
                     instrument.price ||
                     "Contact"}
                 </strong>
+
               </div>
+
 
               {instrument.savings && (
                 <span className="hs-detail-price-saving">
@@ -373,11 +475,17 @@ function InstrumentShowcase({ product }) {
 
           </div>
 
+
+          {/* =====================================
+              TABS
+          ====================================== */}
+
           <div
             className="hs-detail-tabs"
             role="tablist"
             aria-label="Instrument information"
           >
+
             <button
               type="button"
               role="tab"
@@ -396,6 +504,7 @@ function InstrumentShowcase({ product }) {
               Details
             </button>
 
+
             <button
               type="button"
               role="tab"
@@ -413,9 +522,20 @@ function InstrumentShowcase({ product }) {
             >
               Specifications
             </button>
+
           </div>
 
+
+          {/* =====================================
+              TAB CONTENT
+          ====================================== */}
+
           <div className="hs-detail-tab-content">
+
+
+            {/* =====================================
+                DETAILS
+            ====================================== */}
 
             {activeTab === "details" && (
               <div>
@@ -426,125 +546,191 @@ function InstrumentShowcase({ product }) {
                   </p>
                 )}
 
+
                 {hasOverview && (
                   <>
+
                     <p className="hs-detail-subheading">
                       Instrument Overview
                     </p>
 
+
                     <div className="hs-detail-ledger">
+
                       <DetailRow
                         label="Instrument"
-                        value={instrument.instrument}
+                        value={
+                          instrument.instrument
+                        }
                       />
+
 
                       <DetailRow
                         label="Available Size"
                         value={sizes}
                       />
 
+
                       <DetailRow
                         label="Player Level"
-                        value={instrument.level}
+                        value={
+                          instrument.level
+                        }
                       />
+
 
                       <DetailRow
                         label="Ideal For"
-                        value={instrument.idealFor}
+                        value={
+                          instrument.idealFor
+                        }
                       />
+
                     </div>
+
                   </>
                 )}
 
+
                 {hasCraftsmanship && (
                   <>
+
                     <p className="hs-detail-subheading">
                       Craftsmanship
                     </p>
 
+
                     <div className="hs-detail-ledger">
+
                       <DetailRow
                         label="Construction"
-                        value={instrument.construction}
+                        value={
+                          instrument.construction
+                        }
                       />
+
 
                       <DetailRow
                         label="Handwork"
-                        value={instrument.handwork}
+                        value={
+                          instrument.handwork
+                        }
                       />
+
                     </div>
+
                   </>
                 )}
 
+
                 {toneCopy && (
                   <>
+
                     <p className="hs-detail-subheading">
                       Tone &amp; Playability
                     </p>
 
+
                     <p className="hs-detail-description">
                       {toneCopy}
                     </p>
+
                   </>
                 )}
 
               </div>
             )}
 
+
+            {/* =====================================
+                SPECIFICATIONS
+            ====================================== */}
+
             {activeTab === "specifications" && (
               <div className="hs-detail-ledger">
 
                 {hasSpecifications ? (
                   <>
+
                     <DetailRow
                       label="Top"
-                      value={instrument.top}
+                      value={
+                        instrument.top
+                      }
                     />
+
 
                     <DetailRow
                       label="Back & Sides"
-                      value={instrument.backAndSides}
+                      value={
+                        instrument.backAndSides
+                      }
                     />
+
 
                     <DetailRow
                       label="Finish"
-                      value={instrument.finish}
+                      value={
+                        instrument.finish
+                      }
                     />
+
 
                     <DetailRow
                       label="Fittings"
-                      value={instrument.fittings}
+                      value={
+                        instrument.fittings
+                      }
                     />
+
 
                     <DetailRow
                       label="Strings"
-                      value={instrument.strings}
+                      value={
+                        instrument.strings
+                      }
                     />
+
 
                     <DetailRow
                       label="Setup"
-                      value={instrument.setup}
+                      value={
+                        instrument.setup
+                      }
                     />
+
 
                     <DetailRow
                       label="Year"
-                      value={instrument.year}
+                      value={
+                        instrument.year
+                      }
                     />
+
 
                     <DetailRow
                       label="Model Inspiration"
-                      value={instrument.inspiration}
+                      value={
+                        instrument.inspiration
+                      }
                     />
+
 
                     <DetailRow
                       label="Condition"
-                      value={instrument.condition}
+                      value={
+                        instrument.condition
+                      }
                     />
+
 
                     <DetailRow
                       label="Condition Notes"
-                      value={instrument.conditionNotes}
+                      value={
+                        instrument.conditionNotes
+                      }
                     />
+
                   </>
                 ) : (
                   <p className="hs-detail-description">
@@ -561,6 +747,11 @@ function InstrumentShowcase({ product }) {
 
       </article>
 
+
+      {/* =====================================
+          PERSONAL SERVICE
+      ====================================== */}
+
       <section className="hs-detail-service">
 
         <div className="hs-detail-service-heading">
@@ -569,11 +760,13 @@ function InstrumentShowcase({ product }) {
             Interested in this instrument?
           </p>
 
+
           <h2 className="hs-detail-service-title">
             Experience it before you decide.
           </h2>
 
         </div>
+
 
         <p className="hs-detail-service-copy">
           Harmonic Strings currently handles instrument purchases
@@ -581,39 +774,53 @@ function InstrumentShowcase({ product }) {
           arrange your purchase, or inquire about an in-home trial.
         </p>
 
+
         <div className="hs-detail-service-options">
 
           <div className="hs-detail-service-option">
+
             <span>
               Call to Order
             </span>
+
 
             <strong>
               Speak directly with Harmonic Strings
             </strong>
 
+
             <p>
               We’ll answer your questions, confirm the instrument
               is available, and help you with the next steps.
             </p>
+
           </div>
 
+
           <div className="hs-detail-service-option">
+
             <span>
               In-Home Trial
             </span>
 
+
             <strong>
-              Experience the {instrument.instrument?.toLowerCase() || "instrument"} where you play
+              Experience the{" "}
+              {instrument.instrument?.toLowerCase() ||
+                "instrument"}{" "}
+              where you play
             </strong>
+
 
             <p>
               Ask about arranging an in-home trial before making
               your final decision.
             </p>
+
           </div>
 
         </div>
+
 
         <div className="hs-detail-service-actions">
 
@@ -624,6 +831,7 @@ function InstrumentShowcase({ product }) {
             Call 256.437.8447
           </a>
 
+
           <a
             href={`mailto:lisa@harmonicstrings.net?subject=${trialSubject}`}
             className="hs-detail-service-secondary"
@@ -633,15 +841,18 @@ function InstrumentShowcase({ product }) {
 
         </div>
 
+
         <div className="hs-detail-service-contact">
 
           <span>
             Huntsville, Alabama
           </span>
 
+
           <span aria-hidden="true">
             ·
           </span>
+
 
           <a href="mailto:lisa@harmonicstrings.net">
             lisa@harmonicstrings.net
@@ -650,6 +861,11 @@ function InstrumentShowcase({ product }) {
         </div>
 
       </section>
+
+
+      {/* =====================================
+          FULLSCREEN IMAGE VIEWER
+      ====================================== */}
 
       {detailOpen &&
       hasImages &&
@@ -668,6 +884,7 @@ function InstrumentShowcase({ product }) {
             }
           }}
         >
+
           <button
             type="button"
             className="product-detail-viewer-close"
@@ -676,37 +893,49 @@ function InstrumentShowcase({ product }) {
             }
             aria-label="Close detail view"
           >
+
             <X
               size={24}
               strokeWidth={1.5}
             />
 
+
             <span>
               Close
             </span>
+
           </button>
 
+
           <div className="product-detail-viewer-heading">
+
             <p>
               {instrument.level
                 ? `${instrument.level} Collection`
                 : "Harmonic Strings"}
             </p>
 
+
             <h2>
               {instrument.name}
             </h2>
+
           </div>
+
 
           <div className="product-detail-viewer-stage">
+
             <img
               src={activeImage}
-              alt={`${instrument.name} ${activeView} fullscreen view`}
+              alt={`${instrument.name} ${activeViewLabel} fullscreen view`}
               className="product-detail-viewer-image"
             />
+
           </div>
 
+
           <div className="product-detail-viewer-controls">
+
             <button
               type="button"
               className={
@@ -720,6 +949,7 @@ function InstrumentShowcase({ product }) {
             >
               Front
             </button>
+
 
             <button
               type="button"
@@ -735,6 +965,7 @@ function InstrumentShowcase({ product }) {
               Back
             </button>
 
+
             <button
               type="button"
               className={
@@ -746,18 +977,22 @@ function InstrumentShowcase({ product }) {
                 setActiveView("both")
               }
             >
-              Both
+              {thirdViewLabel}
             </button>
+
           </div>
+
 
           <p className="product-detail-viewer-note">
             High-resolution instrument view
           </p>
+
         </div>
       )}
 
     </>
   );
 }
+
 
 export default InstrumentShowcase;
