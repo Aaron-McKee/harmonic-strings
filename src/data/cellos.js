@@ -6,6 +6,10 @@ import a31FrontImage from "../assets/Howard_Core_A31_Cello_Front.png";
 import a31BackImage from "../assets/Howard_Core_A31_Cello_Back.png";
 import a31ScrollImage from "../assets/Howard_Core_A31_Cello_Scroll.png";
 
+import a34FrontImage from "../assets/Howard_Core_A34_Cello_Front.png";
+import a34BackImage from "../assets/Howard_Core_A34_Cello_Back.png";
+import a34ScrollImage from "../assets/Howard_Core_A34_Cello_Scroll.png";
+
 
 export const cellos = [
   /* =====================================================
@@ -150,6 +154,173 @@ export const cellos = [
 
     tonalCharacter:
       "Warm, clear, balanced, and consistent",
+
+    year:
+      null,
+
+    inspiration:
+      null,
+
+    condition:
+      null,
+
+    conditionNotes:
+      null,
+
+
+    /* =====================================
+       INVENTORY
+    ====================================== */
+
+    inStock:
+      true,
+  },
+
+
+  /* =====================================================
+     HOWARD CORE ACADEMY A34 CELLO
+     INTERMEDIATE
+  ====================================================== */
+
+  {
+    id: "howard-core-academy-a34-cello",
+    slug: "howard-core-academy-a34-cello",
+
+    name: "Howard Core Academy A34 Cello",
+    maker: "Howard Core",
+    model: "Academy A34",
+    instrument: "Cello",
+    level: "Intermediate",
+    stage: "instrument",
+
+
+    /* =====================================
+       IMAGES
+
+       COLLECTION:
+       Front
+
+       DETAIL:
+       Front
+       Back
+       Scroll
+    ====================================== */
+
+    image:
+      a34FrontImage,
+
+    frontImage:
+      a34FrontImage,
+
+    backImage:
+      a34BackImage,
+
+    combinedImage:
+      null,
+
+    detailImage:
+      a34ScrollImage,
+
+    detailViewLabel:
+      "Scroll",
+
+
+    /* =====================================
+       PRICING
+    ====================================== */
+
+    price:
+      null,
+
+    regularPrice:
+      "$1,933.00",
+
+    salePrice:
+      "$1,545.00",
+
+    savings:
+      "Save $388",
+
+
+    /* =====================================
+       SIZE
+    ====================================== */
+
+    size:
+      "4/4 (Full Size)",
+
+    availableSizes: [
+      "4/4",
+    ],
+
+
+    /* =====================================
+       COLLECTION DESCRIPTION
+    ====================================== */
+
+    shortDescription:
+      "The Howard Core Academy A34 Cello is a dependable step-up instrument for advancing students, combining a fully carved spruce top, maple construction, professional setup, and a warm, balanced, responsive tone.",
+
+
+    /* =====================================
+       DESCRIPTION
+    ====================================== */
+
+    description:
+      "The Howard Core Academy A34 Cello is a dependable, step-up instrument thoughtfully designed for advancing students seeking warmth, balance, and consistent tone. Crafted with a fully carved spruce top and plain maple back, this cello delivers a rich, even sound that matures beautifully with continued play. Laminated maple sides add strength and resistance to climate changes, making it an excellent long-lasting choice for school programs, studios, and home practice.",
+
+
+    /* =====================================
+       TONE & PLAYABILITY
+    ====================================== */
+
+    toneAndPlayability:
+      "With its clean response and balanced projection, the Academy A34 supports developing bow control and dynamic expression while helping advancing students grow in confidence and musicality. Strung with D’Addario Prelude strings and professionally adjusted by the Harmonic Strings workshop, it produces a warm, balanced, responsive tone suited for both ensemble and solo playing.",
+
+
+    /* =====================================
+       MATERIALS
+    ====================================== */
+
+    top:
+      "Fully carved spruce",
+
+    backAndSides:
+      "Plain maple back with laminated maple sides",
+
+    finish:
+      "Natural amber finish",
+
+    fittings:
+      "Ebony pegs and endpin with composite tailpiece and integrated fine tuners",
+
+    strings:
+      "D’Addario Prelude",
+
+
+    /* =====================================
+       CRAFTSMANSHIP
+    ====================================== */
+
+    construction:
+      "Step-up cello construction with a fully carved spruce top, plain maple back, laminated maple sides, and inlaid purfling for a balance of tonal development, durability, and climate stability",
+
+    handwork:
+      "Inlaid purfling, quality maple bridge, ebony fittings, and professional adjustment provide dependable response, tuning stability, and comfortable playability",
+
+    idealFor:
+      "Advancing students, private lessons, school orchestras, ensemble playing, solo study, educators, studios, and developing cellists ready for a step-up instrument",
+
+    setup:
+      "Professionally adjusted by the Harmonic Strings workshop",
+
+
+    /* =====================================
+       ADDITIONAL INFORMATION
+    ====================================== */
+
+    tonalCharacter:
+      "Warm, balanced, and responsive",
 
     year:
       null,
