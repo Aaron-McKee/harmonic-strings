@@ -10,6 +10,10 @@ import a34FrontImage from "../assets/Howard_Core_A34_Cello_Front.png";
 import a34BackImage from "../assets/Howard_Core_A34_Cello_Back.png";
 import a34ScrollImage from "../assets/Howard_Core_A34_Cello_Scroll.png";
 
+import k515cFrontImage from "../assets/Johannes_Kohr_K515C_Cello_Front.png";
+import k515cBackImage from "../assets/Johannes_Kohr_K515C_Cello_Back.png";
+import k515cScrollImage from "../assets/Johannes_Kohr_K515C_Cello_Scroll.png";
+
 
 export const cellos = [
   /* =====================================================
@@ -267,7 +271,7 @@ export const cellos = [
     ====================================== */
 
     description:
-      "The Howard Core Academy A34 Cello is a dependable, step-up instrument thoughtfully designed for advancing students seeking warmth, balance, and consistent tone. Crafted with a fully carved spruce top and plain maple back, this cello delivers a rich, even sound that matures beautifully with continued play. Laminated maple sides add strength and resistance to climate changes, making it an excellent long-lasting choice for school programs, studios, and home practice.",
+      "The Howard Core Academy A34 Cello is a dependable, step-up instrument thoughtfully designed for advancing students seeking warmth, balance, and consistent tone. Crafted with a fully carved spruce top and plain maple back, this cello delivers a rich, even sound that matures beautifully with continued play. The laminated maple sides add strength and resistance to climate changes, making it an excellent, long-lasting choice for school programs, studios, and home practice.",
 
 
     /* =====================================
@@ -275,7 +279,7 @@ export const cellos = [
     ====================================== */
 
     toneAndPlayability:
-      "With its clean response and balanced projection, the Academy A34 supports developing bow control and dynamic expression while helping advancing students grow in confidence and musicality. Strung with D’Addario Prelude strings and professionally adjusted by the Harmonic Strings workshop, it produces a warm, balanced, responsive tone suited for both ensemble and solo playing.",
+      "With its clean response and balanced projection, the Academy A34 supports developing bow control and dynamic expression, helping students grow in confidence and musicality. Strung with D’Addario Prelude strings and professionally adjusted by the Harmonic Strings workshop, it produces a warm, balanced, and responsive tone suited for both ensemble and solo work.",
 
 
     /* =====================================
@@ -321,6 +325,173 @@ export const cellos = [
 
     tonalCharacter:
       "Warm, balanced, and responsive",
+
+    year:
+      null,
+
+    inspiration:
+      null,
+
+    condition:
+      null,
+
+    conditionNotes:
+      null,
+
+
+    /* =====================================
+       INVENTORY
+    ====================================== */
+
+    inStock:
+      true,
+  },
+
+
+  /* =====================================================
+     JOHANNES KÖHR K515C CELLO
+     INTERMEDIATE
+  ====================================================== */
+
+  {
+    id: "johannes-kohr-k515c-cello",
+    slug: "johannes-kohr-k515c-cello",
+
+    name: "Johannes Köhr K515C Cello",
+    maker: "Johannes Köhr",
+    model: "K515C",
+    instrument: "Cello",
+    level: "Intermediate",
+    stage: "instrument",
+
+
+    /* =====================================
+       IMAGES
+
+       COLLECTION:
+       Front
+
+       DETAIL:
+       Front
+       Back
+       Scroll
+    ====================================== */
+
+    image:
+      k515cFrontImage,
+
+    frontImage:
+      k515cFrontImage,
+
+    backImage:
+      k515cBackImage,
+
+    combinedImage:
+      null,
+
+    detailImage:
+      k515cScrollImage,
+
+    detailViewLabel:
+      "Scroll",
+
+
+    /* =====================================
+       PRICING
+    ====================================== */
+
+    price:
+      "$2,816",
+
+    regularPrice:
+      null,
+
+    salePrice:
+      null,
+
+    savings:
+      null,
+
+
+    /* =====================================
+       SIZE
+    ====================================== */
+
+    size:
+      "4/4 (Full Size)",
+
+    availableSizes: [
+      "4/4",
+    ],
+
+
+    /* =====================================
+       COLLECTION DESCRIPTION
+    ====================================== */
+
+    shortDescription:
+      "The Johannes Köhr K515C Cello combines elegant craftsmanship, powerful resonance, and a striking antiqued finish for intermediate and advancing cellists seeking greater warmth, clarity, projection, and expressive range.",
+
+
+    /* =====================================
+       DESCRIPTION
+    ====================================== */
+
+    description:
+      "The Johannes Köhr K515C Cello captivates with its elegant craftsmanship, powerful resonance, and fiery aesthetic — an exceptional instrument for intermediate and advancing cellists. Built to deliver expressive tone and artistic depth, this fully carved cello combines refined materials with dynamic tonal performance for musicians ready to elevate their sound.",
+
+
+    /* =====================================
+       TONE & PLAYABILITY
+    ====================================== */
+
+    toneAndPlayability:
+      "Handcrafted from a solid spruce top and flamed maple back and sides, the K515C offers a balanced tonal palette marked by warmth, clarity, and projection. Its voice is rich and resonant with a clear response across all registers, making it equally suited for solo, chamber, or orchestral performance.",
+
+
+    /* =====================================
+       MATERIALS
+    ====================================== */
+
+    top:
+      "Fully carved spruce",
+
+    backAndSides:
+      "Flamed maple",
+
+    finish:
+      "Bold antiqued deep red-brown varnish over golden ground",
+
+    fittings:
+      "Ebony fingerboard and Parisian-eye pegs with Despiau “D” level French bridge, composite tailpiece with built-in fine tuners, and ebony or metal endpin depending on size",
+
+    strings:
+      "D’Addario Kaplan",
+
+
+    /* =====================================
+       CRAFTSMANSHIP
+    ====================================== */
+
+    construction:
+      "Fully carved spruce and flamed maple construction designed for resonance, durability, tonal complexity, and expressive projection",
+
+    handwork:
+      "Professionally fitted with ebony Parisian-eye pegs, a Despiau “D” level French bridge, and a composite tailpiece with integrated fine tuners for tonal refinement, tuning accuracy, and reliable response",
+
+    idealFor:
+      "Intermediate and advancing cellists, private study, solo performance, chamber music, ensemble playing, and orchestral performance",
+
+    setup:
+      "Professionally adjusted by the Harmonic Strings workshop",
+
+
+    /* =====================================
+       ADDITIONAL INFORMATION
+    ====================================== */
+
+    tonalCharacter:
+      "Rich, balanced, clear, and resonant with strong projection",
 
     year:
       null,
