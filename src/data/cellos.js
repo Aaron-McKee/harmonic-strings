@@ -14,6 +14,10 @@ import k515cFrontImage from "../assets/Johannes_Kohr_K515C_Cello_Front.png";
 import k515cBackImage from "../assets/Johannes_Kohr_K515C_Cello_Back.png";
 import k515cScrollImage from "../assets/Johannes_Kohr_K515C_Cello_Scroll.png";
 
+import dragonDR10FrontImage from "../assets/Howard_Core_DR10_Cello_Front.png";
+import dragonDR10BackImage from "../assets/Howard_Core_DR10_Cello_Back.png";
+import dragonDR10ScrollImage from "../assets/Howard_Core_DR10_Cello_Scroll.png";
+
 
 export const cellos = [
   /* =====================================================
@@ -466,7 +470,7 @@ export const cellos = [
       "Ebony fingerboard and Parisian-eye pegs with Despiau “D” level French bridge, composite tailpiece with built-in fine tuners, and ebony or metal endpin depending on size",
 
     strings:
-      "D’Addario Kaplan",
+      "D’Addario Kaplan on full-size models / D’Addario Helicore on fractional sizes",
 
 
     /* =====================================
@@ -618,6 +622,173 @@ export const cellos = [
 
     conditionNotes:
       null,
+
+    inStock:
+      true,
+  },
+
+
+  /* =====================================================
+     HOWARD CORE DRAGON DR10VC CELLO
+     ADVANCED
+  ====================================================== */
+
+  {
+    id: "howard-core-dragon-dr10vc-cello",
+    slug: "howard-core-dragon-dr10vc-cello",
+
+    name: "Howard Core Dragon DR10VC Cello",
+    maker: "Howard Core",
+    model: "Dragon DR10VC",
+    instrument: "Cello",
+    level: "Advanced",
+    stage: "instrument",
+
+
+    /* =====================================
+       IMAGES
+
+       COLLECTION:
+       Front
+
+       DETAIL:
+       Front
+       Back
+       Scroll
+    ====================================== */
+
+    image:
+      dragonDR10FrontImage,
+
+    frontImage:
+      dragonDR10FrontImage,
+
+    backImage:
+      dragonDR10BackImage,
+
+    combinedImage:
+      null,
+
+    detailImage:
+      dragonDR10ScrollImage,
+
+    detailViewLabel:
+      "Scroll",
+
+
+    /* =====================================
+       PRICING
+    ====================================== */
+
+    price:
+      "$4,454",
+
+    regularPrice:
+      null,
+
+    salePrice:
+      null,
+
+    savings:
+      null,
+
+
+    /* =====================================
+       SIZE
+    ====================================== */
+
+    size:
+      "4/4 (Full Size)",
+
+    availableSizes: [
+      "4/4",
+    ],
+
+
+    /* =====================================
+       COLLECTION DESCRIPTION
+    ====================================== */
+
+    shortDescription:
+      "The Howard Core Dragon DR10VC Cello offers a refined introduction to the prestigious Dragon series, combining medium-dark tonal warmth, clear projection, quick response, and elegant craftsmanship for advancing players.",
+
+
+    /* =====================================
+       DESCRIPTION
+    ====================================== */
+
+    description:
+      "The Howard Core Dragon DR10VC Cello offers an accessible yet refined introduction to the renowned Dragon series. Designed for advancing students and developing performers, this instrument delivers a medium-dark tone with remarkable clarity, warmth, and quick responsiveness. Balancing accessibility with professional craftsmanship, it provides exceptional value for musicians seeking an instrument that inspires continued growth and confidence.",
+
+
+    /* =====================================
+       TONE & PLAYABILITY
+    ====================================== */
+
+    toneAndPlayability:
+      "The Dragon DR10VC produces a medium-dark tonal character with warmth, clarity, and quick responsiveness. Professionally fitted with a Despiau “C” level French bridge, Wittner tailpiece, carbon fiber endpin, boxwood pegs, and Crown strings, it provides balanced projection, smooth response, dependable tuning stability, and expressive performance across all registers.",
+
+
+    /* =====================================
+       MATERIALS
+    ====================================== */
+
+    top:
+      "Fine-grained spruce",
+
+    backAndSides:
+      "Flamed maple",
+
+    finish:
+      "Mildly antiqued medium-to-red-brown varnish with medium luster",
+
+    fittings:
+      "Boxwood pegs, carbon fiber endpin, Despiau “C” level French bridge, and Wittner tailpiece with fine tuners",
+
+    strings:
+      "Crown",
+
+
+    /* =====================================
+       CRAFTSMANSHIP
+    ====================================== */
+
+    construction:
+      "Crafted from fine-grained spruce and flamed maple with a mildly antiqued finish, combining tonal precision, resonance, durability, and the refined character of the Dragon series",
+
+    handwork:
+      "Professionally fitted with a Despiau “C” level French bridge, boxwood pegs, carbon fiber endpin, Wittner tailpiece, and Crown strings for tonal balance, smooth response, projection, and tuning stability",
+
+    idealFor:
+      "Advancing students, developing performers, serious ensemble musicians, private study, orchestral playing, chamber music, and players seeking a responsive step toward professional-level performance",
+
+    setup:
+      "Professionally adjusted by the Dragon workshop and carefully inspected by Harmonic Strings for tonal balance, projection, playability, and consistency",
+
+
+    /* =====================================
+       ADDITIONAL INFORMATION
+    ====================================== */
+
+    tonalCharacter:
+      "Medium-dark, warm, clear, balanced, and responsive with strong projection",
+
+    year:
+      null,
+
+    inspiration:
+      null,
+
+    condition:
+      null,
+
+    conditionNotes:
+      null,
+
+
+    /* =====================================
+       INVENTORY
+    ====================================== */
 
     inStock:
       true,

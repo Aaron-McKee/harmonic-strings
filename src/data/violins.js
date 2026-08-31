@@ -14,7 +14,13 @@ import np10FrontImage from "../assets/Nicholas_Parola_NP10_Violin_Front.png";
 import np10BackImage from "../assets/Nicholas_Parola_NP10_Violin_Back.png";
 import np10FrontBackImage from "../assets/Nicholas_Parola_NP10_Violin_Front_Back.png";
 
+
 export const violins = [
+  // =========================================================
+  // JOHANNES KÖHR K515 VIOLIN
+  // BEGINNER
+  // =========================================================
+
   {
     id: "k515",
     slug: "k515",
@@ -23,7 +29,7 @@ export const violins = [
     maker: "Johannes Köhr",
     model: "K515",
     instrument: "Violin",
-    level: "Intermediate",
+    level: "Beginner",
     stage: "instrument",
 
     image: k515FrontBackImage,
@@ -40,13 +46,13 @@ export const violins = [
     availableSizes: ["4/4"],
 
     shortDescription:
-      "The Johannes Köhr K515 is a striking intermediate violin designed for advancing musicians who need greater range, projection, and personality as their playing develops.",
+      "The Johannes Köhr K515 is a striking beginner violin designed for developing musicians who want a clear, responsive instrument with warmth, projection, and personality as their playing grows.",
 
     description:
-      "The Johannes Köhr K515 is a striking intermediate violin designed for advancing musicians who need greater range, projection, and personality as their playing develops.",
+      "The Johannes Köhr K515 is a striking beginner violin designed for developing musicians seeking a responsive, rewarding instrument with warmth, projection, and musical character. Its combination of traditional tonewoods, attractive antiqued varnish, and professional preparation makes it an excellent choice for building confidence and developing technique.",
 
     toneAndPlayability:
-      "Clear, rich, powerful, and balanced, with strong projection and a responsive voice for advancing players.",
+      "Clear, rich, powerful, and balanced, with strong projection and a responsive voice that supports developing technique, bow control, intonation, and musical confidence.",
 
     top:
       "Spruce",
@@ -67,7 +73,8 @@ export const violins = [
 
     handwork: null,
 
-    idealFor: null,
+    idealFor:
+      "Beginning and developing violinists seeking a responsive full-size instrument with strong tone, projection, and room for musical growth.",
 
     setup:
       "Professionally prepared",
