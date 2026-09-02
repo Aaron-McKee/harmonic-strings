@@ -14,6 +14,10 @@ import bobelockB1003OpenClosedImage from "../assets/Bobelock_Featherlite_Violin_
 import bobelockB1003OpenImage from "../assets/Bobelock_Featherlite_Violin_Case_Open.png";
 import bobelockB1003ClosedImage from "../assets/Bobelock_Featherlite_Violin_Case_Closed.png";
 
+import bam5003SOpenClosedImage from "../assets/Bam_5003S_Classic_3_Violin_Case_Open_Closed.png";
+import bam5003SOpenImage from "../assets/Bam_5003S_Classic_3_Violin_Case_Open.png";
+import bam5003SClosedImage from "../assets/Bam_5003S_Classic_3_Violin_Case_Closed.png";
+
 import bam2002XLClosedImage from "../assets/Bam_Hightech_Contoured_2002XL_Violin_Case_Closed.png";
 import bam2002XLOpenClosedImage from "../assets/Bam_Hightech_Contoured_2002XL_Violin_Case_Open_Closed.png";
 import bam2002XLOpenImage from "../assets/Bam_Hightech_Contoured_2002XL_Violin_Case_Open.png";
@@ -491,15 +495,6 @@ export const cases = [
 
     /* =====================================
        IMAGES
-
-       EXTERIOR:
-       Closed
-
-       INTERIOR:
-       Open
-
-       BOTH VIEWS:
-       Open + Closed
     ====================================== */
 
     image:
@@ -893,6 +888,310 @@ export const cases = [
 
     protection:
       "Full suspension system with layered plywood and styrofoam construction, plush velour cushioning, and padded exterior",
+
+    inStock:
+      true,
+  },
+
+
+  /* =====================================================
+     BAM CLASSIC 3 5003S
+     SHAPED VIOLIN CASE
+  ====================================================== */
+
+  {
+    id:
+      "bam-classic-3-5003s",
+
+    slug:
+      "bam-classic-3-5003s-violin-case",
+
+    name:
+      "Bam Classic 3 5003S Violin Case",
+
+    maker:
+      "Bam",
+
+    model:
+      "Classic 3 5003S",
+
+    reference:
+      "5003S",
+
+    category:
+      "Shaped Violin Case",
+
+    instrument:
+      "Violin",
+
+    caseType:
+      "Shaped",
+
+    caseStyle:
+      "Compact contoured violin case",
+
+
+    /* =====================================
+       IMAGES
+
+       EXTERIOR:
+       Closed
+
+       INTERIOR:
+       Open
+
+       BOTH VIEWS:
+       Open + Closed
+    ====================================== */
+
+    image:
+      bam5003SOpenClosedImage,
+
+    closedImage:
+      bam5003SClosedImage,
+
+    openImage:
+      bam5003SOpenImage,
+
+    combinedImage:
+      bam5003SOpenClosedImage,
+
+
+    /* =====================================
+       PRICING
+    ====================================== */
+
+    regularPrice:
+      null,
+
+    salePrice:
+      null,
+
+    price:
+      "$390.00",
+
+    savings:
+      null,
+
+
+    /* =====================================
+       COLLECTION DESCRIPTION
+    ====================================== */
+
+    description:
+      "The Bam Classic 3 5003S Violin Case redesigns the traditional Classic model with a compact, slim contoured profile, lightweight construction, protective foam instrument cradle, and practical carrying features for the 4/4 violinist.",
+
+
+    /* =====================================
+       FULL DESCRIPTION
+    ====================================== */
+
+    descriptionParagraphs: [
+      "The Bam Classic 3 5003S Violin Case brings a compact and slim profile to Bam’s redesigned Classic model. Made specifically for the 4/4 violin, the case combines a lightweight 5 lb. design with a protective internal cradle engineered to safeguard the instrument during everyday transportation.",
+
+      "Inside, the violin rests in a high-density and high-resilience injected polyurethane foam cradle reinforced with ABS structural elements. The cradle is covered in black non-invasive velvet fabric and is designed to protect the instrument against shock and unwanted thermal changes. The interior also includes a removable accessory compartment and storage for two full-size bows.",
+
+      "The exterior is made from 2000 denier water-resistant Cordura fabric and includes a high-quality zipper, sturdy side carrying handle, and subway handle for close-quarters transportation. A set of removable and adjustable padded backpack straps provides comfortable hands-free carrying, while a discreet pocket on the top shell provides dedicated storage for a Kun-style shoulder rest.",
+
+      "With its compact dimensions, protective foam construction, convenient accessory storage, and versatile carrying system, the Classic 3 5003S is well suited to students, advancing musicians, teachers, orchestral players, and performers seeking dependable protection in a streamlined case.",
+    ],
+
+
+    /* =====================================
+       KEY FEATURES
+    ====================================== */
+
+    keyFeatures: [
+      {
+        title:
+          "Protective Instrument Cradle",
+
+        icon:
+          "shield",
+
+        description:
+          "A high-density injected polyurethane foam cradle with ABS reinforcement protects the violin against shock and unwanted thermal changes.",
+      },
+
+      {
+        title:
+          "Velvet-Lined Interior",
+
+        icon:
+          "interior",
+
+        description:
+          "The protective instrument cradle is covered in black non-invasive velvet fabric for secure and gentle instrument support.",
+      },
+
+      {
+        title:
+          "Two-Bow Capacity",
+
+        icon:
+          "storage",
+
+        description:
+          "Dedicated interior storage safely accommodates two full-size violin bows.",
+      },
+
+      {
+        title:
+          "Accessory Storage",
+
+        icon:
+          "music",
+
+        description:
+          "A removable accessory compartment provides organized storage for rosin, strings, cleaning supplies, and other essentials.",
+      },
+
+      {
+        title:
+          "Water-Resistant Exterior",
+
+        icon:
+          "security",
+
+        description:
+          "The exterior uses durable 2000 denier water-resistant Cordura fabric with a high-quality zipper for dependable everyday protection.",
+      },
+
+      {
+        title:
+          "Travel Ready",
+
+        icon:
+          "transport",
+
+        description:
+          "Removable padded backpack straps, a sturdy side handle, subway handle, and hidden Kun-style shoulder rest pocket make transportation convenient.",
+      },
+    ],
+
+
+    /* =====================================
+       PRIMARY SPECIFICATIONS
+    ====================================== */
+
+    size:
+      "4/4 (Full Size)",
+
+    availableSizes: [
+      "4/4",
+    ],
+
+    weight:
+      "5 lbs.",
+
+    shell:
+      "High-density injected polyurethane foam cradle with ABS structural reinforcements",
+
+    construction:
+      "High-density and high-resilience injected polyurethane foam instrument cradle reinforced with ABS structural elements",
+
+    exterior:
+      "2000 denier water-resistant Cordura fabric",
+
+    interior:
+      "Black non-invasive velvet-covered polyurethane foam instrument cradle",
+
+    bowCapacity:
+      "2 full-size bows",
+
+    musicPocket:
+      null,
+
+    closure:
+      "High-quality zipper",
+
+    carrying:
+      "Removable and adjustable padded backpack straps, sturdy side carrying handle, and subway handle",
+
+    extraFeatures:
+      "Removable accessory compartment and secret top-shell pocket for a Kun-style shoulder rest",
+
+    color:
+      null,
+
+    protection:
+      "High-density polyurethane foam cradle with ABS reinforcements designed to protect against shock and unwanted thermal changes",
+
+
+    /* =====================================
+       INTERNAL MEASUREMENTS
+    ====================================== */
+
+    internalMeasurements: {
+      totalLength:
+        "24 in. / 61 cm.",
+
+      bodyLength:
+        "15.4 in. / 39 cm.",
+
+      upperBout:
+        "6.7 in. / 17 cm.",
+
+      lowerBout:
+        "8.3 in. / 21 cm.",
+    },
+
+
+    /* =====================================
+       EXTERNAL MEASUREMENTS
+    ====================================== */
+
+    externalMeasurements: {
+      totalLength:
+        "31.1 in. / 79 cm.",
+
+      caseWidth:
+        "10.2 in. / 26 cm.",
+
+      caseDepth:
+        "7.1 in. / 15 cm.",
+    },
+
+
+    /* =====================================
+       INSIDE FEATURES
+    ====================================== */
+
+    insideFeatures: [
+      "Made for 4/4 violin.",
+
+      "Internal instrument cradle made of high-density and high-resilience injected polyurethane foam with ABS reinforcements in the structure, covered in black non-invasive velvet fabric.",
+
+      "Designed to protect the instrument against shock and unwanted thermal changes.",
+
+      "Included removable accessory compartment.",
+
+      "Fitted for 2 full-size bows.",
+    ],
+
+
+    /* =====================================
+       OUTSIDE FEATURES
+    ====================================== */
+
+    outsideFeatures: [
+      "Made with 2000 denier water-resistant Cordura fabric.",
+
+      "Included set of removable and adjustable padded backpack straps.",
+
+      "Secret pocket on the top shell for a Kun-style shoulder rest.",
+
+      "Sturdy side carrying handle.",
+
+      "Subway handle for close-quarters transportation.",
+
+      "High-quality zipper.",
+    ],
+
+
+    /* =====================================
+       INVENTORY
+    ====================================== */
 
     inStock:
       true,
