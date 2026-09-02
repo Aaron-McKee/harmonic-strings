@@ -6,6 +6,10 @@ import cc498OpenClosedImage from "../assets/Howard_Core_CC498_Oblong_Violin_Case
 import cc498OpenImage from "../assets/Howard_Core_CC498_Oblong_Violin_Case_Open.png";
 import cc498ClosedImage from "../assets/Howard_Core_CC498_Oblong_Violin_Case_Closed.png";
 
+import cc500OpenClosedImage from "../assets/Howard_Core_CC500_Violin_Case_Open_Closed.png";
+import cc500OpenImage from "../assets/Howard_Core_CC500_Violin_Case_Open.png";
+import cc500ClosedImage from "../assets/Howard_Core_CC500_Violin_Case_Closed.png";
+
 import bobelockB1003OpenClosedImage from "../assets/Bobelock_Featherlite_Violin_Case_Open_Closed.png";
 import bobelockB1003OpenImage from "../assets/Bobelock_Featherlite_Violin_Case_Open.png";
 import bobelockB1003ClosedImage from "../assets/Bobelock_Featherlite_Violin_Case_Closed.png";
@@ -442,6 +446,236 @@ export const cases = [
 
     protection:
       "Plush-lined suspension interior with durable wood shell construction",
+
+    inStock:
+      true,
+  },
+
+
+  /* =====================================================
+     HOWARD CORE CC500 CORE
+     OBLONG VIOLIN CASE
+  ====================================================== */
+
+  {
+    id:
+      "howard-core-cc500",
+
+    slug:
+      "howard-core-cc500-core-violin-case",
+
+    name:
+      "Howard Core CC500 Core Violin Suspension Case",
+
+    maker:
+      "Howard Core",
+
+    model:
+      "CC500 Core",
+
+    reference:
+      "CC500",
+
+    category:
+      "Oblong Violin Case",
+
+    instrument:
+      "Violin",
+
+    caseType:
+      "Oblong",
+
+    caseStyle:
+      "Oblong wood shell suspension case",
+
+
+    /* =====================================
+       IMAGES
+
+       EXTERIOR:
+       Closed
+
+       INTERIOR:
+       Open
+
+       BOTH VIEWS:
+       Open + Closed
+    ====================================== */
+
+    image:
+      cc500OpenClosedImage,
+
+    closedImage:
+      cc500ClosedImage,
+
+    openImage:
+      cc500OpenImage,
+
+    combinedImage:
+      cc500OpenClosedImage,
+
+
+    /* =====================================
+       PRICING
+    ====================================== */
+
+    regularPrice:
+      null,
+
+    salePrice:
+      null,
+
+    price:
+      "$275.00",
+
+    savings:
+      null,
+
+
+    /* =====================================
+       COLLECTION DESCRIPTION
+    ====================================== */
+
+    description:
+      "The Howard Core CC500 Core Violin Suspension Case is a best-selling professional-grade oblong wood shell case offering dependable protection, generous storage, and convenient carrying options for students, advancing players, and professional violinists.",
+
+
+    /* =====================================
+       FULL DESCRIPTION
+    ====================================== */
+
+    descriptionParagraphs: [
+      "The Howard Core CC500 Core Violin Suspension Case is a best-selling, professional-grade oblong wood shell case designed to offer exceptional protection, organization, and convenience for violinists of all levels. Crafted with a sturdy wood shell and a Cordura screw-attached cover with rain flap, this case provides durable, long-lasting defense against impacts, moisture, and daily wear.",
+
+      "Inside, the plush-lined suspension interior securely cradles the violin while helping protect it from bumps and shocks during transport. A built-in hygrometer allows musicians to monitor humidity conditions, while four Hill-style bow holders, a string tube, and two large accessory pockets provide generous storage for bows, rosin, shoulder rests, strings, and other essentials. An included instrument blanket adds another layer of cushioning and care.",
+
+      "Designed for daily lessons, rehearsals, performances, and travel, the CC500 combines durable construction with practical carrying options. A leather handle provides a traditional, comfortable grip, while the detachable shoulder strap offers additional flexibility on the move. Strong zippers and hardware contribute to the case’s dependable everyday performance.",
+
+      "The CC500 is available in 4/4 size in multiple color options, with 3/4 and 1/2 sizes available in blue. Its combination of classic styling, professional-grade organization, suspension protection, and trusted Howard Core construction makes it a versatile choice for musicians at many stages of development.",
+    ],
+
+
+    /* =====================================
+       KEY FEATURES
+    ====================================== */
+
+    keyFeatures: [
+      {
+        title:
+          "Wood Shell Protection",
+
+        icon:
+          "shield",
+
+        description:
+          "A sturdy oblong wood shell with Cordura cover and rain flap provides durable protection against impacts, moisture, and everyday wear.",
+      },
+
+      {
+        title:
+          "Suspension Interior",
+
+        icon:
+          "interior",
+
+        description:
+          "The plush-lined suspension system securely cradles the violin and helps cushion it during lessons, rehearsals, performances, and travel.",
+      },
+
+      {
+        title:
+          "Four-Bow Capacity",
+
+        icon:
+          "storage",
+
+        description:
+          "Four Hill-style bow holders provide secure dedicated storage for multiple bows inside the case.",
+      },
+
+      {
+        title:
+          "Humidity Monitoring",
+
+        icon:
+          "humidity",
+
+        description:
+          "A built-in hygrometer helps monitor humidity conditions, while the included instrument blanket adds another layer of protection.",
+      },
+
+      {
+        title:
+          "Generous Storage",
+
+        icon:
+          "music",
+
+        description:
+          "Two large accessory pockets and an included string tube provide organized storage for strings, rosin, shoulder rests, and other essentials.",
+      },
+
+      {
+        title:
+          "Comfortable Transport",
+
+        icon:
+          "transport",
+
+        description:
+          "A leather carrying handle and detachable shoulder strap provide comfortable and flexible carrying options for everyday use.",
+      },
+    ],
+
+
+    /* =====================================
+       SPECIFICATIONS
+    ====================================== */
+
+    size:
+      "4/4, 3/4, 1/2",
+
+    availableSizes: [
+      "4/4",
+      "3/4",
+      "1/2",
+    ],
+
+    shell:
+      "Wood shell",
+
+    construction:
+      "Professional-grade oblong wood shell suspension construction",
+
+    exterior:
+      "Cordura screw-attached cover with rain flap",
+
+    interior:
+      "Plush-lined interior with full suspension system",
+
+    bowCapacity:
+      "4 Hill-style bow holders",
+
+    musicPocket:
+      null,
+
+    closure:
+      "Strong zippers and durable fittings",
+
+    carrying:
+      "Leather handle and detachable shoulder strap",
+
+    extraFeatures:
+      "2 large accessory pockets, string tube, built-in hygrometer, and instrument blanket",
+
+    color:
+      "Multiple colors in 4/4; blue only in 3/4 and 1/2",
+
+    weight:
+      "7.00 lbs.",
+
+    protection:
+      "Wood shell construction with plush-lined suspension support, Cordura exterior, rain flap, and instrument blanket",
 
     inStock:
       true,
