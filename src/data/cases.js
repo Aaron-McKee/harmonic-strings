@@ -6,6 +6,10 @@ import cc498OpenClosedImage from "../assets/Howard_Core_CC498_Oblong_Violin_Case
 import cc498OpenImage from "../assets/Howard_Core_CC498_Oblong_Violin_Case_Open.png";
 import cc498ClosedImage from "../assets/Howard_Core_CC498_Oblong_Violin_Case_Closed.png";
 
+import bobelockB1003OpenClosedImage from "../assets/Bobelock_Featherlite_Violin_Case_Open_Closed.png";
+import bobelockB1003OpenImage from "../assets/Bobelock_Featherlite_Violin_Case_Open.png";
+import bobelockB1003ClosedImage from "../assets/Bobelock_Featherlite_Violin_Case_Closed.png";
+
 import bam2002XLClosedImage from "../assets/Bam_Hightech_Contoured_2002XL_Violin_Case_Closed.png";
 import bam2002XLOpenClosedImage from "../assets/Bam_Hightech_Contoured_2002XL_Violin_Case_Open_Closed.png";
 import bam2002XLOpenImage from "../assets/Bam_Hightech_Contoured_2002XL_Violin_Case_Open.png";
@@ -438,6 +442,223 @@ export const cases = [
 
     protection:
       "Plush-lined suspension interior with durable wood shell construction",
+
+    inStock:
+      true,
+  },
+
+
+  /* =====================================================
+     BOBELOCK B1003 FEATHERLITE
+     OBLONG VIOLIN CASE
+  ====================================================== */
+
+  {
+    id:
+      "bobelock-b1003-featherlite",
+
+    slug:
+      "bobelock-b1003-featherlite-violin-case",
+
+    name:
+      "Bobelock B1003 Featherlite Violin Case",
+
+    maker:
+      "Bobelock",
+
+    model:
+      "B1003 Featherlite",
+
+    reference:
+      "B1003",
+
+    category:
+      "Oblong Violin Case",
+
+    instrument:
+      "Violin",
+
+    caseType:
+      "Oblong",
+
+    caseStyle:
+      "Oblong suspension violin case",
+
+
+    /* =====================================
+       IMAGES
+    ====================================== */
+
+    image:
+      bobelockB1003OpenClosedImage,
+
+    closedImage:
+      bobelockB1003ClosedImage,
+
+    openImage:
+      bobelockB1003OpenImage,
+
+    combinedImage:
+      bobelockB1003OpenClosedImage,
+
+
+    /* =====================================
+       PRICING
+    ====================================== */
+
+    regularPrice:
+      null,
+
+    salePrice:
+      null,
+
+    price:
+      "$230.00",
+
+    savings:
+      null,
+
+
+    /* =====================================
+       COLLECTION DESCRIPTION
+    ====================================== */
+
+    description:
+      "The Bobelock B1003 Featherlite Violin Case blends vibrant style with trusted Featherlite protection, offering a lightweight and durable oblong suspension case for 4/4 violinists. Its Puffy padded exterior, plush suspension interior, generous bow storage, and practical accessories make it an excellent choice for everyday lessons, rehearsals, performances, and travel.",
+
+
+    /* =====================================
+       FULL DESCRIPTION
+    ====================================== */
+
+    descriptionParagraphs: [
+      "The Bobelock B1003 Featherlite Violin Case blends vibrant style with trusted Featherlite protection, offering a lightweight, durable solution for 4/4 violinists. Its eye-catching Puffy padded nylon exterior comes in multiple bright color combinations, making it ideal for musicians who want both functionality and personality. Constructed from a combination of layered plywood and styrofoam, the case provides robust protection while remaining comfortable to carry.",
+
+      "Inside, a plush velour suspension interior keeps the violin secure, cushioned, and protected from the bumps and impacts of everyday transport. The case is thoughtfully equipped with four bowholders, a hygrometer for monitoring humidity, an instrument blanket, and practical accessory storage. An exterior music pocket provides convenient space for sheet music or other essentials.",
+
+      "Ideal for students, advancing players, and performers, the B1003 Featherlite Violin Case balances lightweight design, strong protection, and vibrant style. At approximately 5.5 lbs., it remains manageable for regular travel, while the included shoulder strap makes carrying the case between lessons, rehearsals, and performances more convenient.",
+    ],
+
+
+    /* =====================================
+       KEY FEATURES
+    ====================================== */
+
+    keyFeatures: [
+      {
+        title:
+          "Puffy Padded Exterior",
+
+        icon:
+          "shield",
+
+        description:
+          "A colorful Puffy padded nylon exterior adds extra cushioning while giving the case its distinctive, vibrant appearance.",
+      },
+
+      {
+        title:
+          "Suspension Interior",
+
+        icon:
+          "interior",
+
+        description:
+          "A plush velour full-suspension interior securely cushions the violin against everyday bumps and travel impacts.",
+      },
+
+      {
+        title:
+          "Four-Bow Capacity",
+
+        icon:
+          "storage",
+
+        description:
+          "Four dedicated bowholders provide generous and secure storage for multiple bows.",
+      },
+
+      {
+        title:
+          "Humidity & Instrument Care",
+
+        icon:
+          "humidity",
+
+        description:
+          "An included hygrometer helps monitor humidity, while the supplied instrument blanket adds another layer of care and protection.",
+      },
+
+      {
+        title:
+          "Music & Accessory Storage",
+
+        icon:
+          "music",
+
+        description:
+          "An exterior music pocket and interior accessory storage provide practical space for sheet music and everyday essentials.",
+      },
+
+      {
+        title:
+          "Lightweight Transport",
+
+        icon:
+          "transport",
+
+        description:
+          "At approximately 5.5 lbs., the Featherlite design remains easy to carry, with an included shoulder strap for convenient transport.",
+      },
+    ],
+
+
+    /* =====================================
+       SPECIFICATIONS
+    ====================================== */
+
+    size:
+      "4/4 (Full Size)",
+
+    availableSizes: [
+      "4/4",
+    ],
+
+    shell:
+      "Layered plywood and styrofoam",
+
+    construction:
+      "Layered plywood and styrofoam Featherlite suspension construction",
+
+    exterior:
+      "Puffy padded nylon cover with exterior music pocket",
+
+    interior:
+      "Plush velour full-suspension interior",
+
+    bowCapacity:
+      "4 bowholders",
+
+    musicPocket:
+      "Exterior music pocket for sheet music and accessories",
+
+    closure:
+      null,
+
+    carrying:
+      "Shoulder strap included",
+
+    extraFeatures:
+      "Hygrometer, instrument blanket, and accessory storage",
+
+    color:
+      "Blue/Gray, Green/Tan, Orange/Blue, Pink/Gray, Purple/Gray, Red/Gray, Yellow/Blue",
+
+    weight:
+      "5.5 lbs.",
+
+    protection:
+      "Full suspension system with layered plywood and styrofoam construction, plush velour cushioning, and padded exterior",
 
     inStock:
       true,
