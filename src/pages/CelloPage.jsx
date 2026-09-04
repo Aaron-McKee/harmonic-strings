@@ -4,8 +4,6 @@ import { useLocation } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 import { cellos } from "../data/cellos";
 
-import celloCoverImage from "../assets/CelloCover.png";
-
 
 function CelloPage() {
   const location = useLocation();
@@ -126,85 +124,6 @@ function CelloPage() {
 
 
         {/* =====================================
-            BACKGROUND FILL IMAGE
-
-            This fills the wide hero so there
-            are no empty areas around the
-            main photograph.
-        ====================================== */}
-
-        <div
-          aria-hidden="true"
-          style={{
-            position: "absolute",
-            inset: "-20px",
-            zIndex: 0,
-
-            backgroundImage:
-              `url(${celloCoverImage})`,
-
-            backgroundSize:
-              "cover",
-
-            backgroundPosition:
-              "center 58%",
-
-            backgroundRepeat:
-              "no-repeat",
-
-            filter:
-              "blur(10px)",
-
-            opacity:
-              0.48,
-
-            transform:
-              "scale(1.04)",
-
-            pointerEvents:
-              "none",
-          }}
-        />
-
-
-        {/* =====================================
-            MAIN CELLO IMAGE
-
-            contain = more of the original
-            photograph remains visible instead
-            of being heavily cropped.
-        ====================================== */}
-
-        <img
-          src={celloCoverImage}
-          alt=""
-          aria-hidden="true"
-          style={{
-            position: "absolute",
-
-            inset: 0,
-
-            zIndex: 1,
-
-            width: "100%",
-            height: "100%",
-
-            objectFit:
-              "contain",
-
-            objectPosition:
-              "72% center",
-
-            opacity:
-              0.98,
-
-            pointerEvents:
-              "none",
-          }}
-        />
-
-
-        {/* =====================================
             DARK TEXT GRADIENT
         ====================================== */}
 
@@ -215,7 +134,7 @@ function CelloPage() {
 
             inset: 0,
 
-            zIndex: 2,
+            zIndex: 0,
 
             background:
               `linear-gradient(
@@ -242,7 +161,7 @@ function CelloPage() {
           className="collection-page-hero-inner"
           style={{
             position: "relative",
-            zIndex: 3,
+            zIndex: 1,
           }}
         >
 

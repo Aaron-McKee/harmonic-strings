@@ -9,7 +9,7 @@ import musicStandImage from "../assets/Manhasset_5001_Music_Stand.png";
 import evahPirazziImage from "../assets/Pirastro_Evah_Pirazzi_Violin_String_Set.png";
 import kunShoulderRestImage from "../assets/Kun_Collapsible_Violin_Shoulder_Rest.png";
 import evahPirazziRosinImage from "../assets/Pirastro_Evah_Pirazzi_Gold_Rosin.png";
-import bamViolinCaseImage from "../assets/Bam_Hightech_Contoured_2002XL_Violin_Case_Open_Closed.png";
+import bamViolinCaseImage from "../assets/Bam_2002XL_Hightech_Violin_Case_Open_Closed.png";
 import cp5CelloImage from "../assets/Nicholas_Parola_CP5_Cello_Front_Back.png";
 import arcosBrazilBowImage from "../assets/Arcos_Brazil_Violin_Bow_Silver_Full.png";
 
@@ -119,14 +119,14 @@ const featuredProducts = [
 
 
   {
-    name: "Bam Hightech Contoured 2002XL Violin Case",
+    name: "BAM 2002XL Hightech Violin Case",
     category: "Cases",
     image: bamViolinCaseImage,
     sale: true,
     savings: "Save 8%",
     regularPrice: "$978.00",
     salePrice: "$899.00",
-    href: "/cases/bam-hightech-contoured-2002xl-violin-case",
+    href: "/cases/bam-2002xl-hightech-violin-case",
     cta: "View Case",
     stage: "dark",
   },

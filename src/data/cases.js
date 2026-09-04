@@ -28,9 +28,10 @@ import bamSG5003SOpenImage from "../assets/BAM_St._Germain_Classic_3_Violin_Case
 import bamSG5003SOpenClosedImage from "../assets/BAM_St._Germain_Classic_3_Violin_Case_Open_Closed.png";
 import bamSG5003SOpenClosed2Image from "../assets/BAM_St._Germain_Classic_3_Violin_Case_Open_Closed2.png";
 
-import bam2002XLClosedImage from "../assets/Bam_Hightech_Contoured_2002XL_Violin_Case_Closed.png";
-import bam2002XLOpenClosedImage from "../assets/Bam_Hightech_Contoured_2002XL_Violin_Case_Open_Closed.png";
-import bam2002XLOpenImage from "../assets/Bam_Hightech_Contoured_2002XL_Violin_Case_Open.png";
+import bam2002XLClosedImage from "../assets/Bam_2002XL_Hightech_Violin_Case_Closed.png";
+import bam2002XLOpenImage from "../assets/Bam_2002XL_Hightech_Violin_Case_Open.png";
+import bam2002XLOpenClosedImage from "../assets/Bam_2002XL_Hightech_Violin_Case_Open_Closed.png";
+import bam2002XLOpenClosed2Image from "../assets/Bam_2002XL_Hightech_Violin_Case_Open_Closed2.png";
 
 
 export const cases = [
@@ -123,10 +124,6 @@ export const cases = [
     ],
 
 
-    /* =====================================
-       KEY FEATURES
-    ====================================== */
-
     keyFeatures: [
       {
         title:
@@ -195,10 +192,6 @@ export const cases = [
       },
     ],
 
-
-    /* =====================================
-       SPECIFICATIONS
-    ====================================== */
 
     size:
       "4/4, 3/4, 1/2",
@@ -287,10 +280,6 @@ export const cases = [
       "Oblong suspension case",
 
 
-    /* =====================================
-       IMAGES
-    ====================================== */
-
     image:
       cc498OpenClosedImage,
 
@@ -303,10 +292,6 @@ export const cases = [
     combinedImage:
       cc498OpenClosedImage,
 
-
-    /* =====================================
-       PRICING
-    ====================================== */
 
     regularPrice:
       "$304.00",
@@ -321,17 +306,9 @@ export const cases = [
       "Save $79",
 
 
-    /* =====================================
-       COLLECTION DESCRIPTION
-    ====================================== */
-
     description:
       "The Howard Core CC498 Oblong Violin Case is a premium, 100% wood shell suspension case crafted for violinists who demand durability, elegance, and superior protection. Its refined design combines a plush blue interior with a black canvas exterior, providing both style and functionality.",
 
-
-    /* =====================================
-       FULL DESCRIPTION
-    ====================================== */
 
     descriptionParagraphs: [
       "The Howard Core CC498 Oblong Violin Case is a premium, 100% wood shell suspension case crafted for violinists who demand durability, elegance, and superior protection. Its refined design combines a plush blue interior with a black canvas exterior, providing both style and functionality. Equipped with a hygrometer, string tube, and four bowholders, this case is ideal for professional musicians needing to carry multiple bows safely.",
@@ -341,10 +318,6 @@ export const cases = [
       "Perfect for students advancing to professional levels and seasoned performers alike, this oblong case balances sophistication with everyday functionality. Backpack straps make carrying easy, and the thoughtful layout of compartments ensures that your instrument and accessories remain secure wherever your music takes you.",
     ],
 
-
-    /* =====================================
-       KEY FEATURES
-    ====================================== */
 
     keyFeatures: [
       {
@@ -414,10 +387,6 @@ export const cases = [
       },
     ],
 
-
-    /* =====================================
-       SPECIFICATIONS
-    ====================================== */
 
     size:
       "4/4, 3/4, 1/2",
@@ -506,10 +475,6 @@ export const cases = [
       "Oblong wood shell suspension case",
 
 
-    /* =====================================
-       IMAGES
-    ====================================== */
-
     image:
       cc500OpenClosedImage,
 
@@ -522,10 +487,6 @@ export const cases = [
     combinedImage:
       cc500OpenClosedImage,
 
-
-    /* =====================================
-       PRICING
-    ====================================== */
 
     regularPrice:
       null,
@@ -540,17 +501,9 @@ export const cases = [
       null,
 
 
-    /* =====================================
-       COLLECTION DESCRIPTION
-    ====================================== */
-
     description:
       "The Howard Core CC500 Core Violin Suspension Case is a best-selling professional-grade oblong wood shell case offering dependable protection, generous storage, and convenient carrying options for students, advancing players, and professional violinists.",
 
-
-    /* =====================================
-       FULL DESCRIPTION
-    ====================================== */
 
     descriptionParagraphs: [
       "The Howard Core CC500 Core Violin Suspension Case is a best-selling, professional-grade oblong wood shell case designed to offer exceptional protection, organization, and convenience for violinists of all levels. Crafted with a sturdy wood shell and a Cordura screw-attached cover with rain flap, this case provides durable, long-lasting defense against impacts, moisture, and daily wear.",
@@ -562,10 +515,6 @@ export const cases = [
       "The CC500 is available in 4/4 size in multiple color options, with 3/4 and 1/2 sizes available in blue. Its combination of classic styling, professional-grade organization, suspension protection, and trusted Howard Core construction makes it a versatile choice for musicians at many stages of development.",
     ],
 
-
-    /* =====================================
-       KEY FEATURES
-    ====================================== */
 
     keyFeatures: [
       {
@@ -635,10 +584,6 @@ export const cases = [
       },
     ],
 
-
-    /* =====================================
-       SPECIFICATIONS
-    ====================================== */
 
     size:
       "4/4, 3/4, 1/2",
@@ -727,10 +672,6 @@ export const cases = [
       "Oblong suspension violin case",
 
 
-    /* =====================================
-       IMAGES
-    ====================================== */
-
     image:
       bobelockB1003OpenClosedImage,
 
@@ -743,10 +684,6 @@ export const cases = [
     combinedImage:
       bobelockB1003OpenClosedImage,
 
-
-    /* =====================================
-       PRICING
-    ====================================== */
 
     regularPrice:
       null,
@@ -761,17 +698,9 @@ export const cases = [
       null,
 
 
-    /* =====================================
-       COLLECTION DESCRIPTION
-    ====================================== */
-
     description:
       "The Bobelock B1003 Featherlite Violin Case blends vibrant style with trusted Featherlite protection, offering a lightweight and durable oblong suspension case for 4/4 violinists. Its Puffy padded exterior, plush suspension interior, generous bow storage, and practical accessories make it an excellent choice for everyday lessons, rehearsals, performances, and travel.",
 
-
-    /* =====================================
-       FULL DESCRIPTION
-    ====================================== */
 
     descriptionParagraphs: [
       "The Bobelock B1003 Featherlite Violin Case blends vibrant style with trusted Featherlite protection, offering a lightweight, durable solution for 4/4 violinists. Its eye-catching Puffy padded nylon exterior comes in multiple bright color combinations, making it ideal for musicians who want both functionality and personality. Constructed from a combination of layered plywood and styrofoam, the case provides robust protection while remaining comfortable to carry.",
@@ -781,10 +710,6 @@ export const cases = [
       "Ideal for students, advancing players, and performers, the B1003 Featherlite Violin Case balances lightweight design, strong protection, and vibrant style. At approximately 5.5 lbs., it remains manageable for regular travel, while the included shoulder strap makes carrying the case between lessons, rehearsals, and performances more convenient.",
     ],
 
-
-    /* =====================================
-       KEY FEATURES
-    ====================================== */
 
     keyFeatures: [
       {
@@ -854,10 +779,6 @@ export const cases = [
       },
     ],
 
-
-    /* =====================================
-       SPECIFICATIONS
-    ====================================== */
 
     size:
       "4/4 (Full Size)",
@@ -947,22 +868,6 @@ export const cases = [
       "Made in France",
 
 
-    /* =====================================
-       IMAGES
-
-       COLLECTION:
-       Open + Closed
-
-       EXTERIOR:
-       Closed
-
-       INTERIOR:
-       Open
-
-       BOTH VIEWS:
-       Open + Closed 2
-    ====================================== */
-
     image:
       bam2011XLOpenClosedImage,
 
@@ -975,10 +880,6 @@ export const cases = [
     combinedImage:
       bam2011XLOpenClosed2Image,
 
-
-    /* =====================================
-       PRICING
-    ====================================== */
 
     regularPrice:
       null,
@@ -993,17 +894,9 @@ export const cases = [
       null,
 
 
-    /* =====================================
-       COLLECTION DESCRIPTION
-    ====================================== */
-
     description:
       "The BAM 2011XL Hightech Violin Case brings Bam’s Hightech expertise to a professional oblong case for the 4/4 violin, combining a triple-ply insulated ABS shell, full suspension interior, four-bow capacity, integrated music storage, and premium travel features.",
 
-
-    /* =====================================
-       FULL DESCRIPTION
-    ====================================== */
 
     descriptionParagraphs: [
       "The BAM 2011XL Hightech Violin Case showcases the Hightech expertise made in France in a refined oblong design created specifically for the 4/4 violin. Its shell is manufactured using Bam’s Hightech technique, a triple-ply coated and insulated ABS structure made from high-performance materials to provide outstanding protection while maintaining a remarkably manageable carrying weight.",
@@ -1015,10 +908,6 @@ export const cases = [
       "For transportation, the 2011XL includes an ergonomic side handle, a built-in subway handle for close-quarters travel, and two comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks. At 5 lbs. 9 oz., it offers serious protection, organized storage, and professional carrying comfort for rehearsals, performances, lessons, and travel.",
     ],
 
-
-    /* =====================================
-       KEY FEATURES
-    ====================================== */
 
     keyFeatures: [
       {
@@ -1089,10 +978,6 @@ export const cases = [
     ],
 
 
-    /* =====================================
-       PRIMARY SPECIFICATIONS
-    ====================================== */
-
     size:
       "4/4 (Full Size)",
 
@@ -1137,10 +1022,6 @@ export const cases = [
       "Triple-ply insulated ABS Hightech shell with full suspension injected foam cushions, airtight H seal, and anti-wear rubber protection",
 
 
-    /* =====================================
-       INTERNAL MEASUREMENTS
-    ====================================== */
-
     internalMeasurements: {
       totalLength:
         "24 in. / 61 cm.",
@@ -1156,10 +1037,6 @@ export const cases = [
     },
 
 
-    /* =====================================
-       EXTERNAL MEASUREMENTS
-    ====================================== */
-
     externalMeasurements: {
       totalLength:
         "30.3 in. / 77 cm.",
@@ -1172,51 +1049,27 @@ export const cases = [
     },
 
 
-    /* =====================================
-       INSIDE FEATURES
-    ====================================== */
-
     insideFeatures: [
       "Made for 4/4 violin.",
-
       "Full suspension of the instrument on premium fabric-covered injected foam cushions for enhanced protection and instrument care, with Velcro neck strap.",
-
       "Fitted for 4 full-size bows.",
-
       "Removable accessory zipper pouch.",
-
       "Velcro strap for shoulder rest.",
     ],
 
 
-    /* =====================================
-       OUTSIDE FEATURES
-    ====================================== */
-
     outsideFeatures: [
       "Shells made using the Bam Hightech technique: a triple-ply coated and insulated ABS structure made of high-performance materials.",
-
       "Mounted music and accessories pocket on top shell.",
-
       "Outstanding protection and ultralight weight.",
-
       "Ergonomic carrying side handle.",
-
       "Built-in subway handle for close-quarters transportation.",
-
       "Fitted with 2 BAM 3-digit combination latches.",
-
       'Male/female airtight "H" seal.',
-
       "Includes 2 comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks.",
-
       "Fitted with anti-slip and anti-wear rubber patches for protection and to prevent sliding.",
     ],
 
-
-    /* =====================================
-       INVENTORY
-    ====================================== */
 
     inStock:
       true,
@@ -1260,10 +1113,6 @@ export const cases = [
       "Compact contoured violin case",
 
 
-    /* =====================================
-       IMAGES
-    ====================================== */
-
     image:
       bam5003SOpenClosedImage,
 
@@ -1276,10 +1125,6 @@ export const cases = [
     combinedImage:
       bam5003SOpenClosedImage,
 
-
-    /* =====================================
-       PRICING
-    ====================================== */
 
     regularPrice:
       null,
@@ -1294,17 +1139,9 @@ export const cases = [
       null,
 
 
-    /* =====================================
-       COLLECTION DESCRIPTION
-    ====================================== */
-
     description:
       "The Bam Classic 3 5003S Violin Case redesigns the traditional Classic model with a compact, slim contoured profile, lightweight construction, protective foam instrument cradle, and practical carrying features for the 4/4 violinist.",
 
-
-    /* =====================================
-       FULL DESCRIPTION
-    ====================================== */
 
     descriptionParagraphs: [
       "The Bam Classic 3 5003S Violin Case brings a compact and slim profile to Bam’s redesigned Classic model. Made specifically for the 4/4 violin, the case combines a lightweight 5 lb. design with a protective internal cradle engineered to safeguard the instrument during everyday transportation.",
@@ -1316,10 +1153,6 @@ export const cases = [
       "With its compact dimensions, protective foam construction, convenient accessory storage, and versatile carrying system, the Classic 3 5003S is well suited to students, advancing musicians, teachers, orchestral players, and performers seeking dependable protection in a streamlined case.",
     ],
 
-
-    /* =====================================
-       KEY FEATURES
-    ====================================== */
 
     keyFeatures: [
       {
@@ -1390,10 +1223,6 @@ export const cases = [
     ],
 
 
-    /* =====================================
-       PRIMARY SPECIFICATIONS
-    ====================================== */
-
     size:
       "4/4 (Full Size)",
 
@@ -1438,10 +1267,6 @@ export const cases = [
       "High-density polyurethane foam cradle with ABS reinforcements designed to protect against shock and unwanted thermal changes",
 
 
-    /* =====================================
-       INTERNAL MEASUREMENTS
-    ====================================== */
-
     internalMeasurements: {
       totalLength:
         "24 in. / 61 cm.",
@@ -1457,10 +1282,6 @@ export const cases = [
     },
 
 
-    /* =====================================
-       EXTERNAL MEASUREMENTS
-    ====================================== */
-
     externalMeasurements: {
       totalLength:
         "31.1 in. / 79 cm.",
@@ -1472,10 +1293,6 @@ export const cases = [
         "7.1 in. / 15 cm.",
     },
 
-
-    /* =====================================
-       INVENTORY
-    ====================================== */
 
     inStock:
       true,
@@ -1519,10 +1336,6 @@ export const cases = [
       "Compact contoured violin case",
 
 
-    /* =====================================
-       IMAGES
-    ====================================== */
-
     image:
       bamSG5003SOpenClosedImage,
 
@@ -1535,10 +1348,6 @@ export const cases = [
     combinedImage:
       bamSG5003SOpenClosed2Image,
 
-
-    /* =====================================
-       PRICING
-    ====================================== */
 
     regularPrice:
       null,
@@ -1553,17 +1362,9 @@ export const cases = [
       null,
 
 
-    /* =====================================
-       COLLECTION DESCRIPTION
-    ====================================== */
-
     description:
       "The Bam SG5003S Saint Germain Classic III Violin Case combines Bam protection with classic Saint Germain styling in a compact 4/4 violin case featuring a protective polyurethane foam cradle, water-resistant ballistic fabric exterior, expandable music storage, and comfortable backpack carrying.",
 
-
-    /* =====================================
-       FULL DESCRIPTION
-    ====================================== */
 
     descriptionParagraphs: [
       "The Bam SG5003S Saint Germain Classic III Violin Case combines Bam quality with classic elegance and practical everyday protection at an accessible price. Designed specifically for the 4/4 violin, its compact profile uses Bam’s resilient poly foam construction with ABS reinforcement to help absorb shock while insulating the instrument from environmental and thermal changes.",
@@ -1575,10 +1376,6 @@ export const cases = [
       "For transportation, the Saint Germain Classic III includes two adjustable and removable padded backpack straps, a sturdy side handle, and a subway handle for close-quarters travel. Its secure zipper closure, lightweight 5 lb. 12 oz. design, and thoughtful storage layout make it well suited to lessons, rehearsals, performances, and regular travel.",
     ],
 
-
-    /* =====================================
-       KEY FEATURES
-    ====================================== */
 
     keyFeatures: [
       {
@@ -1649,10 +1446,6 @@ export const cases = [
     ],
 
 
-    /* =====================================
-       PRIMARY SPECIFICATIONS
-    ====================================== */
-
     size:
       "4/4 (Full Size)",
 
@@ -1697,10 +1490,6 @@ export const cases = [
       "Injected high-density polyurethane foam cradle with ABS reinforcements, designed to absorb shock and help protect the instrument from thermal changes",
 
 
-    /* =====================================
-       INTERNAL MEASUREMENTS
-    ====================================== */
-
     internalMeasurements: {
       totalLength:
         "24 in. / 61 cm.",
@@ -1716,10 +1505,6 @@ export const cases = [
     },
 
 
-    /* =====================================
-       EXTERNAL MEASUREMENTS
-    ====================================== */
-
     externalMeasurements: {
       totalLength:
         "31.1 in. / 79 cm.",
@@ -1732,35 +1517,31 @@ export const cases = [
     },
 
 
-    /* =====================================
-       INVENTORY
-    ====================================== */
-
     inStock:
       true,
   },
 
 
   /* =====================================================
-     BAM HIGHTECH CONTOURED 2002XL
+     BAM HIGHTECH 2002XL
      SHAPED VIOLIN CASE
   ====================================================== */
 
   {
     id:
-      "bam-hightech-contoured-2002xl",
+      "bam-hightech-2002xl",
 
     slug:
-      "bam-hightech-contoured-2002xl-violin-case",
+      "bam-2002xl-hightech-violin-case",
 
     name:
-      "Bam Hightech Contoured 2002XL Violin Case",
+      "BAM 2002XL Hightech Violin Case",
 
     maker:
       "Bam",
 
     model:
-      "Hightech Contoured 2002XL",
+      "2002XL Hightech",
 
     reference:
       "2002XL",
@@ -1773,6 +1554,9 @@ export const cases = [
 
     caseType:
       "Shaped",
+
+    caseStyle:
+      "Hightech contoured violin case",
 
     origin:
       "Made in France",
@@ -1792,7 +1576,7 @@ export const cases = [
       bam2002XLOpenImage,
 
     combinedImage:
-      bam2002XLOpenClosedImage,
+      bam2002XLOpenClosed2Image,
 
 
     /* =====================================
@@ -1817,7 +1601,7 @@ export const cases = [
     ====================================== */
 
     description:
-      "The Hightech expertise made in France. The Bam Hightech Contoured 2002XL combines outstanding protection, ultralight weight, and premium carrying comfort in a sleek case designed specifically for the 4/4 violin.",
+      "The BAM 2002XL Hightech Violin Case showcases Bam’s Hightech expertise made in France, combining outstanding protection, ultralight weight, full instrument suspension, and professional travel features in a sleek contoured case for the 4/4 violin.",
 
 
     /* =====================================
@@ -1825,13 +1609,13 @@ export const cases = [
     ====================================== */
 
     descriptionParagraphs: [
-      "The Bam Hightech Contoured 2002XL Violin Case showcases Bam’s Hightech expertise made in France. Designed specifically for the 4/4 violin, its contoured profile combines outstanding protection with an exceptionally lightweight and refined travel-ready design.",
+      "The BAM 2002XL Hightech Violin Case showcases the Hightech expertise made in France in a lightweight contoured design created specifically for the 4/4 violin. Its shell is made using Bam’s Hightech technique, a triple-ply coated and insulated ABS structure constructed from high-performance materials for outstanding protection without unnecessary weight.",
 
-      "The outer shell is constructed using the Bam Hightech technique: a triple-ply coated and insulated ABS structure made from high-performance materials. At just 3 lbs. 14 oz., the 2002XL provides serious protection while remaining remarkably light and comfortable to carry.",
+      "Inside, the violin is fully suspended on premium velvet fabric-covered injected foam cushions for enhanced protection and instrument care. A Velcro neck strap helps keep the instrument securely positioned, while the interior provides storage for two full-size bows, a removable accessory zipper pouch, and a secure Velcro strap for a Kun-style shoulder rest.",
 
-      "Inside, the violin is fully suspended on premium velvet fabric-covered injected foam cushions for enhanced protection and instrument care. A Velcro neck strap secures the instrument, while dedicated storage accommodates two full-size bows, a removable accessory zipper pouch, and a Kun-style shoulder rest.",
+      "The exterior combines protection with practical travel features, including an ergonomic side handle, detachable subway handle, two BAM Series 2 soft-touch latches with included keys, and a male/female airtight H seal. Anti-slip and anti-wear rubber patches help protect the case exterior while preventing unwanted sliding.",
 
-      "For travel, the case includes an ergonomic side handle, detachable subway handle, two Bam Series 2 soft-touch latches with keys, a male/female airtight H seal, two neoprene anti-slip backpack straps, and anti-slip and anti-wear rubber patches.",
+      "Two comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks provide convenient hands-free transportation. At only 3 lbs. 14 oz., the 2002XL offers premium Hightech protection in an exceptionally lightweight case suited to rehearsals, performances, lessons, and travel.",
     ],
 
 
@@ -1848,62 +1632,62 @@ export const cases = [
           "shield",
 
         description:
-          "Triple-ply coated and insulated ABS Hightech construction provides serious protection using high-performance materials.",
+          "Triple-ply coated and insulated ABS Hightech construction provides outstanding protection using lightweight high-performance materials.",
       },
 
       {
         title:
-          "Ultralight Design",
+          "Full Suspension Interior",
 
         icon:
           "interior",
 
         description:
-          "At just 3 lbs. 14 oz., the case combines strong protection with exceptionally light carrying weight.",
+          "Premium velvet-covered injected foam cushions fully suspend the violin, with a Velcro neck strap providing additional instrument security.",
       },
 
       {
         title:
-          "Suspension Interior",
+          "Two-Bow Capacity",
 
         icon:
           "storage",
 
         description:
-          "Premium velvet-covered injected foam cushions fully suspend the violin for enhanced protection.",
+          "Dedicated interior fittings provide secure storage for two full-size violin bows.",
       },
 
       {
         title:
-          "Bow & Accessory Storage",
+          "Accessory Storage",
 
         icon:
           "music",
 
         description:
-          "Storage includes space for two full-size bows, a removable accessory pouch, and a Kun-style shoulder rest.",
+          "A removable zipper pouch and secure Velcro strap provide organized storage for accessories and a Kun-style shoulder rest.",
       },
 
       {
         title:
-          "Secure Closure",
+          "Secure Hightech Closure",
 
         icon:
           "security",
 
         description:
-          "Two Bam Series 2 soft-touch latches with keys and an airtight H seal provide secure closure.",
+          "Two BAM Series 2 soft-touch latches with included keys and a male/female airtight H seal provide secure closure.",
       },
 
       {
         title:
-          "Travel Ready",
+          "Ultralight Transport",
 
         icon:
           "transport",
 
         description:
-          "An ergonomic handle, detachable subway handle, and neoprene backpack straps provide flexible carrying options.",
+          "At 3 lbs. 14 oz., the case combines an ergonomic side handle, detachable subway handle, and neoprene backpack straps for comfortable travel.",
       },
     ],
 
@@ -1913,7 +1697,7 @@ export const cases = [
     ====================================== */
 
     size:
-      "4/4",
+      "4/4 (Full Size)",
 
     availableSizes: [
       "4/4",
@@ -1926,10 +1710,10 @@ export const cases = [
       "Triple-ply coated and insulated ABS Hightech structure",
 
     construction:
-      "Bam Hightech triple-ply coated and insulated ABS construction",
+      "Bam Hightech triple-ply coated and insulated ABS construction made from high-performance materials",
 
     exterior:
-      "Contoured Hightech shell made from high-performance materials",
+      "Contoured Hightech ABS shell with anti-slip and anti-wear rubber patches",
 
     interior:
       "Premium velvet fabric-covered injected foam cushions with full suspension support and Velcro neck strap",
@@ -1941,19 +1725,19 @@ export const cases = [
       null,
 
     closure:
-      "2 Bam Series 2 soft-touch latches with included keys",
+      "2 BAM Series 2 soft-touch latches with included keys and male/female airtight H seal",
 
     carrying:
       "Ergonomic side handle, detachable subway handle, and 2 neoprene anti-slip backpack straps",
 
     extraFeatures:
-      "Removable accessory zipper pouch and secure Velcro strap for a Kun-style shoulder rest",
+      "Removable accessory zipper pouch, secure Velcro strap for a Kun-style shoulder rest, and covered security screw carabiner hooks",
 
     color:
       null,
 
     protection:
-      "Full suspension interior, insulated Hightech shell, airtight H seal, and anti-slip / anti-wear rubber protection",
+      "Triple-ply insulated ABS Hightech shell with full suspension injected foam cushions, airtight H seal, and anti-slip / anti-wear rubber protection",
 
 
     /* =====================================
@@ -1992,8 +1776,44 @@ export const cases = [
 
 
     /* =====================================
-       INVENTORY
+       INSIDE FEATURES
     ====================================== */
+
+    insideFeatures: [
+      "Made for 4/4 violin.",
+
+      "Full suspension of the instrument on premium velvet fabric-covered injected foam cushions for enhanced protection and instrument care with Velcro neck strap.",
+
+      "Fitted for 2 full-size bows.",
+
+      "Removable accessory zipper pouch.",
+
+      'Secure Velcro strap for a "Kun" style shoulder rest.',
+    ],
+
+
+    /* =====================================
+       OUTSIDE FEATURES
+    ====================================== */
+
+    outsideFeatures: [
+      "Contoured shells made using the Bam Hightech technique: a triple-ply coated and insulated ABS structure made of high-performance materials.",
+
+      "Outstanding protection and ultralight weight.",
+
+      "Ergonomic carrying side handle.",
+
+      "Included detachable subway handle for close-quarters travel.",
+
+      "Fitted with 2 BAM Series 2 soft-touch latches with included set of keys.",
+
+      'Male/female airtight "H" seal.',
+
+      "Includes 2 comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks.",
+
+      "Fitted with anti-slip and anti-wear rubber patches to prevent sliding.",
+    ],
+
 
     inStock:
       true,
