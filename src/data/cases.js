@@ -23,6 +23,10 @@ import bam2011XLOpenClosed2Image from "../assets/Bam_2011XL_Hightech_Violin_Case
 import bam2011XLOpenImage from "../assets/Bam_2011XL_Hightech_Violin_Case_Open.png";
 import bam2011XLClosedImage from "../assets/Bam_2011XL_Hightech_Violin_Case_Closed.png";
 
+import bobelockB1047OpenClosedImage from "../assets/Boblelock_B1047_Half-Moon_Violin_Case_Open_Closed.png";
+import bobelockB1047OpenImage from "../assets/Boblelock_B1047_Half-Moon_Violin_Case_Open.png";
+import bobelockB1047ClosedImage from "../assets/Boblelock_B1047_Half-Moon_Violin_Case_Closed.png";
+
 import bam5003SOpenClosedImage from "../assets/Bam_5003S_Classic_3_Violin_Case_Open_Closed.png";
 import bam5003SOpenImage from "../assets/Bam_5003S_Classic_3_Violin_Case_Open.png";
 import bam5003SClosedImage from "../assets/Bam_5003S_Classic_3_Violin_Case_Closed.png";
@@ -73,10 +77,6 @@ export const cases = [
       "Oblong",
 
 
-    /* =====================================
-       IMAGES
-    ====================================== */
-
     image:
       cc398OpenClosedImage,
 
@@ -89,10 +89,6 @@ export const cases = [
     combinedImage:
       cc398OpenClosedImage,
 
-
-    /* =====================================
-       PRICING
-    ====================================== */
 
     regularPrice:
       "$184.00",
@@ -107,17 +103,9 @@ export const cases = [
       "Save 21%",
 
 
-    /* =====================================
-       COLLECTION DESCRIPTION
-    ====================================== */
-
     description:
       "The Howard Core CC398 Core Economy Model Oblong Violin Case offers the perfect balance of protection, affordability, and everyday functionality. Crafted with a durable foam shell and a Cordura screw-attached cover, this case is built to safeguard your violin through years of use.",
 
-
-    /* =====================================
-       FULL DESCRIPTION
-    ====================================== */
 
     descriptionParagraphs: [
       "The Howard Core CC398 Core Economy Model Oblong Violin Case offers the perfect balance of protection, affordability, and everyday functionality. Crafted with a durable foam shell and a Cordura screw-attached cover, this case is built to safeguard your violin through years of use. Its oblong design provides a classic, professional look, while the plush-lined suspension interior ensures your instrument remains securely cushioned during transport.",
@@ -127,10 +115,6 @@ export const cases = [
       "Lightweight yet strong, this violin case is ideal for everyday travel between lessons, rehearsals, and performances. Its comfortable carrying strap, zippered closure, and suspension support system make it a dependable companion for musicians seeking value without compromising quality.",
     ],
 
-
-    /* =====================================
-       KEY FEATURES
-    ====================================== */
 
     keyFeatures: [
       {
@@ -200,10 +184,6 @@ export const cases = [
       },
     ],
 
-
-    /* =====================================
-       SPECIFICATIONS
-    ====================================== */
 
     size:
       "4/4, 3/4, 1/2",
@@ -292,10 +272,6 @@ export const cases = [
       "Oblong suspension case",
 
 
-    /* =====================================
-       IMAGES
-    ====================================== */
-
     image:
       cc498OpenClosedImage,
 
@@ -308,10 +284,6 @@ export const cases = [
     combinedImage:
       cc498OpenClosedImage,
 
-
-    /* =====================================
-       PRICING
-    ====================================== */
 
     regularPrice:
       "$304.00",
@@ -326,17 +298,9 @@ export const cases = [
       "Save $79",
 
 
-    /* =====================================
-       COLLECTION DESCRIPTION
-    ====================================== */
-
     description:
       "The Howard Core CC498 Oblong Violin Case is a premium, 100% wood shell suspension case crafted for violinists who demand durability, elegance, and superior protection. Its refined design combines a plush blue interior with a black canvas exterior, providing both style and functionality.",
 
-
-    /* =====================================
-       FULL DESCRIPTION
-    ====================================== */
 
     descriptionParagraphs: [
       "The Howard Core CC498 Oblong Violin Case is a premium, 100% wood shell suspension case crafted for violinists who demand durability, elegance, and superior protection. Its refined design combines a plush blue interior with a black canvas exterior, providing both style and functionality. Equipped with a hygrometer, string tube, and four bowholders, this case is ideal for professional musicians needing to carry multiple bows safely.",
@@ -346,10 +310,6 @@ export const cases = [
       "Perfect for students advancing to professional levels and seasoned performers alike, this oblong case balances sophistication with everyday functionality. Backpack straps make carrying easy, and the thoughtful layout of compartments ensures that your instrument and accessories remain secure wherever your music takes you.",
     ],
 
-
-    /* =====================================
-       KEY FEATURES
-    ====================================== */
 
     keyFeatures: [
       {
@@ -419,10 +379,6 @@ export const cases = [
       },
     ],
 
-
-    /* =====================================
-       SPECIFICATIONS
-    ====================================== */
 
     size:
       "4/4, 3/4, 1/2",
@@ -511,10 +467,6 @@ export const cases = [
       "Oblong wood shell suspension case",
 
 
-    /* =====================================
-       IMAGES
-    ====================================== */
-
     image:
       cc500OpenClosedImage,
 
@@ -527,10 +479,6 @@ export const cases = [
     combinedImage:
       cc500OpenClosedImage,
 
-
-    /* =====================================
-       PRICING
-    ====================================== */
 
     regularPrice:
       null,
@@ -545,17 +493,9 @@ export const cases = [
       null,
 
 
-    /* =====================================
-       COLLECTION DESCRIPTION
-    ====================================== */
-
     description:
       "The Howard Core CC500 Core Violin Suspension Case is a best-selling professional-grade oblong wood shell case offering dependable protection, generous storage, and convenient carrying options for students, advancing players, and professional violinists.",
 
-
-    /* =====================================
-       FULL DESCRIPTION
-    ====================================== */
 
     descriptionParagraphs: [
       "The Howard Core CC500 Core Violin Suspension Case is a best-selling, professional-grade oblong wood shell case designed to offer exceptional protection, organization, and convenience for violinists of all levels. Crafted with a sturdy wood shell and a Cordura screw-attached cover with rain flap, this case provides durable, long-lasting defense against impacts, moisture, and daily wear.",
@@ -567,10 +507,6 @@ export const cases = [
       "The CC500 is available in 4/4 size in multiple color options, with 3/4 and 1/2 sizes available in blue. Its combination of classic styling, professional-grade organization, suspension protection, and trusted Howard Core construction makes it a versatile choice for musicians at many stages of development.",
     ],
 
-
-    /* =====================================
-       KEY FEATURES
-    ====================================== */
 
     keyFeatures: [
       {
@@ -640,10 +576,6 @@ export const cases = [
       },
     ],
 
-
-    /* =====================================
-       SPECIFICATIONS
-    ====================================== */
 
     size:
       "4/4, 3/4, 1/2",
@@ -732,10 +664,6 @@ export const cases = [
       "Oblong suspension violin case",
 
 
-    /* =====================================
-       IMAGES
-    ====================================== */
-
     image:
       bobelockB1003OpenClosedImage,
 
@@ -748,10 +676,6 @@ export const cases = [
     combinedImage:
       bobelockB1003OpenClosedImage,
 
-
-    /* =====================================
-       PRICING
-    ====================================== */
 
     regularPrice:
       null,
@@ -766,17 +690,9 @@ export const cases = [
       null,
 
 
-    /* =====================================
-       COLLECTION DESCRIPTION
-    ====================================== */
-
     description:
       "The Bobelock B1003 Featherlite Violin Case blends vibrant style with trusted Featherlite protection, offering a lightweight and durable oblong suspension case for 4/4 violinists. Its Puffy padded exterior, plush suspension interior, generous bow storage, and practical accessories make it an excellent choice for everyday lessons, rehearsals, performances, and travel.",
 
-
-    /* =====================================
-       FULL DESCRIPTION
-    ====================================== */
 
     descriptionParagraphs: [
       "The Bobelock B1003 Featherlite Violin Case blends vibrant style with trusted Featherlite protection, offering a lightweight, durable solution for 4/4 violinists. Its eye-catching Puffy padded nylon exterior comes in multiple bright color combinations, making it ideal for musicians who want both functionality and personality. Constructed from a combination of layered plywood and styrofoam, the case provides robust protection while remaining comfortable to carry.",
@@ -786,10 +702,6 @@ export const cases = [
       "Ideal for students, advancing players, and performers, the B1003 Featherlite Violin Case balances lightweight design, strong protection, and vibrant style. At approximately 5.5 lbs., it remains manageable for regular travel, while the included shoulder strap makes carrying the case between lessons, rehearsals, and performances more convenient.",
     ],
 
-
-    /* =====================================
-       KEY FEATURES
-    ====================================== */
 
     keyFeatures: [
       {
@@ -859,10 +771,6 @@ export const cases = [
       },
     ],
 
-
-    /* =====================================
-       SPECIFICATIONS
-    ====================================== */
 
     size:
       "4/4 (Full Size)",
@@ -949,10 +857,6 @@ export const cases = [
       "Continental oblong Hill-style professional violin case",
 
 
-    /* =====================================
-       IMAGES
-    ====================================== */
-
     image:
       bobelockB1051OpenClosedImage,
 
@@ -965,10 +869,6 @@ export const cases = [
     combinedImage:
       bobelockB1051OpenClosedImage,
 
-
-    /* =====================================
-       PRICING
-    ====================================== */
 
     regularPrice:
       null,
@@ -983,17 +883,9 @@ export const cases = [
       null,
 
 
-    /* =====================================
-       COLLECTION DESCRIPTION
-    ====================================== */
-
     description:
       "The Bobelock B1051 Corregidor Professional Oblong Violin Case is a luxurious Hill-style case designed for discerning players and collectors, combining five-layer plywood construction, a full French-fitted suspension interior, extensive storage, humidity accessories, and elegant European-inspired detailing.",
 
-
-    /* =====================================
-       FULL DESCRIPTION
-    ====================================== */
 
     descriptionParagraphs: [
       "The Bobelock B1051 Corregidor Professional Oblong Violin Case represents the pinnacle of Bobelock craftsmanship, protection, and classical design. Built in the distinguished Hill-style continental oblong shape, this professional-grade case uses five layers of reinforced plywood to provide strength, stability, and excellent shock protection for valuable instruments.",
@@ -1007,10 +899,6 @@ export const cases = [
       "For transportation, the B1051 includes a leather handle and shoulder strap. A center D-ring also allows compatible backpack straps to be attached when desired, with backpack straps sold separately. At 8.0 lbs., the Corregidor balances substantial professional protection, extensive storage, and elegant traditional styling.",
     ],
 
-
-    /* =====================================
-       KEY FEATURES
-    ====================================== */
 
     keyFeatures: [
       {
@@ -1081,10 +969,6 @@ export const cases = [
     ],
 
 
-    /* =====================================
-       SPECIFICATIONS
-    ====================================== */
-
     size:
       "4/4 (Full Size)",
 
@@ -1129,19 +1013,11 @@ export const cases = [
       "Five-layer plywood shell with suspension construction, full French-fitted interior, and slanted design for increased shock protection",
 
 
-    /* =====================================
-       EXTERNAL MEASUREMENTS
-    ====================================== */
-
     externalMeasurements: {
       totalLength:
         "31 in. / 80 cm.",
     },
 
-
-    /* =====================================
-       ADDITIONAL FEATURES
-    ====================================== */
 
     insideFeatures: [
       "Suspension interior.",
@@ -1170,10 +1046,6 @@ export const cases = [
       "Trim detailing.",
     ],
 
-
-    /* =====================================
-       INVENTORY
-    ====================================== */
 
     inStock:
       true,
@@ -1220,10 +1092,6 @@ export const cases = [
       "Made in France",
 
 
-    /* =====================================
-       IMAGES
-    ====================================== */
-
     image:
       bam2011XLOpenClosedImage,
 
@@ -1236,10 +1104,6 @@ export const cases = [
     combinedImage:
       bam2011XLOpenClosed2Image,
 
-
-    /* =====================================
-       PRICING
-    ====================================== */
 
     regularPrice:
       null,
@@ -1254,17 +1118,9 @@ export const cases = [
       null,
 
 
-    /* =====================================
-       COLLECTION DESCRIPTION
-    ====================================== */
-
     description:
       "The BAM 2011XL Hightech Violin Case brings Bam’s Hightech expertise to a professional oblong case for the 4/4 violin, combining a triple-ply insulated ABS shell, full suspension interior, four-bow capacity, integrated music storage, and premium travel features.",
 
-
-    /* =====================================
-       FULL DESCRIPTION
-    ====================================== */
 
     descriptionParagraphs: [
       "The BAM 2011XL Hightech Violin Case showcases the Hightech expertise made in France in a refined oblong design created specifically for the 4/4 violin. Its shell is manufactured using Bam’s Hightech technique, a triple-ply coated and insulated ABS structure made from high-performance materials to provide outstanding protection while maintaining a remarkably manageable carrying weight.",
@@ -1276,10 +1132,6 @@ export const cases = [
       "For transportation, the 2011XL includes an ergonomic side handle, a built-in subway handle for close-quarters travel, and two comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks. At 5 lbs. 9 oz., it offers serious protection, organized storage, and professional carrying comfort for rehearsals, performances, lessons, and travel.",
     ],
 
-
-    /* =====================================
-       KEY FEATURES
-    ====================================== */
 
     keyFeatures: [
       {
@@ -1349,10 +1201,6 @@ export const cases = [
       },
     ],
 
-
-    /* =====================================
-       PRIMARY SPECIFICATIONS
-    ====================================== */
 
     size:
       "4/4 (Full Size)",
@@ -1446,6 +1294,290 @@ export const cases = [
       "Fitted with anti-slip and anti-wear rubber patches for protection and to prevent sliding.",
     ],
 
+
+    inStock:
+      true,
+  },
+
+
+  /* =====================================================
+     BOBELOCK B1047 HALF-MOON
+     SHAPED VIOLIN CASE
+  ====================================================== */
+
+  {
+    id:
+      "bobelock-b1047-half-moon",
+
+    slug:
+      "bobelock-b1047-half-moon-violin-case",
+
+    name:
+      "Bobelock B1047 Half-Moon Violin Case",
+
+    maker:
+      "Bobelock",
+
+    model:
+      "B1047 Half-Moon",
+
+    reference:
+      "B1047",
+
+    category:
+      "Shaped Violin Case",
+
+    instrument:
+      "Violin",
+
+    caseType:
+      "Shaped",
+
+    caseStyle:
+      "Half-moon suspension violin case",
+
+
+    /* =====================================
+       IMAGES
+    ====================================== */
+
+    image:
+      bobelockB1047OpenClosedImage,
+
+    closedImage:
+      bobelockB1047ClosedImage,
+
+    openImage:
+      bobelockB1047OpenImage,
+
+    combinedImage:
+      bobelockB1047OpenClosedImage,
+
+
+    /* =====================================
+       PRICING
+    ====================================== */
+
+    regularPrice:
+      null,
+
+    salePrice:
+      null,
+
+    price:
+      "$230.00",
+
+    savings:
+      null,
+
+
+    /* =====================================
+       COLLECTION DESCRIPTION
+    ====================================== */
+
+    description:
+      "The Bobelock B1047 Half-Moon Violin Case combines a lighter, trimmer half-moon profile with the durability of Bobelock’s traditional five-layer plywood construction, offering dependable suspension protection, convenient music storage, and essential humidity-control accessories.",
+
+
+    /* =====================================
+       FULL DESCRIPTION
+    ====================================== */
+
+    descriptionParagraphs: [
+      "The Bobelock B1047 Half-Moon Violin Case brings a lighter and more streamlined profile to Bobelock’s traditional case construction. Built with the same five-layer plywood shell used in the company’s classic oblong cases, the half-moon shape provides a slimmer, easier-to-carry design without sacrificing dependable protection.",
+
+      "Inside, the violin is supported by a velour suspension interior designed to help cushion the instrument during everyday transportation. The suspension system works together with the rigid plywood shell to provide dependable protection for lessons, rehearsals, performances, and regular travel.",
+
+      "The exterior is covered in durable black nylon canvas and includes a zippered exterior music pocket for convenient storage of sheet music and other essentials. The half-moon profile offers a more compact appearance while maintaining practical storage and professional functionality.",
+
+      "The B1047 includes a shoulder strap, hygrometer, humistat, and instrument blanket for convenient transport and instrument care. Available in 4/4, 3/4, and 1/2 violin sizes, it provides Bobelock protection in a lighter and trimmer shaped-case design.",
+    ],
+
+
+    /* =====================================
+       KEY FEATURES
+    ====================================== */
+
+    keyFeatures: [
+      {
+        title:
+          "Five-Layer Plywood Protection",
+
+        icon:
+          "shield",
+
+        description:
+          "Five-layer plywood construction provides the strength and durability associated with Bobelock’s traditional professional cases.",
+      },
+
+      {
+        title:
+          "Suspension Interior",
+
+        icon:
+          "interior",
+
+        description:
+          "A velour suspension interior securely cushions the violin and helps protect the instrument during everyday transportation.",
+      },
+
+      {
+        title:
+          "Half-Moon Profile",
+
+        icon:
+          "storage",
+
+        description:
+          "The streamlined half-moon shape creates a lighter, trimmer case profile while maintaining practical instrument protection and storage.",
+      },
+
+      {
+        title:
+          "Humidity Protection",
+
+        icon:
+          "humidity",
+
+        description:
+          "An included hygrometer and humistat help monitor and manage the instrument’s case environment.",
+      },
+
+      {
+        title:
+          "Exterior Music Storage",
+
+        icon:
+          "music",
+
+        description:
+          "A zippered exterior music pocket provides convenient storage for sheet music and everyday accessories.",
+      },
+
+      {
+        title:
+          "Easy Transport",
+
+        icon:
+          "transport",
+
+        description:
+          "An included shoulder strap provides a convenient carrying option for lessons, rehearsals, and performances.",
+      },
+    ],
+
+
+    /* =====================================
+       SPECIFICATIONS
+    ====================================== */
+
+    size:
+      "4/4, 3/4, 1/2",
+
+    availableSizes: [
+      "4/4",
+      "3/4",
+      "1/2",
+    ],
+
+    weight:
+      "7 lbs.",
+
+    shell:
+      "Five-layer plywood shell",
+
+    construction:
+      "Five-layer plywood half-moon suspension construction",
+
+    exterior:
+      "Durable black nylon canvas cover with zippered exterior music pocket",
+
+    interior:
+      "Velour suspension interior",
+
+    bowCapacity:
+      null,
+
+    musicPocket:
+      "Zippered exterior music pocket",
+
+    closure:
+      "Zippered canvas cover",
+
+    carrying:
+      "Shoulder strap included",
+
+    extraFeatures:
+      "Hygrometer, humistat, and instrument blanket",
+
+    color:
+      "Black",
+
+    protection:
+      "Five-layer plywood shell with velour suspension interior",
+
+
+    /* =====================================
+       SIZE DETAILS
+    ====================================== */
+
+    sizeDetails: [
+      {
+        size:
+          "4/4",
+
+        thickness:
+          "4.5 in.",
+
+        length:
+          "31 in.",
+
+        width:
+          "9.5 in.",
+
+        weight:
+          "6.5 lbs.",
+      },
+
+      {
+        size:
+          "3/4",
+
+        thickness:
+          "4.5 in.",
+
+        length:
+          "29 in.",
+
+        width:
+          "9 in.",
+
+        weight:
+          "5 lbs.",
+      },
+
+      {
+        size:
+          "1/2",
+
+        thickness:
+          "4.5 in.",
+
+        length:
+          "29 in.",
+
+        width:
+          "9 in.",
+
+        weight:
+          "5 lbs.",
+      },
+    ],
+
+
+    /* =====================================
+       INVENTORY
+    ====================================== */
 
     inStock:
       true,
@@ -1938,10 +2070,6 @@ export const cases = [
       "Made in France",
 
 
-    /* =====================================
-       IMAGES
-    ====================================== */
-
     image:
       bam2002XLOpenClosedImage,
 
@@ -1954,10 +2082,6 @@ export const cases = [
     combinedImage:
       bam2002XLOpenClosed2Image,
 
-
-    /* =====================================
-       PRICING
-    ====================================== */
 
     regularPrice:
       "$978.00",
@@ -1972,17 +2096,9 @@ export const cases = [
       "Save 8%",
 
 
-    /* =====================================
-       COLLECTION DESCRIPTION
-    ====================================== */
-
     description:
       "The BAM 2002XL Hightech Violin Case showcases Bam’s Hightech expertise made in France, combining outstanding protection, ultralight weight, full instrument suspension, and professional travel features in a sleek contoured case for the 4/4 violin.",
 
-
-    /* =====================================
-       FULL DESCRIPTION
-    ====================================== */
 
     descriptionParagraphs: [
       "The BAM 2002XL Hightech Violin Case showcases the Hightech expertise made in France in a lightweight contoured design created specifically for the 4/4 violin. Its shell is made using Bam’s Hightech technique, a triple-ply coated and insulated ABS structure constructed from high-performance materials for outstanding protection without unnecessary weight.",
@@ -1994,10 +2110,6 @@ export const cases = [
       "Two comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks provide convenient hands-free transportation. At only 3 lbs. 14 oz., the 2002XL offers premium Hightech protection in an exceptionally lightweight case suited to rehearsals, performances, lessons, and travel.",
     ],
 
-
-    /* =====================================
-       KEY FEATURES
-    ====================================== */
 
     keyFeatures: [
       {
@@ -2068,10 +2180,6 @@ export const cases = [
     ],
 
 
-    /* =====================================
-       PRIMARY SPECIFICATIONS
-    ====================================== */
-
     size:
       "4/4 (Full Size)",
 
@@ -2116,10 +2224,6 @@ export const cases = [
       "Triple-ply insulated ABS Hightech shell with full suspension injected foam cushions, airtight H seal, and anti-slip / anti-wear rubber protection",
 
 
-    /* =====================================
-       INTERNAL MEASUREMENTS
-    ====================================== */
-
     internalMeasurements: {
       totalLength:
         "24.4 in. / 62 cm.",
@@ -2135,10 +2239,6 @@ export const cases = [
     },
 
 
-    /* =====================================
-       EXTERNAL MEASUREMENTS
-    ====================================== */
-
     externalMeasurements: {
       totalLength:
         "31.1 in. / 79 cm.",
@@ -2151,10 +2251,6 @@ export const cases = [
     },
 
 
-    /* =====================================
-       INSIDE FEATURES
-    ====================================== */
-
     insideFeatures: [
       "Made for 4/4 violin.",
       "Full suspension of the instrument on premium velvet fabric-covered injected foam cushions for enhanced protection and instrument care with Velcro neck strap.",
@@ -2163,10 +2259,6 @@ export const cases = [
       'Secure Velcro strap for a "Kun" style shoulder rest.',
     ],
 
-
-    /* =====================================
-       OUTSIDE FEATURES
-    ====================================== */
 
     outsideFeatures: [
       "Contoured shells made using the Bam Hightech technique: a triple-ply coated and insulated ABS structure made of high-performance materials.",
@@ -2179,10 +2271,6 @@ export const cases = [
       "Fitted with anti-slip and anti-wear rubber patches to prevent sliding.",
     ],
 
-
-    /* =====================================
-       INVENTORY
-    ====================================== */
 
     inStock:
       true,
