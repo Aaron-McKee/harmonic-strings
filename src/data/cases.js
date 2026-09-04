@@ -18,6 +18,10 @@ import bam5003SOpenClosedImage from "../assets/Bam_5003S_Classic_3_Violin_Case_O
 import bam5003SOpenImage from "../assets/Bam_5003S_Classic_3_Violin_Case_Open.png";
 import bam5003SClosedImage from "../assets/Bam_5003S_Classic_3_Violin_Case_Closed.png";
 
+import bamSG5003SClosedImage from "../assets/BAM_St._Germain_Classic_3_Violin_Case_Closed.png";
+import bamSG5003SOpenImage from "../assets/BAM_St._Germain_Classic_3_Violin_Case_Open.png";
+import bamSG5003SOpenClosedImage from "../assets/BAM_St._Germain_Classic_3_Violin_Case_Open_Closed.png";
+
 import bam2002XLClosedImage from "../assets/Bam_Hightech_Contoured_2002XL_Violin_Case_Closed.png";
 import bam2002XLOpenClosedImage from "../assets/Bam_Hightech_Contoured_2002XL_Violin_Case_Open_Closed.png";
 import bam2002XLOpenImage from "../assets/Bam_Hightech_Contoured_2002XL_Violin_Case_Open.png";
@@ -84,6 +88,9 @@ export const cases = [
 
     salePrice:
       "$145.00",
+
+    price:
+      null,
 
     savings:
       "Save 21%",
@@ -933,15 +940,6 @@ export const cases = [
 
     /* =====================================
        IMAGES
-
-       EXTERIOR:
-       Closed
-
-       INTERIOR:
-       Open
-
-       BOTH VIEWS:
-       Open + Closed
     ====================================== */
 
     image:
@@ -1154,19 +1152,289 @@ export const cases = [
 
 
     /* =====================================
+       INVENTORY
+    ====================================== */
+
+    inStock:
+      true,
+  },
+
+
+  /* =====================================================
+     BAM SAINT GERMAIN CLASSIC III SG5003S
+     SHAPED VIOLIN CASE
+  ====================================================== */
+
+  {
+    id:
+      "bam-sg5003s-saint-germain-classic-iii",
+
+    slug:
+      "bam-sg5003s-saint-germain-classic-iii-violin-case",
+
+    name:
+      "Bam SG5003S Saint Germain Classic III Violin Case",
+
+    maker:
+      "Bam",
+
+    model:
+      "Saint Germain Classic III SG5003S",
+
+    reference:
+      "SG5003S",
+
+    category:
+      "Shaped Violin Case",
+
+    instrument:
+      "Violin",
+
+    caseType:
+      "Shaped",
+
+    caseStyle:
+      "Compact contoured violin case",
+
+
+    /* =====================================
+       IMAGES
+
+       EXTERIOR:
+       Closed
+
+       INTERIOR:
+       Open
+
+       BOTH VIEWS:
+       Open + Closed
+    ====================================== */
+
+    image:
+      bamSG5003SOpenClosedImage,
+
+    closedImage:
+      bamSG5003SClosedImage,
+
+    openImage:
+      bamSG5003SOpenImage,
+
+    combinedImage:
+      bamSG5003SOpenClosedImage,
+
+
+    /* =====================================
+       PRICING
+    ====================================== */
+
+    regularPrice:
+      null,
+
+    salePrice:
+      null,
+
+    price:
+      "$430.00",
+
+    savings:
+      null,
+
+
+    /* =====================================
+       COLLECTION DESCRIPTION
+    ====================================== */
+
+    description:
+      "The Bam SG5003S Saint Germain Classic III Violin Case combines Bam protection with classic Saint Germain styling in a compact 4/4 violin case featuring a protective polyurethane foam cradle, water-resistant ballistic fabric exterior, expandable music storage, and comfortable backpack carrying.",
+
+
+    /* =====================================
+       FULL DESCRIPTION
+    ====================================== */
+
+    descriptionParagraphs: [
+      "The Bam SG5003S Saint Germain Classic III Violin Case combines Bam quality with classic elegance and practical everyday protection at an accessible price. Designed specifically for the 4/4 violin, its compact profile uses Bam’s resilient poly foam construction with ABS reinforcement to help absorb shock while insulating the instrument from environmental and thermal changes.",
+
+      "Inside, a firm but cushioned cradle made from injected high-density polyurethane foam securely supports the violin. The interior is finished in black and includes a removable accessory pouch along with dedicated storage for two full-size bows. A concealed compartment provides convenient storage for a Kun-style shoulder rest without crowding the main instrument area.",
+
+      "The exterior is covered in durable, water-resistant Bam ballistic fabric designed to resist abrasion and tearing. A large expandable external sheet music compartment provides practical carrying space, while a smaller front pocket made with reflecting fabric offers convenient storage for smaller essentials.",
+
+      "For transportation, the Saint Germain Classic III includes two adjustable and removable padded backpack straps, a sturdy side handle, and a subway handle for close-quarters travel. Its secure zipper closure, lightweight 5 lb. 12 oz. design, and thoughtful storage layout make it well suited to lessons, rehearsals, performances, and regular travel.",
+    ],
+
+
+    /* =====================================
+       KEY FEATURES
+    ====================================== */
+
+    keyFeatures: [
+      {
+        title:
+          "Protective Foam Cradle",
+
+        icon:
+          "shield",
+
+        description:
+          "A firm injected high-density polyurethane foam cradle with ABS reinforcement supports the violin and helps protect against shock and thermal changes.",
+      },
+
+      {
+        title:
+          "Black Protective Interior",
+
+        icon:
+          "interior",
+
+        description:
+          "The black interior securely supports the 4/4 violin while providing a removable accessory pouch and protected instrument storage.",
+      },
+
+      {
+        title:
+          "Two-Bow Capacity",
+
+        icon:
+          "storage",
+
+        description:
+          "Dedicated interior fittings provide secure storage for two full-size violin bows.",
+      },
+
+      {
+        title:
+          "Expandable Music Storage",
+
+        icon:
+          "music",
+
+        description:
+          "A large expandable exterior sheet music compartment and additional reflecting front pocket provide practical external storage.",
+      },
+
+      {
+        title:
+          "Ballistic Fabric Protection",
+
+        icon:
+          "security",
+
+        description:
+          "Water-resistant Bam ballistic fabric protects the exterior against moisture, abrasion, and everyday wear.",
+      },
+
+      {
+        title:
+          "Comfortable Transport",
+
+        icon:
+          "transport",
+
+        description:
+          "Two removable padded backpack straps, a sturdy side handle, and a subway handle provide versatile carrying options.",
+      },
+    ],
+
+
+    /* =====================================
+       PRIMARY SPECIFICATIONS
+    ====================================== */
+
+    size:
+      "4/4 (Full Size)",
+
+    availableSizes: [
+      "4/4",
+    ],
+
+    weight:
+      "5 lbs. 12 oz. / 2.6 kg",
+
+    shell:
+      "Injected high-density polyurethane foam with ABS structural reinforcements",
+
+    construction:
+      "Soft, resilient polyurethane foam shell and instrument cradle reinforced with ABS",
+
+    exterior:
+      "Water-resistant Bam ballistic fabric cover with expandable sheet music compartment and reflecting front pocket",
+
+    interior:
+      "Black interior with firm high-density polyurethane foam instrument cradle",
+
+    bowCapacity:
+      "2 full-size bows",
+
+    musicPocket:
+      "Large expandable external sheet music compartment",
+
+    closure:
+      "Zipper closure",
+
+    carrying:
+      "2 removable and adjustable padded backpack straps, sturdy side handle, and subway handle",
+
+    extraFeatures:
+      "Removable accessory pouch, hidden shoulder rest pocket, and small reflective exterior front pocket",
+
+    color:
+      "Black, Blue, Grey, Chocolate",
+
+    protection:
+      "Injected high-density polyurethane foam cradle with ABS reinforcements, designed to absorb shock and help protect the instrument from thermal changes",
+
+
+    /* =====================================
+       INTERNAL MEASUREMENTS
+    ====================================== */
+
+    internalMeasurements: {
+      totalLength:
+        "24 in. / 61 cm.",
+
+      bodyLength:
+        "15.4 in. / 39 cm.",
+
+      upperBout:
+        "6.7 in. / 17 cm.",
+
+      lowerBout:
+        "8.3 in. / 21 cm.",
+    },
+
+
+    /* =====================================
+       EXTERNAL MEASUREMENTS
+    ====================================== */
+
+    externalMeasurements: {
+      totalLength:
+        "31.1 in. / 79 cm.",
+
+      caseWidth:
+        "10.2 in. / 26 cm.",
+
+      caseDepth:
+        "5.9 in. / 15 cm.",
+    },
+
+
+    /* =====================================
        INSIDE FEATURES
     ====================================== */
 
     insideFeatures: [
       "Made for 4/4 violin.",
 
-      "Internal instrument cradle made of high-density and high-resilience injected polyurethane foam with ABS reinforcements in the structure, covered in black non-invasive velvet fabric.",
+      "Firm, soft cradle made from injected high-density polyurethane foam with ABS reinforcement.",
 
-      "Designed to protect the instrument against shock and unwanted thermal changes.",
+      "Polyurethane foam construction helps protect the instrument against shock and thermal changes.",
 
-      "Included removable accessory compartment.",
+      "Removable accessory pouch.",
 
       "Fitted for 2 full-size bows.",
+
+      "Hidden storage pocket for a Kun-style shoulder rest.",
     ],
 
 
@@ -1175,17 +1443,19 @@ export const cases = [
     ====================================== */
 
     outsideFeatures: [
-      "Made with 2000 denier water-resistant Cordura fabric.",
+      "Water-resistant Bam ballistic fabric exterior designed for protection against abrasion and tearing.",
 
-      "Included set of removable and adjustable padded backpack straps.",
-
-      "Secret pocket on the top shell for a Kun-style shoulder rest.",
+      "2 padded backpack straps that are adjustable and removable.",
 
       "Sturdy side carrying handle.",
 
       "Subway handle for close-quarters transportation.",
 
-      "High-quality zipper.",
+      "Large expandable external sheet music compartment.",
+
+      "Small external front pocket made with reflecting fabric.",
+
+      "High-quality zipper closure.",
     ],
 
 
@@ -1261,6 +1531,9 @@ export const cases = [
 
     salePrice:
       "$899.00",
+
+    price:
+      null,
 
     savings:
       "Save 8%",
