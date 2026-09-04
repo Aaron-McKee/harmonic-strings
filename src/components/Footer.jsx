@@ -315,9 +315,9 @@ function Footer() {
               </Link>
 
 
-              <a href="#">
+              <Link to="/terms-of-service">
                 Terms of Service
-              </a>
+              </Link>
 
             </nav>
 
@@ -349,9 +349,9 @@ function Footer() {
             </Link>
 
 
-            <a href="#">
+            <Link to="/terms-of-service">
               Terms of Service
-            </a>
+            </Link>
 
 
             <a href="#">

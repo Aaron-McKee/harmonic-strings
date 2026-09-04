@@ -33,6 +33,7 @@ import AccessoriesDetailPage from "./pages/AccessoriesDetailPage";
 import AboutPage from "./pages/AboutPage";
 
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import TermsOfServicePage from "./pages/TermsOfServicePage";
 
 import ContactPage from "./pages/ContactPage";
 
@@ -157,6 +158,12 @@ function App() {
         <Route
           path="/privacy-policy"
           element={<PrivacyPolicyPage />}
+        />
+
+
+        <Route
+          path="/terms-of-service"
+          element={<TermsOfServicePage />}
         />
 
       </Routes>
