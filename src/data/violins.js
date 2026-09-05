@@ -769,4 +769,209 @@ export const violins = [
     inStock:
       true,
   },
+
+
+  // =========================================================
+  // ALFRED LANINI 1951 VIOLIN
+  // FINE & ANTIQUE
+  // =========================================================
+
+  {
+    id:
+      "alfred-lanini-1951-violin",
+
+    slug:
+      "alfred-lanini-1951-violin",
+
+    name:
+      "Alfred Lanini 1951 Violin",
+
+    maker:
+      "Alfred Lanini",
+
+    model:
+      "1951",
+
+    instrument:
+      "Violin",
+
+    level:
+      "Fine & Antique",
+
+    stage:
+      "instrument",
+
+
+    /* =====================================
+       IMAGES
+       PHOTOGRAPHY TO BE ADDED
+    ====================================== */
+
+    image:
+      null,
+
+    frontImage:
+      null,
+
+    backImage:
+      null,
+
+    combinedImage:
+      null,
+
+
+    /* =====================================
+       PRICING
+    ====================================== */
+
+    price:
+      "$12,500",
+
+    regularPrice:
+      null,
+
+    salePrice:
+      null,
+
+    savings:
+      null,
+
+
+    /* =====================================
+       SIZE
+    ====================================== */
+
+    size:
+      "4/4",
+
+    availableSizes: [
+      "4/4",
+    ],
+
+
+    /* =====================================
+       COLLECTION DESCRIPTION
+    ====================================== */
+
+    shortDescription:
+      "A distinguished 1951 Alfred Lanini violin from San Jose, California, with a rich auburn varnish, dramatic flamed maple, and a gorgeous deep voice offering exceptional projection and character across the registers.",
+
+
+    /* =====================================
+       ABOUT THE INSTRUMENT
+    ====================================== */
+
+    description:
+      "This 1951 Alfred Lanini violin has a gorgeous, projecting deep sound while maintaining its spirit and character across the registers. Its rich auburn varnish highlights the tight spruce grain of the top and the dramatic tiger-stripe maple of the two-piece back, with flames extending outward from the center joint. Similar figure continues along the ribs, neck, and scroll. The purfling and bee-sting corners remain bright and well defined, and the violin is in excellent condition.",
+
+
+    /* =====================================
+       TONE & PLAYABILITY
+    ====================================== */
+
+    toneAndPlayability:
+      "Gorgeous, deep, and projecting, with a strong musical presence that retains its spirit and character across the registers.",
+
+
+    /* =====================================
+       MATERIALS
+    ====================================== */
+
+    top:
+      "Tight-grain spruce",
+
+    backAndSides:
+      "Dramatically flamed tiger-stripe maple with a two-piece back; matching flame extends along the ribs, neck, and scroll",
+
+    finish:
+      "Rich auburn varnish",
+
+    fittings:
+      null,
+
+    strings:
+      null,
+
+
+    /* =====================================
+       CRAFTSMANSHIP
+    ====================================== */
+
+    construction:
+      "Traditional violin construction with a two-piece dramatically flamed maple back and tight-grain spruce top",
+
+    handwork:
+      "Bright, well-defined purfling with distinctive bee-sting corners",
+
+    idealFor:
+      null,
+
+    setup:
+      "Harmonic Strings Workshop",
+
+
+    /* =====================================
+       MAKER BIOGRAPHY
+       DISPLAYED ONLY WHEN PROVIDED
+    ====================================== */
+
+    makerBio:
+      "Alfred Eugene Lanini (1891–1956) was born in Gonzalez, California. As a child, he moved to San Jose and initially worked with a local amateur violin maker before traveling to Milan to study with Romeo Antoniazzi. Antoniazzi died less than a year after Lanini’s arrival, but not before Lanini learned his clear spirit varnish recipe. Lanini then worked for three years in the luthier shop of Celeste Farotti. In 1917, he opened an atelier in San Francisco before soon returning to San Jose, where his workshop remained until his death nearly forty years later. Early in his career, Lanini often drew from instruments by Antonio and Omobono Stradivari, later turning toward Guarneri models after 1930. During his long career he became an eminent and remarkably prolific American violin maker, producing more than 500 instruments, the majority of them violins. Lanini also made nearly 100 bows after studying bow making with August Nurnberger-Seuss and Auguste Husson. His work reflects both his Italian training and the distinctive character of American violin making.",
+
+
+    /* =====================================
+       IDENTIFICATION
+    ====================================== */
+
+    interiorLabel:
+      "Alfredo Lanini / San Jose, California / 1951",
+
+    makerStamp:
+      "A. LANINI",
+
+
+    /* =====================================
+       MEASUREMENTS
+    ====================================== */
+
+    bodyLength:
+      "358 mm",
+
+    upperBouts:
+      "165 mm",
+
+    middleBouts:
+      "111 mm",
+
+    lowerBouts:
+      "206 mm",
+
+
+    /* =====================================
+       ADDITIONAL INFORMATION
+    ====================================== */
+
+    tonalCharacter:
+      "Deep, rich, projecting, spirited, and consistent across the registers",
+
+    year:
+      "1951",
+
+    inspiration:
+      null,
+
+    condition:
+      "Excellent",
+
+    conditionNotes:
+      "The violin is in excellent condition. The rich auburn varnish clearly reveals the tight spruce grain and dramatic maple figure, while the purfling and bee-sting corners remain bright and well defined.",
+
+
+    /* =====================================
+       INVENTORY
+    ====================================== */
+
+    inStock:
+      true,
+  },
 ];

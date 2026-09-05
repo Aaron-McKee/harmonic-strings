@@ -933,3 +933,120 @@
     transform: none;
   }
 }
+
+
+/* =========================================================
+   FINE & ANTIQUE PRODUCT CARDS
+   DARK COLLECTION CONTRAST
+
+   These overrides apply ONLY to product cards inside the
+   Fine & Antique section.
+   ========================================================= */
+
+.collection-fine-section
+.violin-product-card {
+  color:
+    rgba(232, 228, 221, 0.88);
+}
+
+
+/* =========================================================
+   FINE & ANTIQUE / PRODUCT TYPE
+   ========================================================= */
+
+.collection-fine-section
+.violin-product-card-meta {
+  color:
+    rgba(211, 207, 201, 0.62);
+}
+
+
+.collection-fine-section
+.violin-product-card-level {
+  color: #a62424;
+}
+
+
+.collection-fine-section
+.violin-product-card-meta-line {
+  background:
+    rgba(255, 255, 255, 0.20);
+}
+
+
+/* =========================================================
+   FINE & ANTIQUE PRODUCT NAME
+   ========================================================= */
+
+.collection-fine-section
+.violin-product-card-content
+h3
+a {
+  color: #a62424;
+}
+
+
+.collection-fine-section
+.violin-product-card-content
+h3
+a:hover {
+  color: #bc3530;
+}
+
+
+/* =========================================================
+   FINE & ANTIQUE DESCRIPTION
+   ========================================================= */
+
+.collection-fine-section
+.violin-product-card-description {
+  color:
+    rgba(218, 214, 208, 0.72);
+}
+
+
+/* =========================================================
+   FINE & ANTIQUE PRICE
+   ========================================================= */
+
+.collection-fine-section
+.violin-product-card-standard-price {
+  color:
+    rgba(232, 228, 221, 0.92);
+}
+
+
+.collection-fine-section
+.violin-product-card-price del {
+  color:
+    rgba(211, 207, 201, 0.54);
+}
+
+
+.collection-fine-section
+.violin-product-card-sale-price {
+  color: #b12d2d;
+}
+
+
+/* =========================================================
+   FINE & ANTIQUE EXPLORE LINK
+   ========================================================= */
+
+.collection-fine-section
+.violin-product-card-link {
+  color:
+    rgba(218, 214, 208, 0.74);
+
+  border-bottom-color:
+    rgba(218, 214, 208, 0.24);
+}
+
+
+.collection-fine-section
+.violin-product-card-link:hover {
+  color: #b12d2d;
+
+  border-bottom-color:
+    rgba(177, 45, 45, 0.55);
+}

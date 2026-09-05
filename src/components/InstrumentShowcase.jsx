@@ -54,6 +54,16 @@ function InstrumentShowcase({ product }) {
 
     tonalCharacter: null,
 
+    makerBio: null,
+
+    interiorLabel: null,
+    makerStamp: null,
+
+    bodyLength: null,
+    upperBouts: null,
+    middleBouts: null,
+    lowerBouts: null,
+
     year: null,
     inspiration: null,
     condition: null,
@@ -254,6 +264,12 @@ function InstrumentShowcase({ product }) {
       instrument.fittings ||
       instrument.strings ||
       instrument.setup ||
+      instrument.interiorLabel ||
+      instrument.makerStamp ||
+      instrument.bodyLength ||
+      instrument.upperBouts ||
+      instrument.middleBouts ||
+      instrument.lowerBouts ||
       instrument.year ||
       instrument.inspiration ||
       instrument.condition ||
@@ -638,6 +654,22 @@ function InstrumentShowcase({ product }) {
                   </>
                 )}
 
+
+                {instrument.makerBio && (
+                  <>
+
+                    <p className="hs-detail-subheading">
+                      About the Maker
+                    </p>
+
+
+                    <p className="hs-detail-description">
+                      {instrument.makerBio}
+                    </p>
+
+                  </>
+                )}
+
               </div>
             )}
 
@@ -696,6 +728,54 @@ function InstrumentShowcase({ product }) {
                       label="Setup"
                       value={
                         instrument.setup
+                      }
+                    />
+
+
+                    <DetailRow
+                      label="Interior Label"
+                      value={
+                        instrument.interiorLabel
+                      }
+                    />
+
+
+                    <DetailRow
+                      label="Maker Stamp"
+                      value={
+                        instrument.makerStamp
+                      }
+                    />
+
+
+                    <DetailRow
+                      label="Body Length"
+                      value={
+                        instrument.bodyLength
+                      }
+                    />
+
+
+                    <DetailRow
+                      label="Upper Bouts"
+                      value={
+                        instrument.upperBouts
+                      }
+                    />
+
+
+                    <DetailRow
+                      label="Middle Bouts"
+                      value={
+                        instrument.middleBouts
+                      }
+                    />
+
+
+                    <DetailRow
+                      label="Lower Bouts"
+                      value={
+                        instrument.lowerBouts
                       }
                     />
 
