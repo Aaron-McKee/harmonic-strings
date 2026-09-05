@@ -41,6 +41,11 @@ import bam2002XLOpenImage from "../assets/Bam_2002XL_Hightech_Violin_Case_Open.p
 import bam2002XLOpenClosedImage from "../assets/Bam_2002XL_Hightech_Violin_Case_Open_Closed.png";
 import bam2002XLOpenClosed2Image from "../assets/Bam_2002XL_Hightech_Violin_Case_Open_Closed2.png";
 
+import cc399VOpenClosedImage from "../assets/Howard_Core_CC399V_Viola_Case_Open_Closed.png";
+import cc399VOpenClosed2Image from "../assets/Howard_Core_CC399V_Viola_Case_Open_Closed2.png";
+import cc399VOpenImage from "../assets/Howard_Core_CC399V_Viola_Case_Open.png";
+import cc399VClosedImage from "../assets/Howard_Core_CC399V_Viola_Case_Closed.png";
+
 
 export const cases = [
   /* =====================================================
@@ -2271,6 +2276,306 @@ export const cases = [
       "Fitted with anti-slip and anti-wear rubber patches to prevent sliding.",
     ],
 
+
+    inStock:
+      true,
+  },
+
+
+  /* =====================================================
+     HOWARD CORE CC399V
+     SHAPED VIOLA CASE
+  ====================================================== */
+
+  {
+    id:
+      "howard-core-cc399v",
+
+    slug:
+      "howard-core-cc399v-viola-case",
+
+    name:
+      "Howard Core CC399V Viola Case",
+
+    maker:
+      "Howard Core",
+
+    model:
+      "CC399V",
+
+    reference:
+      "CC399V",
+
+    category:
+      "Shaped Viola Case",
+
+    instrument:
+      "Viola",
+
+    caseType:
+      "Shaped",
+
+    caseStyle:
+      "Dart / contoured-shaped suspension viola case",
+
+
+    /* =====================================
+       IMAGES
+
+       COLLECTION:
+       Open + Closed
+
+       DETAIL:
+       Exterior = Closed
+       Interior = Open
+       Both Views = Open + Closed 2
+    ====================================== */
+
+    image:
+      cc399VOpenClosedImage,
+
+    closedImage:
+      cc399VClosedImage,
+
+    openImage:
+      cc399VOpenImage,
+
+    combinedImage:
+      cc399VOpenClosed2Image,
+
+
+    /* =====================================
+       PRICING
+    ====================================== */
+
+    regularPrice:
+      null,
+
+    salePrice:
+      null,
+
+    price:
+      "$110.00",
+
+    savings:
+      null,
+
+
+    /* =====================================
+       COLLECTION DESCRIPTION
+    ====================================== */
+
+    description:
+      "The Howard Core CC399V Viola Case is a lightweight shaped suspension case designed to provide dependable protection, convenient storage, and easy everyday transport for 15-inch through 16.5-inch violas.",
+
+
+    /* =====================================
+       FULL DESCRIPTION
+    ====================================== */
+
+    descriptionParagraphs: [
+      "The Howard Core CC399V Viola Case is a high-quality shaped suspension case, expertly crafted to provide lightweight protection and dependable durability. Its dart-style contoured profile uses a thin plywood-reinforced layered wood shell beneath a durable black Cordura exterior, balancing strength and portability for students, advancing players, teachers, and performers.",
+
+      "Inside, a deep plush-lined suspension system uses dense padding to help cushion the viola during transportation. Two secure spinner bow holders are built into the upper lid, while a dedicated internal accessory compartment provides convenient storage for rosin, extra strings, mutes, and other essentials. A formed lower storage cavity is designed for a folding shoulder rest, and an included plush instrument blanket adds another layer of protection over the instrument.",
+
+      "The exterior features a heavy-duty, water-resistant black Cordura cover with an integrated full-length expandable music pocket. A full-perimeter zipper closure is reinforced by a secure mechanical center latch and heavy-duty screw-mounted hardware. A sturdy structural side / subway-style handle and included removable backpack straps provide flexible carrying options for daily lessons, rehearsals, performances, and travel.",
+
+      "The CC399V is offered in two exact-fit viola size ranges: 15 to 15.5 inches for smaller intermediate violas and 16 to 16.5 inches for standard full-size orchestral violas. At 4.50 lbs., it provides practical protection and storage without the added bulk of a traditional oblong case. A 1-year limited warranty covers defects in materials and craftsmanship.",
+    ],
+
+
+    /* =====================================
+       KEY FEATURES
+    ====================================== */
+
+    keyFeatures: [
+      {
+        title:
+          "Shaped Suspension Protection",
+
+        icon:
+          "shield",
+
+        description:
+          "A thin plywood-reinforced layered wood shell and dense suspension padding provide lightweight protection in a compact dart-shaped profile.",
+      },
+
+      {
+        title:
+          "Plush Suspension Interior",
+
+        icon:
+          "interior",
+
+        description:
+          "Deep plush lining with dense suspension padding helps cushion and support the viola during everyday transportation.",
+      },
+
+      {
+        title:
+          "Two-Bow Capacity",
+
+        icon:
+          "storage",
+
+        description:
+          "Two secure spinner bow holders are built into the upper lid for dedicated bow storage.",
+      },
+
+      {
+        title:
+          "Music & Accessory Storage",
+
+        icon:
+          "music",
+
+        description:
+          "A full-length expandable exterior music pocket and dedicated interior accessory compartment provide organized storage for everyday essentials.",
+      },
+
+      {
+        title:
+          "Secure Closure",
+
+        icon:
+          "security",
+
+        description:
+          "A full-perimeter zipper, secure mechanical center latch, and heavy-duty screw-mounted hardware provide dependable closure.",
+      },
+
+      {
+        title:
+          "Travel Ready",
+
+        icon:
+          "transport",
+
+        description:
+          "A sturdy side / subway-style handle, included removable backpack straps, and formed shoulder rest storage make everyday carrying convenient.",
+      },
+    ],
+
+
+    /* =====================================
+       SPECIFICATIONS
+    ====================================== */
+
+    size:
+      '15"–15.5", 16"–16.5"',
+
+    availableSizes: [
+      '15"–15.5"',
+      '16"–16.5"',
+    ],
+
+    weight:
+      "4.50 lbs.",
+
+    shell:
+      "Thin plywood-reinforced layered wood shell",
+
+    construction:
+      "Dart / contoured-shaped suspension construction with a thin plywood-reinforced layered wood shell",
+
+    exterior:
+      "Heavy-duty water-resistant black Cordura cover with full-length expandable music pocket",
+
+    interior:
+      "Deep plush-lined fabric with dense suspension padding",
+
+    bowCapacity:
+      "2 secure spinner bow holders",
+
+    musicPocket:
+      "Integrated full-length expandable exterior music pocket",
+
+    closure:
+      "Full-perimeter zipper closure with secure mechanical center latch and heavy-duty screw-mounted hardware",
+
+    carrying:
+      "Heavy-duty structural side / subway-style handle with included removable backpack straps",
+
+    extraFeatures:
+      "1 accessory pocket, formed shoulder rest storage cavity, instrument blanket, and 1-year limited warranty covering defects in materials and craftsmanship",
+
+    color:
+      "Black Cordura exterior with plush interior",
+
+    protection:
+      "Thin plywood-reinforced shell with deep plush suspension padding designed to cushion the viola during everyday transport",
+
+
+    /* =====================================
+       SIZE DETAILS
+    ====================================== */
+
+    sizeDetails: [
+      {
+        model:
+          "CC399V",
+
+        size:
+          '15"–15.5"',
+
+        description:
+          "Exact-fit chassis designed for smaller intermediate violas.",
+      },
+
+      {
+        model:
+          "CC399V",
+
+        size:
+          '16"–16.5"',
+
+        description:
+          "Exact-fit chassis scaled for standard full-size orchestral violas.",
+      },
+    ],
+
+
+    /* =====================================
+       INSIDE FEATURES
+    ====================================== */
+
+    insideFeatures: [
+      "Deep plush-lined suspension interior with dense protective padding.",
+      "Two secure spinner bow holders built into the upper lid.",
+      "Matched plush fabric instrument blanket.",
+      "One dedicated internal accessory compartment with lid.",
+      "Formed lower storage cavity for a folding shoulder rest.",
+    ],
+
+
+    /* =====================================
+       OUTSIDE FEATURES
+    ====================================== */
+
+    outsideFeatures: [
+      "Dart / contoured-shaped suspension design.",
+      "Thin plywood-reinforced layered wood shell.",
+      "Heavy-duty water-resistant black Cordura exterior.",
+      "Integrated full-length expandable exterior music pocket.",
+      "Full-perimeter zipper closure.",
+      "Secure mechanical center latch.",
+      "Heavy-duty screw-mounted hardware.",
+      "Heavy-duty structural side / subway-style carrying handle.",
+      "D-rings with included removable backpack straps.",
+    ],
+
+
+    /* =====================================
+       WARRANTY
+    ====================================== */
+
+    warranty:
+      "1-year limited warranty covering defects in materials and craftsmanship",
+
+
+    /* =====================================
+       INVENTORY
+    ====================================== */
 
     inStock:
       true,

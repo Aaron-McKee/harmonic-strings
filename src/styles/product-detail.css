@@ -1119,8 +1119,7 @@
   letter-spacing:
     1.45px;
 
-  text-transform:
-    uppercase;
+  text-transform: uppercase;
 }
 
 .hs-detail-service-title {
@@ -1223,8 +1222,7 @@
   letter-spacing:
     1.1px;
 
-  text-transform:
-    uppercase;
+  text-transform: uppercase;
 }
 
 .hs-detail-service-option > strong {
@@ -1441,7 +1439,7 @@
 
   .product-detail-page {
     padding:
-      145px
+      190px
       3vw
       42px !important;
   }
@@ -1479,7 +1477,7 @@
 
   .product-detail-page {
     padding:
-      94px
+      180px
       0
       24px !important;
   }
