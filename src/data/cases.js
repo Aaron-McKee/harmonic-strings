@@ -46,6 +46,10 @@ import cc399VOpenClosed2Image from "../assets/Howard_Core_CC399V_Viola_Case_Open
 import cc399VOpenImage from "../assets/Howard_Core_CC399V_Viola_Case_Open.png";
 import cc399VClosedImage from "../assets/Howard_Core_CC399V_Viola_Case_Closed.png";
 
+import cc399VOBLOpenClosedImage from "../assets/Howard_Core_CC399VOBL_Viola_Case_Open_Closed.png";
+import cc399VOBLOpenImage from "../assets/Howard_Core_CC399VOBL_Viola_Case_Open.png";
+import cc399VOBLClosedImage from "../assets/Howard_Core_CC399VOBL_Viola_Case_Closed.png";
+
 
 export const cases = [
   /* =====================================================
@@ -2283,6 +2287,282 @@ export const cases = [
 
 
   /* =====================================================
+     HOWARD CORE CC399VOBL
+     OBLONG VIOLA CASE
+  ====================================================== */
+
+  {
+    id:
+      "howard-core-cc399vobl",
+
+    slug:
+      "howard-core-cc399vobl-viola-case",
+
+    name:
+      "Howard Core CC399VOBL Viola Case",
+
+    maker:
+      "Howard Core",
+
+    model:
+      "CC399VOBL",
+
+    reference:
+      "CC399VOBL",
+
+    category:
+      "Oblong Viola Case",
+
+    instrument:
+      "Viola",
+
+    caseType:
+      "Oblong",
+
+    caseStyle:
+      "Oblong adjustable suspension viola case",
+
+
+    /* =====================================
+       IMAGES
+
+       COLLECTION:
+       Open + Closed
+
+       DETAIL:
+       Exterior = Closed
+       Interior = Open
+       Both Views = Open + Closed
+    ====================================== */
+
+    image:
+      cc399VOBLOpenClosedImage,
+
+    closedImage:
+      cc399VOBLClosedImage,
+
+    openImage:
+      cc399VOBLOpenImage,
+
+    combinedImage:
+      cc399VOBLOpenClosedImage,
+
+
+    /* =====================================
+       PRICING
+    ====================================== */
+
+    regularPrice:
+      null,
+
+    salePrice:
+      null,
+
+    price:
+      "$185.00",
+
+    savings:
+      null,
+
+
+    /* =====================================
+       COLLECTION DESCRIPTION
+    ====================================== */
+
+    description:
+      "The Howard Core CC399VOBL Viola Case is a versatile oblong adjustable case designed for violists who need dependable protection with the flexibility to fit violas from 15 inches to 16.5 inches.",
+
+
+    /* =====================================
+       FULL DESCRIPTION
+    ====================================== */
+
+    descriptionParagraphs: [
+      "The Howard Core CC399V Oblong Adjustable Viola Case is a versatile oblong case designed for violists who need reliable protection combined with the flexibility to fit multiple instrument sizes. Built with the same quality standards as the renowned CC399 oblong violin case, this model features an adjustable interior that securely accommodates violas from 15 inches to 16.5 inches, making it ideal for advancing students and performing musicians alike.",
+
+      "Constructed from a thin plywood-reinforced foam shell with a durable Cordura exterior, the CC399V offers lightweight strength while shielding your instrument from everyday bumps and impacts. Inside, the plush-lined adjustable suspension interior ensures a snug fit, providing superior protection during transport. An included instrument blanket adds extra cushioning, and the full-length music pocket keeps sheet music and small accessories organized and within easy reach.",
+
+      "Designed for comfort and practicality, this case features backpack straps and a shoulder rest pocket for effortless carrying. Two Hill-style bow holders, interior accessory pockets, and a thoughtful layout make it easy to keep all essentials in place. Its durable construction and adaptable interior make it a long-term investment for violists who may upgrade instruments or travel frequently.",
+    ],
+
+
+    /* =====================================
+       KEY FEATURES
+    ====================================== */
+
+    keyFeatures: [
+      {
+        title:
+          "Adjustable Viola Fit",
+
+        icon:
+          "shield",
+
+        description:
+          "An adjustable interior securely accommodates violas from 15 inches through 16.5 inches for flexible long-term use.",
+      },
+
+      {
+        title:
+          "Suspension Interior",
+
+        icon:
+          "interior",
+
+        description:
+          "A plush-lined adjustable suspension interior helps provide a snug fit and dependable protection during transport.",
+      },
+
+      {
+        title:
+          "Two-Bow Capacity",
+
+        icon:
+          "storage",
+
+        description:
+          "Two Hill-style bow holders provide secure dedicated storage for bows inside the case.",
+      },
+
+      {
+        title:
+          "Music & Accessory Storage",
+
+        icon:
+          "music",
+
+        description:
+          "A full-length exterior music pocket, interior accessory pockets, and shoulder rest compartment keep essentials organized.",
+      },
+
+      {
+        title:
+          "Durable Closure",
+
+        icon:
+          "security",
+
+        description:
+          "A durable zippered closure with sturdy hardware helps keep the case securely closed during everyday use and travel.",
+      },
+
+      {
+        title:
+          "Backpack Transport",
+
+        icon:
+          "transport",
+
+        description:
+          "Backpack straps provide a comfortable hands-free carrying option for lessons, rehearsals, performances, and travel.",
+      },
+    ],
+
+
+    /* =====================================
+       SPECIFICATIONS
+    ====================================== */
+
+    size:
+      '15"–16.5"',
+
+    availableSizes: [
+      '15"–15.5"',
+      '16"–16.5"',
+    ],
+
+    weight:
+      "6.00 lbs.",
+
+    shell:
+      "Thin plywood-reinforced foam shell",
+
+    construction:
+      "Oblong adjustable suspension construction with a thin plywood-reinforced foam shell",
+
+    exterior:
+      "Cordura cover with full-length music pocket",
+
+    interior:
+      "Plush-lined adjustable suspension interior",
+
+    bowCapacity:
+      "2 Hill-style bow holders",
+
+    musicPocket:
+      "Full-length exterior music pocket",
+
+    closure:
+      "Zippered closure with sturdy hardware",
+
+    carrying:
+      "Backpack straps",
+
+    extraFeatures:
+      "Interior accessory pockets, shoulder rest compartment, and instrument blanket",
+
+    color:
+      "Black exterior with plush interior",
+
+    protection:
+      "Thin plywood-reinforced foam shell with plush-lined adjustable suspension support and instrument blanket",
+
+
+    /* =====================================
+       SIZE DETAILS
+    ====================================== */
+
+    sizeDetails: [
+      {
+        size:
+          '15"–15.5"',
+      },
+
+      {
+        size:
+          '16"–16.5"',
+      },
+    ],
+
+
+    /* =====================================
+       INSIDE FEATURES
+    ====================================== */
+
+    insideFeatures: [
+      "Plush-lined adjustable suspension interior.",
+      "Adjustable fit for violas from 15 inches to 16.5 inches.",
+      "Two Hill-style bow holders.",
+      "Interior accessory pockets.",
+      "Shoulder rest compartment.",
+      "Instrument blanket included.",
+    ],
+
+
+    /* =====================================
+       OUTSIDE FEATURES
+    ====================================== */
+
+    outsideFeatures: [
+      "Oblong adjustable viola case design.",
+      "Thin plywood-reinforced foam shell.",
+      "Durable Cordura exterior.",
+      "Full-length exterior music pocket.",
+      "Zippered closure with sturdy hardware.",
+      "Backpack straps for carrying.",
+    ],
+
+
+    /* =====================================
+       INVENTORY
+    ====================================== */
+
+    inStock:
+      true,
+  },
+
+
+  /* =====================================================
      HOWARD CORE CC399V
      SHAPED VIOLA CASE
   ====================================================== */
@@ -2580,4 +2860,5 @@ export const cases = [
     inStock:
       true,
   },
+
 ];
