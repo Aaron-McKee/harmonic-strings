@@ -41,6 +41,7 @@ import bam2002XLOpenImage from "../assets/Bam_2002XL_Hightech_Violin_Case_Open.p
 import bam2002XLOpenClosedImage from "../assets/Bam_2002XL_Hightech_Violin_Case_Open_Closed.png";
 import bam2002XLOpenClosed2Image from "../assets/Bam_2002XL_Hightech_Violin_Case_Open_Closed2.png";
 
+
 import cc399VOpenClosedImage from "../assets/Howard_Core_CC399V_Viola_Case_Open_Closed.png";
 import cc399VOpenClosed2Image from "../assets/Howard_Core_CC399V_Viola_Case_Open_Closed2.png";
 import cc399VOpenImage from "../assets/Howard_Core_CC399V_Viola_Case_Open.png";
@@ -61,6 +62,10 @@ import bobelockB2005ClosedImage from "../assets/Bobelock_B2005_Viola_Case_Closed
 import bobelockB2006OpenClosedImage from "../assets/Bobelock_B2006_Viola_Case_Open_Closed.png";
 import bobelockB2006Open1Image from "../assets/Bobelock_B2006_Viola_Case_Open1.png";
 import bobelockB2006ClosedImage from "../assets/Bobelock_B2006_Viola_Case_Closed.png";
+
+import bobelockB2048OpenClosedImage from "../assets/Bobelock_B2048_Half_Moon_Viola_Case_Open_Closed.png";
+import bobelockB2048Open1Image from "../assets/Bobelock_B2048_Half_Moon_Viola_Case_Open1.png";
+import bobelockB2048ClosedImage from "../assets/Bobelock_B2048_Half_Moon_Viola_Case_Closed.png";
 
 
 export const cases = [
@@ -1358,6 +1363,10 @@ export const cases = [
       "Half-moon suspension violin case",
 
 
+    /* =====================================
+       IMAGES
+    ====================================== */
+
     image:
       bobelockB1047OpenClosedImage,
 
@@ -1370,6 +1379,10 @@ export const cases = [
     combinedImage:
       bobelockB1047OpenClosedImage,
 
+
+    /* =====================================
+       PRICING
+    ====================================== */
 
     regularPrice:
       null,
@@ -1384,9 +1397,17 @@ export const cases = [
       null,
 
 
+    /* =====================================
+       COLLECTION DESCRIPTION
+    ====================================== */
+
     description:
       "The Bobelock B1047 Half-Moon Violin Case combines a lighter, trimmer half-moon profile with the durability of Bobelock’s traditional five-layer plywood construction, offering dependable suspension protection, convenient music storage, and essential humidity-control accessories.",
 
+
+    /* =====================================
+       FULL DESCRIPTION
+    ====================================== */
 
     descriptionParagraphs: [
       "The Bobelock B1047 Half-Moon Violin Case brings a lighter and more streamlined profile to Bobelock’s traditional case construction. Built with the same five-layer plywood shell used in the company’s classic oblong cases, the half-moon shape provides a slimmer, easier-to-carry design without sacrificing dependable protection.",
@@ -1398,6 +1419,10 @@ export const cases = [
       "The B1047 includes a shoulder strap, hygrometer, humistat, and instrument blanket for convenient transport and instrument care. Available in 4/4, 3/4, and 1/2 violin sizes, it provides Bobelock protection in a lighter and trimmer shaped-case design.",
     ],
 
+
+    /* =====================================
+       KEY FEATURES
+    ====================================== */
 
     keyFeatures: [
       {
@@ -1468,6 +1493,10 @@ export const cases = [
     ],
 
 
+    /* =====================================
+       SPECIFICATIONS
+    ====================================== */
+
     size:
       "4/4, 3/4, 1/2",
 
@@ -1513,6 +1542,10 @@ export const cases = [
     protection:
       "Five-layer plywood shell with velour suspension interior",
 
+
+    /* =====================================
+       SIZE DETAILS
+    ====================================== */
 
     sizeDetails: [
       {
@@ -1567,6 +1600,10 @@ export const cases = [
       },
     ],
 
+
+    /* =====================================
+       INVENTORY
+    ====================================== */
 
     inStock:
       true,
@@ -2346,65 +2383,48 @@ export const cases = [
       {
         title:
           "Adjustable Viola Fit",
-
         icon:
           "shield",
-
         description:
           "An adjustable interior securely accommodates violas from 15 inches through 16.5 inches for flexible long-term use.",
       },
-
       {
         title:
           "Suspension Interior",
-
         icon:
           "interior",
-
         description:
           "A plush-lined adjustable suspension interior helps provide a snug fit and dependable protection during transport.",
       },
-
       {
         title:
           "Two-Bow Capacity",
-
         icon:
           "storage",
-
         description:
           "Two Hill-style bow holders provide secure dedicated storage for bows inside the case.",
       },
-
       {
         title:
           "Music & Accessory Storage",
-
         icon:
           "music",
-
         description:
           "A full-length exterior music pocket, interior accessory pockets, and shoulder rest compartment keep essentials organized.",
       },
-
       {
         title:
           "Durable Closure",
-
         icon:
           "security",
-
         description:
           "A durable zippered closure with sturdy hardware helps keep the case securely closed during everyday use and travel.",
       },
-
       {
         title:
           "Backpack Transport",
-
         icon:
           "transport",
-
         description:
           "Backpack straps provide a comfortable hands-free carrying option for lessons, rehearsals, performances, and travel.",
       },
@@ -2556,65 +2576,48 @@ export const cases = [
       {
         title:
           "Adjustable 15–17 Inch Fit",
-
         icon:
           "shield",
-
         description:
           "Bobelock’s patented adjustable slide allows the interior to fit violas from 15 inches through 17 inches.",
       },
-
       {
         title:
           "Full Suspension Interior",
-
         icon:
           "interior",
-
         description:
           "A full-suspension semi-French fit interior supports and cushions the viola during transport.",
       },
-
       {
         title:
           "Four-Bow Capacity",
-
         icon:
           "storage",
-
         description:
           "Four bow holders provide generous dedicated storage for players who carry multiple bows.",
       },
-
       {
         title:
           "Organized Storage",
-
         icon:
           "music",
-
         description:
           "Two interior accessory pockets, a string tube, pencil pocket, and full exterior music pocket keep essentials organized.",
       },
-
       {
         title:
           "Instrument Care",
-
         icon:
           "humidity",
-
         description:
           "A hygrometer, humistat, instrument blanket, Velcro neck restraint, and tail-block sponge support secure instrument care.",
       },
-
       {
         title:
           "Featherlite Transport",
-
         icon:
           "transport",
-
         description:
           "The layered plywood-and-styrofoam Featherlite shell reduces weight to 7.0 lbs. while retaining practical shoulder and subway straps.",
       },
@@ -2789,65 +2792,48 @@ export const cases = [
       {
         title:
           "Adjustable 14–17 Inch Fit",
-
         icon:
           "shield",
-
         description:
           "Bobelock’s adjustable fit system accommodates violas from 14 inches through 17 inches and up to 260 mm wide.",
       },
-
       {
         title:
           "Velour Suspension Interior",
-
         icon:
           "interior",
-
         description:
           "A plush velour suspension interior cushions and supports the viola during everyday transport.",
       },
-
       {
         title:
           "Two-Bow Capacity",
-
         icon:
           "storage",
-
         description:
           "Two dedicated bow holders provide secure storage for bows inside the case.",
       },
-
       {
         title:
           "Accessory Storage",
-
         icon:
           "music",
-
         description:
           "An interior accessory pocket keeps rosin and other compact essentials organized and easy to reach.",
       },
-
       {
         title:
           "Instrument Care",
-
         icon:
           "humidity",
-
         description:
           "A hygrometer, humistat, instrument blanket, and shoulder rest clip support instrument care and organization.",
       },
-
       {
         title:
           "Professional Transport",
-
         icon:
           "transport",
-
         description:
           "A waterproof black canvas exterior and included shoulder strap provide practical protection and carrying comfort.",
       },
@@ -2915,6 +2901,222 @@ export const cases = [
       "Durable plywood construction.",
       "Waterproof black canvas cover.",
       "Included shoulder strap.",
+    ],
+
+
+    inStock:
+      true,
+  },
+
+
+  /* =====================================================
+     BOBELOCK B2048 HALF MOON
+     OBLONG VIOLA CASE
+  ====================================================== */
+
+  {
+    id:
+      "bobelock-b2048-half-moon",
+
+    slug:
+      "bobelock-b2048-half-moon-viola-case",
+
+    name:
+      "Bobelock B2048 Half Moon Viola Case",
+
+    maker:
+      "Bobelock",
+
+    model:
+      "B2048 Half Moon",
+
+    reference:
+      "B2048",
+
+    category:
+      "Oblong Viola Case",
+
+    instrument:
+      "Viola",
+
+    caseType:
+      "Oblong",
+
+    caseStyle:
+      "Half-moon adjustable suspension viola case",
+
+
+    image:
+      bobelockB2048OpenClosedImage,
+
+    closedImage:
+      bobelockB2048ClosedImage,
+
+    openImage:
+      bobelockB2048Open1Image,
+
+    combinedImage:
+      bobelockB2048OpenClosedImage,
+
+
+    regularPrice:
+      null,
+
+    salePrice:
+      null,
+
+    price:
+      "$375.00",
+
+    savings:
+      null,
+
+
+    description:
+      "The Bobelock B2048 Half Moon Viola Case combines five-layer plywood construction, an adjustable 15-to-16.5-inch fit, plush velour suspension protection, four-bow storage, and a streamlined half-moon profile for advancing and professional violists.",
+
+
+    descriptionParagraphs: [
+      "The Bobelock Half-Moon Adjustable Velour Viola Case delivers a balance of modern style, durable craftsmanship, and secure protection for advancing and professional violists. Built from five-layered plywood, the B2048 offers Bobelock’s signature durability in a sleek half-moon shape that reduces bulk while maintaining dependable strength and protection.",
+
+      "The exterior is covered in durable black nylon canvas with a zippered cover and full-size music pocket, providing weather-resistant protection and convenient storage. Inside, a soft velour suspension interior securely supports and cushions the viola during lessons, rehearsals, performances, and travel.",
+
+      "Four bow holders provide generous bow storage, while an included hygrometer, humistat, and instrument blanket support instrument care. A padded shoulder strap provides a convenient carrying option for musicians on the go.",
+
+      "The adjustable interior fits violas from 15 inches to 16.5 inches and instruments up to 260 mm wide. Available in Blue, Green, Gray, Wine, and Tan, the B2048 combines adaptable fit, professional protection, and a refined half-moon profile.",
+    ],
+
+
+    keyFeatures: [
+      {
+        title:
+          "Five-Layer Plywood Protection",
+
+        icon:
+          "shield",
+
+        description:
+          "Five-layered plywood construction provides durable structural protection in a streamlined half-moon profile.",
+      },
+
+      {
+        title:
+          "Velour Suspension Interior",
+
+        icon:
+          "interior",
+
+        description:
+          "A soft velour suspension interior securely supports and cushions the viola during everyday transport.",
+      },
+
+      {
+        title:
+          "Four-Bow Capacity",
+
+        icon:
+          "storage",
+
+        description:
+          "Four bow holders provide secure dedicated storage for players who carry multiple bows.",
+      },
+
+      {
+        title:
+          "Full-Size Music Storage",
+
+        icon:
+          "music",
+
+        description:
+          "A full-size exterior music pocket provides convenient storage for sheet music and everyday essentials.",
+      },
+
+      {
+        title:
+          "Instrument Care",
+
+        icon:
+          "humidity",
+
+        description:
+          "An included hygrometer, humistat, and instrument blanket support instrument care and protection.",
+      },
+
+      {
+        title:
+          "Adjustable Travel Design",
+
+        icon:
+          "transport",
+
+        description:
+          "The adjustable interior fits 15-to-16.5-inch violas up to 260 mm wide, while the padded shoulder strap makes transport convenient.",
+      },
+    ],
+
+
+    size:
+      'Adjustable 15"–16.5" (up to 260 mm wide)',
+
+    availableSizes: [
+      'Adjustable 15"–16.5"',
+    ],
+
+    weight:
+      "9.0 lbs.",
+
+    shell:
+      "Five-layered plywood",
+
+    construction:
+      "Five-layered plywood construction in a half-moon shape with adjustable interior",
+
+    exterior:
+      "Durable black nylon canvas zippered cover with full-size exterior music pocket",
+
+    interior:
+      "Velour suspension interior with accessory fittings",
+
+    bowCapacity:
+      "4 bow holders",
+
+    musicPocket:
+      "Full-size exterior music pocket",
+
+    closure:
+      "Zippered black nylon canvas cover",
+
+    carrying:
+      "Padded shoulder strap included",
+
+    extraFeatures:
+      "Hygrometer, humistat, instrument blanket, and accessory fittings",
+
+    color:
+      "Blue, Green, Gray, Wine, Tan",
+
+    protection:
+      "Five-layered plywood shell with velour suspension support and weather-resistant black nylon canvas exterior",
+
+
+    insideFeatures: [
+      "Adjustable fit for violas from 15 inches to 16.5 inches and up to 260 mm wide.",
+      "Velour suspension interior.",
+      "Four bow holders.",
+      "Hygrometer.",
+      "Humistat.",
+      "Instrument blanket.",
+      "Accessory fittings.",
+    ],
+
+
+    outsideFeatures: [
+      "Half-moon profile.",
+      "Five-layered plywood construction.",
+      "Durable black nylon canvas zippered cover.",
+      "Full-size exterior music pocket.",
+      "Padded shoulder strap included.",
     ],
 
 
@@ -3005,65 +3207,48 @@ export const cases = [
       {
         title:
           "Shaped Suspension Protection",
-
         icon:
           "shield",
-
         description:
           "A thin plywood-reinforced layered wood shell and dense suspension padding provide lightweight protection in a compact dart-shaped profile.",
       },
-
       {
         title:
           "Plush Suspension Interior",
-
         icon:
           "interior",
-
         description:
           "Deep plush lining with dense suspension padding helps cushion and support the viola during everyday transportation.",
       },
-
       {
         title:
           "Two-Bow Capacity",
-
         icon:
           "storage",
-
         description:
           "Two secure spinner bow holders are built into the upper lid for dedicated bow storage.",
       },
-
       {
         title:
           "Music & Accessory Storage",
-
         icon:
           "music",
-
         description:
           "A full-length expandable exterior music pocket and dedicated interior accessory compartment provide organized storage for everyday essentials.",
       },
-
       {
         title:
           "Secure Closure",
-
         icon:
           "security",
-
         description:
           "A full-perimeter zipper, secure mechanical center latch, and heavy-duty screw-mounted hardware provide dependable closure.",
       },
-
       {
         title:
           "Travel Ready",
-
         icon:
           "transport",
-
         description:
           "A sturdy side / subway-style handle, included removable backpack straps, and formed shoulder rest storage make everyday carrying convenient.",
       },
@@ -3229,65 +3414,48 @@ export const cases = [
       {
         title:
           "Five-Layer Plywood Protection",
-
         icon:
           "shield",
-
         description:
           "Durable five-layer plywood construction provides sturdy protection in a compact shaped viola case.",
       },
-
       {
         title:
           "Suspension Interior",
-
         icon:
           "interior",
-
         description:
           "A plush velour-lined suspension interior cushions and supports the viola during everyday transport.",
       },
-
       {
         title:
           "Two-Bow Capacity",
-
         icon:
           "storage",
-
         description:
           "Dedicated interior bow storage securely accommodates two bows.",
       },
-
       {
         title:
           "Exterior Accessory Pocket",
-
         icon:
           "music",
-
         description:
           "A small exterior accessory pocket provides convenient storage for compact everyday essentials.",
       },
-
       {
         title:
           "Zippered Protection",
-
         icon:
           "security",
-
         description:
           "A black nylon canvas zippered cover protects the plywood shell while providing durable everyday usability.",
       },
-
       {
         title:
           "Slim Travel Profile",
-
         icon:
           "transport",
-
         description:
           "The shaped design keeps the case compact and travel-friendly without the bulk of a traditional oblong case.",
       },
