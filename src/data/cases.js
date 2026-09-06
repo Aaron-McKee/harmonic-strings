@@ -58,6 +58,10 @@ import bobelockB2005OpenClosedImage from "../assets/Bobelock_B2005_Viola_Case_Op
 import bobelockB2005Open1Image from "../assets/Bobelock_B2005_Viola_Case_Open1.png";
 import bobelockB2005ClosedImage from "../assets/Bobelock_B2005_Viola_Case_Closed.png";
 
+import bobelockB2006OpenClosedImage from "../assets/Bobelock_B2006_Viola_Case_Open_Closed.png";
+import bobelockB2006Open1Image from "../assets/Bobelock_B2006_Viola_Case_Open1.png";
+import bobelockB2006ClosedImage from "../assets/Bobelock_B2006_Viola_Case_Closed.png";
+
 
 export const cases = [
   /* =====================================================
@@ -1354,10 +1358,6 @@ export const cases = [
       "Half-moon suspension violin case",
 
 
-    /* =====================================
-       IMAGES
-    ====================================== */
-
     image:
       bobelockB1047OpenClosedImage,
 
@@ -1370,10 +1370,6 @@ export const cases = [
     combinedImage:
       bobelockB1047OpenClosedImage,
 
-
-    /* =====================================
-       PRICING
-    ====================================== */
 
     regularPrice:
       null,
@@ -1388,17 +1384,9 @@ export const cases = [
       null,
 
 
-    /* =====================================
-       COLLECTION DESCRIPTION
-    ====================================== */
-
     description:
       "The Bobelock B1047 Half-Moon Violin Case combines a lighter, trimmer half-moon profile with the durability of Bobelock’s traditional five-layer plywood construction, offering dependable suspension protection, convenient music storage, and essential humidity-control accessories.",
 
-
-    /* =====================================
-       FULL DESCRIPTION
-    ====================================== */
 
     descriptionParagraphs: [
       "The Bobelock B1047 Half-Moon Violin Case brings a lighter and more streamlined profile to Bobelock’s traditional case construction. Built with the same five-layer plywood shell used in the company’s classic oblong cases, the half-moon shape provides a slimmer, easier-to-carry design without sacrificing dependable protection.",
@@ -1410,10 +1398,6 @@ export const cases = [
       "The B1047 includes a shoulder strap, hygrometer, humistat, and instrument blanket for convenient transport and instrument care. Available in 4/4, 3/4, and 1/2 violin sizes, it provides Bobelock protection in a lighter and trimmer shaped-case design.",
     ],
 
-
-    /* =====================================
-       KEY FEATURES
-    ====================================== */
 
     keyFeatures: [
       {
@@ -1484,10 +1468,6 @@ export const cases = [
     ],
 
 
-    /* =====================================
-       SPECIFICATIONS
-    ====================================== */
-
     size:
       "4/4, 3/4, 1/2",
 
@@ -1533,10 +1513,6 @@ export const cases = [
     protection:
       "Five-layer plywood shell with velour suspension interior",
 
-
-    /* =====================================
-       SIZE DETAILS
-    ====================================== */
 
     sizeDetails: [
       {
@@ -1591,10 +1567,6 @@ export const cases = [
       },
     ],
 
-
-    /* =====================================
-       INVENTORY
-    ====================================== */
 
     inStock:
       true,
@@ -2497,26 +2469,6 @@ export const cases = [
     ],
 
 
-    insideFeatures: [
-      "Plush-lined adjustable suspension interior.",
-      "Adjustable fit for violas from 15 inches to 16.5 inches.",
-      "Two Hill-style bow holders.",
-      "Interior accessory pockets.",
-      "Shoulder rest compartment.",
-      "Instrument blanket included.",
-    ],
-
-
-    outsideFeatures: [
-      "Oblong adjustable viola case design.",
-      "Thin plywood-reinforced foam shell.",
-      "Durable Cordura exterior.",
-      "Full-length exterior music pocket.",
-      "Zippered closure with sturdy hardware.",
-      "Backpack straps for carrying.",
-    ],
-
-
     inStock:
       true,
   },
@@ -2559,18 +2511,6 @@ export const cases = [
       "Adjustable oblong full-suspension viola case",
 
 
-    /* =====================================
-       IMAGES
-
-       COLLECTION:
-       Open + Closed
-
-       DETAIL:
-       Exterior = Closed
-       Interior = Open1
-       Both Views = Open + Closed
-    ====================================== */
-
     image:
       bobelockB2005OpenClosedImage,
 
@@ -2583,10 +2523,6 @@ export const cases = [
     combinedImage:
       bobelockB2005OpenClosedImage,
 
-
-    /* =====================================
-       PRICING
-    ====================================== */
 
     regularPrice:
       null,
@@ -2601,17 +2537,9 @@ export const cases = [
       null,
 
 
-    /* =====================================
-       COLLECTION DESCRIPTION
-    ====================================== */
-
     description:
       "The Bobelock B2005 Featherlite Viola Case combines an adjustable 15-to-17-inch fit with full suspension, four-bow storage, extensive accessories, and a lighter layered plywood-and-styrofoam shell in a traditional oblong profile.",
 
-
-    /* =====================================
-       FULL DESCRIPTION
-    ====================================== */
 
     descriptionParagraphs: [
       "The Bobelock B2005 Featherlite adjustable oblong viola case offers the flexibility to fit violas from 15 inches to 17 inches using Bobelock’s patented adjustable slide. Built in the traditional oblong shape, it provides the durability, protection, and practical storage expected from Bobelock while reducing weight compared with the standard all-wood version.",
@@ -2623,10 +2551,6 @@ export const cases = [
       "The B2005 family is available in both a standard five-layer wooden shell version and the lighter Featherlite version. The standard wood shell weighs approximately 9 lbs., while this Featherlite model weighs 7.0 lbs. and retains the same adjustable 15-to-17-inch viola range.",
     ],
 
-
-    /* =====================================
-       KEY FEATURES
-    ====================================== */
 
     keyFeatures: [
       {
@@ -2697,10 +2621,6 @@ export const cases = [
     ],
 
 
-    /* =====================================
-       SPECIFICATIONS
-    ====================================== */
-
     size:
       'Adjustable 15"–17"',
 
@@ -2745,10 +2665,6 @@ export const cases = [
       "Full suspension with semi-French fit, adjustable slide, instrument blanket, Velcro neck restraint, and tail-block sponge",
 
 
-    /* =====================================
-       EXTERNAL MEASUREMENTS
-    ====================================== */
-
     externalMeasurements: {
       totalLength:
         "32.375 in.",
@@ -2757,10 +2673,6 @@ export const cases = [
         "10.25 in.",
     },
 
-
-    /* =====================================
-       INSIDE FEATURES
-    ====================================== */
 
     insideFeatures: [
       "Full suspension.",
@@ -2777,10 +2689,6 @@ export const cases = [
     ],
 
 
-    /* =====================================
-       OUTSIDE FEATURES
-    ====================================== */
-
     outsideFeatures: [
       "Traditional oblong profile.",
       "Layered plywood and styrofoam Featherlite shell.",
@@ -2794,9 +2702,221 @@ export const cases = [
     ],
 
 
-    /* =====================================
-       INVENTORY
-    ====================================== */
+    inStock:
+      true,
+  },
+
+
+  /* =====================================================
+     BOBELOCK B2006
+     OBLONG VIOLA CASE
+  ====================================================== */
+
+  {
+    id:
+      "bobelock-b2006",
+
+    slug:
+      "bobelock-b2006-viola-case",
+
+    name:
+      "Bobelock B2006 Viola Case",
+
+    maker:
+      "Bobelock",
+
+    model:
+      "B2006",
+
+    reference:
+      "B2006",
+
+    category:
+      "Oblong Viola Case",
+
+    instrument:
+      "Viola",
+
+    caseType:
+      "Oblong",
+
+    caseStyle:
+      "Adjustable oblong suspension viola case",
+
+
+    image:
+      bobelockB2006OpenClosedImage,
+
+    closedImage:
+      bobelockB2006ClosedImage,
+
+    openImage:
+      bobelockB2006Open1Image,
+
+    combinedImage:
+      bobelockB2006OpenClosedImage,
+
+
+    regularPrice:
+      null,
+
+    salePrice:
+      null,
+
+    price:
+      "$350.00",
+
+    savings:
+      null,
+
+
+    description:
+      "The Bobelock B2006 Viola Case combines durable plywood construction, an adjustable 14-to-17-inch fit, plush velour suspension protection, and practical instrument-care accessories in a traditional professional oblong design.",
+
+
+    descriptionParagraphs: [
+      "The Bobelock Oblong Adjustable Viola Suspension Case combines strength, versatility, and professional-grade protection in a refined design built for advancing players and seasoned performers. Constructed from durable plywood in a traditional oblong shape, the B2006 provides dependable structural integrity while maintaining a classic, professional appearance.",
+
+      "Wrapped in a waterproof black canvas cover, the case provides reliable protection from rain and humidity for travel, lessons, rehearsals, and performances. Inside, the plush velour suspension interior cushions the viola securely, while an accessory pocket helps keep everyday essentials organized.",
+
+      "The B2006 includes two bow holders, a hygrometer, humistat, instrument blanket, shoulder rest clip, and shoulder strap. These practical features support instrument care and convenient transport without adding unnecessary complexity to the case layout.",
+
+      "Bobelock’s adjustable fit system accommodates violas from 14 inches to 17 inches and instruments up to 260 mm wide. This broad adjustment range makes the B2006 a versatile choice for advancing students, teachers working with multiple sizes, and professional violists who want a durable long-term case.",
+    ],
+
+
+    keyFeatures: [
+      {
+        title:
+          "Adjustable 14–17 Inch Fit",
+
+        icon:
+          "shield",
+
+        description:
+          "Bobelock’s adjustable fit system accommodates violas from 14 inches through 17 inches and up to 260 mm wide.",
+      },
+
+      {
+        title:
+          "Velour Suspension Interior",
+
+        icon:
+          "interior",
+
+        description:
+          "A plush velour suspension interior cushions and supports the viola during everyday transport.",
+      },
+
+      {
+        title:
+          "Two-Bow Capacity",
+
+        icon:
+          "storage",
+
+        description:
+          "Two dedicated bow holders provide secure storage for bows inside the case.",
+      },
+
+      {
+        title:
+          "Accessory Storage",
+
+        icon:
+          "music",
+
+        description:
+          "An interior accessory pocket keeps rosin and other compact essentials organized and easy to reach.",
+      },
+
+      {
+        title:
+          "Instrument Care",
+
+        icon:
+          "humidity",
+
+        description:
+          "A hygrometer, humistat, instrument blanket, and shoulder rest clip support instrument care and organization.",
+      },
+
+      {
+        title:
+          "Professional Transport",
+
+        icon:
+          "transport",
+
+        description:
+          "A waterproof black canvas exterior and included shoulder strap provide practical protection and carrying comfort.",
+      },
+    ],
+
+
+    size:
+      'Adjustable 14"–17" (up to 260 mm wide)',
+
+    availableSizes: [
+      'Adjustable 14"–17"',
+    ],
+
+    weight:
+      "8.5 lbs.",
+
+    shell:
+      "Plywood",
+
+    construction:
+      "Durable plywood construction in a traditional oblong shape with adjustable fit system",
+
+    exterior:
+      "Waterproof black canvas cover",
+
+    interior:
+      "Plush velour suspension interior with accessory pocket",
+
+    bowCapacity:
+      "2 bow holders",
+
+    musicPocket:
+      null,
+
+    closure:
+      null,
+
+    carrying:
+      "Shoulder strap included",
+
+    extraFeatures:
+      "Hygrometer, humistat, instrument blanket, shoulder rest clip, and accessory pocket",
+
+    color:
+      "Blue, Green, Gray, Wine, Tan",
+
+    protection:
+      "Durable plywood shell with plush velour suspension support and waterproof black canvas exterior",
+
+
+    insideFeatures: [
+      "Adjustable fit for violas from 14 inches to 17 inches and up to 260 mm wide.",
+      "Plush velour suspension interior.",
+      "Two bow holders.",
+      "Accessory pocket.",
+      "Hygrometer.",
+      "Humistat.",
+      "Instrument blanket.",
+      "Shoulder rest clip.",
+    ],
+
+
+    outsideFeatures: [
+      "Traditional oblong profile.",
+      "Durable plywood construction.",
+      "Waterproof black canvas cover.",
+      "Included shoulder strap.",
+    ],
+
 
     inStock:
       true,
@@ -2840,18 +2960,6 @@ export const cases = [
       "Dart / contoured-shaped suspension viola case",
 
 
-    /* =====================================
-       IMAGES
-
-       COLLECTION:
-       Open + Closed
-
-       DETAIL:
-       Exterior = Closed
-       Interior = Open
-       Both Views = Open + Closed 2
-    ====================================== */
-
     image:
       cc399VOpenClosedImage,
 
@@ -2864,10 +2972,6 @@ export const cases = [
     combinedImage:
       cc399VOpenClosed2Image,
 
-
-    /* =====================================
-       PRICING
-    ====================================== */
 
     regularPrice:
       null,
@@ -2882,17 +2986,9 @@ export const cases = [
       null,
 
 
-    /* =====================================
-       COLLECTION DESCRIPTION
-    ====================================== */
-
     description:
       "The Howard Core CC399V Viola Case is a lightweight shaped suspension case designed to provide dependable protection, convenient storage, and easy everyday transport for 15-inch through 16.5-inch violas.",
 
-
-    /* =====================================
-       FULL DESCRIPTION
-    ====================================== */
 
     descriptionParagraphs: [
       "The Howard Core CC399V Viola Case is a high-quality shaped suspension case, expertly crafted to provide lightweight protection and dependable durability. Its dart-style contoured profile uses a thin plywood-reinforced layered wood shell beneath a durable black Cordura exterior, balancing strength and portability for students, advancing players, teachers, and performers.",
@@ -2904,10 +3000,6 @@ export const cases = [
       "The CC399V is offered in two exact-fit viola size ranges: 15 to 15.5 inches for smaller intermediate violas and 16 to 16.5 inches for standard full-size orchestral violas. At 4.50 lbs., it provides practical protection and storage without the added bulk of a traditional oblong case. A 1-year limited warranty covers defects in materials and craftsmanship.",
     ],
 
-
-    /* =====================================
-       KEY FEATURES
-    ====================================== */
 
     keyFeatures: [
       {
@@ -2978,10 +3070,6 @@ export const cases = [
     ],
 
 
-    /* =====================================
-       SPECIFICATIONS
-    ====================================== */
-
     size:
       '15"–15.5", 16"–16.5"',
 
@@ -3027,10 +3115,6 @@ export const cases = [
       "Thin plywood-reinforced shell with deep plush suspension padding designed to cushion the viola during everyday transport",
 
 
-    /* =====================================
-       SIZE DETAILS
-    ====================================== */
-
     sizeDetails: [
       {
         model:
@@ -3056,47 +3140,9 @@ export const cases = [
     ],
 
 
-    /* =====================================
-       INSIDE FEATURES
-    ====================================== */
-
-    insideFeatures: [
-      "Deep plush-lined suspension interior with dense protective padding.",
-      "Two secure spinner bow holders built into the upper lid.",
-      "Matched plush fabric instrument blanket.",
-      "One dedicated internal accessory compartment with lid.",
-      "Formed lower storage cavity for a folding shoulder rest.",
-    ],
-
-
-    /* =====================================
-       OUTSIDE FEATURES
-    ====================================== */
-
-    outsideFeatures: [
-      "Dart / contoured-shaped suspension design.",
-      "Thin plywood-reinforced layered wood shell.",
-      "Heavy-duty water-resistant black Cordura exterior.",
-      "Integrated full-length expandable exterior music pocket.",
-      "Full-perimeter zipper closure.",
-      "Secure mechanical center latch.",
-      "Heavy-duty screw-mounted hardware.",
-      "Heavy-duty structural side / subway-style carrying handle.",
-      "D-rings with included removable backpack straps.",
-    ],
-
-
-    /* =====================================
-       WARRANTY
-    ====================================== */
-
     warranty:
       "1-year limited warranty covering defects in materials and craftsmanship",
 
-
-    /* =====================================
-       INVENTORY
-    ====================================== */
 
     inStock:
       true,
@@ -3140,18 +3186,6 @@ export const cases = [
       "Slim-profile shaped suspension viola case",
 
 
-    /* =====================================
-       IMAGES
-
-       COLLECTION:
-       Open + Closed
-
-       DETAIL:
-       Exterior = Closed
-       Interior = Open
-       Both Views = Open + Closed
-    ====================================== */
-
     image:
       bobelockB2001OpenClosedImage,
 
@@ -3164,10 +3198,6 @@ export const cases = [
     combinedImage:
       bobelockB2001OpenClosedImage,
 
-
-    /* =====================================
-       PRICING
-    ====================================== */
 
     regularPrice:
       null,
@@ -3182,17 +3212,9 @@ export const cases = [
       null,
 
 
-    /* =====================================
-       COLLECTION DESCRIPTION
-    ====================================== */
-
     description:
       "The Bobelock B2001 Viola Case combines a slim, travel-friendly shaped profile with durable five-layer plywood construction, plush velour suspension protection, two-bow storage, and practical exterior accessory space.",
 
-
-    /* =====================================
-       FULL DESCRIPTION
-    ====================================== */
 
     descriptionParagraphs: [
       "The Bobelock B2001 Shaped Viola Case is a premium, slim-profile case designed for violists who need durable protection without the bulk of traditional oblong cases. Crafted with five-layer plywood construction and a plush velour-lined interior with suspension, this case ensures your instrument remains secure while providing a touch of elegance. Its black nylon canvas zippered exterior with a small accessory pocket combines resilience with practicality for everyday use or travel.",
@@ -3202,10 +3224,6 @@ export const cases = [
       "Ideal for students, professional players, and advancing musicians, this shaped viola case stands out for its travel-friendly slim design, secure interior suspension, and elegant velour lining. Lightweight yet sturdy, it fits most airline carry-on restrictions and provides convenient storage with its exterior accessory pocket, making it a versatile choice for any violist.",
     ],
 
-
-    /* =====================================
-       KEY FEATURES
-    ====================================== */
 
     keyFeatures: [
       {
@@ -3276,10 +3294,6 @@ export const cases = [
     ],
 
 
-    /* =====================================
-       SPECIFICATIONS
-    ====================================== */
-
     size:
       '15", 15.5", 16", 16.5", 17"',
 
@@ -3328,20 +3342,12 @@ export const cases = [
       "Five-layer plywood shell with plush velour suspension interior and included instrument blanket",
 
 
-    /* =====================================
-       INSIDE FEATURES
-    ====================================== */
-
     insideFeatures: [
       "Plush velour-lined suspension interior.",
       "Holds 2 bows.",
       "Instrument blanket included.",
     ],
 
-
-    /* =====================================
-       OUTSIDE FEATURES
-    ====================================== */
 
     outsideFeatures: [
       "Slim shaped viola case profile.",
@@ -3352,11 +3358,8 @@ export const cases = [
     ],
 
 
-    /* =====================================
-       INVENTORY
-    ====================================== */
-
     inStock:
       true,
   },
+
 ];
