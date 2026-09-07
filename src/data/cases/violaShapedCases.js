@@ -7,6 +7,10 @@ import bobelockB2001OpenClosedImage from "../../assets/Bobelock_2001_Viola_Case_
 import bobelockB2001OpenImage from "../../assets/Bobelock_2001_Viola_Case_Open1.png";
 import bobelockB2001ClosedImage from "../../assets/Bobelock_2001_Viola_Case_Closed.png";
 
+import bam2200XLOpenClosedImage from "../../assets/Bam_2200XL_Hightech_Viola_Case_Open_Closed.png";
+import bam2200XLOpenImage from "../../assets/Bam_2200XL_Hightech_Viola_Case_Open.png";
+import bam2200XLClosedImage from "../../assets/Bam_2200XL_Hightech_Viola_Case_Closed.png";
+
 
 export const violaShapedCases = [
   /* =====================================================
@@ -407,6 +411,250 @@ export const violaShapedCases = [
       "Black nylon canvas zippered cover.",
       "Small exterior accessory pocket.",
       "Shoulder strap not included.",
+    ],
+
+
+    inStock:
+      true,
+  },
+
+
+  /* =====================================================
+     BAM HIGHTECH 2200XL
+     SHAPED VIOLA CASE
+  ====================================================== */
+
+  {
+    id:
+      "bam-hightech-2200xl",
+
+    slug:
+      "bam-2200xl-hightech-viola-case",
+
+    name:
+      "BAM 2200XL Hightech Viola Case",
+
+    maker:
+      "Bam",
+
+    model:
+      "2200XL Hightech",
+
+    reference:
+      "2200XL",
+
+    category:
+      "Shaped Viola Case",
+
+    instrument:
+      "Viola",
+
+    caseType:
+      "Shaped",
+
+    caseStyle:
+      "Hightech contoured adjustable viola case",
+
+
+    image:
+      bam2200XLOpenClosedImage,
+
+    closedImage:
+      bam2200XLClosedImage,
+
+    openImage:
+      bam2200XLOpenImage,
+
+    combinedImage:
+      bam2200XLOpenClosedImage,
+
+
+    regularPrice:
+      null,
+
+    salePrice:
+      null,
+
+    price:
+      "$954.00",
+
+    savings:
+      null,
+
+
+    description:
+      "The BAM 2200XL Hightech Viola Case combines an adjustable fit for violas up to 17 inches, full suspension protection, ultralight Hightech construction, two-bow storage, and professional travel features in a streamlined contoured design.",
+
+
+    descriptionParagraphs: [
+      "The BAM 2200XL Hightech Viola Case is designed for violas adjustable up to 43 cm / 17 inches and combines Bam’s contoured Hightech construction with a lightweight professional carrying design. Its triple-ply coated and insulated ABS structure is made from high-performance materials to provide outstanding protection while keeping the case remarkably light.",
+
+      "Inside, the viola is fully suspended on premium fabric-covered injected foam cushions for enhanced protection and instrument care. The interior is fitted for two full-size bows and includes a removable accessory draw-string pouch along with a secure strap for a Kun-style shoulder rest.",
+
+      "The exterior includes an ergonomic carrying side handle, a detachable subway handle for close-quarters travel, and two comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks. Two BAM Series 2 soft-touch latches with included keys and a male/female airtight H seal provide secure closure.",
+
+      "Anti-slip and anti-wear rubber patches help prevent sliding and protect the case during travel. At 4 lbs. 6 oz., the 2200XL combines adjustable viola fit, full suspension protection, secure hardware, and practical professional transport features.",
+    ],
+
+
+    keyFeatures: [
+      {
+        title:
+          "Hightech Protection",
+
+        icon:
+          "shield",
+
+        description:
+          "Triple-ply coated and insulated ABS Hightech construction provides outstanding protection using lightweight high-performance materials.",
+      },
+
+      {
+        title:
+          "Full Suspension Interior",
+
+        icon:
+          "interior",
+
+        description:
+          "Premium fabric-covered injected foam cushions fully suspend the viola for enhanced protection and instrument care.",
+      },
+
+      {
+        title:
+          "Two-Bow Capacity",
+
+        icon:
+          "storage",
+
+        description:
+          "Dedicated interior fittings provide secure storage for two full-size bows.",
+      },
+
+      {
+        title:
+          "Accessory Storage",
+
+        icon:
+          "music",
+
+        description:
+          "A removable draw-string accessory pouch and secure Kun-style shoulder rest strap keep essential accessories organized.",
+      },
+
+      {
+        title:
+          "Secure Hightech Closure",
+
+        icon:
+          "security",
+
+        description:
+          "Two BAM Series 2 soft-touch latches with included keys and a male/female airtight H seal provide secure closure.",
+      },
+
+      {
+        title:
+          "Professional Transport",
+
+        icon:
+          "transport",
+
+        description:
+          "An ergonomic side handle, detachable subway handle, and two neoprene anti-slip backpack straps provide versatile carrying options.",
+      },
+    ],
+
+
+    size:
+      'Adjustable up to 17" / 43 cm',
+
+    availableSizes: [
+      'Adjustable up to 17" / 43 cm',
+    ],
+
+    weight:
+      "4 lbs. 6 oz.",
+
+    shell:
+      "Triple-ply coated and insulated ABS Hightech structure",
+
+    construction:
+      "Contoured Bam Hightech triple-ply coated and insulated ABS construction made from high-performance materials",
+
+    exterior:
+      "Contoured Hightech shell with anti-slip and anti-wear rubber patches",
+
+    interior:
+      "Premium fabric-covered injected foam cushions with full suspension support",
+
+    bowCapacity:
+      "2 full-size bows",
+
+    musicPocket:
+      null,
+
+    closure:
+      "2 BAM Series 2 soft-touch latches with included keys and male/female airtight H seal",
+
+    carrying:
+      "Ergonomic side handle, detachable subway handle, and 2 neoprene anti-slip backpack straps",
+
+    extraFeatures:
+      "Removable accessory draw-string pouch, secure Kun-style shoulder rest strap, and covered security screw carabiner hooks",
+
+    color:
+      null,
+
+    protection:
+      "Triple-ply insulated ABS Hightech shell with full suspension injected foam cushions, airtight H seal, and anti-slip / anti-wear rubber protection",
+
+
+    internalMeasurements: {
+      totalLength:
+        "31.5 in. / 80 cm.",
+
+      bodyLength:
+        "16.92 in. / 43 cm.",
+
+      upperBout:
+        "8.3 in. / 21 cm.",
+
+      lowerBout:
+        "10.4 in. / 26.5 cm. (Maximum)",
+    },
+
+
+    externalMeasurements: {
+      totalLength:
+        "32.7 in. / 83 cm.",
+
+      caseWidth:
+        "12.2 in. / 31 cm.",
+
+      caseDepth:
+        "7.5 in. / 19 cm.",
+    },
+
+
+    insideFeatures: [
+      "Made for viola, adjustable up to 43 cm / 17 inches.",
+      "Full suspension on premium fabric-covered injected foam cushions.",
+      "Fitted for 2 full-size bows.",
+      "Removable accessory draw-string pouch.",
+      'Secure strap for a "Kun" style shoulder rest.',
+    ],
+
+
+    outsideFeatures: [
+      "Contoured shells made using the Bam Hightech technique: a triple-ply coated and insulated ABS structure made of high-performance materials.",
+      "Outstanding protection and ultralight weight.",
+      "Ergonomic carrying side handle.",
+      "Included detachable subway handle for close-quarters travel.",
+      "Fitted with 2 BAM Series 2 soft-touch latches with included set of keys.",
+      'Male/female airtight "H" seal.',
+      "Includes 2 comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks.",
+      "Fitted with anti-slip and anti-wear rubber patches to prevent sliding.",
     ],
 
 
