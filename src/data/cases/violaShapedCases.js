@@ -7,9 +7,17 @@ import bobelockB2001OpenClosedImage from "../../assets/Bobelock_2001_Viola_Case_
 import bobelockB2001OpenImage from "../../assets/Bobelock_2001_Viola_Case_Open1.png";
 import bobelockB2001ClosedImage from "../../assets/Bobelock_2001_Viola_Case_Closed.png";
 
+import bobelockB2048OpenClosedImage from "../../assets/Bobelock_B2048_Half_Moon_Viola_Case_Open_Closed.png";
+import bobelockB2048Open1Image from "../../assets/Bobelock_B2048_Half_Moon_Viola_Case_Open1.png";
+import bobelockB2048ClosedImage from "../../assets/Bobelock_B2048_Half_Moon_Viola_Case_Closed.png";
+
 import bam2200XLOpenClosedImage from "../../assets/Bam_2200XL_Hightech_Viola_Case_Open_Closed.png";
 import bam2200XLOpenImage from "../../assets/Bam_2200XL_Hightech_Viola_Case_Open.png";
 import bam2200XLClosedImage from "../../assets/Bam_2200XL_Hightech_Viola_Case_Closed.png";
+
+import bamGraffitiOpenClosedImage from "../../assets/Bam_Graffiti_ Hightech_Viola_Case_Open_Closed.png";
+import bamGraffitiOpenImage from "../../assets/Bam_Graffiti_ Hightech_Viola_Case_Open.png";
+import bamGraffitiClosedImage from "../../assets/Bam_Graffiti_ Hightech_Viola_Case_Closed.png";
 
 
 export const violaShapedCases = [
@@ -420,6 +428,222 @@ export const violaShapedCases = [
 
 
   /* =====================================================
+     BOBELOCK B2048 HALF MOON
+     SHAPED VIOLA CASE
+  ====================================================== */
+
+  {
+    id:
+      "bobelock-b2048-half-moon",
+
+    slug:
+      "bobelock-b2048-half-moon-viola-case",
+
+    name:
+      "Bobelock B2048 Half Moon Viola Case",
+
+    maker:
+      "Bobelock",
+
+    model:
+      "B2048 Half Moon",
+
+    reference:
+      "B2048",
+
+    category:
+      "Shaped Viola Case",
+
+    instrument:
+      "Viola",
+
+    caseType:
+      "Shaped",
+
+    caseStyle:
+      "Half-moon adjustable suspension viola case",
+
+
+    image:
+      bobelockB2048OpenClosedImage,
+
+    closedImage:
+      bobelockB2048ClosedImage,
+
+    openImage:
+      bobelockB2048Open1Image,
+
+    combinedImage:
+      bobelockB2048OpenClosedImage,
+
+
+    regularPrice:
+      null,
+
+    salePrice:
+      null,
+
+    price:
+      "$375.00",
+
+    savings:
+      null,
+
+
+    description:
+      "The Bobelock B2048 Half Moon Viola Case combines five-layer plywood construction, an adjustable 15-to-16.5-inch fit, plush velour suspension protection, four-bow storage, and a streamlined half-moon profile for advancing and professional violists.",
+
+
+    descriptionParagraphs: [
+      "The Bobelock Half-Moon Adjustable Velour Viola Case delivers a balance of modern style, durable craftsmanship, and secure protection for advancing and professional violists. Built from five-layered plywood, the B2048 offers Bobelock’s signature durability in a sleek half-moon shape that reduces bulk while maintaining dependable strength and protection.",
+
+      "The exterior is covered in durable black nylon canvas with a zippered cover and full-size music pocket, providing weather-resistant protection and convenient storage. Inside, a soft velour suspension interior securely supports and cushions the viola during lessons, rehearsals, performances, and travel.",
+
+      "Four bow holders provide generous bow storage, while an included hygrometer, humistat, and instrument blanket support instrument care. A padded shoulder strap provides a convenient carrying option for musicians on the go.",
+
+      "The adjustable interior fits violas from 15 inches to 16.5 inches and instruments up to 260 mm wide. Available in Blue, Green, Gray, Wine, and Tan, the B2048 combines adaptable fit, professional protection, and a refined half-moon profile.",
+    ],
+
+
+    keyFeatures: [
+      {
+        title:
+          "Five-Layer Plywood Protection",
+
+        icon:
+          "shield",
+
+        description:
+          "Five-layered plywood construction provides durable structural protection in a streamlined half-moon profile.",
+      },
+
+      {
+        title:
+          "Velour Suspension Interior",
+
+        icon:
+          "interior",
+
+        description:
+          "A soft velour suspension interior securely supports and cushions the viola during everyday transport.",
+      },
+
+      {
+        title:
+          "Four-Bow Capacity",
+
+        icon:
+          "storage",
+
+        description:
+          "Four bow holders provide secure dedicated storage for players who carry multiple bows.",
+      },
+
+      {
+        title:
+          "Full-Size Music Storage",
+
+        icon:
+          "music",
+
+        description:
+          "A full-size exterior music pocket provides convenient storage for sheet music and everyday essentials.",
+      },
+
+      {
+        title:
+          "Instrument Care",
+
+        icon:
+          "humidity",
+
+        description:
+          "An included hygrometer, humistat, and instrument blanket support instrument care and protection.",
+      },
+
+      {
+        title:
+          "Adjustable Travel Design",
+
+        icon:
+          "transport",
+
+        description:
+          "The adjustable interior fits 15-to-16.5-inch violas up to 260 mm wide, while the padded shoulder strap makes transport convenient.",
+      },
+    ],
+
+
+    size:
+      'Adjustable 15"–16.5" (up to 260 mm wide)',
+
+    availableSizes: [
+      'Adjustable 15"–16.5"',
+    ],
+
+    weight:
+      "9.0 lbs.",
+
+    shell:
+      "Five-layered plywood",
+
+    construction:
+      "Five-layered plywood construction in a half-moon shape with adjustable interior",
+
+    exterior:
+      "Durable black nylon canvas zippered cover with full-size exterior music pocket",
+
+    interior:
+      "Velour suspension interior with accessory fittings",
+
+    bowCapacity:
+      "4 bow holders",
+
+    musicPocket:
+      "Full-size exterior music pocket",
+
+    closure:
+      "Zippered black nylon canvas cover",
+
+    carrying:
+      "Padded shoulder strap included",
+
+    extraFeatures:
+      "Hygrometer, humistat, instrument blanket, and accessory fittings",
+
+    color:
+      "Blue, Green, Gray, Wine, Tan",
+
+    protection:
+      "Five-layered plywood shell with velour suspension support and weather-resistant black nylon canvas exterior",
+
+
+    insideFeatures: [
+      "Adjustable fit for violas from 15 inches to 16.5 inches and up to 260 mm wide.",
+      "Velour suspension interior.",
+      "Four bow holders.",
+      "Hygrometer.",
+      "Humistat.",
+      "Instrument blanket.",
+      "Accessory fittings.",
+    ],
+
+
+    outsideFeatures: [
+      "Half-moon profile.",
+      "Five-layered plywood construction.",
+      "Durable black nylon canvas zippered cover.",
+      "Full-size exterior music pocket.",
+      "Padded shoulder strap included.",
+    ],
+
+
+    inStock:
+      true,
+  },
+
+
+  /* =====================================================
      BAM HIGHTECH 2200XL
      SHAPED VIOLA CASE
   ====================================================== */
@@ -661,4 +885,252 @@ export const violaShapedCases = [
     inStock:
       true,
   },
+
+
+  /* =====================================================
+     BAM GRAFFITI HIGHTECH GRAF2200XL
+     SHAPED VIOLA CASE
+  ====================================================== */
+
+  {
+    id:
+      "bam-graffiti-hightech-graf2200xl",
+
+    slug:
+      "bam-graffiti-hightech-viola-case",
+
+    name:
+      "BAM Graffiti Hightech Viola Case",
+
+    maker:
+      "Bam",
+
+    model:
+      "Graffiti Hightech",
+
+    reference:
+      "GRAF2200XL",
+
+    category:
+      "Shaped Viola Case",
+
+    instrument:
+      "Viola",
+
+    caseType:
+      "Shaped",
+
+    caseStyle:
+      "Hightech contoured adjustable viola case",
+
+    origin:
+      "Made in France",
+
+
+    image:
+      bamGraffitiOpenClosedImage,
+
+    closedImage:
+      bamGraffitiClosedImage,
+
+    openImage:
+      bamGraffitiOpenImage,
+
+    combinedImage:
+      bamGraffitiOpenClosedImage,
+
+
+    regularPrice:
+      null,
+
+    salePrice:
+      null,
+
+    price:
+      "$1,037",
+
+    savings:
+      null,
+
+
+    description:
+      "The BAM Graffiti Hightech Viola Case combines Bam’s Hightech expertise made in France with an adjustable fit for violas up to 17 inches, full suspension protection, ultralight construction, secure professional hardware, and distinctive Graffiti styling.",
+
+
+    descriptionParagraphs: [
+      "The BAM Graffiti Hightech Viola Case brings Bam’s Hightech expertise made in France to an adjustable shaped case for violas up to 43 cm / 17 inches. Its premium lightweight triple-ply insulated ABS structure is made from high-performance materials and embossed with the Bam logo, providing outstanding protection while maintaining an ultralight carrying weight.",
+
+      "Inside, the viola is fully suspended on premium fabric-covered injected foam cushions for enhanced protection and instrument care. The interior is fitted for two full-size bows and includes a removable accessory draw-string pouch along with a secure strap for a Kun-style shoulder rest.",
+
+      "The exterior includes an ergonomic carrying side handle, a detachable subway handle for close-quarters travel, and two comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks. Two BAM Series 2 soft-touch latches with included keys and a male/female airtight H seal provide secure closure.",
+
+      "Anti-slip and anti-wear rubber patches help prevent sliding during transport. The case weighs 4 lbs. 8 oz. and is available in White with orange trim, green with orange trim, raspberry red with sliver trim, and navy blue with red trim.",
+    ],
+
+
+    keyFeatures: [
+      {
+        title:
+          "Hightech Protection",
+
+        icon:
+          "shield",
+
+        description:
+          "A premium lightweight triple-ply insulated ABS Hightech structure made from high-performance materials provides outstanding protection with ultralight weight.",
+      },
+
+      {
+        title:
+          "Full Suspension Interior",
+
+        icon:
+          "interior",
+
+        description:
+          "Premium fabric-covered injected foam cushions fully suspend the viola for enhanced protection and instrument care.",
+      },
+
+      {
+        title:
+          "Two-Bow Capacity",
+
+        icon:
+          "storage",
+
+        description:
+          "Dedicated interior fittings provide secure storage for two full-size bows.",
+      },
+
+      {
+        title:
+          "Accessory Storage",
+
+        icon:
+          "music",
+
+        description:
+          "A removable draw-string accessory pouch and secure Kun-style shoulder rest strap keep essential accessories organized.",
+      },
+
+      {
+        title:
+          "Secure Hightech Closure",
+
+        icon:
+          "security",
+
+        description:
+          "Two BAM Series 2 soft-touch latches with included keys and a male/female airtight H seal provide secure closure.",
+      },
+
+      {
+        title:
+          "Professional Transport",
+
+        icon:
+          "transport",
+
+        description:
+          "An ergonomic side handle, detachable subway handle, and two neoprene anti-slip backpack straps provide versatile carrying options.",
+      },
+    ],
+
+
+    size:
+      'Adjustable up to 17" / 43 cm',
+
+    availableSizes: [
+      'Adjustable up to 17" / 43 cm',
+    ],
+
+    weight:
+      "4 lbs. 8 oz.",
+
+    shell:
+      "Premium lightweight triple-ply insulated ABS Hightech structure made from high-performance materials",
+
+    construction:
+      "Bam Hightech premium lightweight triple-ply insulated ABS construction embossed with the Bam logo",
+
+    exterior:
+      "Hightech shell with anti-slip and anti-wear rubber patches",
+
+    interior:
+      "Premium fabric-covered injected foam cushions with full suspension support",
+
+    bowCapacity:
+      "2 full-size bows",
+
+    musicPocket:
+      null,
+
+    closure:
+      "2 BAM Series 2 soft-touch latches with included keys and male/female airtight H seal",
+
+    carrying:
+      "Ergonomic side handle, detachable subway handle, and 2 neoprene anti-slip backpack straps",
+
+    extraFeatures:
+      "Removable accessory draw-string pouch, secure Kun-style shoulder rest strap, covered security screw carabiner hooks, and shell embossed with the Bam logo",
+
+    color:
+      "White with orange trim, green with orange trim, raspberry red with sliver trim, navy blue with red trim",
+
+    protection:
+      "Premium lightweight triple-ply insulated ABS Hightech shell with full suspension injected foam cushions, airtight H seal, and anti-slip / anti-wear rubber protection",
+
+
+    internalMeasurements: {
+      totalLength:
+        "31.5 in. / 80 cm.",
+
+      bodyLength:
+        "16.92 in. / 43 cm.",
+
+      upperBout:
+        "8.3 in. / 21 cm.",
+
+      lowerBout:
+        "10.4 in. / 26.5 cm. (Maximum)",
+    },
+
+
+    externalMeasurements: {
+      totalLength:
+        "32.7 in. / 83 cm.",
+
+      caseWidth:
+        "12.2 in. / 31 cm.",
+
+      caseDepth:
+        "7.5 in. / 19 cm.",
+    },
+
+
+    insideFeatures: [
+      "Made for viola, adjustable up to 43 cm / 17 inches.",
+      "Full suspension on premium fabric-covered injected foam cushions.",
+      "Fitted for 2 full-size bows.",
+      "Removable accessory draw-string pouch.",
+      'Secure strap for a "Kun" style shoulder rest.',
+    ],
+
+
+    outsideFeatures: [
+      "Shells made using the Bam Hightech technique: a premium lightweight triple-ply insulated ABS structure made of high-performance materials, embossed with the Bam logo.",
+      "Outstanding protection and ultralight weight.",
+      "Ergonomic carrying side handle.",
+      "Included detachable subway handle for close-quarters travel.",
+      "Fitted with 2 BAM Series 2 soft-touch latches with included set of keys.",
+      'Male/female airtight "H" seal.',
+      "Includes 2 comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks.",
+      "Fitted with anti-slip and anti-wear rubber patches to prevent sliding.",
+    ],
+
+
+    inStock:
+      true,
+  },
+
 ];
