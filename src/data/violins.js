@@ -348,7 +348,7 @@ export const violins = [
     ====================================== */
 
     price:
-      "$3,800.00",
+      "$3,800",
 
     regularPrice:
       null,
@@ -657,7 +657,7 @@ export const violins = [
     ====================================== */
 
     price:
-      "$4,200.00",
+      "$4,200",
 
     regularPrice:
       null,

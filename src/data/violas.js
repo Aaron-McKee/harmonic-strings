@@ -37,7 +37,7 @@ export const violas = [
     backImage: ca500BackImage,
     combinedImage: ca500CombinedImage,
 
-    price: "$969",
+    price: "$969.00",
     regularPrice: null,
     salePrice: null,
     savings: null,

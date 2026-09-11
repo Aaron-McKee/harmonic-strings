@@ -241,10 +241,10 @@ export const cellos = [
       null,
 
     regularPrice:
-      "$1,933.00",
+      "$1,933",
 
     salePrice:
-      "$1,545.00",
+      "$1,545",
 
     savings:
       "Save $388",
