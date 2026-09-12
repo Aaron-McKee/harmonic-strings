@@ -19,6 +19,10 @@ import bamGraffitiOpenClosedImage from "../../assets/Bam_Graffiti_ Hightech_Viol
 import bamGraffitiOpenImage from "../../assets/Bam_Graffiti_ Hightech_Viola_Case_Open.png";
 import bamGraffitiClosedImage from "../../assets/Bam_Graffiti_ Hightech_Viola_Case_Closed.png";
 
+import bamET2200XLClosedImage from "../../assets/Bam_ET2200XL_Hightech_L'etoile_Contoured_Viola_Case_Closed.png";
+import bamET2200XLOpenImage from "../../assets/Bam_ET2200XL_Hightech_L'etoile_Contoured_Viola_Case_Open.png";
+import bamET2200XLOpenClosedImage from "../../assets/Bam_ET2200XL_Hightech_L'etoile_Contoured_Viola_Case_Open_Closed.png";
+
 
 export const violaShapedCases = [
   /* =====================================================
@@ -1121,6 +1125,250 @@ export const violaShapedCases = [
       "Shells made using the Bam Hightech technique: a premium lightweight triple-ply insulated ABS structure made of high-performance materials, embossed with the Bam logo.",
       "Outstanding protection and ultralight weight.",
       "Ergonomic carrying side handle.",
+      "Included detachable subway handle for close-quarters travel.",
+      "Fitted with 2 BAM Series 2 soft-touch latches with included set of keys.",
+      'Male/female airtight "H" seal.',
+      "Includes 2 comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks.",
+      "Fitted with anti-slip and anti-wear rubber patches to prevent sliding.",
+    ],
+
+
+    inStock:
+      true,
+  },
+
+
+  /* =====================================================
+     BAM ET2200XL HIGHTECH L'ETOILE CONTOURED
+     SHAPED VIOLA CASE
+  ====================================================== */
+
+  {
+    id:
+      "bam-et2200xl-hightech-letoile-contoured",
+
+    slug:
+      "bam-et2200xl-hightech-letoile-contoured-viola-case",
+
+    name:
+      "Bam ET2200XL Hightech L'etoile Contoured Viola Case",
+
+    maker:
+      "Bam",
+
+    model:
+      "ET2200XL Hightech L'etoile Contoured",
+
+    reference:
+      "ET2200XL",
+
+    category:
+      "Shaped Viola Case",
+
+    instrument:
+      "Viola",
+
+    caseType:
+      "Shaped",
+
+    caseStyle:
+      "Hightech contoured adjustable viola case",
+
+
+    image:
+      bamET2200XLOpenClosedImage,
+
+    closedImage:
+      bamET2200XLClosedImage,
+
+    openImage:
+      bamET2200XLOpenImage,
+
+    combinedImage:
+      bamET2200XLOpenClosedImage,
+
+
+    regularPrice:
+      null,
+
+    salePrice:
+      null,
+
+    price:
+      "$1,500",
+
+    savings:
+      null,
+
+
+    description:
+      "The Bam ET2200XL Hightech L'etoile Contoured Viola Case combines an adjustable fit for violas up to 17 inches, full suspension protection, premium Hightech construction, two-bow storage, real cow Leather Cases sewn on the top shell, and professional travel features in a contoured design.",
+
+
+    descriptionParagraphs: [
+      "The Bam ET2200XL Hightech L'etoile Contoured Viola Case is designed for violas adjustable up to 43 cm / 17 inches. Its contoured shell uses Bam's Hightech technique, combining a triple-ply coated and insulated ABS structure made from high-performance materials with real cow Leather Cases sewn on the top shell.",
+
+      "Inside, the viola is fully suspended on premium fabric-covered injected foam cushions for enhanced protection and instrument care. The interior is fitted for two full-size bows and includes a removable accessory draw-string pouch along with a secure strap for a Kun-style shoulder rest.",
+
+      "The exterior includes a premium ergonomic carrying side handle in matching Leather Cases and an included detachable subway handle for close-quarters travel. Two BAM Series 2 soft-touch latches with included keys provide secure closure, while a male/female airtight H seal helps protect the case interior.",
+
+      "Two comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks provide hands-free transportation. Anti-slip and anti-wear rubber patches help prevent sliding. At 4 lbs. 14 oz., the ET2200XL combines premium Hightech protection, adjustable viola fit, and professional portability.",
+    ],
+
+
+    keyFeatures: [
+      {
+        title:
+          "Hightech Protection",
+
+        icon:
+          "shield",
+
+        description:
+          "A triple-ply coated and insulated ABS Hightech structure made from high-performance materials provides outstanding protection, with real cow Leather Cases sewn on the top shell.",
+      },
+
+      {
+        title:
+          "Full Suspension Interior",
+
+        icon:
+          "interior",
+
+        description:
+          "Premium fabric-covered injected foam cushions fully suspend the viola for enhanced protection and instrument care.",
+      },
+
+      {
+        title:
+          "Two-Bow Capacity",
+
+        icon:
+          "storage",
+
+        description:
+          "Dedicated interior fittings provide secure storage for two full-size bows.",
+      },
+
+      {
+        title:
+          "Accessory Storage",
+
+        icon:
+          "music",
+
+        description:
+          "A removable draw-string accessory pouch and secure Kun-style shoulder rest strap keep essential accessories organized.",
+      },
+
+      {
+        title:
+          "Secure Hightech Closure",
+
+        icon:
+          "security",
+
+        description:
+          "Two BAM Series 2 soft-touch latches with included keys and a male/female airtight H seal provide secure closure.",
+      },
+
+      {
+        title:
+          "Professional Transport",
+
+        icon:
+          "transport",
+
+        description:
+          "A premium ergonomic side handle in matching Leather Cases, detachable subway handle, and two neoprene anti-slip backpack straps provide versatile carrying options.",
+      },
+    ],
+
+
+    size:
+      'Adjustable up to 17" / 43 cm',
+
+    availableSizes: [
+      'Adjustable up to 17" / 43 cm',
+    ],
+
+    weight:
+      "4 lbs. 14 oz.",
+
+    shell:
+      "Triple-ply coated and insulated ABS Hightech structure with real cow Leather Cases sewn on the top shell",
+
+    construction:
+      "Contoured Bam Hightech triple-ply coated and insulated ABS construction made from high-performance materials with real cow Leather Cases sewn on the top shell",
+
+    exterior:
+      "Contoured Hightech shell with real cow Leather Cases sewn on the top shell and anti-slip / anti-wear rubber patches",
+
+    interior:
+      "Premium fabric-covered injected foam cushions with full suspension support",
+
+    bowCapacity:
+      "2 full-size bows",
+
+    musicPocket:
+      null,
+
+    closure:
+      "2 BAM Series 2 soft-touch latches with included set of keys and male/female airtight H seal",
+
+    carrying:
+      "Premium ergonomic side handle in matching Leather Cases, detachable subway handle, and 2 neoprene anti-slip backpack straps",
+
+    extraFeatures:
+      "Removable accessory draw-string pouch, secure Kun-style shoulder rest strap, covered security screw carabiner hooks, and anti-slip / anti-wear rubber patches",
+
+    color:
+      null,
+
+    protection:
+      "Triple-ply coated and insulated ABS Hightech shell with full suspension injected foam cushions, airtight H seal, and anti-slip / anti-wear rubber protection",
+
+
+    internalMeasurements: {
+      totalLength:
+        "31.5 in. / 80 cm.",
+
+      bodyLength:
+        "16.92 in. / 43 cm.",
+
+      upperBout:
+        "8.3 in. / 21 cm.",
+
+      lowerBout:
+        "10.4 in. / 26.5 cm. (Maximum)",
+    },
+
+
+    externalMeasurements: {
+      totalLength:
+        "32.7 in. / 83 cm.",
+
+      caseWidth:
+        "12.2 in. / 31 cm.",
+
+      caseDepth:
+        "7.5 in. / 19 cm.",
+    },
+
+
+    insideFeatures: [
+      "Made for viola, adjustable up to 43 cm / 17 inches.",
+      "Full suspension of the instrument on premium fabric-covered injected foam cushions for enhanced protection and instrument care.",
+      "Fitted for 2 full-size bows.",
+      "Removable accessory draw-string pouch.",
+      'Secure strap for a "Kun" style shoulder rest.',
+    ],
+
+
+    outsideFeatures: [
+      "Contoured shells made using the Bam Hightech technique: a triple-ply coated and insulated ABS structure made of high-performance materials, with real cow Leather Cases sewn on the top shell.",
+      "Outstanding protection and ultralight weight.",
+      "Premium ergonomic carrying side handle in matching Leather Cases.",
       "Included detachable subway handle for close-quarters travel.",
       "Fitted with 2 BAM Series 2 soft-touch latches with included set of keys.",
       'Male/female airtight "H" seal.',

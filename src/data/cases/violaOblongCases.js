@@ -14,6 +14,10 @@ import bam5140SOpenImage from "../../assets/Bam_5140S_Stylus_Viola_Case_Open.png
 import bam5140SClosedImage from "../../assets/Bam_5140S_Stylus_Viola_Case_Closed.png";
 import bam5140SOpenClosedImage from "../../assets/Bam_5140S_Stylus_Viola_Case_Open_Closed.png";
 
+import bamET2201XLClosedImage from "../../assets/Bam_ET2201XL_Hightech_L'etoile_Viola_Case_Closed.png";
+import bamET2201XLOpenImage from "../../assets/Bam_ET2201XL_Hightech_L'etoile_Viola_Case_Open.png";
+import bamET2201XLOpenClosedImage from "../../assets/Bam_ET2201XL_Hightech_L'etoile_Viola_Case_Open_Closed.png";
+
 
 export const violaOblongCases = [
   /* =====================================================
@@ -862,4 +866,248 @@ export const violaOblongCases = [
     inStock:
       true,
   },
+
+
+  /* =====================================================
+     BAM ET2201XL HIGHTECH L'ETOILE
+     OBLONG VIOLA CASE
+  ====================================================== */
+
+  {
+    id:
+      "bam-et2201xl-hightech-letoile",
+
+    slug:
+      "bam-et2201xl-hightech-letoile-viola-case",
+
+    name:
+      "Bam ET2201XL Hightech L'etoile Viola Case",
+
+    maker:
+      "Bam",
+
+    model:
+      "ET2201XL Hightech L'etoile",
+
+    reference:
+      "ET2201XL",
+
+    category:
+      "Oblong Viola Case",
+
+    instrument:
+      "Viola",
+
+    caseType:
+      "Oblong",
+
+    caseStyle:
+      "Hightech oblong adjustable viola case",
+
+
+    image:
+      bamET2201XLOpenClosedImage,
+
+    closedImage:
+      bamET2201XLClosedImage,
+
+    openImage:
+      bamET2201XLOpenImage,
+
+    combinedImage:
+      bamET2201XLOpenClosedImage,
+
+
+    regularPrice:
+      null,
+
+    salePrice:
+      null,
+
+    price:
+      "$1,817",
+
+    savings:
+      null,
+
+
+    description:
+      "The Bam ET2201XL Hightech L'etoile Viola Case combines an adjustable fit for larger violas up to 16.92 inches, full suspension protection, premium Hightech construction, four-bow capacity, real cow leather detailing, and professional travel features in an elegant oblong design.",
+
+
+    descriptionParagraphs: [
+      "The Bam ET2201XL Hightech L'etoile Viola Case is designed for larger violas and adjusts up to 43 cm / 16.92 inches. Its shell uses Bam's Hightech technique, combining a triple-ply coated and insulated ABS structure made from high-performance materials with real cow leather sewn on the top shell.",
+
+      "Inside, the viola is fully suspended on premium fabric-covered injected foam cushions for enhanced protection and instrument care. The interior accommodates four full-size bows and includes a removable accessory pouch along with a Velcro strap for a shoulder rest.",
+
+      "The exterior includes an ergonomic carrying side handle and a built-in subway handle for close-quarters transportation. Two BAM 3-digit combination latches provide secure closure, while a male/female airtight H seal helps protect the case interior.",
+
+      "Two comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks provide hands-free transport. At 7 lbs. 4 oz., the ET2201XL combines premium materials, adjustable viola fit, protective suspension, and practical professional carrying features.",
+    ],
+
+
+    keyFeatures: [
+      {
+        title:
+          "Hightech Protection",
+
+        icon:
+          "shield",
+
+        description:
+          "A triple-ply coated and insulated ABS Hightech structure made from high-performance materials provides outstanding protection, with real cow leather sewn on the top shell.",
+      },
+
+      {
+        title:
+          "Full Suspension Interior",
+
+        icon:
+          "interior",
+
+        description:
+          "Premium fabric-covered injected foam cushions fully suspend the viola for enhanced protection and instrument care.",
+      },
+
+      {
+        title:
+          "Four-Bow Capacity",
+
+        icon:
+          "storage",
+
+        description:
+          "Dedicated interior fittings provide secure storage for four full-size bows.",
+      },
+
+      {
+        title:
+          "Accessory Storage",
+
+        icon:
+          "music",
+
+        description:
+          "A removable accessory pouch and Velcro shoulder rest strap keep essential accessories organized inside the case.",
+      },
+
+      {
+        title:
+          "Combination Security",
+
+        icon:
+          "security",
+
+        description:
+          "Two BAM 3-digit combination latches and a male/female airtight H seal provide secure closure and protection.",
+      },
+
+      {
+        title:
+          "Professional Transport",
+
+        icon:
+          "transport",
+
+        description:
+          "An ergonomic side handle, built-in subway handle, and two neoprene anti-slip backpack straps provide versatile carrying options.",
+      },
+    ],
+
+
+    size:
+      'Adjustable up to 16.92" / 43 cm',
+
+    availableSizes: [
+      'Adjustable up to 16.92" / 43 cm',
+    ],
+
+    weight:
+      "7 lbs. 4 oz.",
+
+    shell:
+      "Triple-ply coated and insulated ABS Hightech structure with real cow leather sewn on the top shell",
+
+    construction:
+      "Bam Hightech triple-ply coated and insulated ABS construction made from high-performance materials with real cow leather sewn on the top shell",
+
+    exterior:
+      "Hightech oblong shell with real cow leather sewn on the top shell",
+
+    interior:
+      "Premium fabric-covered injected foam cushions with full suspension support",
+
+    bowCapacity:
+      "4 full-size bows",
+
+    musicPocket:
+      null,
+
+    closure:
+      "2 BAM 3-digit combination latches with male/female airtight H seal",
+
+    carrying:
+      "Ergonomic side handle, built-in subway handle, and 2 neoprene anti-slip backpack straps",
+
+    extraFeatures:
+      "Removable accessory pouch, Velcro shoulder rest strap, and covered security screw carabiner hooks",
+
+    color:
+      null,
+
+    protection:
+      "Triple-ply coated and insulated ABS Hightech shell with full suspension injected foam cushions and airtight H seal",
+
+
+    internalMeasurements: {
+      totalLength:
+        "28.3 in. / 76 cm.",
+
+      bodyLength:
+        "16.92 in. / 43 cm. (Maximum)",
+
+      upperBout:
+        "7.5 in. / 20 cm.",
+
+      lowerBout:
+        "9.1 in. / 25 cm.",
+    },
+
+
+    externalMeasurements: {
+      totalLength:
+        "30.7 in. / 78 cm.",
+
+      caseWidth:
+        "11.4 in. / 31 cm.",
+
+      caseDepth:
+        "7.5 in. / 19 cm.",
+    },
+
+
+    insideFeatures: [
+      "Made for larger viola, adjustable up to 43 cm / 16.92 inches.",
+      "Full suspension of the instrument on premium fabric-covered injected foam cushions for enhanced protection and instrument care.",
+      "Fitted for 4 full-size bows.",
+      "Removable accessory pouch.",
+      "Velcro strap for shoulder rest.",
+    ],
+
+
+    outsideFeatures: [
+      "Shells made using the Bam Hightech technique: a triple-ply coated and insulated ABS structure made of high-performance materials, with real cow leather sewn on the top shell.",
+      "Outstanding protection and ultralight weight.",
+      "Ergonomic carrying side handle.",
+      "Built-in subway handle for close-quarters transportation.",
+      "Fitted with 2 BAM 3-digit combination latches.",
+      'Male/female airtight "H" seal.',
+      "Includes 2 comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks.",
+    ],
+
+
+    inStock:
+      true,
+  },
+
 ];
