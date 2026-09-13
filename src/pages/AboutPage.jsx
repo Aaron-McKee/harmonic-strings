@@ -48,24 +48,20 @@ function AboutPage() {
 
 
             <h1 className="about-hero-title">
-              Sound begins
-              <br />
-              with{" "}
-              <span>
-                the right
-                <br />
-                instrument.
+
+              <span className="about-hero-title-line about-hero-title-line--light">
+                Helping musicians
               </span>
+
+              <span className="about-hero-title-line about-hero-title-line--light">
+                reach their full
+              </span>
+
+              <span className="about-hero-title-line about-hero-title-line--accent about-hero-title-line--final">
+                musical potential
+              </span>
+
             </h1>
-
-
-            <p className="about-hero-intro">
-              Harmonic Strings was founded on the belief
-              that quality equipment is the gateway to
-              excellent sound. Every instrument and bow is
-              selected with musical potential, playability,
-              and beauty of tone in mind.
-            </p>
 
           </div>
 
@@ -176,11 +172,13 @@ function AboutPage() {
             </p>
 
 
-            <h2>
-              A musician-led approach to instruments,
-              <br />
-              bows, and better playing.
-            </h2>
+            <p className="about-highlights-intro">
+              String players are called to master two instruments —
+              one in each hand. Harmonic Strings is dedicated to
+              helping musicians of every level find the right
+              instrument, bow, or combination of both to support
+              confident playing, expressive freedom, and musical growth.
+            </p>
 
           </header>
 
@@ -343,7 +341,6 @@ function AboutPage() {
 
             <div className="about-founder-copy">
 
-              
               <h2>
                 Lisa Wiggins
               </h2>
@@ -398,121 +395,6 @@ function AboutPage() {
                 />
 
               </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* =====================================
-          MISSION
-      ====================================== */}
-
-      <section className="about-mission-section">
-
-        <div className="about-content-shell">
-
-          <div className="about-mission-grid">
-
-
-            {/* =====================================
-                MISSION STATEMENT
-            ====================================== */}
-
-            <div className="about-mission-column">
-
-              <p className="about-section-label">
-                Mission
-              </p>
-
-
-              <h2>
-                Helping musicians discover
-                <br />
-                what better sound can do.
-              </h2>
-
-
-              <div className="about-mission-copy">
-
-                <p>
-                  Music begins with sound production and
-                  having quality equipment is the gateway to
-                  excellent sound. Decades of professional
-                  playing and teaching has assisted me in
-                  knowing how critical this is.
-                </p>
-
-
-                <p>
-                  An instrument or bow should never limit the
-                  player and very often it does. How do you
-                  know if your equipment is limiting you?
-                  Take advantage of a no obligation -
-                  opportunity to try some bows and
-                  instruments and hear what a difference an
-                  upgrade would make.
-                </p>
-
-
-                <p>
-                  It is that simple!
-                </p>
-
-              </div>
-
-            </div>
-
-
-            {/* =====================================
-                VALUES
-            ====================================== */}
-
-            <div className="about-values-panel">
-
-              <h3>
-                What Harmonic Strings is built around
-              </h3>
-
-
-              <ul className="about-values-list">
-
-                <li>
-                  <span />
-                  Thoughtfully selected instruments and bows
-                </li>
-
-
-                <li>
-                  <span />
-                  Professional adjustment and musical insight
-                </li>
-
-
-                <li>
-                  <span />
-                  A sound-first approach to player development
-                </li>
-
-
-                <li>
-                  <span />
-                  Guidance for students, advancing players,
-                  teachers, and performers
-                </li>
-
-
-                <li>
-                  <span />
-                  A welcoming path toward finding the right
-                  fit without pressure
-                </li>
-
-              </ul>
 
             </div>
 

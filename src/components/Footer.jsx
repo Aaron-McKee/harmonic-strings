@@ -222,7 +222,7 @@ function Footer() {
             <nav aria-label="Footer company navigation">
 
               <Link to="/about">
-                About Us
+                About
               </Link>
 
 
