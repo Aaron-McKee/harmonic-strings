@@ -1,0 +1,572 @@
+/* =========================================================
+   HARMONIC STRINGS
+   CUSTOMER POLICY PAGES
+
+   Trade-In Policy
+   Shipping
+   Warranty
+========================================================= */
+
+.customer-policy-page {
+  --policy-bg: #0d0c0b;
+  --policy-panel: #15120f;
+
+  --policy-ivory: #eee7da;
+  --policy-copy: rgba(238, 231, 218, 0.72);
+
+  --policy-gold: #c3a16c;
+  --policy-burgundy: #741f1c;
+
+  --policy-border: rgba(181, 139, 79, 0.18);
+
+  --policy-serif:
+    Baskerville,
+    "Iowan Old Style",
+    "Palatino Linotype",
+    "Book Antiqua",
+    Palatino,
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  min-height: 100vh;
+
+  padding:
+    205px
+    7vw
+    110px;
+
+  color: var(--policy-ivory);
+
+  background:
+    radial-gradient(
+      circle at 12% 2%,
+      rgba(116, 31, 28, 0.12),
+      transparent 25%
+    ),
+    linear-gradient(
+      180deg,
+      #0c0b0a 0%,
+      #11100e 44%,
+      #0b0b0a 100%
+    );
+}
+
+
+/* =========================================================
+   SHELL
+========================================================= */
+
+.customer-policy-shell {
+  width: min(100%, 1120px);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.customer-policy-header {
+  max-width: 900px;
+
+  padding-bottom: 56px;
+}
+
+
+.customer-policy-eyebrow {
+  margin: 0;
+
+  color: var(--policy-gold);
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 2.6px;
+
+  text-transform: uppercase;
+}
+
+
+.customer-policy-header h1 {
+  margin:
+    18px
+    0
+    0;
+
+  color: var(--policy-ivory);
+
+  font-family: var(--policy-serif);
+
+  font-size:
+    clamp(
+      56px,
+      7vw,
+      92px
+    );
+
+  font-weight: 400;
+
+  line-height: 0.98;
+
+  letter-spacing: -2px;
+}
+
+
+.customer-policy-updated {
+  margin:
+    22px
+    0
+    0;
+
+  color: var(--policy-gold);
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1.2px;
+
+  text-transform: uppercase;
+}
+
+
+.customer-policy-intro {
+  max-width: 860px;
+
+  margin:
+    22px
+    0
+    0;
+
+  color: var(--policy-copy);
+
+  font-size: 17px;
+
+  line-height: 1.85;
+}
+
+
+.customer-policy-notice {
+  display: inline-block;
+
+  max-width: 860px;
+
+  margin:
+    28px
+    0
+    0;
+
+  padding:
+    11px
+    16px;
+
+  border-left:
+    2px
+    solid
+    var(--policy-burgundy);
+
+  color:
+    rgba(
+      238,
+      231,
+      218,
+      0.88
+    );
+
+  background:
+    rgba(
+      116,
+      31,
+      28,
+      0.08
+    );
+
+  font-size: 13px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.customer-policy-section {
+  padding:
+    48px
+    0;
+
+  border-top:
+    1px
+    solid
+    var(--policy-border);
+}
+
+
+.customer-policy-section h2 {
+  max-width: 800px;
+
+  margin:
+    0
+    0
+    24px;
+
+  color: var(--policy-ivory);
+
+  font-family: var(--policy-serif);
+
+  font-size:
+    clamp(
+      31px,
+      3vw,
+      44px
+    );
+
+  font-weight: 400;
+
+  line-height: 1.08;
+
+  letter-spacing: -0.7px;
+}
+
+
+.customer-policy-section > p {
+  max-width: 930px;
+
+  margin:
+    0
+    0
+    17px;
+
+  color: var(--policy-copy);
+
+  font-size: 15px;
+
+  line-height: 1.82;
+}
+
+
+.customer-policy-section > p:last-child {
+  margin-bottom: 0;
+}
+
+
+.customer-policy-section strong {
+  color:
+    rgba(
+      238,
+      231,
+      218,
+      0.94
+    );
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   LISTS
+========================================================= */
+
+.customer-policy-section ul {
+  max-width: 900px;
+
+  margin:
+    20px
+    0
+    22px;
+
+  padding:
+    0
+    0
+    0
+    23px;
+
+  color: var(--policy-copy);
+}
+
+
+.customer-policy-section li {
+  margin-bottom: 12px;
+
+  padding-left: 5px;
+
+  font-size: 15px;
+
+  line-height: 1.72;
+}
+
+
+.customer-policy-section li:last-child {
+  margin-bottom: 0;
+}
+
+
+.customer-policy-section li::marker {
+  color: var(--policy-gold);
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.customer-policy-table-wrap {
+  width: 100%;
+
+  margin:
+    28px
+    0;
+
+  overflow-x: auto;
+
+  border:
+    1px
+    solid
+    var(--policy-border);
+}
+
+
+.customer-policy-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 620px;
+}
+
+
+.customer-policy-table th,
+.customer-policy-table td {
+  padding:
+    17px
+    20px;
+
+  text-align: left;
+
+  vertical-align: top;
+
+  border-bottom:
+    1px
+    solid
+    var(--policy-border);
+}
+
+
+.customer-policy-table th {
+  color: var(--policy-gold);
+
+  background:
+    rgba(
+      195,
+      161,
+      108,
+      0.05
+    );
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+
+.customer-policy-table td {
+  color: var(--policy-copy);
+
+  font-size: 14px;
+
+  line-height: 1.65;
+}
+
+
+.customer-policy-table td:first-child {
+  width: 34%;
+
+  color:
+    rgba(
+      238,
+      231,
+      218,
+      0.9
+    );
+
+  font-weight: 700;
+}
+
+
+.customer-policy-table tr:last-child td {
+  border-bottom: 0;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.customer-policy-contact {
+  margin-top: 12px;
+
+  padding:
+    44px
+    40px;
+
+  border:
+    1px
+    solid
+    rgba(
+      195,
+      161,
+      108,
+      0.24
+    );
+
+  background:
+    radial-gradient(
+      circle at 5% 50%,
+      rgba(116, 31, 28, 0.17),
+      transparent 34%
+    ),
+    linear-gradient(
+      135deg,
+      #17120f,
+      #100f0d
+    );
+}
+
+
+.customer-policy-contact h2 {
+  margin-top: 10px;
+}
+
+
+.customer-policy-contact-details {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap:
+    12px
+    28px;
+
+  margin-top: 26px;
+}
+
+
+.customer-policy-contact-details a,
+.customer-policy-contact-details span {
+  color: var(--policy-gold);
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 0.3px;
+
+  text-decoration: none;
+}
+
+
+.customer-policy-contact-details a:hover {
+  color: var(--policy-ivory);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .customer-policy-page {
+    padding:
+      180px
+      6vw
+      90px;
+  }
+
+
+  .customer-policy-header {
+    padding-bottom: 44px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .customer-policy-page {
+    padding:
+      155px
+      18px
+      72px;
+  }
+
+
+  .customer-policy-header h1 {
+    font-size:
+      clamp(
+        50px,
+        15vw,
+        68px
+      );
+  }
+
+
+  .customer-policy-intro {
+    font-size: 15px;
+
+    line-height: 1.75;
+  }
+
+
+  .customer-policy-notice {
+    font-size: 12px;
+
+    line-height: 1.65;
+  }
+
+
+  .customer-policy-section {
+    padding:
+      38px
+      0;
+  }
+
+
+  .customer-policy-section h2 {
+    font-size:
+      clamp(
+        30px,
+        9vw,
+        39px
+      );
+  }
+
+
+  .customer-policy-section > p,
+  .customer-policy-section li {
+    font-size: 14px;
+  }
+
+
+  .customer-policy-contact {
+    padding:
+      30px
+      22px;
+  }
+
+
+  .customer-policy-contact-details {
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+}

@@ -258,9 +258,9 @@ function Footer() {
               </a>
 
 
-              <a href="#">
+              <Link to="/trade-in-policy">
                 Trade-In Program
-              </a>
+              </Link>
 
 
               <a href="#">
@@ -300,14 +300,19 @@ function Footer() {
               </a>
 
 
-              <a href="#">
-                Shipping &amp; Returns
-              </a>
+              <Link to="/shipping">
+                Shipping
+              </Link>
 
 
-              <a href="#">
+              <Link to="/return-policy">
+                Return Policy
+              </Link>
+
+
+              <Link to="/warranty">
                 Product Warranties
-              </a>
+              </Link>
 
 
               <Link to="/privacy-policy">
@@ -354,9 +359,24 @@ function Footer() {
             </Link>
 
 
-            <a href="#">
-              Shipping &amp; Returns
-            </a>
+            <Link to="/shipping">
+              Shipping
+            </Link>
+
+
+            <Link to="/return-policy">
+              Return Policy
+            </Link>
+
+
+            <Link to="/warranty">
+              Warranty
+            </Link>
+
+
+            <Link to="/trade-in-policy">
+              Trade-In Policy
+            </Link>
 
           </div>
 

@@ -35,6 +35,11 @@ import AboutPage from "./pages/AboutPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import TermsOfServicePage from "./pages/TermsOfServicePage";
 
+import TradeInPolicyPage from "./pages/TradeInPolicyPage";
+import ShippingPage from "./pages/ShippingPage";
+import ReturnPolicyPage from "./pages/ReturnPolicyPage";
+import WarrantyPage from "./pages/WarrantyPage";
+
 import ContactPage from "./pages/ContactPage";
 
 
@@ -164,6 +169,30 @@ function App() {
         <Route
           path="/terms-of-service"
           element={<TermsOfServicePage />}
+        />
+
+
+        <Route
+          path="/trade-in-policy"
+          element={<TradeInPolicyPage />}
+        />
+
+
+        <Route
+          path="/shipping"
+          element={<ShippingPage />}
+        />
+
+
+        <Route
+          path="/return-policy"
+          element={<ReturnPolicyPage />}
+        />
+
+
+        <Route
+          path="/warranty"
+          element={<WarrantyPage />}
         />
 
       </Routes>
