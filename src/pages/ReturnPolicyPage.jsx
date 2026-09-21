@@ -58,27 +58,47 @@ function ReturnPolicyPage() {
 
 
           <p>
-            Eligible products may be returned within
-            <strong> 45 days of delivery</strong> for a refund.
-            The return period for products received through an
-            in-home trial begins on the date the product was
-            originally delivered.
+            Eligible products that have been purchased from
+            Harmonic Strings may be returned within
+            <strong> 45 days of delivery</strong> for a refund,
+            subject to the conditions and exclusions described
+            in this Return Policy.
+          </p>
+
+
+          <p>
+            The Standard Return Policy is separate from the
+            Harmonic Strings In-Home Trial Program. Instruments
+            and bows sent as part of an In-Home Trial are governed
+            by the separate <strong>In-Home Trial Terms</strong>,
+            including the 10-day evaluation period, applicable
+            trial fees, return deadlines, and trial shipping
+            arrangements.
           </p>
 
 
           <p>
             Unless there is a defect, shipping damage, or another
-            issue for which Harmonic Strings is responsible, the
-            customer is responsible for return shipping costs.
-            When Harmonic Strings provides a return shipping
-            label, the cost of return shipping may be deducted
-            from the final refund.
+            issue for which Harmonic Strings is responsible,
+            customers making a standard return are responsible
+            for return shipping costs. When Harmonic Strings
+            provides a return shipping label for a standard
+            return, the cost of that label may be deducted from
+            the final refund.
           </p>
 
 
           <p>
-            Refunds are issued to the original form of payment
-            only.
+            Return shipping for products being returned as part
+            of an approved In-Home Trial is handled according to
+            the In-Home Trial Terms and is not subject to the
+            standard return-shipping provisions above.
+          </p>
+
+
+          <p>
+            Approved refunds for purchased merchandise are issued
+            to the original form of payment only.
           </p>
 
         </section>

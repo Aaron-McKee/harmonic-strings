@@ -39,6 +39,7 @@ import TradeInPolicyPage from "./pages/TradeInPolicyPage";
 import ShippingPage from "./pages/ShippingPage";
 import ReturnPolicyPage from "./pages/ReturnPolicyPage";
 import WarrantyPage from "./pages/WarrantyPage";
+import InHomeTrialPage from "./pages/InHomeTrialPage";
 
 import ContactPage from "./pages/ContactPage";
 
@@ -175,6 +176,12 @@ function App() {
         <Route
           path="/trade-in-policy"
           element={<TradeInPolicyPage />}
+        />
+
+
+        <Route
+          path="/in-home-trials"
+          element={<InHomeTrialPage />}
         />
 
 

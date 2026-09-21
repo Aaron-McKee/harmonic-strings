@@ -253,9 +253,9 @@ function Footer() {
               </a>
 
 
-              <a href="#">
+              <Link to="/in-home-trials">
                 In-Home Trials
-              </a>
+              </Link>
 
 
               <Link to="/trade-in-policy">
