@@ -219,7 +219,7 @@ export const violins = [
     ====================================== */
 
     size:
-      "4/4 (Full Size) and Fractional Sizes Available",
+      "4/4",
 
     availableSizes: [],
 
@@ -526,7 +526,7 @@ export const violins = [
     ====================================== */
 
     size:
-      "4/4 (Full Size)",
+      "4/4",
 
     availableSizes: [
       "4/4",

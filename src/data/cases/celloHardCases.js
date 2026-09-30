@@ -12,12 +12,18 @@ import bobelockB2002ClosedImage from "../../assets/Bobelock_B2002_Cello_Case_Clo
 import bobelockB2002OpenClosedImage from "../../assets/Bobelock_B2002_Cello_Case_Open_Closed.png";
 
 
-import bam1001SClosedImage from "../../assets/Bam_101S_Classic_Cello_Case_Closed.png";
+import bam1001SClosedImage from "../../assets/Bam_1001S_Classic_Cello_Case_Closed.png";
 
-import bam1001SOpenImage from "../../assets/Bam_101S_Classic_Cello_Case_Open.png";
+import bam1001SOpenImage from "../../assets/Bam_1001S_Classic_Cello_Case_Open.png";
 
-import bam1001SOpenClosedImage from "../../assets/Bam_101S_Classic_Cello_Case_Open_Closed.png";
+import bam1001SOpenClosedImage from "../../assets/Bam_1001S_Classic_Cello_Case_Open_Closed.png";
 
+
+import bam1001SWClosedImage from "../../assets/Bam_1001SW_Cello_Case_Wheels_Closed.png";
+
+import bam1001SWOpenImage from "../../assets/Bam_1001SW_Cello_Case_Wheels_Open.png";
+
+import bam1001SWOpenClosedImage from "../../assets/Bam_1001SW_Cello_Case_Wheels_Open_Closed.png";
 
 export const celloHardCases = [
 
@@ -585,7 +591,7 @@ export const celloHardCases = [
       null,
 
     price:
-      "$1,050.00",
+      "$1,050",
 
     savings:
       null,
@@ -795,6 +801,293 @@ export const celloHardCases = [
       "2 comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks.",
       "2 secure body handles.",
       "Without wheels.",
+    ],
+
+
+    /* =====================================
+       INVENTORY
+    ====================================== */
+
+    inStock:
+      true,
+  },
+
+
+  /* =====================================================
+     BAM 1001SW
+     HARD CELLO CASE
+  ====================================================== */
+
+  {
+    id:
+      "bam-1001sw",
+
+    slug:
+      "bam-1001sw-cello-case",
+
+    name:
+      "Bam 1001SW Cello Case",
+
+    maker:
+      "Bam",
+
+    model:
+      "1001SW",
+
+    reference:
+      "1001SW",
+
+    category:
+      "Hard Cello Case",
+
+    instrument:
+      "Cello",
+
+    caseType:
+      "Hard",
+
+    caseStyle:
+      "Textured ABS cello case with wheels",
+
+
+    /* =====================================
+       IMAGES
+    ====================================== */
+
+    image:
+      bam1001SWOpenClosedImage,
+
+    closedImage:
+      bam1001SWClosedImage,
+
+    openImage:
+      bam1001SWOpenImage,
+
+    combinedImage:
+      bam1001SWOpenClosedImage,
+
+
+    /* =====================================
+       PRICING
+    ====================================== */
+
+    regularPrice:
+      "$1,187",
+
+    salePrice:
+      "$1,033",
+
+    price:
+      null,
+
+    savings:
+      "Save 13%",
+
+
+    /* =====================================
+       COLLECTION DESCRIPTION
+    ====================================== */
+
+    description:
+      "The Bam 1001SW Cello Case combines a high-resistance anti-shock textured ABS shell, suspended instrument support, secure eight-latch closure, built-in wheels, a pulling handle, and versatile carrying options for dependable cello protection and easier transportation.",
+
+
+    /* =====================================
+       FULL DESCRIPTION
+    ====================================== */
+
+    descriptionParagraphs: [
+      "The Bam 1001SW Cello Case combines durable hard-shell protection with convenient rolling transport. Its exterior is constructed from high-resistance anti-shock textured ABS and equipped with built-in wheels and a pulling handle, providing an easier way to move the case between lessons, rehearsals, performances, and travel.",
+
+      "Inside, the instrument is suspended on injected foam cushions, while breathable side padding helps protect the cello's varnish. Head scroll and neck straps help secure the instrument, and an elastic loop at the bottom keeps the endpin positioned during travel. The interior also accommodates two full-size bows and includes a small Velcro string pocket and an attached cello body sheet music pocket.",
+
+      "The exterior is fitted with eight BAM Series 2 soft-touch latches with an included set of keys and a male/female airtight H seal. Anti-slip and anti-wear rubber patches help protect the bottom outer shell, while two secure body handles and two comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks provide additional carrying options. The case weighs 13 lbs.",
+    ],
+
+
+    /* =====================================
+       KEY FEATURES
+    ====================================== */
+
+    keyFeatures: [
+      {
+        title:
+          "Anti-Shock ABS Protection",
+
+        icon:
+          "shield",
+
+        description:
+          "A high-resistance textured ABS shell provides strong hard-case protection for everyday transportation and travel.",
+      },
+
+      {
+        title:
+          "Suspension Interior",
+
+        icon:
+          "interior",
+
+        description:
+          "Injected foam cushions suspend the instrument while breathable side padding helps protect the cello's varnish.",
+      },
+
+      {
+        title:
+          "Built-In Rolling Transport",
+
+        icon:
+          "transport",
+
+        description:
+          "Built-in wheels and a pulling handle provide convenient rolling transport when carrying the case by hand is less practical.",
+      },
+
+      {
+        title:
+          "Secure Eight-Latch Closure",
+
+        icon:
+          "security",
+
+        description:
+          "Eight BAM Series 2 soft-touch latches with included keys and an airtight H seal provide secure case closure.",
+      },
+
+      {
+        title:
+          "Bow & Music Storage",
+
+        icon:
+          "music",
+
+        description:
+          "The interior accommodates two full-size bows and includes a cello body sheet music pocket and small Velcro string pocket.",
+      },
+
+      {
+        title:
+          "Versatile Carrying Options",
+
+        icon:
+          "transport",
+
+        description:
+          "Two secure body handles and two neoprene anti-slip backpack straps provide additional carrying options alongside the built-in wheels.",
+      },
+    ],
+
+
+    /* =====================================
+       SPECIFICATIONS
+    ====================================== */
+
+    size:
+      "4/4 Cello",
+
+    availableSizes: [
+      "4/4",
+    ],
+
+    weight:
+      "13 lbs.",
+
+    shell:
+      "High-resistance anti-shock textured ABS",
+
+    construction:
+      "Textured ABS hard-shell construction with suspended injected foam instrument support",
+
+    exterior:
+      "High-resistance textured ABS shell with built-in wheels, pulling handle, and anti-slip and anti-wear rubber patches",
+
+    interior:
+      "Suspension interior with injected foam cushions and breathable side padding",
+
+    bowCapacity:
+      "2 full-size bows",
+
+    musicPocket:
+      "Cello body sheet music pocket attached inside the case",
+
+    closure:
+      "8 BAM Series 2 soft-touch latches with included keys and male/female airtight H seal",
+
+    carrying:
+      "Built-in wheels and pulling handle, 2 secure body handles, and 2 neoprene anti-slip backpack straps",
+
+    extraFeatures:
+      "Head scroll and neck straps, elastic endpin securing band, and small Velcro string pocket",
+
+    color:
+      "Grenade Red, Light Grey, Black",
+
+    protection:
+      "High-resistance anti-shock textured ABS shell with suspended injected foam cushions, breathable side padding, secure neck support, and protective rubber patches",
+
+
+    /* =====================================
+       INTERNAL MEASUREMENTS
+    ====================================== */
+
+    internalMeasurements: {
+      totalLength:
+        "51.6 in. / 131 cm.",
+
+      bodyLength:
+        "33 in. / 84 cm.",
+
+      upperBout:
+        "14.2 in. / 36 cm.",
+
+      lowerBout:
+        "18.1 in. / 46 cm.",
+    },
+
+
+    /* =====================================
+       EXTERNAL MEASUREMENTS
+    ====================================== */
+
+    externalMeasurements: {
+      totalLength:
+        "53.1 in. / 135 cm.",
+
+      caseWidth:
+        "19.7 in. / 50 cm.",
+
+      caseDepth:
+        "11.8 in. / 30 cm.",
+    },
+
+
+    /* =====================================
+       INSIDE FEATURES
+    ====================================== */
+
+    insideFeatures: [
+      "Suspension of the instrument on injected foam cushions.",
+      "Side padding made of breathable fabric to protect varnish.",
+      "Fitted for 2 full-size bows.",
+      "Includes head scroll and neck straps.",
+      "Bottom pad elastic loop band secures the endpin during travel.",
+      "Small Velcro string pocket.",
+      "Cello body sheet music pocket attached inside the case.",
+    ],
+
+
+    /* =====================================
+       OUTSIDE FEATURES
+    ====================================== */
+
+    outsideFeatures: [
+      "Shell made of high-resistance anti-shock textured ABS.",
+      "Built-in wheels and pulling handle.",
+      "8 BAM Series 2 soft-touch latches with included set of keys.",
+      'Male/female airtight "H" seal.',
+      "Anti-slip and anti-wear rubber patches on the bottom outer shell.",
+      "2 comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks.",
+      "2 secure body handles.",
     ],
 
 
