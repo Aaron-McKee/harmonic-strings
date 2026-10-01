@@ -33,6 +33,13 @@ import cc4500ClosedImage from "../../assets/Howard_Core_CC4500_Cello_Case_Closed
 import cc4500OpenClosedImage from "../../assets/Howard_Core_CC4500_Cello_Case_Open_Closed.png";
 
 
+import bam1002NWOpenImage from "../../assets/Bam_1002NW_Newtech_Cello_Case_Open.png";
+
+import bam1002NWClosedImage from "../../assets/Bam_1002NW_Newtech_Cello_Case_Closed.png";
+
+import bam1002NWOpenClosedImage from "../../assets/Bam_1002NW_Newtech_Cello_Case_Open_Closed.png";
+
+
 export const celloHardCases = [
 
   /* =====================================================
@@ -1375,6 +1382,291 @@ export const celloHardCases = [
       "Carry handle.",
       "Backpack straps.",
       "Available in Black, Blue, Red, and Silver.",
+    ],
+
+
+    /* =====================================
+       INVENTORY
+    ====================================== */
+
+    inStock:
+      true,
+  },
+
+
+  /* =====================================================
+     BAM 1002NW NEWTECH
+     HARD CELLO CASE
+  ====================================================== */
+
+  {
+    id:
+      "bam-1002nw-newtech",
+
+    slug:
+      "bam-1002nw-newtech-cello-case",
+
+    name:
+      "Bam 1002NW Newtech Cello Case",
+
+    maker:
+      "Bam",
+
+    model:
+      "1002NW Newtech",
+
+    reference:
+      "1002NW",
+
+    category:
+      "Hard Cello Case",
+
+    instrument:
+      "Cello",
+
+    caseType:
+      "Hard",
+
+    caseStyle:
+      "Newtech metallic ABS composite cello case with wheels",
+
+
+    /* =====================================
+       IMAGES
+    ====================================== */
+
+    image:
+      bam1002NWOpenClosedImage,
+
+    closedImage:
+      bam1002NWClosedImage,
+
+    openImage:
+      bam1002NWOpenImage,
+
+    combinedImage:
+      bam1002NWOpenClosedImage,
+
+
+    /* =====================================
+       PRICING
+    ====================================== */
+
+    regularPrice:
+      "$2,100",
+
+    salePrice:
+      "$1,830",
+
+    price:
+      null,
+
+    savings:
+      "Save 13%",
+
+
+    /* =====================================
+       COLLECTION DESCRIPTION
+    ====================================== */
+
+    description:
+      "The Bam 1002NW Newtech Cello Case combines a triple-ply metallic ABS composite shell, insulated internal skeleton, full instrument suspension, built-in wheels, and professional carrying features for lightweight, dependable cello protection.",
+
+
+    /* =====================================
+       FULL DESCRIPTION
+    ====================================== */
+
+    descriptionParagraphs: [
+      "The Bam 1002NW Newtech Cello Case combines strong protective construction with practical transportation features in a streamlined hard-shell design. Its exterior uses the Bam technique: a triple-ply sleek metallic ABS composite shell measuring approximately 2 mm thick with an insulated internal skeleton, providing outstanding protection while keeping the case manageable for regular travel.",
+
+      "Inside, the instrument is fully suspended on premium fabric-covered injected foam cushions for enhanced protection and instrument care. Installed scroll and neck straps help keep the cello securely positioned, while an elastic band at the bottom secures the endpin during travel. The interior also accommodates two full-size bows and includes an attached string pocket for essential accessories.",
+
+      "For transportation, the 1002NW includes built-in wheels and a pulling handle, two secure body handles, and two comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks. Five BAM Series 2 soft-touch latches with an included set of keys and a male/female airtight H seal secure the case, while anti-slip and anti-wear rubber patches on the bottom outer shell help prevent unwanted sliding and exterior wear.",
+    ],
+
+
+    /* =====================================
+       KEY FEATURES
+    ====================================== */
+
+    keyFeatures: [
+      {
+        title:
+          "Newtech Composite Protection",
+
+        icon:
+          "shield",
+
+        description:
+          "A triple-ply sleek metallic ABS composite shell with an insulated internal skeleton provides strong protection without unnecessary weight.",
+      },
+
+      {
+        title:
+          "Full Suspension Interior",
+
+        icon:
+          "interior",
+
+        description:
+          "Premium fabric-covered injected foam cushions fully suspend the instrument for enhanced protection and instrument care.",
+      },
+
+      {
+        title:
+          "Built-In Rolling Transport",
+
+        icon:
+          "transport",
+
+        description:
+          "Built-in wheels and a pulling handle provide convenient rolling transport for rehearsals, performances, lessons, and travel.",
+      },
+
+      {
+        title:
+          "Five-Latch Security",
+
+        icon:
+          "security",
+
+        description:
+          "Five BAM Series 2 soft-touch latches with included keys and a male/female airtight H seal provide secure case closure.",
+      },
+
+      {
+        title:
+          "Bow & Accessory Storage",
+
+        icon:
+          "storage",
+
+        description:
+          "The interior accommodates two full-size bows and includes an attached string pocket for essential accessories.",
+      },
+
+      {
+        title:
+          "Versatile Carrying Options",
+
+        icon:
+          "transport",
+
+        description:
+          "Two secure body handles and two neoprene anti-slip backpack straps provide additional carrying options alongside the built-in wheels.",
+      },
+    ],
+
+
+    /* =====================================
+       SPECIFICATIONS
+    ====================================== */
+
+    size:
+      null,
+
+    availableSizes: [],
+
+    weight:
+      "12 lbs. 6 oz.",
+
+    shell:
+      "Triple-ply sleek metallic ABS composite shell with insulated internal skeleton",
+
+    construction:
+      "Bam Newtech triple-ply 2 mm metallic ABS composite construction with insulated internal skeleton",
+
+    exterior:
+      "Sleek metallic ABS composite shell with built-in wheels, pulling handle, and anti-slip and anti-wear rubber patches",
+
+    interior:
+      "Full suspension on premium fabric-covered injected foam cushions",
+
+    bowCapacity:
+      "2 full-size bows",
+
+    musicPocket:
+      null,
+
+    closure:
+      "5 BAM Series 2 soft-touch latches with included keys and male/female airtight H seal",
+
+    carrying:
+      "Built-in wheels and pulling handle, 2 secure body handles, and 2 neoprene anti-slip backpack straps",
+
+    extraFeatures:
+      "Installed scroll and neck straps, elastic endpin securing band, and attached inside string pocket",
+
+    color:
+      "Black, Blue, Mint",
+
+    protection:
+      "Triple-ply metallic ABS composite shell with insulated internal skeleton and full suspension on premium fabric-covered injected foam cushions",
+
+
+    /* =====================================
+       INTERNAL MEASUREMENTS
+    ====================================== */
+
+    internalMeasurements: {
+      totalLength:
+        "51.6 in. / 131 cm.",
+
+      bodyLength:
+        "31.1 in. / 79 cm.",
+
+      upperBout:
+        "14.5 in. / 37 cm.",
+
+      lowerBout:
+        "17.7 in. / 45 cm.",
+    },
+
+
+    /* =====================================
+       EXTERNAL MEASUREMENTS
+    ====================================== */
+
+    externalMeasurements: {
+      totalLength:
+        "52.75 in. / 134 cm.",
+
+      caseWidth:
+        "20.1 in. / 51 cm.",
+
+      caseDepth:
+        "13 in. / 33 cm.",
+    },
+
+
+    /* =====================================
+       INSIDE FEATURES
+    ====================================== */
+
+    insideFeatures: [
+      "Full suspension of the instrument on premium fabric-covered injected foam cushions for enhanced protection and instrument care.",
+      "Fitted for 2 full-size bows.",
+      "Installed scroll and neck straps.",
+      "Bottom pad elastic band secures the endpin during travel.",
+      "Attached inside string pocket.",
+    ],
+
+
+    /* =====================================
+       OUTSIDE FEATURES
+    ====================================== */
+
+    outsideFeatures: [
+      "Triple-ply sleek metallic ABS composite shell measuring approximately 2 mm with an insulated internal skeleton.",
+      "Outstanding protection with lightweight construction.",
+      "Built-in wheels and pulling handle for transport.",
+      "2 secure body handles.",
+      "5 BAM Series 2 soft-touch latches with included set of keys.",
+      'Male/female airtight "H" seal.',
+      "2 comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks.",
+      "Anti-slip and anti-wear rubber patches on the bottom outer shell to help prevent sliding.",
+      "Available in Black, Blue, and Mint.",
     ],
 
 
