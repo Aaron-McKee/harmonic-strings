@@ -25,6 +25,14 @@ import bam1001SWOpenImage from "../../assets/Bam_1001SW_Cello_Case_Wheels_Open.p
 
 import bam1001SWOpenClosedImage from "../../assets/Bam_1001SW_Cello_Case_Wheels_Open_Closed.png";
 
+
+import cc4500OpenImage from "../../assets/Howard_Core_CC4500_Cello_Case_Open.png";
+
+import cc4500ClosedImage from "../../assets/Howard_Core_CC4500_Cello_Case_Closed.png";
+
+import cc4500OpenClosedImage from "../../assets/Howard_Core_CC4500_Cello_Case_Open_Closed.png";
+
+
 export const celloHardCases = [
 
   /* =====================================================
@@ -591,7 +599,7 @@ export const celloHardCases = [
       null,
 
     price:
-      "$1,050",
+      "$1,050.00",
 
     savings:
       null,
@@ -1088,6 +1096,285 @@ export const celloHardCases = [
       "Anti-slip and anti-wear rubber patches on the bottom outer shell.",
       "2 comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks.",
       "2 secure body handles.",
+    ],
+
+
+    /* =====================================
+       INVENTORY
+    ====================================== */
+
+    inStock:
+      true,
+  },
+
+
+  /* =====================================================
+     HOWARD CORE CC4500
+     HARD CELLO CASE
+  ====================================================== */
+
+  {
+    id:
+      "howard-core-cc4500",
+
+    slug:
+      "howard-core-cc4500-cello-case",
+
+    name:
+      "Howard Core CC4500 Cello Case",
+
+    maker:
+      "Howard Core",
+
+    model:
+      "CC4500",
+
+    reference:
+      "CC4500",
+
+    category:
+      "Hard Cello Case",
+
+    instrument:
+      "Cello",
+
+    caseType:
+      "Hard",
+
+    caseStyle:
+      "Scratch-resistant composite fiberglass cello case",
+
+
+    /* =====================================
+       IMAGES
+    ====================================== */
+
+    image:
+      cc4500OpenClosedImage,
+
+    closedImage:
+      cc4500ClosedImage,
+
+    openImage:
+      cc4500OpenImage,
+
+    combinedImage:
+      cc4500OpenClosedImage,
+
+
+    /* =====================================
+       PRICING
+    ====================================== */
+
+    regularPrice:
+      null,
+
+    salePrice:
+      null,
+
+    price:
+      "$1,050",
+
+    savings:
+      null,
+
+
+    /* =====================================
+       COLLECTION DESCRIPTION
+    ====================================== */
+
+    description:
+      "The Howard Core CC4500 Cello Case combines a lightweight composite fiberglass shell, scratch-resistant exterior finish, protective suspension interior, wheels, backpack straps, and practical accessory storage for dependable full-size cello protection and transportation.",
+
+
+    /* =====================================
+       FULL DESCRIPTION
+    ====================================== */
+
+    descriptionParagraphs: [
+      "The Howard Core CC4500 Cello Case is a durable hard-shell case designed to provide dependable protection for the full-size cello while remaining practical for everyday transportation. Its composite fiberglass shell features a scratch-resistant exterior finish that helps maintain the case's appearance through lessons, rehearsals, performances, and regular travel.",
+
+      "Inside, a black plush lining surrounds the instrument while protective suspension pads help cushion and support the cello during transport. The interior includes two bow holders and one accessory pocket, providing organized storage for bows and essential cello accessories.",
+
+      "For transportation, the CC4500 includes wheels, a pull strap, a carry handle, and backpack straps, giving musicians several options for moving the case comfortably. Black exterior fittings complement the protective shell, while the combination of rolling and backpack-style transport makes the CC4500 a versatile choice for cellists who regularly travel with their instrument.",
+    ],
+
+
+    /* =====================================
+       KEY FEATURES
+    ====================================== */
+
+    keyFeatures: [
+      {
+        title:
+          "Composite Fiberglass Protection",
+
+        icon:
+          "shield",
+
+        description:
+          "A composite fiberglass shell provides durable hard-case protection for a full-size cello.",
+      },
+
+      {
+        title:
+          "Scratch-Resistant Exterior",
+
+        icon:
+          "shield",
+
+        description:
+          "The exterior features a scratch-resistant finish designed to withstand the demands of regular handling and transportation.",
+      },
+
+      {
+        title:
+          "Suspension Interior",
+
+        icon:
+          "interior",
+
+        description:
+          "A black plush interior with protective suspension pads helps cushion and support the cello during transport.",
+      },
+
+      {
+        title:
+          "Bow & Accessory Storage",
+
+        icon:
+          "storage",
+
+        description:
+          "Two bow holders and one accessory pocket provide organized interior storage for essential cello equipment.",
+      },
+
+      {
+        title:
+          "Rolling Transport",
+
+        icon:
+          "transport",
+
+        description:
+          "Built-in wheels and a pull strap make the CC4500 easier to move between lessons, rehearsals, performances, and travel.",
+      },
+
+      {
+        title:
+          "Multiple Carrying Options",
+
+        icon:
+          "transport",
+
+        description:
+          "A carry handle and backpack straps provide additional carrying options when rolling the case is not practical.",
+      },
+    ],
+
+
+    /* =====================================
+       SPECIFICATIONS
+    ====================================== */
+
+    size:
+      "4/4 Cello",
+
+    availableSizes: [
+      "4/4",
+    ],
+
+    weight:
+      "9 lbs.",
+
+    shell:
+      "Composite fiberglass shell",
+
+    construction:
+      "Composite fiberglass hard-shell construction",
+
+    exterior:
+      "Scratch-resistant exterior finish with black fittings",
+
+    interior:
+      "Black plush lining with protective suspension pads",
+
+    bowCapacity:
+      "2 bow holders",
+
+    musicPocket:
+      null,
+
+    closure:
+      null,
+
+    carrying:
+      "Wheels, pull strap, carry handle, and backpack straps",
+
+    extraFeatures:
+      "1 accessory pocket",
+
+    color:
+      "Black, Blue, Red, Silver",
+
+    protection:
+      "Composite fiberglass shell with scratch-resistant exterior finish, black plush lining, and protective suspension pads",
+
+
+    /* =====================================
+       INTERNAL MEASUREMENTS
+    ====================================== */
+
+    internalMeasurements: {
+      upperBout:
+        '15"',
+
+      lowerBout:
+        '19.25"',
+
+      scrollToEndpin:
+        '48.5"',
+
+      heelToEndpin:
+        '30.5"',
+    },
+
+
+    /* =====================================
+       EXTERNAL MEASUREMENTS
+    ====================================== */
+
+    externalMeasurements: {
+      totalLength:
+        '54"',
+    },
+
+
+    /* =====================================
+       INSIDE FEATURES
+    ====================================== */
+
+    insideFeatures: [
+      "Black plush interior lining.",
+      "Protective suspension pads.",
+      "Two bow holders.",
+      "One accessory pocket.",
+    ],
+
+
+    /* =====================================
+       OUTSIDE FEATURES
+    ====================================== */
+
+    outsideFeatures: [
+      "Composite fiberglass shell.",
+      "Scratch-resistant exterior finish.",
+      "Black fittings.",
+      "Built-in wheels for easier transportation.",
+      "Pull strap.",
+      "Carry handle.",
+      "Backpack straps.",
+      "Available in Black, Blue, Red, and Silver.",
     ],
 
 
