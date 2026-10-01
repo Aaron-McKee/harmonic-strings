@@ -40,6 +40,13 @@ import bam1002NWClosedImage from "../../assets/Bam_1002NW_Newtech_Cello_Case_Clo
 import bam1002NWOpenClosedImage from "../../assets/Bam_1002NW_Newtech_Cello_Case_Open_Closed.png";
 
 
+import bam1002XLClosedImage from "../../assets/Bam_1002XL_Hightech_Cello_Case.Closed.png";
+
+import bam1002XLOpenImage from "../../assets/Bam_1002XL_Hightech_Cello_Case.Open.png";
+
+import bam1002XLOpenClosedImage from "../../assets/Bam_1002XL_Hightech_Cello_Case.Open_Closed.png";
+
+
 export const celloHardCases = [
 
   /* =====================================================
@@ -528,7 +535,7 @@ export const celloHardCases = [
       "Smooth high-gloss finish.",
       "Two shoulder straps included.",
       "No wheels.",
-      "Available in Blue/Gray, Black/Wine, Green/Tan, Ivory/Blue, Orange/Blue, Pink/Gray, Purple/Gray, Red/Gray, Yellow/Blue.",
+      "Available in Blue/Gray, Black/Wine, Green/Tan, Ivory/Blue, Orange/Blue, Pink/Gray, Purple/Gray, Red/Gray, and Yellow/Blue.",
     ],
 
 
@@ -1667,6 +1674,293 @@ export const celloHardCases = [
       "2 comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks.",
       "Anti-slip and anti-wear rubber patches on the bottom outer shell to help prevent sliding.",
       "Available in Black, Blue, and Mint.",
+    ],
+
+
+    /* =====================================
+       INVENTORY
+    ====================================== */
+
+    inStock:
+      true,
+  },
+
+
+  /* =====================================================
+     BAM 1002XL HIGHTECH
+     HARD CELLO CASE
+  ====================================================== */
+
+  {
+    id:
+      "bam-1002xl-hightech",
+
+    slug:
+      "bam-1002xl-hightech-cello-case",
+
+    name:
+      "Bam 1002XL Hightech Cello Case",
+
+    maker:
+      "Bam",
+
+    model:
+      "1002XL Hightech",
+
+    reference:
+      "1002XL",
+
+    category:
+      "Hard Cello Case",
+
+    instrument:
+      "Cello",
+
+    caseType:
+      "Hard",
+
+    caseStyle:
+      "Hightech lightweight cello case",
+
+
+    /* =====================================
+       IMAGES
+    ====================================== */
+
+    image:
+      bam1002XLOpenClosedImage,
+
+    closedImage:
+      bam1002XLClosedImage,
+
+    openImage:
+      bam1002XLOpenImage,
+
+    combinedImage:
+      bam1002XLOpenClosedImage,
+
+
+    /* =====================================
+       PRICING
+    ====================================== */
+
+    regularPrice:
+      "$2,680",
+
+    salePrice:
+      "$2,320",
+
+    price:
+      null,
+
+    savings:
+      "Save 13%",
+
+
+    /* =====================================
+       COLLECTION DESCRIPTION
+    ====================================== */
+
+    description:
+      "The Bam 1002XL Hightech Cello Case combines Bam's triple-ply Hightech shell construction, full instrument suspension, ultralight weight, secure five-latch closure, and professional carrying features for premium cello protection and transport.",
+
+
+    /* =====================================
+       FULL DESCRIPTION
+    ====================================== */
+
+    descriptionParagraphs: [
+      "The Bam 1002XL Hightech Cello Case is designed to provide outstanding protection while maintaining an exceptionally manageable weight for a full-featured cello case. Its shell is constructed using Bam's Hightech technique, a triple-ply coated and insulated ABS structure made from high-performance materials for a strong protective barrier without unnecessary bulk.",
+
+      "Inside, the instrument is fully suspended on premium fabric-covered injected foam cushions for enhanced protection and instrument care. Installed scroll and neck straps help keep the cello securely positioned, while an elastic band on the bottom pad secures the endpin during travel. The interior accommodates two full-size bows and includes a removable string pocket, an attached cello body sheet music pocket, and a set of six additional attachable cushions for achieving a more precise instrument fit.",
+
+      "The exterior includes a premium ergonomic side handle and an integrated loop handle on the back of the case. Five BAM Series 2 soft-touch latches with an included set of keys and a male/female airtight H seal provide secure closure. Two neoprene anti-slip backpack straps with covered security screw carabiner hooks provide hands-free transportation, while anti-slip and anti-wear rubber patches and feet on the bottom outer shell allow the case to stand securely and help prevent unwanted sliding.",
+    ],
+
+
+    /* =====================================
+       KEY FEATURES
+    ====================================== */
+
+    keyFeatures: [
+      {
+        title:
+          "Hightech Protection",
+
+        icon:
+          "shield",
+
+        description:
+          "Bam's triple-ply coated and insulated ABS Hightech structure uses high-performance materials for outstanding protection at a reduced weight.",
+      },
+
+      {
+        title:
+          "Full Suspension Interior",
+
+        icon:
+          "interior",
+
+        description:
+          "Premium fabric-covered injected foam cushions fully suspend the cello for enhanced protection and instrument care.",
+      },
+
+      {
+        title:
+          "Customizable Instrument Fit",
+
+        icon:
+          "interior",
+
+        description:
+          "Six additional attachable cushions are included to help create a secure and precise fit around the instrument.",
+      },
+
+      {
+        title:
+          "Bow & Music Storage",
+
+        icon:
+          "storage",
+
+        description:
+          "The interior accommodates two full-size bows and includes a removable string pocket and attached sheet music pocket.",
+      },
+
+      {
+        title:
+          "Five-Latch Security",
+
+        icon:
+          "security",
+
+        description:
+          "Five BAM Series 2 soft-touch latches with included keys and an airtight H seal provide secure closure.",
+      },
+
+      {
+        title:
+          "Professional Carrying System",
+
+        icon:
+          "transport",
+
+        description:
+          "An ergonomic side handle, rear loop handle, and two neoprene anti-slip backpack straps provide multiple carrying options.",
+      },
+    ],
+
+
+    /* =====================================
+       SPECIFICATIONS
+    ====================================== */
+
+    size:
+      null,
+
+    availableSizes: [],
+
+    weight:
+      "10 lbs. 9 oz.",
+
+    shell:
+      "Triple-ply coated and insulated ABS Hightech structure",
+
+    construction:
+      "Bam Hightech triple-ply coated and insulated ABS construction made from high-performance materials",
+
+    exterior:
+      "Hightech ABS shell with ergonomic side handle, integrated rear loop handle, anti-slip rubber patches, and protective standing feet",
+
+    interior:
+      "Full suspension on premium fabric-covered injected foam cushions",
+
+    bowCapacity:
+      "2 full-size bows",
+
+    musicPocket:
+      "Cello body sheet music pocket attached inside",
+
+    closure:
+      "5 BAM Series 2 soft-touch latches with included keys and male/female airtight H seal",
+
+    carrying:
+      "Premium ergonomic side handle, integrated rear loop handle, and 2 neoprene anti-slip backpack straps",
+
+    extraFeatures:
+      "Installed scroll and neck straps, elastic endpin securing band, removable string pocket, and 6 additional attachable fitting cushions",
+
+    color:
+      "Black Carbon, Silver",
+
+    protection:
+      "Triple-ply coated and insulated ABS Hightech shell with full suspension on premium fabric-covered injected foam cushions",
+
+
+    /* =====================================
+       INTERNAL MEASUREMENTS
+    ====================================== */
+
+    internalMeasurements: {
+      totalLength:
+        "50.8 in. / 129 cm.",
+
+      bodyLength:
+        "29.9 in. / 76 cm.",
+
+      upperBout:
+        "15.35 in. / 39 cm.",
+
+      lowerBout:
+        "18.9 in. / 48 cm.",
+    },
+
+
+    /* =====================================
+       EXTERNAL MEASUREMENTS
+    ====================================== */
+
+    externalMeasurements: {
+      totalLength:
+        "54.5 in. / 138.5 cm.",
+
+      caseWidth:
+        "21.1 in. / 53.5 cm.",
+
+      caseDepth:
+        "13.7 in. / 35 cm.",
+    },
+
+
+    /* =====================================
+       INSIDE FEATURES
+    ====================================== */
+
+    insideFeatures: [
+      "Full suspension of the instrument on premium fabric-covered injected foam cushions for enhanced protection and instrument care.",
+      "Fitted for 2 full-size bows.",
+      "Installed scroll and neck straps.",
+      "Bottom pad elastic band secures the endpin during travel.",
+      "Removable string pocket.",
+      "Cello body sheet music pocket attached inside.",
+      "Includes a set of 6 additional attachable cushions for a more precise instrument fit.",
+    ],
+
+
+    /* =====================================
+       OUTSIDE FEATURES
+    ====================================== */
+
+    outsideFeatures: [
+      "Bam Hightech triple-ply coated and insulated ABS structure made of high-performance materials.",
+      "Outstanding protection with ultralight weight.",
+      "Premium ergonomic carrying side handle.",
+      "Integrated loop handle on the back of the case.",
+      "5 BAM Series 2 soft-touch latches with included set of keys.",
+      'Male/female airtight "H" seal.',
+      "2 comfortable neoprene anti-slip backpack straps with covered security screw carabiner hooks.",
+      "Anti-slip and anti-wear rubber patches and feet on the bottom outer shell for standing and to help prevent sliding.",
+      "Available in Black Carbon and Silver.",
     ],
 
 
