@@ -73,6 +73,10 @@ function CaseShowcase({ caseItem }) {
     useState(false);
 
 
+  const hideInteriorView =
+    product.id === "howard-core-cc482";
+
+
   const exteriorImage =
     product.closedImage ||
     product.image ||
@@ -98,7 +102,8 @@ function CaseShowcase({ caseItem }) {
 
 
   const activeImage =
-    activeView === "interior"
+    activeView === "interior" &&
+    !hideInteriorView
       ? interiorImage
       : activeView === "both"
         ? bothViewsImage
@@ -128,6 +133,19 @@ function CaseShowcase({ caseItem }) {
     transport: Backpack,
     security: LockKeyhole,
   };
+
+
+  useEffect(() => {
+    if (
+      hideInteriorView &&
+      activeView === "interior"
+    ) {
+      setActiveView("both");
+    }
+  }, [
+    hideInteriorView,
+    activeView,
+  ]);
 
 
   useEffect(() => {
@@ -174,7 +192,6 @@ function CaseShowcase({ caseItem }) {
 
     return (
       <div className="hs-detail-ledger-row">
-
         <span>
           {label}
         </span>
@@ -182,7 +199,6 @@ function CaseShowcase({ caseItem }) {
         <strong>
           {value}
         </strong>
-
       </div>
     );
   };
@@ -243,19 +259,21 @@ function CaseShowcase({ caseItem }) {
                 </button>
 
 
-                <button
-                  type="button"
-                  className={
-                    activeView === "interior"
-                      ? "active"
-                      : ""
-                  }
-                  onClick={() =>
-                    setActiveView("interior")
-                  }
-                >
-                  Interior
-                </button>
+                {!hideInteriorView && (
+                  <button
+                    type="button"
+                    className={
+                      activeView === "interior"
+                        ? "active"
+                        : ""
+                    }
+                    onClick={() =>
+                      setActiveView("interior")
+                    }
+                  >
+                    Interior
+                  </button>
+                )}
 
 
                 <button
@@ -805,19 +823,21 @@ function CaseShowcase({ caseItem }) {
             </button>
 
 
-            <button
-              type="button"
-              className={
-                activeView === "interior"
-                  ? "active"
-                  : ""
-              }
-              onClick={() =>
-                setActiveView("interior")
-              }
-            >
-              Interior
-            </button>
+            {!hideInteriorView && (
+              <button
+                type="button"
+                className={
+                  activeView === "interior"
+                    ? "active"
+                    : ""
+                }
+                onClick={() =>
+                  setActiveView("interior")
+                }
+              >
+                Interior
+              </button>
+            )}
 
 
             <button
