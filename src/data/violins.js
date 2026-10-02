@@ -1,25 +1,41 @@
 import k515FrontBackImage from "../assets/K515_Violin_Front_Back.png";
+
 import k515FrontImage from "../assets/K515_Violin_Front.png";
+
 import k515BackImage from "../assets/K515_Violin_Back.png";
 
 import snowPV800FrontBackImage from "../assets/Snow_PV800_Violin_Front_Back.png";
+
 import snowPV800FrontImage from "../assets/Snow_PV800_Violin_Front.png";
+
 import snowPV800BackImage from "../assets/Snow_PV800_Violin_Back.png";
 
 import stefanPetrovEuroFrontBackImage from "../assets/Stefan_Petrov_Euro_Violin_Front_Back.png";
+
 import stefanPetrovEuroFrontImage from "../assets/Stefan_Petrov_Euro_Violin_Front.png";
+
 import stefanPetrovEuroBackImage from "../assets/Stefan_Petrov_Euro_Violin_Back.png";
 
 import np10FrontImage from "../assets/Nicholas_Parola_NP10_Violin_Front.png";
+
 import np10BackImage from "../assets/Nicholas_Parola_NP10_Violin_Back.png";
+
 import np10FrontBackImage from "../assets/Nicholas_Parola_NP10_Violin_Front_Back.png";
 
+import stefanPetrovTristaFrontImage from "../assets/Stefan_Petrov_Trista_Workshop_Violin_Front.png";
+
+import stefanPetrovTristaBackImage from "../assets/Stefan_Petrov_Trista_Workshop_Violin_Back.png";
+
+import stefanPetrovTristaFrontBackImage from "../assets/Stefan_Petrov_Trista_Workshop_Violin_Front_Back.png";
+
 import coreSelectOleBullFrontImage from "../assets/Core_Select_Ole_Bull_Violin_Front.png";
+
 import coreSelectOleBullBackImage from "../assets/Core_Select_Ole_Bull_Violin_Back.png";
+
 import coreSelectOleBullFrontBackImage from "../assets/Core_Select_Ole_Bull_Violin_Front_Back.png";
 
-
 export const violins = [
+
   // =========================================================
   // JOHANNES KÖHR K515 VIOLIN
   // BEGINNER
@@ -300,6 +316,154 @@ export const violins = [
 
     condition:
       null,
+
+    conditionNotes:
+      null,
+
+
+    /* =====================================
+       INVENTORY
+    ====================================== */
+
+    inStock:
+      true,
+  },
+
+
+  // =========================================================
+  // STEFAN PETROV TRISTA WORKSHOP VIOLIN
+  // INTERMEDIATE
+  // =========================================================
+
+  {
+    id: "stefan-petrov-trista-workshop-violin",
+    slug: "stefan-petrov-trista-workshop-violin",
+
+    name: "Stefan Petrov Trista Workshop Violin",
+    maker: "Stefan Petrov",
+    model: "Trista Workshop",
+    instrument: "Violin",
+    level: "Intermediate",
+    stage: "instrument",
+
+    image:
+      stefanPetrovTristaFrontBackImage,
+
+    frontImage:
+      stefanPetrovTristaFrontImage,
+
+    backImage:
+      stefanPetrovTristaBackImage,
+
+    combinedImage:
+      stefanPetrovTristaFrontBackImage,
+
+
+    /* =====================================
+       PRICING
+    ====================================== */
+
+    price:
+      "$1,850",
+
+    regularPrice:
+      null,
+
+    salePrice:
+      null,
+
+    savings:
+      null,
+
+
+    /* =====================================
+       SIZE
+    ====================================== */
+
+    size:
+      "4/4",
+
+    availableSizes: [
+      "4/4",
+    ],
+
+
+    /* =====================================
+       COLLECTION DESCRIPTION
+    ====================================== */
+
+    shortDescription:
+      "The Stefan Petrov Trista Workshop Violin is a handcrafted 4/4 instrument for intermediate and advancing players, offering a big, robust sound, strong projection, beautiful boxwood fittings, and Evah Pirazzi strings.",
+
+
+    /* =====================================
+       DESCRIPTION
+    ====================================== */
+
+    description:
+      "The Stefan Petrov Trista Workshop Violin is a handcrafted advancing-level instrument from the Stefan Petrov workshop, created for players seeking greater tonal power, responsiveness, and expressive range. This 4/4 violin features beautiful boxwood fittings, Evah Pirazzi strings, and a hand-rubbed oil varnish, with careful workshop craftsmanship and a big, robust sound.",
+
+
+    /* =====================================
+       TONE & PLAYABILITY
+    ====================================== */
+
+    toneAndPlayability:
+      "Big, robust, powerful, and responsive, with strong projection and an expressive character suited to intermediate and advancing players.",
+
+
+    /* =====================================
+       MATERIALS
+    ====================================== */
+
+    top:
+      null,
+
+    backAndSides:
+      null,
+
+    finish:
+      "Hand-rubbed oil varnish",
+
+    fittings:
+      "Beautiful boxwood fittings",
+
+    strings:
+      "Evah Pirazzi",
+
+
+    /* =====================================
+       CRAFTSMANSHIP
+    ====================================== */
+
+    construction:
+      "Made by a single maker in the Stefan Petrov workshop using quality materials, with final inspection by a master maker",
+
+    handwork:
+      "Made from start to finish by one workshop maker under journeyman or master-maker oversight",
+
+    idealFor:
+      "Intermediate and advancing violinists seeking a responsive 4/4 instrument with a big, robust sound and strong projection",
+
+    setup:
+      "Harmonic Strings Workshop",
+
+
+    /* =====================================
+       ADDITIONAL INFORMATION
+    ====================================== */
+
+    tonalCharacter:
+      "Big, robust, powerful, responsive, and projecting",
+
+    year:
+      null,
+
+    inspiration:
+      null,
+
+    condition:
+      "Excellent",
 
     conditionNotes:
       null,
@@ -974,4 +1138,5 @@ export const violins = [
     inStock:
       true,
   },
+
 ];
